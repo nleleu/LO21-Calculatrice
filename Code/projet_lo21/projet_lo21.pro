@@ -13,11 +13,19 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     dialog.cpp \
-    pile.cpp
+    pile.cpp \
+    type.cpp \
+    entier.cpp \
+    reel.cpp \
+    collection_pile.cpp
 
 HEADERS  += mainwindow.h \
     dialog.h \
-    pile.h
+    pile.h \
+    type.h \
+    entier.h \
+    reel.h \
+    collection_pile.h
 
 FORMS    += mainwindow.ui \
     dialog.ui

@@ -4,6 +4,7 @@
 #include "ui_dialog.h"
 #include <QtDebug>
 #include "pile.h"
+#include "entier.h"
 #include <QDebug>
 
 
@@ -55,14 +56,14 @@ void MainWindow::on_pushButton9_clicked(){
 
 void MainWindow::on_stackButton_clicked(){
     emit ajouterStack(ui->lineEdit->text());
-
-    _pile.push(ui->lineEdit->text().toInt());
+    entier *test=new entier(ui->lineEdit->text().toInt());
+    _pile.push(test);
     ui->lineEdit->clear();
 }
 
 void MainWindow::on_affichePile_clicked(){
-    for(int i=0; i<_pile.size(); i++)
-        qDebug()<<_pile.at(i);
+    for(int i=0; i<_pile.size(); i++);
+        //qDebug()<<_pile.at(i); //revoir
 }
 
 void MainWindow::on_swap_clicked(){
