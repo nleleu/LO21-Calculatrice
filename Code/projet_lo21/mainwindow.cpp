@@ -1,14 +1,19 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <stack>
+#include "dialog.h"
+#include "ui_dialog.h"
+#include <QtDebug>
+#include "pile.h"
+#include <QDebug>
 
-using namespace std;
 
-MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
+MainWindow::MainWindow(Pile &pile, QWidget *parent) :
+    _pile(pile), QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    connect(this, SIGNAL(keyPress(QKeyEvent*)), this, SLOT(keyPressEvent(QKeyEvent*)));
 }
 
 MainWindow::~MainWindow()
@@ -46,5 +51,42 @@ void MainWindow::on_pushButton8_clicked(){
 }
 void MainWindow::on_pushButton9_clicked(){
     ui->lineEdit->setText(ui->lineEdit->text()+ui->pushButton9->text());
+}
+
+void MainWindow::on_stackButton_clicked(){
+    emit ajouterStack(ui->lineEdit->text());
+
+    _pile.push(ui->lineEdit->text().toInt());
+    ui->lineEdit->clear();
+}
+
+void MainWindow::on_affichePile_clicked(){
+    for(int i=0; i<_pile.size(); i++)
+        qDebug()<<_pile.at(i);
+}
+
+void MainWindow::on_swap_clicked(){
+    _pile.swap(0, 1);
+}
+
+void MainWindow::on_sum_clicked(){
+    _pile.sum(10);
+}
+
+void MainWindow::on_mean_clicked(){
+    _pile.mean(10);
+}
+
+void MainWindow::on_clear_clicked(){
+    _pile.clear();
+    emit nettoyerList();
+}
+
+void MainWindow::on_dup_clicked(){
+    _pile.dup();
+}
+
+void MainWindow::on_drop_clicked(){
+    _pile.drop();
 }
 

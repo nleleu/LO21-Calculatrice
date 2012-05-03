@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Mon 30. Apr 12:08:20 2012
+** Created: Wed 2. May 01:29:22 2012
 **      by: Qt User Interface Compiler version 4.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -14,6 +14,7 @@
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
+#include <QtGui/QGroupBox>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLineEdit>
 #include <QtGui/QMainWindow>
@@ -42,6 +43,15 @@ public:
     QPushButton *pushButton3;
     QPushButton *pushButton6;
     QPushButton *pushButton0;
+    QPushButton *stackButton;
+    QGroupBox *groupBox;
+    QPushButton *affichePile;
+    QPushButton *swap;
+    QPushButton *clear;
+    QPushButton *sum;
+    QPushButton *dup;
+    QPushButton *mean;
+    QPushButton *drop;
     QMenuBar *menuBar;
     QMenu *menuFile;
     QToolBar *mainToolBar;
@@ -51,7 +61,9 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(400, 300);
+        MainWindow->setEnabled(true);
+        MainWindow->resize(753, 301);
+        MainWindow->setAcceptDrops(false);
         actionQuit = new QAction(MainWindow);
         actionQuit->setObjectName(QString::fromUtf8("actionQuit"));
         centralWidget = new QWidget(MainWindow);
@@ -59,7 +71,7 @@ public:
         lineEdit = new QLineEdit(centralWidget);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
         lineEdit->setGeometry(QRect(30, 30, 231, 20));
-        lineEdit->setReadOnly(false);
+        lineEdit->setReadOnly(true);
         pushButton1 = new QPushButton(centralWidget);
         pushButton1->setObjectName(QString::fromUtf8("pushButton1"));
         pushButton1->setGeometry(QRect(30, 90, 75, 23));
@@ -90,10 +102,37 @@ public:
         pushButton0 = new QPushButton(centralWidget);
         pushButton0->setObjectName(QString::fromUtf8("pushButton0"));
         pushButton0->setGeometry(QRect(30, 180, 75, 23));
+        stackButton = new QPushButton(centralWidget);
+        stackButton->setObjectName(QString::fromUtf8("stackButton"));
+        stackButton->setGeometry(QRect(300, 170, 75, 61));
+        groupBox = new QGroupBox(centralWidget);
+        groupBox->setObjectName(QString::fromUtf8("groupBox"));
+        groupBox->setGeometry(QRect(430, 30, 281, 201));
+        affichePile = new QPushButton(groupBox);
+        affichePile->setObjectName(QString::fromUtf8("affichePile"));
+        affichePile->setGeometry(QRect(10, 20, 75, 61));
+        swap = new QPushButton(groupBox);
+        swap->setObjectName(QString::fromUtf8("swap"));
+        swap->setGeometry(QRect(110, 30, 41, 41));
+        clear = new QPushButton(groupBox);
+        clear->setObjectName(QString::fromUtf8("clear"));
+        clear->setGeometry(QRect(110, 80, 41, 41));
+        sum = new QPushButton(groupBox);
+        sum->setObjectName(QString::fromUtf8("sum"));
+        sum->setGeometry(QRect(170, 30, 41, 41));
+        dup = new QPushButton(groupBox);
+        dup->setObjectName(QString::fromUtf8("dup"));
+        dup->setGeometry(QRect(170, 80, 41, 41));
+        mean = new QPushButton(groupBox);
+        mean->setObjectName(QString::fromUtf8("mean"));
+        mean->setGeometry(QRect(220, 30, 41, 41));
+        drop = new QPushButton(groupBox);
+        drop->setObjectName(QString::fromUtf8("drop"));
+        drop->setGeometry(QRect(220, 80, 41, 41));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 400, 21));
+        menuBar->setGeometry(QRect(0, 0, 753, 21));
         menuFile = new QMenu(menuBar);
         menuFile->setObjectName(QString::fromUtf8("menuFile"));
         MainWindow->setMenuBar(menuBar);
@@ -138,6 +177,18 @@ public:
         pushButton6->setShortcut(QApplication::translate("MainWindow", "6", 0, QApplication::UnicodeUTF8));
         pushButton0->setText(QApplication::translate("MainWindow", "0", 0, QApplication::UnicodeUTF8));
         pushButton0->setShortcut(QApplication::translate("MainWindow", "0", 0, QApplication::UnicodeUTF8));
+        stackButton->setText(QApplication::translate("MainWindow", "Stack", 0, QApplication::UnicodeUTF8));
+        stackButton->setShortcut(QApplication::translate("MainWindow", "Return", 0, QApplication::UnicodeUTF8));
+        groupBox->setTitle(QApplication::translate("MainWindow", "Op\303\251rations sur la Pile", 0, QApplication::UnicodeUTF8));
+        affichePile->setText(QApplication::translate("MainWindow", "Affiche Pile", 0, QApplication::UnicodeUTF8));
+        affichePile->setShortcut(QApplication::translate("MainWindow", "A", 0, QApplication::UnicodeUTF8));
+        swap->setText(QApplication::translate("MainWindow", "Swap", 0, QApplication::UnicodeUTF8));
+        clear->setText(QApplication::translate("MainWindow", "Clear", 0, QApplication::UnicodeUTF8));
+        clear->setShortcut(QApplication::translate("MainWindow", "Ctrl+C", 0, QApplication::UnicodeUTF8));
+        sum->setText(QApplication::translate("MainWindow", "Sum", 0, QApplication::UnicodeUTF8));
+        dup->setText(QApplication::translate("MainWindow", "Dup", 0, QApplication::UnicodeUTF8));
+        mean->setText(QApplication::translate("MainWindow", "Mean", 0, QApplication::UnicodeUTF8));
+        drop->setText(QApplication::translate("MainWindow", "Drop", 0, QApplication::UnicodeUTF8));
         menuFile->setTitle(QApplication::translate("MainWindow", "File", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 

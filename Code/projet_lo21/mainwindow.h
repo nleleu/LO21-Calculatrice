@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QStack>
+#include "pile.h"
+
 
 namespace Ui {
 class MainWindow;
@@ -12,7 +15,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
     
 public:
-    explicit MainWindow(QWidget *parent = 0);
+    explicit MainWindow(Pile &pile, QWidget *parent = 0);
     ~MainWindow();
 
 public slots:
@@ -27,8 +30,24 @@ public slots:
     void on_pushButton8_clicked();
     void on_pushButton9_clicked();
 
+
+    void on_stackButton_clicked();
+    void on_affichePile_clicked();
+    void on_swap_clicked();
+    void on_sum_clicked();
+    void on_mean_clicked();
+    void on_clear_clicked();
+    void on_dup_clicked();
+    void on_drop_clicked();
+
+signals:
+    void ajouterStack(const QString&);
+    void nettoyerList();
+
 private:
     Ui::MainWindow *ui;
+    Pile &_pile;
 };
 
 #endif // MAINWINDOW_H
+
