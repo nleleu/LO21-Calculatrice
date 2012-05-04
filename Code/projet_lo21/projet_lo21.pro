@@ -17,7 +17,9 @@ SOURCES += main.cpp\
     type.cpp \
     entier.cpp \
     reel.cpp \
-    collection_pile.cpp
+    collection_pile.cpp \
+    rationnel.cpp \
+    complexe.cpp
 
 HEADERS  += mainwindow.h \
     dialog.h \
@@ -25,7 +27,9 @@ HEADERS  += mainwindow.h \
     type.h \
     entier.h \
     reel.h \
-    collection_pile.h
+    collection_pile.h \
+    rationnel.h \
+    complexe.h
 
 FORMS    += mainwindow.ui \
     dialog.ui

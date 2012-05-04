@@ -5,6 +5,8 @@
 #include "pile.h"
 #include "entier.h"
 #include <iostream>
+#include "rationnel.h"
+
 
 int main(int argc, char *argv[])
 {
@@ -12,8 +14,8 @@ int main(int argc, char *argv[])
 
     Pile pile;
     int i=2;
-    entier e(4);
-    std::cout << e.toString();
+    rationnel r("4/2");
+    std::cout << r.toString();
    MainWindow w(pile, 0);
    w.show();
 
