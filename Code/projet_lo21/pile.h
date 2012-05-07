@@ -16,7 +16,6 @@ public:
     void mean(const unsigned int x);
     void dup(){if(!isEmpty()){push(top());}}
     void drop(){if(!isEmpty()){pop();}}
-
 };
 
 #endif // PILE_H

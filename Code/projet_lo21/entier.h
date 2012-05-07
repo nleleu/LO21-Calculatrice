@@ -19,8 +19,6 @@ public:
     type& operator/(int & i);
     type& operator/(double & i);
     std::string toString();
-
-
 };
 
 #endif // ENTIER_H

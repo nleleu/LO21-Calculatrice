@@ -2,10 +2,13 @@
 #include "ui_mainwindow.h"
 #include "dialog.h"
 #include "ui_dialog.h"
-#include <QtDebug>
 #include "pile.h"
-#include "entier.h"
 #include <QDebug>
+#include "entier.h"
+#include "reel.h"
+#include "rationnel.h"
+#include "complexe.h"
+
 
 
 MainWindow::MainWindow(Pile &pile, QWidget *parent) :
@@ -56,26 +59,40 @@ void MainWindow::on_pushButton9_clicked(){
 
 void MainWindow::on_stackButton_clicked(){
     emit ajouterStack(ui->lineEdit->text());
-    entier *test=new entier(ui->lineEdit->text().toInt());
-    _pile.push(test);
+
+    //reconnaissance du type :
+    //if(type::isEntier(ui->lineEdit->text()))
+      //  entier *test=new entier(ui->lineEdit->text().toInt());
+    if(type::isReel(ui->lineEdit->text()))
+        reel *test=new reel(ui->lineEdit->text().toDouble());
+    //if(type::isRationnel(ui->lineEdit->text()))
+      //  rationnel *test=new entier(ui->lineEdit->text().toInt());
+    /*if(type::isComplexe(ui->lineEdit->text()))
+        complexe *test=new entier(ui->lineEdit->text().toInt());*/
+
+
+    //_pile.push(test);
     ui->lineEdit->clear();
 }
 
 void MainWindow::on_affichePile_clicked(){
-    for(int i=0; i<_pile.size(); i++);
-        //qDebug()<<_pile.at(i); //revoir
+    //for(int i=0; i<_pile.size(); i++)
+        //qDebug()<<QString::number(_pile.at(i), 10); //revoir
 }
 
 void MainWindow::on_swap_clicked(){
     _pile.swap(0, 1);
+    emit refresh_signal();
 }
 
 void MainWindow::on_sum_clicked(){
     _pile.sum(10);
+    emit refresh_signal();
 }
 
 void MainWindow::on_mean_clicked(){
     _pile.mean(10);
+    emit refresh_signal();
 }
 
 void MainWindow::on_clear_clicked(){
@@ -85,9 +102,11 @@ void MainWindow::on_clear_clicked(){
 
 void MainWindow::on_dup_clicked(){
     _pile.dup();
+    emit refresh_signal();
 }
 
 void MainWindow::on_drop_clicked(){
     _pile.drop();
+    emit refresh_signal();
 }
 

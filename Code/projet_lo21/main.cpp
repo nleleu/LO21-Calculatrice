@@ -22,5 +22,6 @@ int main(int argc, char *argv[])
     Dialog d(pile, &w);
     d.show();
 
+
     return a.exec();
 }

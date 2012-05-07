@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QStack>
 #include "pile.h"
+#include "type.h"
 
 
 namespace Ui {
@@ -43,6 +44,7 @@ public slots:
 signals:
     void ajouterStack(const QString&);
     void nettoyerList();
+    void refresh_signal();
 
 private:
     Ui::MainWindow *ui;
@@ -50,4 +52,3 @@ private:
 };
 
 #endif // MAINWINDOW_H
-

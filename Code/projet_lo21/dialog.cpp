@@ -18,6 +18,7 @@ Dialog::Dialog(Pile &pile, QWidget *parent) :
 
     QObject::connect(parent, SIGNAL(ajouterStack(const QString&)), this, SLOT(stocke(const QString&)));
     QObject::connect(parent, SIGNAL(nettoyerList()), this, SLOT(listNettoye()));
+    QObject::connect(parent, SIGNAL(refresh_signal()), this, SLOT(refresh_slot()));
 }
 
 Dialog::~Dialog()
@@ -53,4 +54,11 @@ void Dialog::on_addition_clicked(){
 
 void Dialog::listNettoye(){
     ui->list->clear();
+}
+
+void Dialog::refresh_slot(){
+    ui->list->clear();
+    for(int i=0; i<_pile.size(); i++){
+        ui->list->addItem("QString::number(_pile.at(i), 10)");
+    }
 }

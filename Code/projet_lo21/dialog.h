@@ -21,6 +21,7 @@ public slots:
     void stocke(const QString& t);
     void on_addition_clicked();
     void listNettoye();
+    void refresh_slot();
     
 private:
     Ui::Dialog *ui;
