@@ -23,7 +23,6 @@ void Pile::sum(const unsigned int x){
         switch(MainWindow::selectedComplexUse){
         case NO:
         {
-
             type* sumVect;
 
             //reconnaissance du type de constante
@@ -84,18 +83,76 @@ void Pile::sum(const unsigned int x){
     }
 }
 
-void Pile::mean(const unsigned int x){  //A revoir
-    if(size()>0){
-        type *tmp(0),*res=new entier;
-        int y=x;
+void Pile::mean(const unsigned int x){
+    if(!isEmpty()){
 
-        if(x>size())
-            y=size();
+        //selection de l'utilisation des complexes
+        switch(MainWindow::selectedComplexUse){
+        case NO:
+        {
+            type* sumVect;
 
-        for(int i=0; i<y; i++)
-            *tmp=*tmp+*pop();
-        *res=*tmp/y;
-        push(res);
+            //reconnaissance du type de constante
+            switch(MainWindow::selectedConstType){
+                case ENTIER:
+                {
+                    sumVect=new entier;
+
+                    for(iterator it=begin(); it!=end(); it++){
+                        *sumVect=*sumVect+*(*it);
+                    }
+
+                    entier taille(size());
+                    *sumVect=*sumVect/taille;
+                    push(sumVect);
+                }
+                    break;
+
+                case REEL:
+                {
+                    sumVect=new reel;
+
+                    for(iterator it=begin(); it!=end(); it++){
+                        *sumVect=*sumVect+*(*it);
+                    }
+
+                    reel taille(size());
+                    *sumVect=*sumVect/taille;
+                    push(sumVect);
+                }
+                    break;
+
+                case RATIONNEL:
+                {
+                    sumVect=new rationnel;
+
+                    for(iterator it=begin(); it!=end(); it++){
+                        *sumVect=*sumVect+*(*it);
+                    }
+
+                    rationnel taille(size());
+                    *sumVect=*sumVect/taille;
+                    push(sumVect);
+                }
+                    break;
+
+                default:
+                    qDebug()<<"probleme mean, constType non detecte";
+                    break;
+            }
+        }
+        break;
+
+        case YES:
+        {
+            //A implementer
+            break;
+        }
+
+        default:
+            qDebug()<<"probleme mean, complexUse non detecte";
+            break;
+        }
     }
 }
 
