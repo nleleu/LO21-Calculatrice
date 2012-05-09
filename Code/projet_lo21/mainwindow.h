@@ -5,6 +5,11 @@
 #include <QStack>
 #include "pile.h"
 #include "type.h"
+#include <QString>
+
+enum constType{ENTIER, REEL, RATIONNEL};
+enum complexUse{YES, NO};
+enum degUnit{DEGRE, RADIANT};
 
 
 namespace Ui {
@@ -18,6 +23,9 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(Pile &pile, QWidget *parent = 0);
     ~MainWindow();
+    static constType selectedConstType;
+    static complexUse selectedComplexUse;
+    static degUnit selectedDegUnit;
 
 public slots:
     void on_pushButton0_clicked();
@@ -41,9 +49,27 @@ public slots:
     void on_dup_clicked();
     void on_drop_clicked();
 
+    void pushStack_slot(const QString& t);
+    void on_addition_clicked();
+    void cleanList_slot();
+    void refresh_slot();
+
+    //selection du type de constante utilise
+    void on_intRadio_clicked();
+    void on_doubleRadio_clicked();
+    void on_rationalRadio_clicked();
+
+    //selection de l'utilisation des complexes
+    void on_yesComplex_clicked();
+    void on_noComplex_clicked();
+
+    //selection de l'unite des degres
+    void on_degUnit_clicked();
+    void on_radUnit_clicked();
+
 signals:
-    void ajouterStack(const QString&);
-    void nettoyerList();
+    void pushStack_signal(const QString&);
+    void cleanList_signal();
     void refresh_signal();
 
 private:
@@ -52,3 +78,4 @@ private:
 };
 
 #endif // MAINWINDOW_H
+

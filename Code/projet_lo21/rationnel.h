@@ -4,6 +4,7 @@
 #include "type.h"
 #include <iostream>
 #include <sstream>
+#include <QString>
 
 class rationnel:public type
 {
@@ -25,12 +26,14 @@ public:
         num=n;
         denum=d;
     }
-
+    type& operator =(type & t);
     type& operator +(type & t){}    //a implementer
     type& operator /(type & t){}    //a implementer
     type& operator/(int & i){}      //a implementer
     type& operator/(double & i){}   //a implementer
     std::string toString();
+
+    static bool isRationnel(const QString& s){return s.contains ("/");}
 };
 
 #endif // RATIONNEL_H

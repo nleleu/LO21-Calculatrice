@@ -3,6 +3,8 @@
 
 #include <QStack>
 #include "type.h"
+#include <QString>
+#include <sstream>
 
 class Pile : public QStack<type *>
 {

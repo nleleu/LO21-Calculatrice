@@ -12,7 +12,6 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    dialog.cpp \
     pile.cpp \
     type.cpp \
     entier.cpp \
@@ -22,7 +21,6 @@ SOURCES += main.cpp\
     complexe.cpp
 
 HEADERS  += mainwindow.h \
-    dialog.h \
     pile.h \
     type.h \
     entier.h \
@@ -31,5 +29,4 @@ HEADERS  += mainwindow.h \
     rationnel.h \
     complexe.h
 
-FORMS    += mainwindow.ui \
-    dialog.ui
+FORMS    += mainwindow.ui

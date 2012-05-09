@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>753</width>
-    <height>301</height>
+    <width>799</width>
+    <height>604</height>
    </rect>
   </property>
   <property name="acceptDrops">
@@ -20,202 +20,10 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLineEdit" name="lineEdit">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>30</y>
-      <width>231</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="readOnly">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton1">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>90</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1</string>
-    </property>
-    <property name="shortcut">
-     <string>1</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton4">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>120</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>4</string>
-    </property>
-    <property name="shortcut">
-     <string>4</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton7">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>150</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>7</string>
-    </property>
-    <property name="shortcut">
-     <string>7</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton2">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>90</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>2</string>
-    </property>
-    <property name="shortcut">
-     <string>2</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton8">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>150</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>8</string>
-    </property>
-    <property name="shortcut">
-     <string>8</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton5">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>120</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>5</string>
-    </property>
-    <property name="shortcut">
-     <string>5</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton9">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>150</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>9</string>
-    </property>
-    <property name="shortcut">
-     <string>9</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton3">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>90</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>3</string>
-    </property>
-    <property name="shortcut">
-     <string>3</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton6">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>120</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>6</string>
-    </property>
-    <property name="shortcut">
-     <string>6</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton0">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>180</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-    <property name="shortcut">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="stackButton">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>170</y>
-      <width>75</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Stack</string>
-    </property>
-    <property name="shortcut">
-     <string>Return</string>
-    </property>
-   </widget>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>420</x>
       <y>30</y>
       <width>281</width>
       <height>201</height>
@@ -224,102 +32,364 @@
     <property name="title">
      <string>Opérations sur la Pile</string>
     </property>
-    <widget class="QPushButton" name="affichePile">
+    <widget class="QWidget" name="gridLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>19</y>
+       <width>271</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QPushButton" name="swap">
+        <property name="text">
+         <string>Swap</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPushButton" name="sum">
+        <property name="text">
+         <string>Sum</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="mean">
+        <property name="text">
+         <string>Mean</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="clear">
+        <property name="text">
+         <string>Clear</string>
+        </property>
+        <property name="shortcut">
+         <string>Ctrl+C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="dup">
+        <property name="text">
+         <string>Dup</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="drop">
+        <property name="text">
+         <string>Drop</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QListWidget" name="list">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>260</y>
+      <width>271</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addition">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>260</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>271</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pushButton1">
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="shortcut">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="pushButton2">
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="shortcut">
+        <string>2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="pushButton3">
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="shortcut">
+        <string>3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButton4">
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="shortcut">
+        <string>4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="pushButton5">
+       <property name="text">
+        <string>5</string>
+       </property>
+       <property name="shortcut">
+        <string>5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="pushButton6">
+       <property name="text">
+        <string>6</string>
+       </property>
+       <property name="shortcut">
+        <string>6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="pushButton7">
+       <property name="text">
+        <string>7</string>
+       </property>
+       <property name="shortcut">
+        <string>7</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="pushButton8">
+       <property name="text">
+        <string>8</string>
+       </property>
+       <property name="shortcut">
+        <string>8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="pushButton9">
+       <property name="text">
+        <string>9</string>
+       </property>
+       <property name="shortcut">
+        <string>9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1" colspan="2">
+      <widget class="QPushButton" name="stackButton">
+       <property name="text">
+        <string>Stack</string>
+       </property>
+       <property name="shortcut">
+        <string>Return</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="pushButton0">
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="shortcut">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="3">
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="affichePile">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>480</y>
+      <width>75</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Affiche Pile</string>
+    </property>
+    <property name="shortcut">
+     <string>A</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="constTypeBox">
+    <property name="geometry">
+     <rect>
+      <x>29</x>
+      <y>309</y>
+      <width>121</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Type de constante</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>81</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QRadioButton" name="intRadio">
+        <property name="text">
+         <string>Entiers</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="doubleRadio">
+        <property name="text">
+         <string>Réels</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rationalRadio">
+        <property name="text">
+         <string>Rationnels</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="complexRadio">
+        <property name="text">
+         <string>Complexes</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="complexUseBox">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>320</y>
+      <width>141</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Utilisation des complexes</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>111</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QRadioButton" name="yesComplex">
+        <property name="text">
+         <string>Oui</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="noComplex">
+        <property name="text">
+         <string>Non</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="degUnitBox">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>410</y>
+      <width>141</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Unité des degrés</string>
+    </property>
+    <widget class="QWidget" name="verticalLayoutWidget_3">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>20</y>
-       <width>75</width>
-       <height>61</height>
+       <width>101</width>
+       <height>42</height>
       </rect>
      </property>
-     <property name="text">
-      <string>Affiche Pile</string>
-     </property>
-     <property name="shortcut">
-      <string>A</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="swap">
-     <property name="geometry">
-      <rect>
-       <x>110</x>
-       <y>30</y>
-       <width>41</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Swap</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="clear">
-     <property name="geometry">
-      <rect>
-       <x>110</x>
-       <y>80</y>
-       <width>41</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Clear</string>
-     </property>
-     <property name="shortcut">
-      <string>Ctrl+C</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="sum">
-     <property name="geometry">
-      <rect>
-       <x>170</x>
-       <y>30</y>
-       <width>41</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Sum</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="dup">
-     <property name="geometry">
-      <rect>
-       <x>170</x>
-       <y>80</y>
-       <width>41</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Dup</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="mean">
-     <property name="geometry">
-      <rect>
-       <x>220</x>
-       <y>30</y>
-       <width>41</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Mean</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="drop">
-     <property name="geometry">
-      <rect>
-       <x>220</x>
-       <y>80</y>
-       <width>41</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Drop</string>
-     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QRadioButton" name="degUnit">
+        <property name="text">
+         <string>Degré</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radUnit">
+        <property name="text">
+         <string>Radiant</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
   </widget>
@@ -328,7 +398,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>753</width>
+     <width>799</width>
      <height>21</height>
     </rect>
    </property>

@@ -1,7 +1,9 @@
 #ifndef COLLECTION_PILE_H
 #define COLLECTION_PILE_H
+
 #include <vector>
 #include "pile.h"
+#include <QString>
 
 class Collection_pile
 {

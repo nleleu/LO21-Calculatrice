@@ -1,12 +1,15 @@
 #include <QtGui/QApplication>
 #include "mainwindow.h"
-#include "dialog.h"
 #include <QStack>
 #include "pile.h"
 #include "entier.h"
 #include <iostream>
 #include "rationnel.h"
 #include "reel.h"
+
+constType MainWindow::selectedConstType=ENTIER;
+complexUse MainWindow::selectedComplexUse=NO;
+degUnit MainWindow::selectedDegUnit=DEGRE;
 
 int main(int argc, char *argv[])
 {
@@ -16,11 +19,8 @@ int main(int argc, char *argv[])
     int i=2;
     reel r("2.321");
     std::cout << r.toString();
-   MainWindow w(pile, 0);
-   w.show();
-
-    Dialog d(pile, &w);
-    d.show();
+    MainWindow w(pile, 0);
+    w.show();
 
 
     return a.exec();

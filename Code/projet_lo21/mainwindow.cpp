@@ -1,15 +1,16 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "dialog.h"
-#include "ui_dialog.h"
 #include "pile.h"
 #include <QDebug>
 #include "entier.h"
 #include "reel.h"
 #include "rationnel.h"
 #include "complexe.h"
+#include <QListWidget>
+#include <QListWidgetItem>
+#include <QString>
 
-
+using namespace std;
 
 MainWindow::MainWindow(Pile &pile, QWidget *parent) :
     _pile(pile), QMainWindow(parent),
@@ -17,7 +18,14 @@ MainWindow::MainWindow(Pile &pile, QWidget *parent) :
 {
     ui->setupUi(this);
 
-    connect(this, SIGNAL(keyPress(QKeyEvent*)), this, SLOT(keyPressEvent(QKeyEvent*)));
+    QObject::connect(this, SIGNAL(keyPress(QKeyEvent*)), this, SLOT(keyPressEvent(QKeyEvent*)));
+    QObject::connect(this, SIGNAL(pushStack_signal(const QString&)), this, SLOT(pushStack_slot(const QString&)));
+    QObject::connect(this, SIGNAL(cleanList_signal()), this, SLOT(cleanList_slot()));
+    QObject::connect(this, SIGNAL(refresh_signal()), this, SLOT(refresh_slot()));
+
+    ui->intRadio->setChecked(true);
+    ui->noComplex->setChecked(true);
+    ui->degUnit->setChecked(true);
 }
 
 MainWindow::~MainWindow()
@@ -58,26 +66,27 @@ void MainWindow::on_pushButton9_clicked(){
 }
 
 void MainWindow::on_stackButton_clicked(){
-    emit ajouterStack(ui->lineEdit->text());
+    emit pushStack_signal(ui->lineEdit->text());
+
+    type* test=NULL;
 
     //reconnaissance du type :
-    //if(type::isEntier(ui->lineEdit->text()))
-      //  entier *test=new entier(ui->lineEdit->text().toInt());
-    if(type::isReel(ui->lineEdit->text()))
-        reel *test=new reel(ui->lineEdit->text().toDouble());
-    //if(type::isRationnel(ui->lineEdit->text()))
-      //  rationnel *test=new entier(ui->lineEdit->text().toInt());
-    /*if(type::isComplexe(ui->lineEdit->text()))
-        complexe *test=new entier(ui->lineEdit->text().toInt());*/
+    if(entier::isEntier(ui->lineEdit->text()))
+        test=new entier(ui->lineEdit->text().toInt());
+    if(reel::isReel(ui->lineEdit->text()))
+        test=new reel(ui->lineEdit->text().toDouble());
+    if(rationnel::isRationnel(ui->lineEdit->text()))
+        test=new rationnel(ui->lineEdit->text().toStdString());
+    //if(complexe::isComplexe(ui->lineEdit->text()))
+      //  complexe *test=new complexe(ui->lineEdit->text().toStdString());
 
-
-    //_pile.push(test);
+    _pile.push(test);
     ui->lineEdit->clear();
 }
 
 void MainWindow::on_affichePile_clicked(){
-    //for(int i=0; i<_pile.size(); i++)
-        //qDebug()<<QString::number(_pile.at(i), 10); //revoir
+    for(int i=0; i<_pile.size(); i++)
+        qDebug()<<QString::fromStdString(((_pile.at(i))->toString()))<<endl;
 }
 
 void MainWindow::on_swap_clicked(){
@@ -97,7 +106,7 @@ void MainWindow::on_mean_clicked(){
 
 void MainWindow::on_clear_clicked(){
     _pile.clear();
-    emit nettoyerList();
+    emit cleanList_signal();
 }
 
 void MainWindow::on_dup_clicked(){
@@ -108,5 +117,69 @@ void MainWindow::on_dup_clicked(){
 void MainWindow::on_drop_clicked(){
     _pile.drop();
     emit refresh_signal();
+}
+
+
+//Selection du type de constante utilise
+void MainWindow::pushStack_slot(const QString& t){
+    ui->list->addItem(t);
+}
+void MainWindow::on_intRadio_clicked(){
+    MainWindow::selectedConstType=ENTIER;
+}
+void MainWindow::on_doubleRadio_clicked(){
+    MainWindow::selectedConstType=REEL;
+}
+void MainWindow::on_rationalRadio_clicked(){
+    MainWindow::selectedConstType=RATIONNEL;
+}
+
+//Selection de l'utilisation des complexes
+void MainWindow::on_yesComplex_clicked(){
+    MainWindow::selectedComplexUse=YES;
+}
+void MainWindow::on_noComplex_clicked(){
+    MainWindow::selectedComplexUse=NO;
+}
+
+//Selection de l'unite des degres
+void MainWindow::on_degUnit_clicked(){
+    MainWindow::selectedDegUnit=DEGRE;
+}
+void MainWindow::on_radUnit_clicked(){
+    MainWindow::selectedDegUnit=RADIANT;
+}
+
+void MainWindow::on_addition_clicked(){
+    QListWidgetItem *pt1 = new QListWidgetItem;
+    QListWidgetItem *pt2 = new QListWidgetItem;
+
+    pt1 = ui->list->takeItem(ui->list->count()-1);
+    pt2 = ui->list->takeItem(ui->list->count()-1);
+
+
+    if(pt1!=NULL && pt2!=NULL){
+        type *op1 = _pile.pop();
+        type *op2 = _pile.pop();
+        type *res;
+        *op1=*op1+*op2;
+        _pile.push(res);
+
+       // pt1->setText(QString::number(op1, 10));
+    }
+
+    ui->list->addItem(pt1);
+    delete pt2;
+}
+
+void MainWindow::cleanList_slot(){
+    ui->list->clear();
+}
+
+void MainWindow::refresh_slot(){
+    ui->list->clear();
+    for(int i=0; i<_pile.size(); i++){
+        ui->list->addItem(QString::fromStdString((_pile.at(i))->toString()));
+    }
 }
 
