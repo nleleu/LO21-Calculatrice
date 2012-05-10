@@ -26,6 +26,10 @@ public:
     type& operator =(type & t);
     type& operator +(type & t){}
     type& operator /(type & t){}
+    type& operator*(type& t);
+    type& operator-(type& t);
+
+
     double getData(){return data;}
     type& operator/(int & i){}
     type& operator/(double & i){}

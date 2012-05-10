@@ -40,6 +40,7 @@ public slots:
     void on_pushButton9_clicked();
 
 
+    //operations sur la pile
     void on_stackButton_clicked();
     void on_affichePile_clicked();
     void on_swap_clicked();
@@ -49,10 +50,15 @@ public slots:
     void on_dup_clicked();
     void on_drop_clicked();
 
+
     void pushStack_slot(const QString& t);
     void on_addition_clicked();
     void cleanList_slot();
     void refresh_slot();
+
+    void on_complexeButton_clicked();
+    void on_reelButton_clicked();
+    void on_rationnelButton_clicked();
 
     //selection du type de constante utilise
     void on_intRadio_clicked();

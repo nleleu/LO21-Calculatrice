@@ -72,11 +72,11 @@ void MainWindow::on_stackButton_clicked(){
 
     //reconnaissance du type :
     if(entier::isEntier(ui->lineEdit->text()))
-        test=new entier(ui->lineEdit->text().toInt());
+        test=new entier(ui->lineEdit->text());
     if(reel::isReel(ui->lineEdit->text()))
-        test=new reel(ui->lineEdit->text().toDouble());
+        test=new reel(ui->lineEdit->text());
     if(rationnel::isRationnel(ui->lineEdit->text()))
-        test=new rationnel(ui->lineEdit->text().toStdString());
+        test=new rationnel(ui->lineEdit->text());
     //if(complexe::isComplexe(ui->lineEdit->text()))
       //  complexe *test=new complexe(ui->lineEdit->text().toStdString());
 
@@ -137,9 +137,23 @@ void MainWindow::on_rationalRadio_clicked(){
 //Selection de l'utilisation des complexes
 void MainWindow::on_yesComplex_clicked(){
     MainWindow::selectedComplexUse=YES;
+
+    switch(selectedConstType){
+    case ENTIER:
+        ui->lineEdit->show();
+        break;
+
+    case REEL:
+        break;
+
+    case RATIONNEL:
+        break;
+
+    }
 }
 void MainWindow::on_noComplex_clicked(){
     MainWindow::selectedComplexUse=NO;
+    ui->lineEdit->show();
 }
 
 //Selection de l'unite des degres
@@ -149,6 +163,7 @@ void MainWindow::on_degUnit_clicked(){
 void MainWindow::on_radUnit_clicked(){
     MainWindow::selectedDegUnit=RADIANT;
 }
+
 
 void MainWindow::on_addition_clicked(){
     QListWidgetItem *pt1 = new QListWidgetItem;
@@ -181,5 +196,53 @@ void MainWindow::refresh_slot(){
     for(int i=0; i<_pile.size(); i++){
         ui->list->addItem(QString::fromStdString((_pile.at(i))->toString()));
     }
+}
+
+void MainWindow::on_complexeButton_clicked(){
+    if(selectedComplexUse==YES){
+        if(!ui->lineEdit->text().contains('$'))
+            ui->lineEdit->setText(ui->lineEdit->text()+'$');
+    }
+
+    else
+        qDebug()<<"action impossible hors du mode utilisation des complexes";
+}
+
+void MainWindow::on_reelButton_clicked(){
+    if(selectedConstType==REEL){
+        if(!ui->lineEdit->text().contains('$')){
+            if(!ui->lineEdit->text().section('$', 0).contains(',')){
+                ui->lineEdit->setText(ui->lineEdit->text()+',');
+            }
+        }
+
+        else{
+            if(!ui->lineEdit->text().section('$', 1).contains(',')){
+                ui->lineEdit->setText(ui->lineEdit->text()+',');
+            }
+        }
+    }
+
+    else
+        qDebug()<<"action impossible hors du mode constante reel";
+}
+
+void MainWindow::on_rationnelButton_clicked(){
+    if(selectedConstType==RATIONNEL){
+        if(!ui->lineEdit->text().contains('$')){
+            if(!ui->lineEdit->text().section('$', 0).contains('/')){
+                 ui->lineEdit->setText(ui->lineEdit->text()+'/');
+              }
+         }
+
+         else{
+              if(!ui->lineEdit->text().section('$', 1).contains("/")){
+                  ui->lineEdit->setText(ui->lineEdit->text()+'/');
+               }
+         }
+     }
+
+    else
+        qDebug()<<"action impossible hors du mode constante rationnel";
 }
 

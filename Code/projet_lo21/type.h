@@ -13,8 +13,8 @@ public:
     virtual type& operator=(type & t)=0;
     virtual type& operator+(type & t)=0;
     virtual type& operator/(type & t)=0;
-    virtual type& operator/(int & i)=0;
-    virtual type& operator/(double & i)=0;
+    //virtual type& operator/(int & i)=0;
+    //virtual type& operator/(double & i)=0;
     virtual std::string toString()=0;
 };
 

@@ -16,9 +16,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
     Pile pile;
-    int i=2;
-    reel r("2.321");
-    std::cout << r.toString();
+
     MainWindow w(pile, 0);
     w.show();
 

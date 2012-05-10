@@ -83,7 +83,7 @@ void Pile::sum(const unsigned int x){
     }
 }
 
-void Pile::mean(const unsigned int x){
+void Pile::mean(const unsigned int x){//A reviser: ne calcule qu'une seule fois la moyenne
     if(!isEmpty()){
 
         //selection de l'utilisation des complexes

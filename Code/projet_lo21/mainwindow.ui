@@ -119,7 +119,7 @@
       <x>20</x>
       <y>10</y>
       <width>271</width>
-      <height>221</height>
+      <height>271</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
@@ -213,16 +213,6 @@
        </property>
       </widget>
      </item>
-     <item row="4" column="1" colspan="2">
-      <widget class="QPushButton" name="stackButton">
-       <property name="text">
-        <string>Stack</string>
-       </property>
-       <property name="shortcut">
-        <string>Return</string>
-       </property>
-      </widget>
-     </item>
      <item row="4" column="0">
       <widget class="QPushButton" name="pushButton0">
        <property name="text">
@@ -240,6 +230,46 @@
        </property>
        <property name="readOnly">
         <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1" colspan="2">
+      <widget class="QPushButton" name="stackButton">
+       <property name="text">
+        <string>Stack</string>
+       </property>
+       <property name="shortcut">
+        <string>Return</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="reelButton">
+       <property name="text">
+        <string>,</string>
+       </property>
+       <property name="shortcut">
+        <string>,</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="complexeButton">
+       <property name="text">
+        <string>$</string>
+       </property>
+       <property name="shortcut">
+        <string>$</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="rationnelButton">
+       <property name="text">
+        <string>/</string>
+       </property>
+       <property name="shortcut">
+        <string>/</string>
        </property>
       </widget>
      </item>
@@ -301,13 +331,6 @@
        <widget class="QRadioButton" name="rationalRadio">
         <property name="text">
          <string>Rationnels</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QRadioButton" name="complexRadio">
-        <property name="text">
-         <string>Complexes</string>
         </property>
        </widget>
       </item>
