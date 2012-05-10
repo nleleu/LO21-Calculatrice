@@ -82,6 +82,5 @@ private:
     Ui::MainWindow *ui;
     Pile &_pile;
 };
-
 #endif // MAINWINDOW_H
 

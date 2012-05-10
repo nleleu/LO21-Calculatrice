@@ -1,4 +1,5 @@
 #include "rationnel.h"
+#include <QDataStream>
 
 
 type& rationnel::operator =(type & t){
@@ -72,11 +73,11 @@ void rationnel::simplifie()
     denum /= nombre;
 }
 
-/*std::string rationnel::toString(){
+std::string rationnel::toString(){
     std::stringstream ss;
     ss << num << "/" << denum;
     return ss.str();
-}*/
+}
 
 int pgcd(int a, int b)
 {

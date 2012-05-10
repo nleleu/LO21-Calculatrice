@@ -14,5 +14,4 @@ void Collection_pile::releaseInstance()
 {
     if (instance!=0)
         delete instance;
-
 }

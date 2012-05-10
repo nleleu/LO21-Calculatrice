@@ -72,11 +72,11 @@ void MainWindow::on_stackButton_clicked(){
 
     //reconnaissance du type :
     if(entier::isEntier(ui->lineEdit->text()))
-        test=new entier(ui->lineEdit->text());
+        test=new entier(ui->lineEdit->text().toStdString());
     if(reel::isReel(ui->lineEdit->text()))
-        test=new reel(ui->lineEdit->text());
+        test=new reel(ui->lineEdit->text().toStdString());
     if(rationnel::isRationnel(ui->lineEdit->text()))
-        test=new rationnel(ui->lineEdit->text());
+        test=new rationnel(ui->lineEdit->text().toStdString());
     //if(complexe::isComplexe(ui->lineEdit->text()))
       //  complexe *test=new complexe(ui->lineEdit->text().toStdString());
 
@@ -125,35 +125,46 @@ void MainWindow::pushStack_slot(const QString& t){
     ui->list->addItem(t);
 }
 void MainWindow::on_intRadio_clicked(){
-    MainWindow::selectedConstType=ENTIER;
+    if(MainWindow::selectedConstType!=ENTIER){
+        _pile.clear();
+        ui->lineEdit->clear();
+        emit cleanList_signal();
+        MainWindow::selectedConstType=ENTIER;
+    }
 }
 void MainWindow::on_doubleRadio_clicked(){
-    MainWindow::selectedConstType=REEL;
+    if(MainWindow::selectedConstType!=REEL){
+        _pile.clear();
+        ui->lineEdit->clear();
+        emit cleanList_signal();
+        MainWindow::selectedConstType=REEL;
+    }
 }
 void MainWindow::on_rationalRadio_clicked(){
-    MainWindow::selectedConstType=RATIONNEL;
+    if(MainWindow::selectedConstType!=RATIONNEL){
+        _pile.clear();
+        ui->lineEdit->clear();
+        emit cleanList_signal();
+        MainWindow::selectedConstType=RATIONNEL;
+    }
 }
 
 //Selection de l'utilisation des complexes
 void MainWindow::on_yesComplex_clicked(){
-    MainWindow::selectedComplexUse=YES;
-
-    switch(selectedConstType){
-    case ENTIER:
-        ui->lineEdit->show();
-        break;
-
-    case REEL:
-        break;
-
-    case RATIONNEL:
-        break;
-
+    if(MainWindow::selectedComplexUse!=YES){
+        _pile.clear();
+        ui->lineEdit->clear();
+        emit cleanList_signal();
+        MainWindow::selectedComplexUse=YES;
     }
 }
 void MainWindow::on_noComplex_clicked(){
-    MainWindow::selectedComplexUse=NO;
-    ui->lineEdit->show();
+    if(MainWindow::selectedComplexUse!=NO){
+        _pile.clear();
+        ui->lineEdit->clear();
+        emit cleanList_signal();
+        MainWindow::selectedComplexUse=NO;
+    }
 }
 
 //Selection de l'unite des degres
