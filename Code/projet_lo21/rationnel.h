@@ -6,6 +6,7 @@
 #include <sstream>
 #include <QString>
 
+
 int pgcd(int a, int b);
 
 class rationnel:public type
@@ -46,6 +47,7 @@ public:
     //type& operator/(double & i){}   //a implementer
     void simplifie();
     std::string toString();
+    QString toQString();
 
     static bool isRationnel(const QString& s){return s.contains ("/");}
 };

@@ -89,3 +89,10 @@ int pgcd(int a, int b)
     }
     return a;
 }
+
+
+QString rationnel::toQString(){
+    QTextStream ss;
+    ss << num <<'/'<< denum;
+    return ss.readAll();
+}

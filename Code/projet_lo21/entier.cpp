@@ -67,3 +67,8 @@ std::string entier::toString()
     return ss.str();
 }
 
+QString entier::toQString(){
+    QTextStream ss;
+    ss << data;
+    return ss.readAll();
+}

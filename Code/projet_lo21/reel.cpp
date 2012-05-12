@@ -52,3 +52,10 @@ std::string reel::toString(){
     return ss.str();
 }
 
+QString reel::toQString(){
+    QTextStream ss;
+    ss << data;
+    return ss.readAll();
+}
+
+

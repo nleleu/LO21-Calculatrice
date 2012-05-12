@@ -3,6 +3,7 @@
 
 #include <sstream>
 #include <QString>
+#include <QTextStream>
 
 
 class type
@@ -18,6 +19,7 @@ public:
     //virtual type& operator/(int & i)=0;
     //virtual type& operator/(double & i)=0;
     virtual std::string toString()=0;
+    virtual QString toQString()=0;
 };
 
 #endif // TYPE_H

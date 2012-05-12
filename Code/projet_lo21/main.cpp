@@ -6,6 +6,7 @@
 #include <iostream>
 #include "rationnel.h"
 #include "reel.h"
+#include <QDebug>
 
 constType MainWindow::selectedConstType=ENTIER;
 complexUse MainWindow::selectedComplexUse=NO;

@@ -72,13 +72,13 @@ void MainWindow::on_stackButton_clicked(){
 
     //reconnaissance du type :
     if(entier::isEntier(ui->lineEdit->text()))
-        test=new entier(ui->lineEdit->text().toStdString());
+        test=new entier(ui->lineEdit->text());
     if(reel::isReel(ui->lineEdit->text()))
-        test=new reel(ui->lineEdit->text().toStdString());
-    if(rationnel::isRationnel(ui->lineEdit->text()))
-        test=new rationnel(ui->lineEdit->text().toStdString());
+        test=new reel(ui->lineEdit->text());
+    //if(rationnel::isRationnel(ui->lineEdit->text()))
+      //  test=new rationnel(ui->lineEdit->text());
     //if(complexe::isComplexe(ui->lineEdit->text()))
-      //  complexe *test=new complexe(ui->lineEdit->text().toStdString());
+        //*test=new complexe(ui->lineEdit->text().toStdString());
 
     _pile.push(test);
     ui->lineEdit->clear();

@@ -23,13 +23,12 @@ void Pile::sum(const unsigned int x){
         switch(MainWindow::selectedComplexUse){
         case NO:
         {
-            type* sumVect;
 
             //reconnaissance du type de constante
             switch(MainWindow::selectedConstType){
                 case ENTIER:
                 {
-                    sumVect=new entier;
+                    entier* sumVect= new entier;
 
                     for(iterator it=begin(); it!=end(); it++){
                         *sumVect=*sumVect+*(*it);
@@ -41,19 +40,18 @@ void Pile::sum(const unsigned int x){
 
                 case REEL:
                 {
-                    sumVect=new reel;
+                    reel* sumVect= new reel;
 
                     for(iterator it=begin(); it!=end(); it++){
                         *sumVect=*sumVect+*(*it);
                     }
-
                     push(sumVect);
                 }
                     break;
 
                 case RATIONNEL:
                 {
-                    sumVect=new rationnel;
+                    rationnel* sumVect=new rationnel;
 
                     for(iterator it=begin(); it!=end(); it++){
                         *sumVect=*sumVect+*(*it);
@@ -68,13 +66,57 @@ void Pile::sum(const unsigned int x){
                     break;
             }
         }
-        break;
+            break;
 
         case YES:
         {
-            //A implementer
-            break;
+
+            //reconnaissance du type de constante
+            switch(MainWindow::selectedConstType){
+                case ENTIER:
+                {
+                    complexe* sumVect= new complexe;
+
+
+                    for(iterator it=begin(); it!=end(); it++){
+                        *sumVect=*sumVect+*(*it);
+
+                    }
+
+                    push(sumVect);
+                }
+                    break;
+
+                case REEL:
+                {
+                    complexe* sumVect= new complexe;
+
+                    for(iterator it=begin(); it!=end(); it++){
+                        *sumVect=*sumVect+*(*it);
+                    }
+
+                    push(sumVect);
+                }
+                    break;
+
+                case RATIONNEL:
+                {
+                    complexe* sumVect= new complexe;
+
+                    for(iterator it=begin(); it!=end(); it++){
+                        *sumVect=*sumVect+*(*it);
+                    }
+
+                    push(sumVect);
+                }
+                    break;
+
+                default:
+                    qDebug()<<"probleme somme, constType non detecte";
+                    break;
+            }
         }
+             break;
 
         default:
             qDebug()<<"probleme somme, complexUse non detecte";
