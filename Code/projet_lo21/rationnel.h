@@ -37,11 +37,11 @@ public:
         denum=(copie.section('/', 1)).toInt();
     }
 
-    type& operator =(type & t);
-    type& operator +(type & t);
-    type& operator /(type & t);
-    type& operator*(type& t);
-    type& operator-(type& t);
+    type* operator =(type & t);
+    type* operator +(type & t);
+    type* operator /(type & t);
+    type* operator*(type& t);
+    type* operator-(type& t);
 
     //type& operator/(int & i){}      //a implementer
     //type& operator/(double & i){}   //a implementer

@@ -19,10 +19,10 @@ public:
         {data = s.toInt();}
 
     type& operator =(type & t);
-    type& operator +(type & t);
-    type& operator /(type & t);
-    type& operator*(type& t);
-    type& operator-(type& t);
+    type* operator +(type & t);
+    type* operator /(type & t);
+    type* operator*(type& t);
+    type* operator-(type& t);
 
     int getData(){return data;}
     //type& operator/(int & i);

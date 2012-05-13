@@ -2,19 +2,19 @@
 #include <QDataStream>
 
 
-type& rationnel::operator =(type & t){
+type* rationnel::operator =(type & t){
     try{
        rationnel &tmp=dynamic_cast<rationnel&>(t);
        num=tmp.num;
        denum=tmp.denum;
 
        this->simplifie();
-       return *this;
+       return this;
     }
     catch(std::exception &e){}
 }
 
-type& rationnel::operator +(type & t){
+type* rationnel::operator +(type & t){
     try{
        rationnel &tmp=dynamic_cast<rationnel&>(t);
        rationnel *res=new rationnel(*this);
@@ -22,12 +22,12 @@ type& rationnel::operator +(type & t){
        res->denum=res->denum*tmp.denum;
 
        res->simplifie();
-       return *res;
+       return res;
     }
     catch(std::exception &e){}
 }
 
-type& rationnel::operator -(type & t){
+type* rationnel::operator -(type & t){
     try{
        rationnel &tmp=dynamic_cast<rationnel&>(t);
        rationnel *res=new rationnel(*this);
@@ -35,12 +35,12 @@ type& rationnel::operator -(type & t){
        res->denum=res->denum*tmp.denum;
 
        res->simplifie();
-       return *res;
+       return res;
     }
     catch(std::exception &e){}
 }
 
-type& rationnel::operator /(type & t){
+type* rationnel::operator /(type & t){
     try{
        rationnel &tmp=dynamic_cast<rationnel&>(t);
        rationnel *res=new rationnel(*this);
@@ -48,13 +48,13 @@ type& rationnel::operator /(type & t){
        res->denum=res->denum/tmp.denum;
 
        res->simplifie();
-       return *res;
+       return res;
     }
     catch(std::exception &e){}
 }
 
 
-type& rationnel::operator*(type& t)
+type* rationnel::operator*(type& t)
 {
     rationnel &tmp=dynamic_cast<rationnel&>(t);
     rationnel *res=new rationnel(*this);
@@ -62,7 +62,7 @@ type& rationnel::operator*(type& t)
     res->denum *= tmp.denum;
 
     res->simplifie();
-    return *res;
+    return res;
 }
 
 void rationnel::simplifie()

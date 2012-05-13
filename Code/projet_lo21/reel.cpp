@@ -1,5 +1,6 @@
 #include "reel.h"
-
+#include "entier.h"
+#include <QDebug>
 
 type& reel::operator =(type & t){
     try{
@@ -10,38 +11,52 @@ type& reel::operator =(type & t){
     catch(std::exception &e){}
 }
 
-type& reel::operator +(type & t){
+type* reel::operator +(type & t){
+
     try{
-       reel &tmp=dynamic_cast<reel&>(t);
+
+       entier &tmp=dynamic_cast<entier&>(t);
        reel *res=new reel(data+tmp.getData());
-       return *res;
+        qDebug() << res->toQString() << "\n" ;
+       return res;
     }
     catch(std::exception &e){}
+
+    try{
+
+       reel &tmp=dynamic_cast<reel&>(t);
+       reel *res=new reel(data+tmp.getData());
+       qDebug() << "reel + reel\n";
+       return res;
+    }
+    catch(std::exception &e){}
+
+
 }
 
-type& reel::operator /(type & t){
+type* reel::operator /(type & t){
     try{
        reel &tmp=dynamic_cast<reel&>(t);
        reel *res=new reel(data/tmp.getData());
-       return *res;
+       return res;
     }
     catch(std::exception &e){}
 }
 
-type& reel::operator*(type& t){
+type* reel::operator*(type& t){
     try{
        reel &tmp=dynamic_cast<reel&>(t);
        reel *res=new reel(data*tmp.getData());
-       return *res;
+       return res;
     }
     catch(std::exception &e){}
 }
 
-type& reel::operator-(type& t){
+type* reel::operator-(type& t){
     try{
        reel &tmp=dynamic_cast<reel&>(t);
        reel *res=new reel(data-tmp.getData());
-       return *res;
+       return res;
     }
     catch(std::exception &e){}
 }

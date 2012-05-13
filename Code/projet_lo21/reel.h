@@ -4,13 +4,13 @@
 #include "type.h"
 #include <sstream>
 #include <QString>
-
+#include <qDebug>
 
 class reel:public type
 {
     double data;
 public:
-    reel(double val=0):data(val){}
+    reel(double val=0):data(val){qDebug() << "constructeur double" << data << "\n" ;}
     /*reel(const std::string &s){
         std::istringstream iss1(s);//pour convertir une string en int
         iss1 >> data;
@@ -20,14 +20,15 @@ public:
     {
         QString copie(s);
         copie.replace(',', '.');
+        qDebug() << "constructeru" << s << "\n" ;
         data = copie.toDouble();
     }
 
     type& operator =(type & t);
-    type& operator +(type & t);
-    type& operator /(type & t);
-    type& operator*(type& t);
-    type& operator-(type& t);
+    type* operator +(type & t);
+    type* operator /(type & t);
+    type* operator*(type& t);
+    type* operator-(type& t);
 
     double getData(){return data;}
     QString toQString();

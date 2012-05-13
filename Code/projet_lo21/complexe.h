@@ -23,11 +23,11 @@ public:
         im=(copie.section('$', 1)).toInt();
     }
 
-    type& operator =(type & t);
-    type& operator +(type & t);
-    type& operator /(type & t);
-    type& operator*(type& t);
-    type& operator-(type& t);
+    type* operator =(type & t);
+    type* operator +(type & t);
+    type* operator /(type & t);
+    type* operator*(type& t);
+    type* operator-(type& t);
 
 
     int getRe(){return re;}

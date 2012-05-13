@@ -28,10 +28,10 @@ void Pile::sum(const unsigned int x){
             switch(MainWindow::selectedConstType){
                 case ENTIER:
                 {
-                    entier* sumVect= new entier;
+                    type* sumVect= new entier;
 
                     for(iterator it=begin(); it!=end(); it++){
-                        *sumVect=*sumVect+*(*it);
+                        sumVect=*sumVect+*(*it);
                     }
 
                     push(sumVect);
@@ -40,10 +40,10 @@ void Pile::sum(const unsigned int x){
 
                 case REEL:
                 {
-                    reel* sumVect= new reel;
+                    type* sumVect= new reel;
 
                     for(iterator it=begin(); it!=end(); it++){
-                        *sumVect=*sumVect+*(*it);
+                        sumVect=*sumVect+*(*it);
                     }
                     push(sumVect);
                 }
@@ -51,10 +51,10 @@ void Pile::sum(const unsigned int x){
 
                 case RATIONNEL:
                 {
-                    rationnel* sumVect=new rationnel;
+                    type* sumVect=new rationnel;
 
                     for(iterator it=begin(); it!=end(); it++){
-                        *sumVect=*sumVect+*(*it);
+                        sumVect=*sumVect+*(*it);
                     }
 
                     push(sumVect);
@@ -75,11 +75,11 @@ void Pile::sum(const unsigned int x){
             switch(MainWindow::selectedConstType){
                 case ENTIER:
                 {
-                    complexe* sumVect= new complexe;
+                    type* sumVect= new complexe;
 
 
                     for(iterator it=begin(); it!=end(); it++){
-                        *sumVect=*sumVect+*(*it);
+                        sumVect=*sumVect+*(*it);
 
                     }
 
@@ -89,10 +89,10 @@ void Pile::sum(const unsigned int x){
 
                 case REEL:
                 {
-                    complexe* sumVect= new complexe;
+                    type* sumVect= new complexe;
 
                     for(iterator it=begin(); it!=end(); it++){
-                        *sumVect=*sumVect+*(*it);
+                        sumVect=*sumVect+*(*it);
                     }
 
                     push(sumVect);
@@ -101,10 +101,10 @@ void Pile::sum(const unsigned int x){
 
                 case RATIONNEL:
                 {
-                    complexe* sumVect= new complexe;
+                    type* sumVect= new complexe;
 
                     for(iterator it=begin(); it!=end(); it++){
-                        *sumVect=*sumVect+*(*it);
+                        sumVect=*sumVect+*(*it);
                     }
 
                     push(sumVect);
@@ -141,11 +141,11 @@ void Pile::mean(const unsigned int x){//A reviser: ne calcule qu'une seule fois 
                     sumVect=new entier;
 
                     for(iterator it=begin(); it!=end(); it++){
-                        *sumVect=*sumVect+*(*it);
+                        sumVect=*sumVect+*(*it);
                     }
 
                     entier taille(size());
-                    *sumVect=*sumVect/taille;
+                    sumVect=*sumVect/taille;
                     push(sumVect);
                 }
                     break;
@@ -155,11 +155,11 @@ void Pile::mean(const unsigned int x){//A reviser: ne calcule qu'une seule fois 
                     sumVect=new reel;
 
                     for(iterator it=begin(); it!=end(); it++){
-                        *sumVect=*sumVect+*(*it);
+                        sumVect=*sumVect+*(*it);
                     }
 
                     reel taille(size());
-                    *sumVect=*sumVect/taille;
+                    sumVect=*sumVect/taille;
                     push(sumVect);
                 }
                     break;
@@ -169,11 +169,11 @@ void Pile::mean(const unsigned int x){//A reviser: ne calcule qu'une seule fois 
                     sumVect=new rationnel;
 
                     for(iterator it=begin(); it!=end(); it++){
-                        *sumVect=*sumVect+*(*it);
+                        sumVect=*sumVect+*(*it);
                     }
 
                     rationnel taille(size());
-                    *sumVect=*sumVect/taille;
+                    sumVect=*sumVect/taille;
                     push(sumVect);
                 }
                     break;

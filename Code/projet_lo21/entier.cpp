@@ -1,9 +1,10 @@
 #include "entier.h"
 #include <exception>
+#include "reel.h"
 
+#include <QDebug>
 
-
-type& entier::operator =(type &t){
+/*type& entier::operator =(type &t){
     try{
        entier &tmp=dynamic_cast<entier&>(t);
        data=tmp.data;
@@ -11,52 +12,63 @@ type& entier::operator =(type &t){
     }
     catch(std::exception &e){}
 }
-
-type& entier::operator +(type & t){
+*/
+type* entier::operator +(type & t){
     try{
+
        entier &tmp=dynamic_cast<entier&>(t);
        entier *res=new entier(data+tmp.getData());
-       return *res;
+       qDebug() << "entier + entier\n";
+       return res;
+    }
+    catch(std::exception &e){}
+
+    try{
+
+       reel &tmp=dynamic_cast<reel&>(t);
+       reel *res=new reel(data+tmp.getData());
+       qDebug() << "entier + reel\n";
+       return res;
     }
     catch(std::exception &e){}
 }
 
-type& entier::operator /(type & t)
+type* entier::operator /(type & t)
 {
     try{
        entier &tmp=dynamic_cast<entier&>(t);
        entier *res=new entier(data/tmp.getData());
-       return *res;
+       return res;
     }
     catch(std::exception &e){}
 }
 
-type& entier::operator*(type& t){
+type* entier::operator*(type& t){
     try{
        entier &tmp=dynamic_cast<entier&>(t);
        entier *res=new entier(data*tmp.getData());
-       return *res;
+       return res;
     }
     catch(std::exception &e){}
 }
 
-type& entier::operator-(type& t){
+type* entier::operator-(type& t){
     try{
        entier &tmp=dynamic_cast<entier&>(t);
        entier *res=new entier(data-tmp.getData());
-       return *res;
+       return res;
     }
     catch(std::exception &e){}
 }
 
 
-/*type& entier::operator/(int & i)
+/*type* entier::operator/(int & i)
 {
     entier *res=new entier(data/i);
-    return *res;
+    return res;
 }
-
-type& entier::operator/(double & i)
+*/
+/*type& entier::operator/(double & i)
 {
 
 }*/
