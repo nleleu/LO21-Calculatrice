@@ -96,3 +96,4 @@ QString rationnel::toQString(){
     ss << num <<'/'<< denum;
     return ss.readAll();
 }
+

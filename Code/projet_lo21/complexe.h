@@ -19,8 +19,8 @@ public:
     complexe(const QString &s)//pour convertir une QString en complexe
     {
         QString copie(s);
-        re=copie.section('$', 0).toInt();
-        im=copie.section('$', 1).toInt();
+        re=(copie.section('$', 0)).toInt();
+        im=(copie.section('$', 1)).toInt();
     }
 
     type& operator =(type & t);

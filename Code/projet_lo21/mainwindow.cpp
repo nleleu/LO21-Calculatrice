@@ -26,6 +26,11 @@ MainWindow::MainWindow(Pile &pile, QWidget *parent) :
     ui->intRadio->setChecked(true);
     ui->noComplex->setChecked(true);
     ui->degUnit->setChecked(true);
+
+    /*QString s("1/3");
+    rationnel z(s), e(1,2);
+    rationnel r= e;
+    qDebug()<<"Test : "<<e.toQString();*/
 }
 
 MainWindow::~MainWindow()

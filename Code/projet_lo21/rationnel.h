@@ -14,7 +14,7 @@ class rationnel:public type
     int num;
     int denum;
 public:
-    rationnel(int _num=0,int _denum=1):num(_num),denum(_denum){std::cout << "test";}
+    rationnel(int _num=0,int _denum=1):num(_num),denum(_denum){}
     rationnel(const std::string &s){
         int pos;
         pos=s.find('/'); //caractere separateur
@@ -33,8 +33,8 @@ public:
     rationnel(const QString &s)//pour convertir une QString en rationnel
     {
         QString copie(s);
-        num=copie.section('/', 0).toInt();
-        denum=copie.section('/', 1).toInt();
+        num=(copie.section('/', 0)).toInt();
+        denum=(copie.section('/', 1)).toInt();
     }
 
     type& operator =(type & t);
