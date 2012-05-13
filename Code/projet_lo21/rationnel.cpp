@@ -18,7 +18,6 @@
 type* rationnel::operator +(type & t){
     try{
        rationnel &tmp=dynamic_cast<rationnel&>(t);
-       qDebug() << denum << num << tmp.num << tmp.denum;
        rationnel *res=new rationnel(num*tmp.denum+tmp.num*denum,denum*tmp.denum);
        return res;
     }
@@ -28,11 +27,7 @@ type* rationnel::operator +(type & t){
 type* rationnel::operator -(type & t){
     try{
        rationnel &tmp=dynamic_cast<rationnel&>(t);
-       rationnel *res=new rationnel(*this);
-       res->num=res->num*tmp.denum - res->denum*tmp.num;
-       res->denum=res->denum*tmp.denum;
-
-       res->simplifie();
+       rationnel *res=new rationnel(num*tmp.denum-tmp.num*denum,denum*tmp.denum);
        return res;
     }
     catch(std::exception &e){}
@@ -41,12 +36,8 @@ type* rationnel::operator -(type & t){
 type* rationnel::operator /(type & t){
     try{
        rationnel &tmp=dynamic_cast<rationnel&>(t);
-       rationnel *res=new rationnel(*this);
-       res->num=res->num/tmp.num;
-       res->denum=res->denum/tmp.denum;
-
-       res->simplifie();
-       return res;
+       rationnel r(tmp.denum,tmp.num);
+       return *this*r;
     }
     catch(std::exception &e){}
 }
@@ -54,13 +45,12 @@ type* rationnel::operator /(type & t){
 
 type* rationnel::operator*(type& t)
 {
-    rationnel &tmp=dynamic_cast<rationnel&>(t);
-    rationnel *res=new rationnel(*this);
-    res->num *= tmp.num;
-    res->denum *= tmp.denum;
-
-    res->simplifie();
-    return res;
+    try{
+       rationnel &tmp=dynamic_cast<rationnel&>(t);
+       rationnel *res=new rationnel(num*tmp.num,denum*tmp.denum);
+       return res;
+    }
+    catch(std::exception &e){}
 }
 
 int rationnel::pgcd(int a, int b) const {
