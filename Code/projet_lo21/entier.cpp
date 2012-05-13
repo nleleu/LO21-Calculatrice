@@ -1,7 +1,8 @@
 #include "entier.h"
 #include <exception>
 #include "reel.h"
-
+#include "rationnel.h"
+#include <QDebug>
 
 /*type& entier::operator =(type &t){
     try{
@@ -25,6 +26,16 @@ type* entier::operator +(type & t){
 
        reel &tmp=dynamic_cast<reel&>(t);
        reel *res=new reel(data+tmp.getData());
+       return res;
+    }
+    catch(std::exception &e){}
+
+    try{
+
+       rationnel &tmp=dynamic_cast<rationnel&>(t);
+       type* res;
+       rationnel r(data,1);
+       res=tmp+r;
        return res;
     }
     catch(std::exception &e){}

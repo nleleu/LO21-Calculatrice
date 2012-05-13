@@ -5,6 +5,7 @@
 #include <iostream>
 #include <sstream>
 #include <QString>
+#include <qDebug>
 
 
 int pgcd(int a, int b);
@@ -14,7 +15,7 @@ class rationnel:public type
     int num;
     int denum;
 public:
-    rationnel(int _num=0,int _denum=1):num(_num),denum(_denum){}
+    rationnel(int _num=0,int _denum=1):num(_num),denum(_denum){simplifie();}
     rationnel(const std::string &s){
         int pos;
         pos=s.find('/'); //caractere separateur
@@ -33,19 +34,17 @@ public:
     rationnel(const QString &s)//pour convertir une QString en rationnel
     {
         QString copie(s);
-        num=(copie.section('/', 0)).toInt();
-        denum=(copie.section('/', 1)).toInt();
+
+        num=(copie.section('/', 0,0)).toInt();
+        denum=(copie.section('/', 1,1)).toInt();
     }
 
-    type* operator =(type & t);
     type* operator +(type & t);
     type* operator /(type & t);
     type* operator*(type& t);
     type* operator-(type& t);
-
-    //type& operator/(int & i){}      //a implementer
-    //type& operator/(double & i){}   //a implementer
     void simplifie();
+    int pgcd(int, int ) const;
     QString toQString();
 
     static bool isRationnel(const QString& s){return s.contains ("/");}

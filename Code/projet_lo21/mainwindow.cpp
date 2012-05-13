@@ -80,8 +80,8 @@ void MainWindow::on_stackButton_clicked(){
         test=new entier(ui->lineEdit->text());
     if(reel::isReel(ui->lineEdit->text()))
         test=new reel(ui->lineEdit->text());
-    //if(rationnel::isRationnel(ui->lineEdit->text()))
-      //  test=new rationnel(ui->lineEdit->text());
+    if(rationnel::isRationnel(ui->lineEdit->text()))
+        test=new rationnel(ui->lineEdit->text());
     //if(complexe::isComplexe(ui->lineEdit->text()))
         //*test=new complexe(ui->lineEdit->text().toStdString());
 
