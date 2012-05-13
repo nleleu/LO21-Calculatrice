@@ -181,14 +181,7 @@ void MainWindow::on_radUnit_clicked(){
 }
 
 
-void MainWindow::on_addition_clicked(){
-        type *op1 = _pile.pop();
-        type *op2 = _pile.pop();
-        op1=*op2+*op1;
-        qDebug()<< op1->toQString();
-        _pile.push(op1);
-        emit refresh_signal();
-}
+
 
 void MainWindow::cleanList_slot(){
     ui->list->clear();
@@ -250,14 +243,27 @@ void MainWindow::on_rationnelButton_clicked(){
 }
 
 
+void MainWindow::on_addition_clicked(){
+        type *res;
+        type *op1 = _pile.pop();
+        type *op2 = _pile.pop();
+        res=*op2+*op1;
+        delete op1;
+        delete op2;
+        _pile.push(res);
+        emit refresh_signal();
+}
 
 void MainWindow::on_soustraction_clicked()
 {
+    type * res;
     type *op1 = _pile.pop();
     type *op2 = _pile.pop();
 
-    op1=*op2-*op1;
-    _pile.push(op1);
+    res=*op2-*op1;
+    delete op1;
+    delete op2;
+    _pile.push(res);
     emit refresh_signal();
 }
 
@@ -265,20 +271,26 @@ void MainWindow::on_soustraction_clicked()
 
 void MainWindow::on_multiplication_clicked()
 {
+    type *res;
     type *op1 = _pile.pop();
     type *op2 = _pile.pop();
 
-    op1=*op2*(*op1);
-    _pile.push(op1);
+    res=*op2*(*op1);
+    delete op1;
+    delete op2;
+    _pile.push(res);
     emit refresh_signal();
 }
 
 void MainWindow::on_division_clicked()
 {
+    type * res;
     type *op1 = _pile.pop();
     type *op2 = _pile.pop();
 
-    op1=*op2/(*op1);
-    _pile.push(op1);
+    res=*op2/(*op1);
+    delete op1;
+    delete op2;
+    _pile.push(res);
     emit refresh_signal();
 }
