@@ -59,15 +59,9 @@ type& complexe::operator-(type& t){
     catch(std::exception &e){}
 }
 
-std::string complexe::toString()
-{
-    std::stringstream ss;
-    ss << re << "$" << im;
-    return ss.str();
-}
-
 QString complexe::toQString(){
-    QTextStream ss;
+    QString res;
+    QTextStream ss(&res);
     ss << re <<'$'<< im;
-    return ss.readAll();
+    return res;
 }

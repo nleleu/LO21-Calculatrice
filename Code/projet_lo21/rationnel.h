@@ -46,7 +46,6 @@ public:
     //type& operator/(int & i){}      //a implementer
     //type& operator/(double & i){}   //a implementer
     void simplifie();
-    std::string toString();
     QString toQString();
 
     static bool isRationnel(const QString& s){return s.contains ("/");}

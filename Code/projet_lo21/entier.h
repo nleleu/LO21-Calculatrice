@@ -27,7 +27,6 @@ public:
     int getData(){return data;}
     //type& operator/(int & i);
     //type& operator/(double & i);
-    std::string toString();
     QString toQString();
 
     static bool isEntier(const QString& s){return !(s.contains (",") || s.contains ("/") || s.contains ("i"));}

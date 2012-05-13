@@ -73,11 +73,6 @@ void rationnel::simplifie()
     denum /= nombre;
 }
 
-std::string rationnel::toString(){
-    std::stringstream ss;
-    ss << num << "/" << denum;
-    return ss.str();
-}
 
 int pgcd(int a, int b)
 {
@@ -92,8 +87,9 @@ int pgcd(int a, int b)
 
 
 QString rationnel::toQString(){
-    QTextStream ss;
+    QString res;
+    QTextStream ss(&res);
     ss << num <<'/'<< denum;
-    return ss.readAll();
+    return res;
 }
 

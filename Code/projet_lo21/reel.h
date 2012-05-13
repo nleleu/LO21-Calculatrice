@@ -30,7 +30,6 @@ public:
     type& operator-(type& t);
 
     double getData(){return data;}
-    std::string toString();
     QString toQString();
 
     static bool isReel(const QString& s){return s.contains (",");}

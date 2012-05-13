@@ -17,7 +17,6 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
     Pile pile;
-
     MainWindow w(pile, 0);
     w.show();
 

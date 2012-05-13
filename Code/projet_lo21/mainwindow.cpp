@@ -91,7 +91,7 @@ void MainWindow::on_stackButton_clicked(){
 
 void MainWindow::on_affichePile_clicked(){
     for(int i=0; i<_pile.size(); i++)
-        qDebug()<<QString::fromStdString(((_pile.at(i))->toString()))<<endl;
+        qDebug()<<((_pile.at(i))->toQString())<<endl;
 }
 
 void MainWindow::on_swap_clicked(){
@@ -182,25 +182,12 @@ void MainWindow::on_radUnit_clicked(){
 
 
 void MainWindow::on_addition_clicked(){
-    QListWidgetItem *pt1 = new QListWidgetItem;
-    QListWidgetItem *pt2 = new QListWidgetItem;
-
-    pt1 = ui->list->takeItem(ui->list->count()-1);
-    pt2 = ui->list->takeItem(ui->list->count()-1);
-
-
-    if(pt1!=NULL && pt2!=NULL){
         type *op1 = _pile.pop();
         type *op2 = _pile.pop();
-        type *res;
-        *op1=*op1+*op2;
-        _pile.push(res);
 
-       // pt1->setText(QString::number(op1, 10));
-    }
-
-    ui->list->addItem(pt1);
-    delete pt2;
+        *op1=*op2+*op1;
+        _pile.push(op1);
+        emit refresh_signal();
 }
 
 void MainWindow::cleanList_slot(){
@@ -210,7 +197,7 @@ void MainWindow::cleanList_slot(){
 void MainWindow::refresh_slot(){
     ui->list->clear();
     for(int i=0; i<_pile.size(); i++){
-        ui->list->addItem(QString::fromStdString((_pile.at(i))->toString()));
+        ui->list->addItem((_pile.at(i))->toQString());
     }
 }
 
@@ -262,3 +249,36 @@ void MainWindow::on_rationnelButton_clicked(){
         qDebug()<<"action impossible hors du mode constante rationnel";
 }
 
+
+
+void MainWindow::on_soustraction_clicked()
+{
+    type *op1 = _pile.pop();
+    type *op2 = _pile.pop();
+
+    *op1=*op2-*op1;
+    _pile.push(op1);
+    emit refresh_signal();
+}
+
+
+
+void MainWindow::on_multiplication_clicked()
+{
+    type *op1 = _pile.pop();
+    type *op2 = _pile.pop();
+
+    *op1=*op2*(*op1);
+    _pile.push(op1);
+    emit refresh_signal();
+}
+
+void MainWindow::on_division_clicked()
+{
+    type *op1 = _pile.pop();
+    type *op2 = _pile.pop();
+
+    *op1=*op2/(*op1);
+    _pile.push(op1);
+    emit refresh_signal();
+}

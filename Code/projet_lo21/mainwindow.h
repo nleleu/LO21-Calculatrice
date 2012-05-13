@@ -78,6 +78,15 @@ signals:
     void cleanList_signal();
     void refresh_signal();
 
+private slots:
+    void on_addition_2_clicked();
+
+    void on_soustraction_clicked();
+
+    void on_multiplication_clicked();
+
+    void on_division_clicked();
+
 private:
     Ui::MainWindow *ui;
     Pile &_pile;

@@ -46,16 +46,12 @@ type& reel::operator-(type& t){
     catch(std::exception &e){}
 }
 
-std::string reel::toString(){
-    std::stringstream ss;
-    ss << data ;
-    return ss.str();
-}
 
 QString reel::toQString(){
-    QTextStream ss;
+    QString res;
+    QTextStream ss(&res);
     ss << data;
-    return ss.readAll();
+    return res;
 }
 
 
