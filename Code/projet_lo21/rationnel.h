@@ -37,6 +37,7 @@ public:
 
         num=(copie.section('/', 0,0)).toInt();
         denum=(copie.section('/', 1,1)).toInt();
+        simplifie();
     }
 
     type* operator +(type & t);

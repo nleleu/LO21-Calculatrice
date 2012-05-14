@@ -71,7 +71,7 @@ void MainWindow::on_pushButton9_clicked(){
 }
 
 void MainWindow::on_stackButton_clicked(){
-    emit pushStack_signal(ui->lineEdit->text());
+    //emit pushStack_signal(ui->lineEdit->text());
 
     type* test=NULL;
 
@@ -86,7 +86,9 @@ void MainWindow::on_stackButton_clicked(){
         //*test=new complexe(ui->lineEdit->text().toStdString());
 
     _pile.push(test);
+    emit refresh_signal();
     ui->lineEdit->clear();
+
 }
 
 void MainWindow::on_affichePile_clicked(){
