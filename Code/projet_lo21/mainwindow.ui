@@ -233,7 +233,7 @@
        </property>
       </widget>
      </item>
-     <item row="5" column="1" colspan="2">
+     <item row="6" column="0" colspan="3">
       <widget class="QPushButton" name="stackButton">
        <property name="text">
         <string>Stack</string>
@@ -253,16 +253,6 @@
        </property>
       </widget>
      </item>
-     <item row="5" column="0">
-      <widget class="QPushButton" name="complexeButton">
-       <property name="text">
-        <string>$</string>
-       </property>
-       <property name="shortcut">
-        <string>$</string>
-       </property>
-      </widget>
-     </item>
      <item row="4" column="2">
       <widget class="QPushButton" name="rationnelButton">
        <property name="text">
@@ -270,6 +260,26 @@
        </property>
        <property name="shortcut">
         <string>/</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" colspan="2">
+      <widget class="QPushButton" name="espace">
+       <property name="text">
+        <string>Space</string>
+       </property>
+       <property name="shortcut">
+        <string>Space</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QPushButton" name="complexeButton">
+       <property name="text">
+        <string>$</string>
+       </property>
+       <property name="shortcut">
+        <string>$</string>
        </property>
       </widget>
      </item>
@@ -454,6 +464,58 @@
      <string>/</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="multiplication_2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>150</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>*</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addition_2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>50</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="division_2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>200</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>/</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="soustraction_2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>100</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -470,7 +532,14 @@
     </property>
     <addaction name="actionQuit"/>
    </widget>
+   <widget class="QMenu" name="menuOutils">
+    <property name="title">
+     <string>Outils</string>
+    </property>
+    <addaction name="actionParametres"/>
+   </widget>
    <addaction name="menuFile"/>
+   <addaction name="menuOutils"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -484,6 +553,11 @@
   <action name="actionQuit">
    <property name="text">
     <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionParametres">
+   <property name="text">
+    <string>Parametres</string>
    </property>
   </action>
  </widget>

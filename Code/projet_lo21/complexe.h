@@ -8,7 +8,7 @@
 
 class complexe:public type //A revoir, la classe complexe actuelle ne prend que des constantes entières
 {
-    int re;
+    int  re;
     int im;
 public:
     complexe(int _re=0,int _im=0):re(_re), im(_im){}
@@ -19,8 +19,9 @@ public:
     complexe(const QString &s)//pour convertir une QString en complexe
     {
         QString copie(s);
-        re=(copie.section('$', 0)).toInt();
-        im=(copie.section('$', 1)).toInt();
+
+        /*re=(copie.section('$', 0,0)).toInt();
+        im=(copie.section('$', 1,1)).toInt();*/
     }
 
     type* operator =(type & t);

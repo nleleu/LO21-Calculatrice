@@ -10,6 +10,8 @@
 #include <QListWidgetItem>
 #include <QString>
 
+
+
 using namespace std;
 
 MainWindow::MainWindow(Pile &pile, QWidget *parent) :
@@ -26,6 +28,8 @@ MainWindow::MainWindow(Pile &pile, QWidget *parent) :
     ui->intRadio->setChecked(true);
     ui->noComplex->setChecked(true);
     ui->degUnit->setChecked(true);
+
+
 
     /*QString s("1/3");
     rationnel z(s), e(1,2);
@@ -70,22 +74,16 @@ void MainWindow::on_pushButton9_clicked(){
     ui->lineEdit->setText(ui->lineEdit->text()+ui->pushButton9->text());
 }
 
+void MainWindow::on_espace_clicked()
+{
+    ui->lineEdit->setText(ui->lineEdit->text()+" ");
+}
+
+
 void MainWindow::on_stackButton_clicked(){
     //emit pushStack_signal(ui->lineEdit->text());
+    _pile.parser(ui->lineEdit->text());
 
-    type* test=NULL;
-
-    //reconnaissance du type :
-    if(entier::isEntier(ui->lineEdit->text()))
-        test=new entier(ui->lineEdit->text());
-    if(reel::isReel(ui->lineEdit->text()))
-        test=new reel(ui->lineEdit->text());
-    if(rationnel::isRationnel(ui->lineEdit->text()))
-        test=new rationnel(ui->lineEdit->text());
-    //if(complexe::isComplexe(ui->lineEdit->text()))
-        //*test=new complexe(ui->lineEdit->text().toStdString());
-
-    _pile.push(test);
     emit refresh_signal();
     ui->lineEdit->clear();
 
@@ -191,8 +189,10 @@ void MainWindow::cleanList_slot(){
 
 void MainWindow::refresh_slot(){
     ui->list->clear();
-    for(int i=0; i<_pile.size(); i++){
+    int n=_pile.getNb();
+    for(int i=_pile.size()-1; i>=0 && n>0; i--){
         ui->list->addItem((_pile.at(i))->toQString());
+        n--;
     }
 }
 
@@ -246,26 +246,13 @@ void MainWindow::on_rationnelButton_clicked(){
 
 
 void MainWindow::on_addition_clicked(){
-        type *res;
-        type *op1 = _pile.pop();
-        type *op2 = _pile.pop();
-        res=*op2+*op1;
-        delete op1;
-        delete op2;
-        _pile.push(res);
-        emit refresh_signal();
+    _pile.addition();
+    emit refresh_signal();
 }
 
 void MainWindow::on_soustraction_clicked()
 {
-    type * res;
-    type *op1 = _pile.pop();
-    type *op2 = _pile.pop();
-
-    res=*op2-*op1;
-    delete op1;
-    delete op2;
-    _pile.push(res);
+    _pile.soustraction();
     emit refresh_signal();
 }
 
@@ -273,26 +260,43 @@ void MainWindow::on_soustraction_clicked()
 
 void MainWindow::on_multiplication_clicked()
 {
-    type *res;
-    type *op1 = _pile.pop();
-    type *op2 = _pile.pop();
-
-    res=*op2*(*op1);
-    delete op1;
-    delete op2;
-    _pile.push(res);
+    _pile.multiplication();
     emit refresh_signal();
 }
 
 void MainWindow::on_division_clicked()
 {
-    type * res;
-    type *op1 = _pile.pop();
-    type *op2 = _pile.pop();
-
-    res=*op2/(*op1);
-    delete op1;
-    delete op2;
-    _pile.push(res);
+    _pile.division();
     emit refresh_signal();
+}
+
+
+
+
+void MainWindow::on_addition_2_clicked()
+{
+    ui->lineEdit->setText(ui->lineEdit->text()+ui->addition_2->text());
+}
+
+
+
+void MainWindow::on_soustraction_2_clicked()
+{
+    ui->lineEdit->setText(ui->lineEdit->text()+ui->soustraction_2->text());
+}
+
+void MainWindow::on_multiplication_2_clicked()
+{
+    ui->lineEdit->setText(ui->lineEdit->text()+ui->multiplication_2->text());
+}
+
+void MainWindow::on_division_2_clicked()
+{
+    ui->lineEdit->setText(ui->lineEdit->text()+ui->division_2->text());
+}
+
+void MainWindow::on_actionParametres_triggered()
+{
+    reglages* r=new reglages(this);
+            r->exec();
 }

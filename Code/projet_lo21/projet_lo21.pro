@@ -18,7 +18,8 @@ SOURCES += main.cpp\
     reel.cpp \
     collection_pile.cpp \
     rationnel.cpp \
-    complexe.cpp
+    complexe.cpp \
+    reglages.cpp
 
 HEADERS  += mainwindow.h \
     pile.h \
@@ -27,6 +28,8 @@ HEADERS  += mainwindow.h \
     reel.h \
     collection_pile.h \
     rationnel.h \
-    complexe.h
+    complexe.h \
+    reglages.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    reglages.ui

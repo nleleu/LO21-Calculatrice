@@ -6,6 +6,7 @@
 #include "pile.h"
 #include "type.h"
 #include <QString>
+#include "reglages.h"
 
 enum constType{ENTIER, REEL, RATIONNEL};
 enum complexUse{YES, NO};
@@ -26,6 +27,7 @@ public:
     static constType selectedConstType;
     static complexUse selectedComplexUse;
     static degUnit selectedDegUnit;
+
 
 public slots:
     void on_pushButton0_clicked();
@@ -86,6 +88,18 @@ private slots:
     void on_multiplication_clicked();
 
     void on_division_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_espace_clicked();
+
+    void on_soustraction_2_clicked();
+
+    void on_multiplication_2_clicked();
+
+    void on_division_2_clicked();
+
+    void on_actionParametres_triggered();
 
 private:
     Ui::MainWindow *ui;

@@ -198,4 +198,84 @@ void Pile::mean(const unsigned int x){//A reviser: ne calcule qu'une seule fois 
     }
 }
 
+void Pile::addition()
+{
+type * res;
+type *op1 = pop();
+type *op2 = pop();
+res=*op2+(*op1);
+delete op1;
+delete op2;
+push(res);
 
+}
+
+void Pile::soustraction()
+{
+type * res;
+type *op1 = pop();
+type *op2 = pop();
+res=*op2-(*op1);
+delete op1;
+delete op2;
+push(res);
+
+}
+
+
+void Pile::multiplication()
+{
+type * res;
+type *op1 = pop();
+type *op2 = pop();
+res=*op2*(*op1);
+delete op1;
+delete op2;
+push(res);
+
+}
+
+
+
+void Pile::division()
+{
+type * res;
+type *op1 = pop();
+type *op2 = pop();
+res=*op2*(*op1);
+delete op1;
+delete op2;
+push(res);
+
+}
+
+void Pile::parser(QString s)
+{
+type* test=NULL;
+QStringList t=(s.split(' '));
+for(int i=0; i<t.size();i++)
+
+    if (t[i]=="+")
+            addition();
+    else if (t[i]=="-")
+            soustraction();
+    else if (t[i]=="/")
+            division();
+    else if (t[i]=="*")
+            multiplication();
+    else
+    {
+        if(entier::isEntier(t[i]))
+    test=new entier(t[i]);
+    if(reel::isReel(t[i]))
+    test=new reel(t[i]);
+    if(rationnel::isRationnel(t[i]))
+    test=new rationnel(t[i]);
+    push(test);
+//if(complexe::isComplexe(ui->lineEdit->text()))
+    //*test=new complexe(ui->lineEdit->text().toStdString());
+        }
+
+
+
+}
