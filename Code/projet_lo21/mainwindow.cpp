@@ -19,7 +19,7 @@ MainWindow::MainWindow(Pile &pile, QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+    r=new reglages(this);
     QObject::connect(this, SIGNAL(keyPress(QKeyEvent*)), this, SLOT(keyPressEvent(QKeyEvent*)));
     QObject::connect(this, SIGNAL(pushStack_signal(const QString&)), this, SLOT(pushStack_slot(const QString&)));
     QObject::connect(this, SIGNAL(cleanList_signal()), this, SLOT(cleanList_slot()));
@@ -295,8 +295,10 @@ void MainWindow::on_division_2_clicked()
     ui->lineEdit->setText(ui->lineEdit->text()+ui->division_2->text());
 }
 
-void MainWindow::on_actionParametres_triggered()
+
+
+void MainWindow::on_actionParametre_triggered()
 {
-    reglages* r=new reglages(this);
-            r->exec();
+    qDebug() << "test";
+    r->exec();
 }

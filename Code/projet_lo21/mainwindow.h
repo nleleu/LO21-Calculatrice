@@ -101,9 +101,12 @@ private slots:
 
     void on_actionParametres_triggered();
 
+    void on_actionParametre_triggered();
+
 private:
     Ui::MainWindow *ui;
     Pile &_pile;
+    reglages * r;
 };
 #endif // MAINWINDOW_H
 

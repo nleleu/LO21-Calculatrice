@@ -531,15 +531,9 @@
      <string>File</string>
     </property>
     <addaction name="actionQuit"/>
-   </widget>
-   <widget class="QMenu" name="menuOutils">
-    <property name="title">
-     <string>Outils</string>
-    </property>
-    <addaction name="actionParametres"/>
+    <addaction name="actionParametre"/>
    </widget>
    <addaction name="menuFile"/>
-   <addaction name="menuOutils"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -555,9 +549,9 @@
     <string>Quit</string>
    </property>
   </action>
-  <action name="actionParametres">
+  <action name="actionParametre">
    <property name="text">
-    <string>Parametres</string>
+    <string>Parametre</string>
    </property>
   </action>
  </widget>
@@ -565,18 +559,18 @@
  <resources/>
  <connections>
   <connection>
-   <sender>menuBar</sender>
-   <signal>triggered(QAction*)</signal>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>18</x>
-     <y>8</y>
+     <x>-1</x>
+     <y>-1</y>
     </hint>
     <hint type="destinationlabel">
-     <x>307</x>
-     <y>107</y>
+     <x>399</x>
+     <y>301</y>
     </hint>
    </hints>
   </connection>

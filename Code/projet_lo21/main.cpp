@@ -8,6 +8,7 @@
 #include "reel.h"
 #include <QDebug>
 
+
 constType MainWindow::selectedConstType=ENTIER;
 complexUse MainWindow::selectedComplexUse=NO;
 degUnit MainWindow::selectedDegUnit=DEGRE;
@@ -19,6 +20,7 @@ int main(int argc, char *argv[])
     Pile pile;
     MainWindow w(pile, 0);
     w.show();
+
 
 
     return a.exec();
