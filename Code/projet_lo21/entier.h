@@ -4,8 +4,9 @@
 #include "type.h"
 #include <sstream>
 #include <QString>
+#include "nocomplex.h"
 
-class entier:public type
+class entier:public nocomplex
 {
     int data;
 public:

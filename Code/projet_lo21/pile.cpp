@@ -6,6 +6,7 @@
 #include "mainwindow.h"
 #include <QDebug>
 
+
 using namespace std;
 
 void Pile::swap(const unsigned int x, const unsigned int y){
@@ -242,7 +243,7 @@ void Pile::division()
 type * res;
 type *op1 = pop();
 type *op2 = pop();
-res=*op2*(*op1);
+res=*op2/(*op1);
 delete op1;
 delete op2;
 push(res);
@@ -251,10 +252,10 @@ push(res);
 
 void Pile::parser(QString s)
 {
-type* test=NULL;
+type* test=0;
 QStringList t=(s.split(' '));
 for(int i=0; i<t.size();i++)
-
+{
     if (t[i]=="+")
             addition();
     else if (t[i]=="-")
@@ -265,16 +266,12 @@ for(int i=0; i<t.size();i++)
             multiplication();
     else
     {
-        if(entier::isEntier(t[i]))
-    test=new entier(t[i]);
-    if(reel::isReel(t[i]))
-    test=new reel(t[i]);
-    if(rationnel::isRationnel(t[i]))
-    test=new rationnel(t[i]);
-    push(test);
+        test=type_factory::getInstance().getType(t[i]);
+        push(test);
 //if(complexe::isComplexe(ui->lineEdit->text()))
     //*test=new complexe(ui->lineEdit->text().toStdString());
         }
+}
 
 
 

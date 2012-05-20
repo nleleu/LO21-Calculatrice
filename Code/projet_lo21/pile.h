@@ -6,6 +6,7 @@
 #include <QString>
 #include <sstream>
 #include <QStringList>
+#include "type_factory.h"
 
 class Pile : public QStack<type *>
 {

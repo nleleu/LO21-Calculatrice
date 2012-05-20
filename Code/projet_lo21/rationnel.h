@@ -6,11 +6,12 @@
 #include <sstream>
 #include <QString>
 #include <qDebug>
+#include "nocomplex.h"
 
 
 int pgcd(int a, int b);
 
-class rationnel:public type
+class rationnel:public nocomplex
 {
     int num;
     int denum;

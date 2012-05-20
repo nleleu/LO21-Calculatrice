@@ -5,8 +5,9 @@
 #include <sstream>
 #include <QString>
 #include <qDebug>
+#include "nocomplex.h"
 
-class reel:public type
+class reel:public nocomplex
 {
     double data;
 public:

@@ -19,7 +19,12 @@ SOURCES += main.cpp\
     collection_pile.cpp \
     rationnel.cpp \
     complexe.cpp \
-    reglages.cpp
+    reglages.cpp \
+    nocomplex.cpp \
+    complex_abs.cpp \
+    constante.cpp \
+    expression.cpp \
+    type_factory.cpp
 
 HEADERS  += mainwindow.h \
     pile.h \
@@ -29,7 +34,12 @@ HEADERS  += mainwindow.h \
     collection_pile.h \
     rationnel.h \
     complexe.h \
-    reglages.h
+    reglages.h \
+    nocomplex.h \
+    complex_abs.h \
+    constante.h \
+    expression.h \
+    type_factory.h
 
 FORMS    += mainwindow.ui \
     reglages.ui

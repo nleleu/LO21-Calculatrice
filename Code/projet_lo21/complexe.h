@@ -4,14 +4,16 @@
 #include "type.h"
 #include <sstream>
 #include <QString>
+#include "nocomplex.h"
+#include "complex_abs.h"
 
 
-class complexe:public type //A revoir, la classe complexe actuelle ne prend que des constantes entières
+class complexe:public complex_abs //A revoir, la classe complexe actuelle ne prend que des constantes entières
 {
-    int  re;
-    int im;
+    nocomplex*  re;
+    nocomplex* im;
 public:
-    complexe(int _re=0,int _im=0):re(_re), im(_im){}
+    complexe(nocomplex* _re=0,nocomplex* _im=0):re(_re), im(_im){}
     /*complexe(const std::string &s){
         std::istringstream iss1(s);//pour convertir une string en int
         iss1 >> data;
@@ -31,8 +33,8 @@ public:
     type* operator-(type& t);
 
 
-    int getRe(){return re;}
-    int getIm(){return im;}
+    nocomplex* getRe(){return re;}
+    nocomplex* getIm(){return im;}
     //type& operator/(int & i){}
     //type& operator/(double & i){}
     QString toQString();
