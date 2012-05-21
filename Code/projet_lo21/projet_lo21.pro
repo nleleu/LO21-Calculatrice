@@ -24,7 +24,8 @@ SOURCES += main.cpp\
     complex_abs.cpp \
     constante.cpp \
     expression.cpp \
-    type_factory.cpp
+    type_factory.cpp \
+    dom.cpp
 
 HEADERS  += mainwindow.h \
     pile.h \
@@ -39,7 +40,10 @@ HEADERS  += mainwindow.h \
     complex_abs.h \
     constante.h \
     expression.h \
-    type_factory.h
+    type_factory.h \
+    dom.h
 
 FORMS    += mainwindow.ui \
     reglages.ui
+
+QT += xml

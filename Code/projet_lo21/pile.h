@@ -8,13 +8,13 @@
 #include <QStringList>
 #include "type_factory.h"
 
+class Dom;
 class Pile : public QStack<type *>
 {
-    Pile (const Pile&);
     int  nbElt;
 public:
-    ~Pile(){}
-    Pile():nbElt(5){}
+    ~Pile();
+    Pile();
     void swap(const unsigned int x, const unsigned int y);
     void sum(const unsigned int x);
     void mean(const unsigned int x);

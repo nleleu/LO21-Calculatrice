@@ -5,9 +5,26 @@
 #include "complexe.h"
 #include "mainwindow.h"
 #include <QDebug>
-
+#include "dom.h"
 
 using namespace std;
+
+Pile::Pile():nbElt(5){
+    Dom xml(*this);
+
+    xml.lire();
+}
+
+Pile::~Pile(){
+    int i(1);
+    Dom xml(*this);
+    xml.newfic();
+    while(!isEmpty()){
+        QString str;
+        xml.demande_ajout(str.setNum(i), (pop()->toQString()));
+        i++;
+    }
+}
 
 void Pile::swap(const unsigned int x, const unsigned int y){
     if (x < this->size() && y < this->size()){

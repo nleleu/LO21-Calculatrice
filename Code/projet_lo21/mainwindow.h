@@ -89,8 +89,6 @@ private slots:
 
     void on_division_clicked();
 
-    void on_pushButton_clicked();
-
     void on_espace_clicked();
 
     void on_soustraction_2_clicked();
@@ -98,8 +96,6 @@ private slots:
     void on_multiplication_2_clicked();
 
     void on_division_2_clicked();
-
-    void on_actionParametres_triggered();
 
     void on_actionParametre_triggered();
 
