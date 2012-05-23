@@ -25,7 +25,10 @@ SOURCES += main.cpp\
     constante.cpp \
     expression.cpp \
     type_factory.cpp \
-    dom.cpp
+    dom.cpp \
+    invoker.cpp \
+    pileaddition.cpp \
+    operation.cpp
 
 HEADERS  += mainwindow.h \
     pile.h \
@@ -41,7 +44,10 @@ HEADERS  += mainwindow.h \
     constante.h \
     expression.h \
     type_factory.h \
-    dom.h
+    dom.h \
+    invoker.h \
+    pileaddition.h \
+    operation.h
 
 FORMS    += mainwindow.ui \
     reglages.ui

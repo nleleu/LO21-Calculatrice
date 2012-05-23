@@ -3,6 +3,7 @@
 #include "reel.h"
 #include "rationnel.h"
 #include "complexe.h"
+#include "expression.h"
 #include "mainwindow.h"
 #include <QDebug>
 #include "dom.h"
@@ -16,7 +17,7 @@ Pile::Pile():nbElt(5){
 }
 
 Pile::~Pile(){
-    int i(1);
+    /*int i(1);
     Dom xml(*this);
     xml.newfic();
     while(!isEmpty()){
@@ -24,6 +25,7 @@ Pile::~Pile(){
         xml.demande_ajout(str.setNum(i), (pop()->toQString()));
         i++;
     }
+    */
 }
 
 void Pile::swap(const unsigned int x, const unsigned int y){
@@ -225,7 +227,6 @@ res=*op2+(*op1);
 delete op1;
 delete op2;
 push(res);
-
 }
 
 void Pile::soustraction()
@@ -269,27 +270,29 @@ push(res);
 
 void Pile::parser(QString s)
 {
-type* test=0;
-QStringList t=(s.split(' '));
-for(int i=0; i<t.size();i++)
-{
-    if (t[i]=="+")
-            addition();
-    else if (t[i]=="-")
-            soustraction();
-    else if (t[i]=="/")
-            division();
-    else if (t[i]=="*")
-            multiplication();
-    else
-    {
-        test=type_factory::getInstance().getType(t[i]);
-        push(test);
-//if(complexe::isComplexe(ui->lineEdit->text()))
-    //*test=new complexe(ui->lineEdit->text().toStdString());
+    if(!Expression::isExpression(s)){
+        type* test=0;
+        QStringList t=(s.split(' '));
+        for(int i=0; i<t.size();i++)
+        {
+            if (t[i]=="+")
+                    addition();
+            else if (t[i]=="-")
+                    soustraction();
+            else if (t[i]=="/")
+                    division();
+            else if (t[i]=="*")
+                    multiplication();
+            else
+            {
+                test=type_factory::getInstance().getType(t[i]);
+                push(test);
+             }
         }
-}
+    }
 
+    else
+        push(new Expression(s));
 
 
 }

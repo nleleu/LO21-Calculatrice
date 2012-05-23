@@ -7,6 +7,7 @@
 #include "type.h"
 #include <QString>
 #include "reglages.h"
+#include "invoker.h"
 
 enum constType{ENTIER, REEL, RATIONNEL};
 enum complexUse{YES, NO};
@@ -22,7 +23,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
     
 public:
-    explicit MainWindow(Pile &pile, QWidget *parent = 0);
+    explicit MainWindow(Pile &pile, Invoker& invoker, QWidget *parent = 0);
     ~MainWindow();
     static constType selectedConstType;
     static complexUse selectedComplexUse;
@@ -57,6 +58,7 @@ public slots:
     void on_addition_clicked();
     void cleanList_slot();
     void refresh_slot();
+    void on_backspace_clicked();
 
     void on_complexeButton_clicked();
     void on_reelButton_clicked();
@@ -74,6 +76,10 @@ public slots:
     //selection de l'unite des degres
     void on_degUnit_clicked();
     void on_radUnit_clicked();
+
+    //Annuler/répéter
+    void on_undo_clicked();
+    void on_redo_clicked();
 
 signals:
     void pushStack_signal(const QString&);
@@ -99,9 +105,12 @@ private slots:
 
     void on_actionParametre_triggered();
 
+    void on_quote_clicked();
+
 private:
     Ui::MainWindow *ui;
     Pile &_pile;
+    Invoker & _invoker;
     reglages * r;
 };
 #endif // MAINWINDOW_H

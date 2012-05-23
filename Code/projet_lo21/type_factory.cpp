@@ -3,6 +3,7 @@
 #include "reel.h"
 #include "rationnel.h"
 #include "complexe.h"
+#include "expression.h"
 
 type_factory* type_factory::instance=0;
 
@@ -23,15 +24,17 @@ void type_factory::releaseInstance()
 type* type_factory::getType(QString s)
 {
 
-          if(entier::isEntier(s))
-        return new entier(s);
+        if(entier::isEntier(s))
+            return new entier(s);
         if(reel::isReel(s))
-        return new reel(s);
+            return new reel(s);
         if(rationnel::isRationnel(s))
-        return new rationnel(s);
-    //if(complexe::isComplexe(ui->lineEdit->text()))
+            return new rationnel(s);
+        if(Expression::isExpression(s))
+            return new Expression(s);
+        //if(complexe::isComplexe(ui->lineEdit->text()))
         //*test=new complexe(ui->lineEdit->text().toStdString());
 
-
-
+        else
+            return NULL;
 }

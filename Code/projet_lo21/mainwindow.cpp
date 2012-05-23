@@ -9,13 +9,15 @@
 #include <QListWidget>
 #include <QListWidgetItem>
 #include <QString>
+#include "invoker.h"
+#include "pileaddition.h"
 
 
 
 using namespace std;
 
-MainWindow::MainWindow(Pile &pile, QWidget *parent) :
-    _pile(pile), QMainWindow(parent),
+MainWindow::MainWindow(Pile &pile, Invoker& invoker, QWidget *parent) :
+    _pile(pile), _invoker(invoker), QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
@@ -29,12 +31,6 @@ MainWindow::MainWindow(Pile &pile, QWidget *parent) :
     ui->noComplex->setChecked(true);
     ui->degUnit->setChecked(true);
 
-
-
-    /*QString s("1/3");
-    rationnel z(s), e(1,2);
-    rationnel r= e;
-    qDebug()<<"Test : "<<e.toQString();*/
 }
 
 MainWindow::~MainWindow()
@@ -129,6 +125,11 @@ void MainWindow::on_drop_clicked(){
 void MainWindow::pushStack_slot(const QString& t){
     ui->list->addItem(t);
 }
+
+void MainWindow::on_backspace_clicked(){
+    ui->lineEdit->backspace();
+}
+
 void MainWindow::on_intRadio_clicked(){
     if(MainWindow::selectedConstType!=ENTIER){
         _pile.clear();
@@ -246,7 +247,7 @@ void MainWindow::on_rationnelButton_clicked(){
 
 
 void MainWindow::on_addition_clicked(){
-    _pile.addition();
+    _invoker.placeOrder(new PileAddition(_pile));
     emit refresh_signal();
 }
 
@@ -301,4 +302,17 @@ void MainWindow::on_actionParametre_triggered()
 {
     qDebug() << "test";
     r->exec();
+}
+
+void MainWindow::on_quote_clicked()
+{
+    ui->lineEdit->setText(ui->lineEdit->text()+ui->quote->text());
+}
+
+void MainWindow::on_undo_clicked(){
+    _invoker.undo();
+}
+
+void MainWindow::on_redo_clicked(){
+    _invoker.redo();
 }

@@ -7,6 +7,7 @@
 #include "rationnel.h"
 #include "reel.h"
 #include <QDebug>
+#include "Invoker.h"
 
 
 constType MainWindow::selectedConstType=ENTIER;
@@ -18,9 +19,9 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
     Pile pile;
-    MainWindow w(pile, 0);
+    Invoker invoker(pile);
+    MainWindow w(pile, invoker, 0);
     w.show();
-
 
 
     return a.exec();

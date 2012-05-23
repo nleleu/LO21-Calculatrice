@@ -7,6 +7,7 @@
 #include <sstream>
 #include <QStringList>
 #include "type_factory.h"
+#include <QDebug>
 
 class Dom;
 class Pile : public QStack<type *>

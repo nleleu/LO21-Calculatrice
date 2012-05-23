@@ -52,7 +52,6 @@ Dom::~Dom()
 
 void Dom::lire()
 {
-    qDebug()<<"pile1";
     QFile file("sauvegarde_contexte.xml");
     if (!file.open(QIODevice::ReadOnly)){return;}
     if (!doc.setContent(&file))
@@ -79,7 +78,6 @@ void Dom::lire()
             tab = racine.childNodes(); // crée un tableau des enfants de « racine »
             for(i=0;i<tab.length();i++)
             {
-                qDebug() << "3";
                 // pour chaque enfant, on extrait la donnée et on la push dans la pile
                 n = tab.item(i);
                 //reconnaissance du type :
@@ -87,7 +85,6 @@ void Dom::lire()
 
                 test=type_factory::getInstance().getType(n.firstChild().toText().data());
 
-                qDebug() << "n.firstChild().toText().data()";
                 qDebug() << noeud.toText().data();
                 _pile.push(test);
 
