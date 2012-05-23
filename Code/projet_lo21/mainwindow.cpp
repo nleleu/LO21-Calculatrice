@@ -311,8 +311,11 @@ void MainWindow::on_quote_clicked()
 
 void MainWindow::on_undo_clicked(){
     _invoker.undo();
+    emit refresh_signal();
 }
 
 void MainWindow::on_redo_clicked(){
     _invoker.redo();
+    emit refresh_signal();
+
 }

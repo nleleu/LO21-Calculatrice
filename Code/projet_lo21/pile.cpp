@@ -16,6 +16,14 @@ Pile::Pile():nbElt(5){
     xml.lire();
 }
 
+/*Pile::Pile(const Pile &p)
+{
+
+    nbElt=p.nbElt;
+
+
+}*/
+
 Pile::~Pile(){
     /*int i(1);
     Dom xml(*this);
@@ -26,6 +34,14 @@ Pile::~Pile(){
         i++;
     }
     */
+}
+
+Pile& Pile::clone(){
+    Pile *p=new Pile();
+    for(int i=size()-1; i>=0; i--){
+        p->push(type_factory::getInstance().getType(at(i)->toQString()));
+    }
+    return *p;
 }
 
 void Pile::swap(const unsigned int x, const unsigned int y){

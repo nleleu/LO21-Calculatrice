@@ -16,6 +16,7 @@ class Pile : public QStack<type *>
 public:
     ~Pile();
     Pile();
+    Pile& clone();
     void swap(const unsigned int x, const unsigned int y);
     void sum(const unsigned int x);
     void mean(const unsigned int x);

@@ -14,7 +14,7 @@ class Invoker
     Pile& pileActuelle;
 
 public:
-    Invoker(Pile& pile);
+    Invoker(Pile &pile);
     void undo();
     void redo();
     void placeOrder(Operation*);
