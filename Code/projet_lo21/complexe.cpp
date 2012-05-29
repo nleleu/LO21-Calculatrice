@@ -1,23 +1,14 @@
 #include "complexe.h"
 
 
-type* complexe::operator =(type & t){
-    try{
-       complexe &tmp=dynamic_cast<complexe&>(t);
-       complexe *res=new complexe;
-       re=tmp.re;
-       im=tmp.im;
-       return this;
-    }
-    catch(std::exception &e){}
-}
+
 
 type* complexe::operator +(type & t){
     try{
        complexe &tmp=dynamic_cast<complexe&>(t);
        complexe *res=new complexe;
-       //res->re= re + tmp.re;
-       //res->im= im + tmp.im;
+       res->re= dynamic_cast<nocomplex*> (*re + *tmp.re);
+       res->im= dynamic_cast<nocomplex*>(*im + *tmp.im);
 
        return res;
     }
@@ -29,8 +20,8 @@ type* complexe::operator /(type & t)
     try{
        complexe &tmp=dynamic_cast<complexe&>(t);
        complexe *res=new complexe;
-       //res->re= (re*tmp.re+im*tmp.im)/(re*re+im*im);
-       //res->im= (re*tmp.im-im*tmp.re)/(re*re+im*im);
+       res->re= dynamic_cast<nocomplex*> (*re / *tmp.re);
+       res->im= dynamic_cast<nocomplex*>(*im / *tmp.im);
        return res;
     }
     catch(std::exception &e){}
@@ -40,8 +31,8 @@ type* complexe::operator*(type& t){
     try{
        complexe &tmp=dynamic_cast<complexe&>(t);
        complexe *res=new complexe;
-       //res->re= re*tmp.re - im*tmp.im;
-       //res->im= im*tmp.re + re*tmp.im;
+       res->re= dynamic_cast<nocomplex*> (*re * *tmp.re);
+       res->im= dynamic_cast<nocomplex*>(*im * *tmp.im);
        return res;
     }
     catch(std::exception &e){}
@@ -51,8 +42,8 @@ type* complexe::operator-(type& t){
     try{
        complexe &tmp=dynamic_cast<complexe&>(t);
        complexe *res=new complexe;
-       //res->re= re - tmp.re;
-       //res->im= im - tmp.im;
+       res->re= dynamic_cast<nocomplex*> (*re - *tmp.re);
+       res->im= dynamic_cast<nocomplex*>(*im - *tmp.im);
 
        return res;
     }
@@ -62,6 +53,6 @@ type* complexe::operator-(type& t){
 QString complexe::toQString(){
     QString res;
     QTextStream ss(&res);
-    ss << re <<'$'<< im;
+    ss << re->toQString() <<'$'<< im->toQString();
     return res;
 }

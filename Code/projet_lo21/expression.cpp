@@ -10,3 +10,18 @@ type* Expression::operator +(type & t){
     exp = exp + ' ' + t.toQString() + ' ' + "+";
 }
 
+type* Expression::operator -(type & t){
+    exp = exp + ' ' + t.toQString() + ' ' + "-";
+}
+
+
+type* Expression::operator *(type & t){
+    exp = exp + ' ' + t.toQString() + ' ' + "*";
+}
+
+
+type* Expression::operator /(type & t){
+    exp = exp + ' ' + t.toQString() + ' ' + "/";
+}
+
+

@@ -8,15 +8,20 @@
 #include <QStringList>
 #include "type_factory.h"
 #include <QDebug>
+#include "gardien.h"
 
 class Dom;
-class Pile : public QStack<type *>
+class Pile : public QStack <type *>
 {
     int  nbElt;
+    gardien* g;
 public:
     ~Pile();
     Pile();
     Pile& clone();
+    Pile& duplique();
+    void setGardien(gardien* _g){g=_g;}
+    gardien* getGardien()const{return g;}
     void swap(const unsigned int x, const unsigned int y);
     void sum(const unsigned int x);
     void mean(const unsigned int x);
@@ -28,6 +33,8 @@ public:
     void multiplication();
     void parser(QString s);
     int getNb(){return nbElt;}
+    void undo(){*this=g->undo();}
+    void redo(){*this=g->redo();}
 
 };
 

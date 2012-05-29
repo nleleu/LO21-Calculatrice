@@ -23,7 +23,11 @@ void type_factory::releaseInstance()
 
 type* type_factory::getType(QString s)
 {
-
+        if(complexe::isComplexe(s))
+        {
+            qDebug() << "complexe";
+        return new complexe(s);
+        }
         if(entier::isEntier(s))
             return new entier(s);
         if(reel::isReel(s))
@@ -32,9 +36,10 @@ type* type_factory::getType(QString s)
             return new rationnel(s);
         if(Expression::isExpression(s))
             return new Expression(s);
-        //if(complexe::isComplexe(ui->lineEdit->text()))
-        //*test=new complexe(ui->lineEdit->text().toStdString());
+
 
         else
+        {
             return NULL;
+        }
 }

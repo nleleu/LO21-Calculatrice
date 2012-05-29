@@ -30,7 +30,7 @@ public:
     //type& operator/(double & i);
     QString toQString();
 
-    static bool isEntier(const QString& s){return !(s.contains (",") || s.contains ("/") || s.contains ("i"));}
+    static bool isEntier(const QString& s){return !(s.contains (",") || s.contains ("/") || s.contains ("$"));}
 };
 
 #endif // ENTIER_H

@@ -12,7 +12,7 @@ using namespace std;
 
 Pile::Pile():nbElt(5){
     Dom xml(*this);
-
+    g=new gardien;
     xml.lire();
 }
 
@@ -41,8 +41,20 @@ Pile& Pile::clone(){
     for(int i=size()-1; i>=0; i--){
         p->push(type_factory::getInstance().getType(at(i)->toQString()));
     }
+    p->setGardien(getGardien());
     return *p;
 }
+
+
+Pile& Pile::duplique(){
+    Pile *p=new Pile();
+    for(int i=size()-1; i>=0; i--){
+        p->push(type_factory::getInstance().getType(at(i)->toQString()));
+    }
+    p->setGardien(new gardien);
+    return *p;
+}
+
 
 void Pile::swap(const unsigned int x, const unsigned int y){
     if (x < this->size() && y < this->size()){
@@ -236,6 +248,7 @@ void Pile::mean(const unsigned int x){//A reviser: ne calcule qu'une seule fois 
 
 void Pile::addition()
 {
+g->addMemento(*this);
 type * res;
 type *op1 = pop();
 type *op2 = pop();
@@ -243,10 +256,12 @@ res=*op2+(*op1);
 delete op1;
 delete op2;
 push(res);
+g->addMemento(*this);
 }
 
 void Pile::soustraction()
 {
+    g->addMemento(*this);
 type * res;
 type *op1 = pop();
 type *op2 = pop();
@@ -254,12 +269,14 @@ res=*op2-(*op1);
 delete op1;
 delete op2;
 push(res);
+g->addMemento(*this);
 
 }
 
 
 void Pile::multiplication()
 {
+    g->addMemento(*this);
 type * res;
 type *op1 = pop();
 type *op2 = pop();
@@ -268,12 +285,15 @@ delete op1;
 delete op2;
 push(res);
 
+g->addMemento(*this);
+
 }
 
 
 
 void Pile::division()
 {
+    g->addMemento(*this);
 type * res;
 type *op1 = pop();
 type *op2 = pop();
@@ -281,6 +301,7 @@ res=*op2/(*op1);
 delete op1;
 delete op2;
 push(res);
+g->addMemento(*this);
 
 }
 

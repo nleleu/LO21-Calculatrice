@@ -1,5 +1,5 @@
 #include "invoker.h"
-
+/*
 Invoker::Invoker(Pile& pile): pileActuelle(pile)
 {
     currentStack = 0;
@@ -47,3 +47,4 @@ void Invoker::redo(){
     //if(currentStack >= 0 && currentStack < 8)
        // pileActuelle = tabPile.at(currentStack);
 }
+*/

@@ -1,6 +1,6 @@
 #ifndef INVOKER_H
 #define INVOKER_H
-
+/*
 #include <QVector>
 #include "pile.h"
 #include <QString>
@@ -19,5 +19,5 @@ public:
     void redo();
     void placeOrder(Operation*);
 };
-
+*/
 #endif // INVOKER_H

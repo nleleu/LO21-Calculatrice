@@ -23,8 +23,8 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>30</y>
+      <x>390</x>
+      <y>260</y>
       <width>281</width>
       <height>201</height>
      </rect>
@@ -93,8 +93,8 @@
    <widget class="QListWidget" name="list">
     <property name="geometry">
      <rect>
-      <x>430</x>
-      <y>260</y>
+      <x>390</x>
+      <y>40</y>
       <width>271</width>
       <height>211</height>
      </rect>
@@ -104,7 +104,7 @@
     <property name="geometry">
      <rect>
       <x>730</x>
-      <y>260</y>
+      <y>320</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -117,7 +117,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>10</y>
+      <y>30</y>
       <width>271</width>
       <height>271</height>
      </rect>
@@ -326,7 +326,7 @@
     <property name="geometry">
      <rect>
       <x>710</x>
-      <y>480</y>
+      <y>250</y>
       <width>75</width>
       <height>61</height>
      </rect>
@@ -342,7 +342,7 @@
     <property name="geometry">
      <rect>
       <x>29</x>
-      <y>309</y>
+      <y>369</y>
       <width>121</width>
       <height>141</height>
      </rect>
@@ -388,7 +388,7 @@
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>310</y>
+      <y>370</y>
       <width>141</width>
       <height>80</height>
      </rect>
@@ -427,7 +427,7 @@
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>400</y>
+      <y>460</y>
       <width>141</width>
       <height>80</height>
      </rect>
@@ -466,7 +466,7 @@
     <property name="geometry">
      <rect>
       <x>730</x>
-      <y>310</y>
+      <y>370</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -479,7 +479,7 @@
     <property name="geometry">
      <rect>
       <x>730</x>
-      <y>360</y>
+      <y>420</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -492,7 +492,7 @@
     <property name="geometry">
      <rect>
       <x>730</x>
-      <y>410</y>
+      <y>470</y>
       <width>51</width>
       <height>41</height>
      </rect>
@@ -504,7 +504,7 @@
    <widget class="QPushButton" name="multiplication_2">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>300</x>
       <y>150</y>
       <width>51</width>
       <height>41</height>
@@ -520,7 +520,7 @@
    <widget class="QPushButton" name="addition_2">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>300</x>
       <y>50</y>
       <width>51</width>
       <height>41</height>
@@ -536,7 +536,7 @@
    <widget class="QPushButton" name="division_2">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>300</x>
       <y>200</y>
       <width>51</width>
       <height>41</height>
@@ -549,7 +549,7 @@
    <widget class="QPushButton" name="soustraction_2">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>300</x>
       <y>100</y>
       <width>51</width>
       <height>41</height>
@@ -561,6 +561,33 @@
     <property name="shortcut">
      <string>-</string>
     </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>781</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Onglet_1">
+     <property name="accessibleName">
+      <string/>
+     </property>
+     <property name="accessibleDescription">
+      <string/>
+     </property>
+     <attribute name="title">
+      <string>Onglet 1</string>
+     </attribute>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -579,7 +606,14 @@
     <addaction name="actionQuit"/>
     <addaction name="actionParametre"/>
    </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>Edition</string>
+    </property>
+    <addaction name="actionNouvel_onglet"/>
+   </widget>
    <addaction name="menuFile"/>
+   <addaction name="menuEdition"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -598,6 +632,14 @@
   <action name="actionParametre">
    <property name="text">
     <string>Parametre</string>
+   </property>
+  </action>
+  <action name="actionNouvel_onglet">
+   <property name="text">
+    <string>Nouvel onglet</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
    </property>
   </action>
  </widget>

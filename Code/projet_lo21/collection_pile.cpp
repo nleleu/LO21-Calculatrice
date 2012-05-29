@@ -10,6 +10,12 @@ Collection_pile& Collection_pile::getInstance()
 
 }
 
+
+void Collection_pile::addPile(Pile* _pile)
+{
+    push_back(&_pile->duplique());
+}
+
 void Collection_pile::releaseInstance()
 {
     if (instance!=0)

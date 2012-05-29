@@ -7,7 +7,7 @@
 #include "type.h"
 #include <QString>
 #include "reglages.h"
-#include "invoker.h"
+#include "collection_pile.h"
 
 enum constType{ENTIER, REEL, RATIONNEL};
 enum complexUse{YES, NO};
@@ -23,7 +23,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
     
 public:
-    explicit MainWindow(Pile &pile, Invoker& invoker, QWidget *parent = 0);
+    explicit MainWindow(Pile &pile, QWidget *parent);
     ~MainWindow();
     static constType selectedConstType;
     static complexUse selectedComplexUse;
@@ -81,6 +81,9 @@ public slots:
     void on_undo_clicked();
     void on_redo_clicked();
 
+    //Créer un onglet à partir de la pile courante
+    void createOnglet();
+
 signals:
     void pushStack_signal(const QString&);
     void cleanList_signal();
@@ -107,10 +110,12 @@ private slots:
 
     void on_quote_clicked();
 
+    void on_tabWidget_currentChanged(int index);
+
+    void on_actionNouvel_onglet_triggered();
+
 private:
     Ui::MainWindow *ui;
-    Pile &_pile;
-    Invoker & _invoker;
     reglages * r;
 };
 #endif // MAINWINDOW_H

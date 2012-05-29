@@ -9,15 +9,15 @@
 #include <QListWidget>
 #include <QListWidgetItem>
 #include <QString>
-#include "invoker.h"
 #include "pileaddition.h"
+#include <QTextStream>
 
 
 
 using namespace std;
 
-MainWindow::MainWindow(Pile &pile, Invoker& invoker, QWidget *parent) :
-    _pile(pile), _invoker(invoker), QMainWindow(parent),
+MainWindow::MainWindow(Pile &pile, QWidget *parent) :
+    QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
@@ -27,6 +27,7 @@ MainWindow::MainWindow(Pile &pile, Invoker& invoker, QWidget *parent) :
     QObject::connect(this, SIGNAL(cleanList_signal()), this, SLOT(cleanList_slot()));
     QObject::connect(this, SIGNAL(refresh_signal()), this, SLOT(refresh_slot()));
 
+    Collection_pile::getInstance().addPile(&pile);
     ui->intRadio->setChecked(true);
     ui->noComplex->setChecked(true);
     ui->degUnit->setChecked(true);
@@ -78,7 +79,7 @@ void MainWindow::on_espace_clicked()
 
 void MainWindow::on_stackButton_clicked(){
     //emit pushStack_signal(ui->lineEdit->text());
-    _pile.parser(ui->lineEdit->text());
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->parser(ui->lineEdit->text());
 
     emit refresh_signal();
     ui->lineEdit->clear();
@@ -86,37 +87,37 @@ void MainWindow::on_stackButton_clicked(){
 }
 
 void MainWindow::on_affichePile_clicked(){
-    for(int i=0; i<_pile.size(); i++)
-        qDebug()<<((_pile.at(i))->toQString())<<endl;
+    for(int i=0; i<Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->size(); i++)
+        qDebug()<<((Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->at(i))->toQString())<<endl;
 }
 
 void MainWindow::on_swap_clicked(){
-    _pile.swap(0, 1);
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->swap(0, 1);
     emit refresh_signal();
 }
 
 void MainWindow::on_sum_clicked(){
-    _pile.sum(10);
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->sum(10);
     emit refresh_signal();
 }
 
 void MainWindow::on_mean_clicked(){
-    _pile.mean(10);
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->mean(10);
     emit refresh_signal();
 }
 
 void MainWindow::on_clear_clicked(){
-    _pile.clear();
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->clear();
     emit cleanList_signal();
 }
 
 void MainWindow::on_dup_clicked(){
-    _pile.dup();
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->dup();
     emit refresh_signal();
 }
 
 void MainWindow::on_drop_clicked(){
-    _pile.drop();
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->drop();
     emit refresh_signal();
 }
 
@@ -132,7 +133,7 @@ void MainWindow::on_backspace_clicked(){
 
 void MainWindow::on_intRadio_clicked(){
     if(MainWindow::selectedConstType!=ENTIER){
-        _pile.clear();
+        Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->clear();
         ui->lineEdit->clear();
         emit cleanList_signal();
         MainWindow::selectedConstType=ENTIER;
@@ -140,7 +141,7 @@ void MainWindow::on_intRadio_clicked(){
 }
 void MainWindow::on_doubleRadio_clicked(){
     if(MainWindow::selectedConstType!=REEL){
-        _pile.clear();
+        Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->clear();
         ui->lineEdit->clear();
         emit cleanList_signal();
         MainWindow::selectedConstType=REEL;
@@ -148,7 +149,7 @@ void MainWindow::on_doubleRadio_clicked(){
 }
 void MainWindow::on_rationalRadio_clicked(){
     if(MainWindow::selectedConstType!=RATIONNEL){
-        _pile.clear();
+        Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->clear();
         ui->lineEdit->clear();
         emit cleanList_signal();
         MainWindow::selectedConstType=RATIONNEL;
@@ -158,7 +159,7 @@ void MainWindow::on_rationalRadio_clicked(){
 //Selection de l'utilisation des complexes
 void MainWindow::on_yesComplex_clicked(){
     if(MainWindow::selectedComplexUse!=YES){
-        _pile.clear();
+        Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->clear();
         ui->lineEdit->clear();
         emit cleanList_signal();
         MainWindow::selectedComplexUse=YES;
@@ -166,7 +167,7 @@ void MainWindow::on_yesComplex_clicked(){
 }
 void MainWindow::on_noComplex_clicked(){
     if(MainWindow::selectedComplexUse!=NO){
-        _pile.clear();
+        Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->clear();
         ui->lineEdit->clear();
         emit cleanList_signal();
         MainWindow::selectedComplexUse=NO;
@@ -190,9 +191,9 @@ void MainWindow::cleanList_slot(){
 
 void MainWindow::refresh_slot(){
     ui->list->clear();
-    int n=_pile.getNb();
-    for(int i=_pile.size()-1; i>=0 && n>0; i--){
-        ui->list->addItem((_pile.at(i))->toQString());
+    int n=Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->getNb();
+    for(int i=Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->size()-1; i>=0 && n>0; i--){
+        ui->list->addItem((Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->at(i))->toQString());
         n--;
     }
 }
@@ -247,13 +248,13 @@ void MainWindow::on_rationnelButton_clicked(){
 
 
 void MainWindow::on_addition_clicked(){
-    _invoker.placeOrder(new PileAddition(_pile));
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->addition();
     emit refresh_signal();
 }
 
 void MainWindow::on_soustraction_clicked()
 {
-    _pile.soustraction();
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->soustraction();
     emit refresh_signal();
 }
 
@@ -261,13 +262,13 @@ void MainWindow::on_soustraction_clicked()
 
 void MainWindow::on_multiplication_clicked()
 {
-    _pile.multiplication();
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->multiplication();
     emit refresh_signal();
 }
 
 void MainWindow::on_division_clicked()
 {
-    _pile.division();
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->division();
     emit refresh_signal();
 }
 
@@ -298,6 +299,8 @@ void MainWindow::on_division_2_clicked()
 
 
 
+
+
 void MainWindow::on_actionParametre_triggered()
 {
     qDebug() << "test";
@@ -310,12 +313,38 @@ void MainWindow::on_quote_clicked()
 }
 
 void MainWindow::on_undo_clicked(){
-    _invoker.undo();
+     Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->undo();
     emit refresh_signal();
 }
 
 void MainWindow::on_redo_clicked(){
-    _invoker.redo();
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->undo();
     emit refresh_signal();
 
+}
+
+void MainWindow::createOnglet()
+{
+    Collection_pile::getInstance().addPile(Collection_pile::getInstance().at(Collection_pile::getInstance().getActif()));
+
+}
+
+void MainWindow::on_tabWidget_currentChanged(int index)
+{
+    if(index>=Collection_pile::getInstance().size())
+    createOnglet();
+    Collection_pile::getInstance().setActif(index);
+    emit refresh_signal();
+}
+
+void MainWindow::on_actionNouvel_onglet_triggered()
+{
+
+    createOnglet();
+    QWidget *ajout = new QTabWidget(this);
+    QString res;
+    QTextStream ss(&res);
+    ss << "Onglet "<< Collection_pile::getInstance().size();
+
+        ui->tabWidget->addTab(ajout,res);
 }

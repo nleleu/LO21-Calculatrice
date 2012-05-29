@@ -5,10 +5,11 @@
 #include <sstream>
 #include <QString>
 #include "nocomplex.h"
-#include "complex_abs.h"
+#include "type_factory.h"
 
+#include "constante.h"
 
-class complexe:public complex_abs //A revoir, la classe complexe actuelle ne prend que des constantes entières
+class complexe:public constante
 {
     nocomplex*  re;
     nocomplex* im;
@@ -22,11 +23,10 @@ public:
     {
         QString copie(s);
 
-        /*re=(copie.section('$', 0,0)).toInt();
-        im=(copie.section('$', 1,1)).toInt();*/
+        re=dynamic_cast<nocomplex*>(type_factory::getInstance().getType((copie.section('$', 0,0))));
+        im=dynamic_cast<nocomplex*>(type_factory::getInstance().getType((copie.section('$', 1,1))));
     }
 
-    type* operator =(type & t);
     type* operator +(type & t);
     type* operator /(type & t);
     type* operator*(type& t);
