@@ -313,8 +313,7 @@ void MainWindow::on_quote_clicked()
 }
 
 void MainWindow::on_undo_clicked(){
-     Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->undo();
-    emit refresh_signal();
+
 }
 
 void MainWindow::on_redo_clicked(){
@@ -340,6 +339,11 @@ void MainWindow::on_tabWidget_currentChanged(int index)
 void MainWindow::on_actionNouvel_onglet_triggered()
 {
 
+
+}
+
+void MainWindow::on_actionNouvel_onglet_2_triggered()
+{
     createOnglet();
     QWidget *ajout = new QTabWidget(this);
     QString res;
@@ -347,4 +351,16 @@ void MainWindow::on_actionNouvel_onglet_triggered()
     ss << "Onglet "<< Collection_pile::getInstance().size();
 
         ui->tabWidget->addTab(ajout,res);
+}
+
+void MainWindow::on_actionAnnuler_triggered()
+{
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->undo();
+   emit refresh_signal();
+}
+
+void MainWindow::on_actionR_tablir_triggered()
+{
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->redo();
+   emit refresh_signal();
 }

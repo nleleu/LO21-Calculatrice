@@ -114,6 +114,12 @@ private slots:
 
     void on_actionNouvel_onglet_triggered();
 
+    void on_actionNouvel_onglet_2_triggered();
+
+    void on_actionAnnuler_triggered();
+
+    void on_actionR_tablir_triggered();
+
 private:
     Ui::MainWindow *ui;
     reglages * r;
