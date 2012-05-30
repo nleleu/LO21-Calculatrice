@@ -120,6 +120,10 @@ private slots:
 
     void on_actionR_tablir_triggered();
 
+    void on_tabWidget_destroyed();
+
+    void on_tabWidget_tabCloseRequested(int index);
+
 private:
     Ui::MainWindow *ui;
     reglages * r;

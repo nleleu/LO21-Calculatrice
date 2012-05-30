@@ -364,3 +364,21 @@ void MainWindow::on_actionR_tablir_triggered()
     Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->redo();
    emit refresh_signal();
 }
+
+void MainWindow::on_tabWidget_destroyed()
+{
+
+}
+
+void MainWindow::on_tabWidget_tabCloseRequested(int index)
+{
+    if (index>0)
+    {
+
+    delete Collection_pile::getInstance().at(index);
+        Collection_pile::getInstance().erase(Collection_pile::getInstance().begin()+index);
+        qDebug() << Collection_pile::getInstance().size();
+    ui->tabWidget->removeTab(index);
+
+    }
+}

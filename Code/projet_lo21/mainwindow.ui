@@ -9,15 +9,27 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>799</width>
-    <height>604</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
   </property>
   <property name="acceptDrops">
    <bool>false</bool>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Calculatrice</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QGroupBox" name="groupBox">
@@ -557,6 +569,9 @@
     <property name="currentIndex">
      <number>0</number>
     </property>
+    <property name="tabsClosable">
+     <bool>true</bool>
+    </property>
     <widget class="QWidget" name="Onglet_1">
      <property name="accessibleName">
       <string/>
@@ -575,7 +590,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>799</width>
+     <width>800</width>
      <height>21</height>
     </rect>
    </property>

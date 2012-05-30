@@ -25,15 +25,10 @@ Pile::Pile():nbElt(5){
 }*/
 
 Pile::~Pile(){
-    /*int i(1);
-    Dom xml(*this);
-    xml.newfic();
-    while(!isEmpty()){
-        QString str;
-        xml.demande_ajout(str.setNum(i), (pop()->toQString()));
-        i++;
+
+    for(int i=size()-1; i>=0; i--){
+        delete at(i);
     }
-    */
 }
 
 Pile& Pile::clone() const{
