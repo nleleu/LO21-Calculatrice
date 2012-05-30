@@ -25,10 +25,8 @@ Pile::Pile():nbElt(5){
 }*/
 
 Pile::~Pile(){
+//bug si delete sur tous les poiteurs de la pile, à revoir
 
-    for(int i=size()-1; i>=0; i--){
-        delete at(i);
-    }
 }
 
 Pile& Pile::clone() const{
