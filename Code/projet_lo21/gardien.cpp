@@ -13,24 +13,23 @@ currentStack++;
 
 }
 
-Pile gardien::undo(){
+Pile* gardien::undo(){
 
 
-    if(currentStack > 0 && currentStack < 10)
+    if(currentStack > 0)
     {
      currentStack -= 1;
-     return tabPile.at(currentStack);
+     return &tabPile.at(currentStack).clone();
     }
+    return 0;
 
 }
 
-Pile gardien::redo(){
-    if(currentStack >= 0 && currentStack < 10)
+Pile* gardien::redo(){
+    if(currentStack >= 0 && currentStack < tabPile.size()-1)
     {
      currentStack += 1;
-     return tabPile.at(currentStack);
+     return &tabPile.at(currentStack).clone();
     }
-
-    else
-        qDebug()<<"vide";
+    return 0;
 }

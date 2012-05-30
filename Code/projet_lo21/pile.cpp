@@ -36,7 +36,7 @@ Pile::~Pile(){
     */
 }
 
-Pile& Pile::clone(){
+Pile& Pile::clone() const{
     Pile *p=new Pile();
     for(int i=size()-1; i>=0; i--){
         p->push(type_factory::getInstance().getType(at(i)->toQString()));
@@ -46,7 +46,7 @@ Pile& Pile::clone(){
 }
 
 
-Pile& Pile::duplique(){
+Pile& Pile::duplique() const{
     Pile *p=new Pile();
     for(int i=size()-1; i>=0; i--){
         p->push(type_factory::getInstance().getType(at(i)->toQString()));

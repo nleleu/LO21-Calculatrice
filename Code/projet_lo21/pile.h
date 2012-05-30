@@ -18,8 +18,8 @@ class Pile : public QStack <type *>
 public:
     ~Pile();
     Pile();
-    Pile& clone();
-    Pile& duplique();
+    Pile& clone() const;
+    Pile& duplique()const;
     void setGardien(gardien* _g){g=_g;}
     gardien* getGardien()const{return g;}
     void swap(const unsigned int x, const unsigned int y);
@@ -33,8 +33,8 @@ public:
     void multiplication();
     void parser(QString s);
     int getNb(){return nbElt;}
-    void undo(){*this=g->undo();}
-    void redo(){*this=g->redo();}
+    void undo(){Pile *tmp=g->undo();if(tmp!=0)*this=*tmp;}
+    void redo(){Pile *tmp=g->redo();if(tmp!=0)*this=*tmp;}
 
 };
 

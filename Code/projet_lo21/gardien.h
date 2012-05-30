@@ -15,8 +15,8 @@ class gardien
 
 public:
     gardien();
-    Pile undo();
-    Pile redo();
+    Pile* undo();
+    Pile* redo();
     void addMemento(Pile pile);
 };
 
