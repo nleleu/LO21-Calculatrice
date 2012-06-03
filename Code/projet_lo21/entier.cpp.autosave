@@ -1,25 +1,27 @@
-#include "reel.h"
 #include "entier.h"
+#include <exception>
+#include "reel.h"
+#include "rationnel.h"
+#include "complexe.h"
 #include <QDebug>
 #include <math.h>
 
 #define PI 3.14159265
 
-type& reel::operator =(type & t){
+/*type& entier::operator =(type &t){
     try{
-       reel &tmp=dynamic_cast<reel&>(t);
+       entier &tmp=dynamic_cast<entier&>(t);
        data=tmp.data;
        return *this;
     }
     catch(std::exception &e){}
 }
-
-type* reel::operator +(type & t){
-
+*/
+type* entier::operator +(type & t){
     try{
 
        entier &tmp=dynamic_cast<entier&>(t);
-       reel *res=new reel(data+tmp.getData());
+       entier *res=new entier(data+tmp.getData());
        return res;
     }
     catch(std::exception &e){}
@@ -32,10 +34,27 @@ type* reel::operator +(type & t){
     }
     catch(std::exception &e){}
 
+    try{
+
+       rationnel &tmp=dynamic_cast<rationnel&>(t);
+       type* res;
+       rationnel r(data,1);
+       res=tmp+r;
+       return res;
+    }
+    catch(std::exception &e){}
 
 }
 
-type* reel::operator /(type & t){
+type* entier::operator /(type & t)
+{
+    try{
+       entier &tmp=dynamic_cast<entier&>(t);
+       entier *res=new entier(data/tmp.getData());
+       return res;
+    }
+    catch(std::exception &e){}
+
     try{
        reel &tmp=dynamic_cast<reel&>(t);
        reel *res=new reel(data/tmp.getData());
@@ -44,15 +63,21 @@ type* reel::operator /(type & t){
     catch(std::exception &e){}
 
     try{
-
-       entier &tmp=dynamic_cast<entier&>(t);
-       reel *res=new reel(data/tmp.getData());
+       rationnel &tmp=dynamic_cast<rationnel&>(t);
+       rationnel *res=new rationnel(data*tmp.getDenum(), tmp.getNum());
        return res;
     }
     catch(std::exception &e){}
 }
 
-type* reel::operator*(type& t){
+type* entier::operator*(type& t){
+    try{
+       entier &tmp=dynamic_cast<entier&>(t);
+       entier *res=new entier(data*tmp.getData());
+       return res;
+    }
+    catch(std::exception &e){}
+
     try{
        reel &tmp=dynamic_cast<reel&>(t);
        reel *res=new reel(data*tmp.getData());
@@ -61,15 +86,21 @@ type* reel::operator*(type& t){
     catch(std::exception &e){}
 
     try{
-
-       entier &tmp=dynamic_cast<entier&>(t);
-       reel *res=new reel(data*tmp.getData());
+       rationnel &tmp=dynamic_cast<rationnel&>(t);
+       rationnel *res=new rationnel(data*tmp.getNum(), tmp.getDenum());
        return res;
     }
     catch(std::exception &e){}
 }
 
-type* reel::operator-(type& t){
+type* entier::operator-(type& t){
+    try{
+       entier &tmp=dynamic_cast<entier&>(t);
+       entier *res=new entier(data-tmp.getData());
+       return res;
+    }
+    catch(std::exception &e){}
+
     try{
        reel &tmp=dynamic_cast<reel&>(t);
        reel *res=new reel(data-tmp.getData());
@@ -79,57 +110,60 @@ type* reel::operator-(type& t){
 
     try{
 
-       entier &tmp=dynamic_cast<entier&>(t);
-       reel *res=new reel(data-tmp.getData());
+       rationnel &tmp=dynamic_cast<rationnel&>(t);
+       type* res;
+       rationnel r(data,1);
+       res=r-tmp;
        return res;
     }
     catch(std::exception &e){}
 }
 
 
-QString reel::toQString(){
+
+QString entier::toQString(){
     QString res;
     QTextStream ss(&res);
     ss << data;
     return res;
 }
 
-type* reel::sinus(){
+type* entier::sinus(){
     double tmp(data);
     tmp=sin(tmp*PI/180);
     type* t= new reel(tmp);
     return t;
 }
 
-type* reel::cosinus(){
+type* entier::cosinus(){
     double tmp(data);
     tmp=cos(tmp*PI/180);
     type* t= new reel(tmp);
     return t;
 }
 
-type* reel::tangente(){
+type* entier::tangente(){
     double tmp(data);
     tmp=tan(tmp*PI/180);
     type* t= new reel(tmp);
     return t;
 }
 
-type* reel::sinush(){
+type* entier::sinush(){
     double tmp(data);
     tmp=sinh(tmp*PI/180);
     type* t= new reel(tmp);
     return t;
 }
 
-type* reel::cosinush(){
+type* entier::cosinush(){
     double tmp(data);
     tmp=cosh(tmp*PI/180);
     type* t= new reel(tmp);
     return t;
 }
 
-type* reel::tangenteh(){
+type* entier::tangenteh(){
     double tmp(data);
     tmp=tanh(tmp*PI/180);
     type* t= new reel(tmp);
@@ -137,44 +171,56 @@ type* reel::tangenteh(){
 }
 
 
-type* reel::ln(){
+
+type* entier::ln(){
     double tmp(data);
     tmp=log(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* reel::log(){
+type* entier::log(){
     double tmp(data);
     tmp=log10(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* reel::inv(){
+type* entier::inv(){
     double tmp(data);
     tmp=1/tmp;
     type* t= new reel(tmp);
     return t;
 }
 
-type* reel::sqrt(){
+type* entier::sqrt(){
     double tmp(data);
     tmp=sqrt(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* reel::sqr(){
+type* entier::sqr(){
     double tmp(data);
     tmp=pow (tmp,2);
     type* t= new reel(tmp);
     return t;
 }
 
-type* reel::cube(){
+type* entier::cube(){
     double tmp(data);
     tmp=pow (tmp,3);
     type* t= new reel(tmp);
     return t;
 }
+
+type* entier::fact(){
+    int tmp(1);
+
+    for(int i=1; i<=data; i++)
+        tmp*=i;
+
+    type* t= new reel(tmp);
+    return t;
+}
+

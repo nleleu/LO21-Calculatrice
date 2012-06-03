@@ -22,6 +22,15 @@ public:
     type* cosinush(){}
     type* tangenteh(){}
 
+    type* ln(){}
+    type* log(){}
+    type* inv(){}
+    type* sqrt(){}
+    type* sqr(){}
+    type* cube(){}
+    type* fact(){}
+    type* eval(){}
+
     static bool isExpression(const QString& s){return s.contains ('\'');}
     QString toQString(){return exp;}
 };

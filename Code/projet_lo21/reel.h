@@ -37,6 +37,15 @@ public:
     type* cosinush();
     type* tangenteh();
 
+    type* ln();
+    type* log();
+    type* inv();
+    type* sqrt();
+    type* sqr();
+    type* cube();
+    type* fact();
+    type* eval(){}
+
     double getData(){return data;}
     QString toQString();
 

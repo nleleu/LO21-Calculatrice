@@ -259,3 +259,100 @@ void Pile::tangenteh(){
      }
 }
 
+
+
+void Pile::ln(){
+    if(this->size() > 0){
+
+       g->addMemento(*this);
+       type *op = pop();
+       op=op->ln();
+       push(op);
+       g->addMemento(*this);
+       return;
+     }
+}
+
+void Pile::log(){
+    if(this->size() > 0){
+
+       g->addMemento(*this);
+       type *op = pop();
+       op=op->log();
+       push(op);
+       g->addMemento(*this);
+       return;
+     }
+}
+
+void Pile::inv(){
+    if(this->size() > 0){
+
+       g->addMemento(*this);
+       type *op = pop();
+       op=op->inv();
+       push(op);
+       g->addMemento(*this);
+       return;
+     }
+}
+
+void Pile::sqrt(){
+    if(this->size() > 0){
+
+       g->addMemento(*this);
+       type *op = pop();
+       op=op->sqrt();
+       push(op);
+       g->addMemento(*this);
+       return;
+     }
+}
+
+void Pile::sqr(){
+    if(this->size() > 0){
+
+       g->addMemento(*this);
+       type *op = pop();
+       op=op->sqr();
+       push(op);
+       g->addMemento(*this);
+       return;
+     }
+}
+
+void Pile::cube(){
+    if(this->size() > 0){
+
+       g->addMemento(*this);
+       type *op = pop();
+       op=op->cube();
+       push(op);
+       g->addMemento(*this);
+       return;
+     }
+}
+
+void Pile::fact(){
+    if(this->size() > 0){
+
+       g->addMemento(*this);
+       type *op = pop();
+       op=op->fact();
+       push(op);
+       g->addMemento(*this);
+       return;
+     }
+}
+
+void Pile::eval(){
+    if(this->size() > 0){
+
+       g->addMemento(*this);
+       type *op = pop();
+       op=op->eval();
+       push(op);
+       g->addMemento(*this);
+       return;
+     }
+}

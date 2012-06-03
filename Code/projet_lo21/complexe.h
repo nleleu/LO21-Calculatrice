@@ -39,6 +39,15 @@ public:
     type* cosinush(){}
     type* tangenteh(){}
 
+    type* ln(){}
+    type* log(){}
+    type* inv(){}
+    type* sqrt(){}
+    type* sqr(){}
+    type* cube(){}
+    type* fact(){}
+    type* eval(){}
+
 
     nocomplex* getRe(){return re;}
     nocomplex* getIm(){return im;}

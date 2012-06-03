@@ -37,6 +37,17 @@ public:
     type* cosinush();
     type* tangenteh();
 
+
+    type* ln();
+    type* log();
+    type* inv();
+    type* sqrt();
+    type* sqr();
+    type* cube();
+    type* fact();
+    type* eval(){}
+
+
     static bool isEntier(const QString& s){return !(s.contains (",") || s.contains ("/") || s.contains ("$"));}
 };
 

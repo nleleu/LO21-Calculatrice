@@ -101,6 +101,15 @@ private slots:
     void on_cosh_clicked();
     void on_tanh_clicked();
 
+    void on_ln_clicked();
+    void on_log_clicked();
+    void on_inv_clicked();
+    void on_sqrt_clicked();
+    void on_sqr_clicked();
+    void on_cube_clicked();
+    void on_fact_clicked();
+    void on_eval_clicked();
+
 private:
     Ui::MainWindow *ui;
     reglages * r;

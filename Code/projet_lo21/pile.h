@@ -43,6 +43,16 @@ public:
     void cosinush();
     void tangenteh();
 
+    void ln();
+    void log();
+    void inv();
+    void sqrt();
+    void sqr();
+    void cube();
+    void fact();
+    void eval();
+
+
 };
 
 #endif // PILE_H

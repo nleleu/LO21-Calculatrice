@@ -24,6 +24,16 @@ public:
     virtual type* cosinush()=0;
     virtual type* tangenteh()=0;
 
+    virtual type* ln()=0;
+    virtual type* log()=0;
+    virtual type* inv()=0;
+    virtual type* sqrt()=0;
+    virtual type* sqr()=0;
+    virtual type* cube()=0;
+    virtual type* fact()=0;
+    virtual type* eval()=0;
+
+
     //virtual type& operator/(int & i)=0;
     //virtual type& operator/(double & i)=0;
 

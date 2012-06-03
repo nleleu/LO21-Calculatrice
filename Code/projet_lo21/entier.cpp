@@ -169,3 +169,58 @@ type* entier::tangenteh(){
     type* t= new reel(tmp);
     return t;
 }
+
+
+
+type* entier::ln(){
+    double tmp(data);
+    //tmp=log(tmp);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* entier::log(){
+    double tmp(data);
+    tmp=log10(tmp);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* entier::inv(){
+    double tmp(data);
+    tmp=1/tmp;
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* entier::sqrt(){
+    double tmp(data);
+    //tmp=sqrt(tmp);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* entier::sqr(){
+    double tmp(data);
+    tmp=pow (tmp,2);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* entier::cube(){
+    double tmp(data);
+    tmp=pow (tmp,3);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* entier::fact(){
+    int tmp(1);
+
+    for(int i=1; i<=data; i++)
+        tmp*=i;
+
+    type* t= new reel(tmp);
+    return t;
+}
+

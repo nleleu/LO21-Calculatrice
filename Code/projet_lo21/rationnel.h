@@ -53,6 +53,15 @@ public:
     type* cosinush();
     type* tangenteh();
 
+    type* ln();
+    type* log();
+    type* inv();
+    type* sqrt();
+    type* sqr();
+    type* cube();
+    type* fact();
+    type* eval();
+
 
     void simplifie();
     int pgcd(int, int ) const;

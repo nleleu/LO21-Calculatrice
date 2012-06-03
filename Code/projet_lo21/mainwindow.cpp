@@ -239,6 +239,48 @@ void MainWindow::on_tanh_clicked(){
     emit refresh_signal();
 }
 
+void MainWindow::on_ln_clicked(){
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->ln();
+    emit refresh_signal();
+}
+
+void MainWindow::on_log_clicked(){
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->log();
+    emit refresh_signal();
+}
+
+void MainWindow::on_inv_clicked(){
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->inv();
+    emit refresh_signal();
+}
+
+void MainWindow::on_sqrt_clicked(){
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->sqrt();
+    emit refresh_signal();
+}
+
+void MainWindow::on_sqr_clicked(){
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->sqr();
+    emit refresh_signal();
+}
+
+void MainWindow::on_cube_clicked(){
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->cube();
+    emit refresh_signal();
+}
+
+void MainWindow::on_fact_clicked(){
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->fact();
+    emit refresh_signal();
+}
+
+void MainWindow::on_eval_clicked(){
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->eval();
+    emit refresh_signal();
+}
+
+
+
 
 void MainWindow::on_actionParametre_triggered()
 {

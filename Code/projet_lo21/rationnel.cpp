@@ -129,3 +129,46 @@ type* rationnel::tangenteh(){
     type* t= new reel(tmp);
     return t;
 }
+
+
+type* rationnel::ln(){
+    double tmp(data);
+    tmp=log(tmp);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* rationnel::log(){
+    double tmp(data);
+    tmp=log10(tmp);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* rationnel::inv(){
+    double tmp(data);
+    tmp=1/tmp;
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* rationnel::sqrt(){
+    double tmp(data);
+    tmp=sqrt(tmp);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* rationnel::sqr(){
+    double tmp(data);
+    tmp=pow (tmp,2);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* rationnel::cube(){
+    double tmp(data);
+    tmp=pow (tmp,3);
+    type* t= new reel(tmp);
+    return t;
+}
