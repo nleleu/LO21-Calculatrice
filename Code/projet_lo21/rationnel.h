@@ -49,6 +49,9 @@ public:
     int pgcd(int, int ) const;
     QString toQString();
 
+    int getNum(){return num;}
+    int getDenum(){return denum;}
+
     static bool isRationnel(const QString& s){return s.contains ("/");}
 };
 

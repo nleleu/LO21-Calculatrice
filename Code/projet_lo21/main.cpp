@@ -10,9 +10,8 @@
 #include "Invoker.h"
 #include "gardien.h"
 
-constType MainWindow::selectedConstType=ENTIER;
-complexUse MainWindow::selectedComplexUse=NO;
 degUnit MainWindow::selectedDegUnit=DEGRE;
+
 
 int main(int argc, char *argv[])
 {
@@ -21,7 +20,7 @@ int main(int argc, char *argv[])
     Pile pile;
    // Invoker invoker(pile);
     //MainWindow w(pile, invoker, 0);
-   MainWindow w(pile, 0);
+    MainWindow w(pile, 0);
     w.show();
 
 

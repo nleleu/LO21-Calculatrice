@@ -36,6 +36,13 @@ public:
     void undo(){Pile *tmp=g->undo();if(tmp!=0)*this=*tmp;}
     void redo(){Pile *tmp=g->redo();if(tmp!=0)*this=*tmp;}
 
+    void sinus();
+    /*void cos();
+    void tan();
+    void sinh();
+    void cosh();
+    void tanh();*/
+
 };
 
 #endif // PILE_H
