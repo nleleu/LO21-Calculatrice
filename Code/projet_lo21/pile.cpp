@@ -28,7 +28,7 @@ Pile::Pile():nbElt(5){
 }*/
 
 Pile::~Pile(){
-//bug si delete sur tous les poiteurs de la pile, à revoir
+//bug si delete sur tous les pointeurs de la pile, à revoir
 
 }
 
@@ -188,93 +188,74 @@ void Pile::sinus(){
 
     if(this->size() > 0){
 
-        try{
-           g->addMemento(*this);
-           type * res;
-           type *op = pop();
-           entier &tmp=dynamic_cast<entier&>(*op);
-           res=new reel(sin(tmp.getData()*PI/180));
-           delete op;
-           push(res);
-           g->addMemento(*this);
-           return;
-        }
-        catch(std::exception &e){}
-
-        try{
-           g->addMemento(*this);
-           type * res;
-           type *op = pop();
-           reel &tmp=dynamic_cast<reel&>(*op);
-           res=new reel(sin(tmp.getData()*PI/180));
-           delete op;
-           push(res);
-           g->addMemento(*this);
-           return;
-        }
-        catch(std::exception &e){}
-        }
+       g->addMemento(*this);
+       type *op = pop();
+       op=op->sinus();
+       push(op);
+       g->addMemento(*this);
+       return;
+     }
 }
 
 
-/*
-void Pile::cos(){
+
+void Pile::cosinus(){
     if(this->size() > 0){
-        g->addMemento(*this);
-        type * res;
-        type *op = pop();
-        res=cos(*op);
-        delete op;
-        push(res);
-        g->addMemento(*this);
-        }
+
+       g->addMemento(*this);
+       type *op = pop();
+       op=op->cosinus();
+       push(op);
+       g->addMemento(*this);
+       return;
+     }
 }
 
-void Pile::tan(){
+void Pile::tangente(){
     if(this->size() > 0){
-        g->addMemento(*this);
-        type * res;
-        type *op = pop();
-        res=tan(*op);
-        delete op;
-        push(res);
-        g->addMemento(*this);
-        }
+
+       g->addMemento(*this);
+       type *op = pop();
+       op=op->tangente();
+       push(op);
+       g->addMemento(*this);
+       return;
+     }
 }
 
-void Pile::sinh(){
+void Pile::sinush(){
     if(this->size() > 0){
-        g->addMemento(*this);
-        type * res;
-        type *op = pop();
-        res=sinh(*op);
-        delete op;
-        push(res);
-        g->addMemento(*this);
-        }
+
+       g->addMemento(*this);
+       type *op = pop();
+       op=op->sinush();
+       push(op);
+       g->addMemento(*this);
+       return;
+     }
 }
 
-void Pile::cosh(){
+void Pile::cosinush(){
     if(this->size() > 0){
-        g->addMemento(*this);
-        type * res;
-        type *op = pop();
-        res=cosh(*op);
-        delete op;
-        push(res);
-        g->addMemento(*this);
-        }
+
+       g->addMemento(*this);
+       type *op = pop();
+       op=op->cosinush();
+       push(op);
+       g->addMemento(*this);
+       return;
+     }
 }
 
-void Pile::tanh(){
+void Pile::tangenteh(){
     if(this->size() > 0){
-        g->addMemento(*this);
-        type * res;
-        type *op = pop();
-        res=tanh(*op);
-        delete op;
-        push(res);
-        g->addMemento(*this);
-        }
+
+       g->addMemento(*this);
+       type *op = pop();
+       op=op->tangenteh();
+       push(op);
+       g->addMemento(*this);
+       return;
+     }
 }
-*/
+

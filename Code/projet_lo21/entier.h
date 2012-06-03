@@ -30,6 +30,13 @@ public:
     //type& operator/(double & i);
     QString toQString();
 
+    type* sinus();
+    type* cosinus();
+    type* tangente();
+    type* sinush();
+    type* cosinush();
+    type* tangenteh();
+
     static bool isEntier(const QString& s){return !(s.contains (",") || s.contains ("/") || s.contains ("$"));}
 };
 

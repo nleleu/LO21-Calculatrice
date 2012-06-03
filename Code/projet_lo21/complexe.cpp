@@ -1,8 +1,6 @@
 #include "complexe.h"
 
 
-
-
 type* complexe::operator +(type & t){
     try{
        complexe &tmp=dynamic_cast<complexe&>(t);

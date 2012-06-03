@@ -16,17 +16,18 @@ public:
     virtual type* operator/(type & t)=0;
     virtual type* operator*(type & t)=0;
     virtual type* operator-(type & t)=0;
+
+    virtual type* sinus()=0;
+    virtual type* cosinus()=0;
+    virtual type* tangente()=0;
+    virtual type* sinush()=0;
+    virtual type* cosinush()=0;
+    virtual type* tangenteh()=0;
+
     //virtual type& operator/(int & i)=0;
     //virtual type& operator/(double & i)=0;
 
 
-    //virtual type* sin(type & t)=0;
-
-    /*virtual type* cos(type & t)=0;
-    virtual type* tan(type & t)=0;
-    virtual type* sinh(type & t)=0;
-    virtual type* cosh(type & t)=0;
-    virtual type* tanh(type & t)=0;*/
 
 
     virtual QString toQString()=0;

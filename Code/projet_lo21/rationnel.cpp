@@ -1,7 +1,10 @@
 #include "rationnel.h"
 #include <QDataStream>
-
+#include <math.h>
 #include <qDebug>
+#include "reel.h"
+
+#define PI 3.14159265
 
 /*type* rationnel::operator =(type & t){
     try{
@@ -83,3 +86,46 @@ QString rationnel::toQString(){
     return res;
 }
 
+
+type* rationnel::sinus(){
+    double tmp(num/denum);
+    tmp=sin(tmp*PI/180);
+
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* rationnel::cosinus(){
+    double tmp(num/denum);
+    tmp=cos(tmp*PI/180);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* rationnel::tangente(){
+    double tmp(num/denum);
+    tmp=tan(tmp*PI/180);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* rationnel::sinush(){
+    double tmp(num/denum);
+    tmp=sinh(tmp*PI/180);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* rationnel::cosinush(){
+    double tmp(num/denum);
+    tmp=cosh(tmp*PI/180);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* rationnel::tangenteh(){
+    double tmp(num/denum);
+    tmp=tanh(tmp*PI/180);
+    type* t= new reel(tmp);
+    return t;
+}

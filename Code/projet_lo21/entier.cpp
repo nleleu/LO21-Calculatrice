@@ -6,6 +6,8 @@
 #include <QDebug>
 #include <math.h>
 
+#define PI 3.14159265
+
 /*type& entier::operator =(type &t){
     try{
        entier &tmp=dynamic_cast<entier&>(t);
@@ -126,3 +128,44 @@ QString entier::toQString(){
     return res;
 }
 
+type* entier::sinus(){
+    double tmp(data);
+    tmp=sin(tmp*PI/180);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* entier::cosinus(){
+    double tmp(data);
+    tmp=cos(tmp*PI/180);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* entier::tangente(){
+    double tmp(data);
+    tmp=tan(tmp*PI/180);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* entier::sinush(){
+    double tmp(data);
+    tmp=sinh(tmp*PI/180);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* entier::cosinush(){
+    double tmp(data);
+    tmp=cosh(tmp*PI/180);
+    type* t= new reel(tmp);
+    return t;
+}
+
+type* entier::tangenteh(){
+    double tmp(data);
+    tmp=tanh(tmp*PI/180);
+    type* t= new reel(tmp);
+    return t;
+}

@@ -30,6 +30,13 @@ public:
     type* operator*(type& t);
     type* operator-(type& t);
 
+    type* sinus();
+    type* cosinus();
+    type* tangente();
+    type* sinush();
+    type* cosinush();
+    type* tangenteh();
+
     double getData(){return data;}
     QString toQString();
 

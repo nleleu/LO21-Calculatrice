@@ -35,9 +35,9 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>570</x>
-      <y>30</y>
-      <width>191</width>
+      <x>350</x>
+      <y>330</y>
+      <width>261</width>
       <height>111</height>
      </rect>
     </property>
@@ -49,7 +49,7 @@
       <rect>
        <x>9</x>
        <y>19</y>
-       <width>171</width>
+       <width>239</width>
        <height>81</height>
       </rect>
      </property>
@@ -247,6 +247,9 @@
        <property name="text">
         <string>,</string>
        </property>
+       <property name="shortcut">
+        <string>,</string>
+       </property>
       </widget>
      </item>
      <item row="4" column="2">
@@ -304,8 +307,8 @@
    <widget class="QPushButton" name="affichePile">
     <property name="geometry">
      <rect>
-      <x>700</x>
-      <y>480</y>
+      <x>600</x>
+      <y>460</y>
       <width>75</width>
       <height>61</height>
      </rect>
@@ -320,8 +323,8 @@
    <widget class="QGroupBox" name="degUnitBox">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>160</y>
+      <x>540</x>
+      <y>170</y>
       <width>141</width>
       <height>80</height>
      </rect>

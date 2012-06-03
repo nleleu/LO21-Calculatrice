@@ -37,11 +37,11 @@ public:
     void redo(){Pile *tmp=g->redo();if(tmp!=0)*this=*tmp;}
 
     void sinus();
-    /*void cos();
-    void tan();
-    void sinh();
-    void cosh();
-    void tanh();*/
+    void cosinus();
+    void tangente();
+    void sinush();
+    void cosinush();
+    void tangenteh();
 
 };
 

@@ -218,6 +218,26 @@ void MainWindow::on_sin_clicked(){
     emit refresh_signal();
 }
 
+void MainWindow::on_cos_clicked(){
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->cosinus();
+    emit refresh_signal();
+}
+void MainWindow::on_tan_clicked(){
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->tangente();
+    emit refresh_signal();
+}
+void MainWindow::on_sinh_clicked(){
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->sinush();
+    emit refresh_signal();
+}
+void MainWindow::on_cosh_clicked(){
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->cosinush();
+    emit refresh_signal();
+}
+void MainWindow::on_tanh_clicked(){
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->tangenteh();
+    emit refresh_signal();
+}
 
 
 void MainWindow::on_actionParametre_triggered()

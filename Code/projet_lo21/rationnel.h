@@ -45,6 +45,15 @@ public:
     type* operator /(type & t);
     type* operator*(type& t);
     type* operator-(type& t);
+
+    type* sinus();
+    type* cosinus();
+    type* tangente();
+    type* sinush();
+    type* cosinush();
+    type* tangenteh();
+
+
     void simplifie();
     int pgcd(int, int ) const;
     QString toQString();

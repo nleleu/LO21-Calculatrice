@@ -32,12 +32,20 @@ public:
     type* operator*(type& t);
     type* operator-(type& t);
 
+    type* sinus(){}
+    type* cosinus(){}
+    type* tangente(){}
+    type* sinush(){}
+    type* cosinush(){}
+    type* tangenteh(){}
+
 
     nocomplex* getRe(){return re;}
     nocomplex* getIm(){return im;}
     //type& operator/(int & i){}
     //type& operator/(double & i){}
     QString toQString();
+
 
     static bool isComplexe(const QString& s){return s.contains ("$");}
 };

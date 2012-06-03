@@ -94,12 +94,12 @@ private slots:
     void on_tabWidget_destroyed();
     void on_tabWidget_tabCloseRequested(int index);
 
-    void on_sin_clicked();/*
+    void on_sin_clicked();
     void on_cos_clicked();
     void on_tan_clicked();
     void on_sinh_clicked();
     void on_cosh_clicked();
-    void on_tanh_clicked();*/
+    void on_tanh_clicked();
 
 private:
     Ui::MainWindow *ui;
