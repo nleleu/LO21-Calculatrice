@@ -10,7 +10,7 @@
 #include <QDebug>
 #include "gardien.h"
 
-<<<<<<< HEAD
+
 
 /*!
  * \file pile.h
@@ -24,21 +24,18 @@
    *
    *
  */
-=======
+
 enum degUnit{DEGRE, RADIANT};
->>>>>>> d96136695f89b27500092935a79da598e51d34db
+
 
 class Dom;
 class Pile : public QStack <type *>
 {
-<<<<<<< HEAD
+
     int  nbElt;/*!< Nombre d'elements a afficher*/
     gardien* g;/*!< Gardien de la pile*/
-=======
-    int  nbElt;
     QString fileName;
-    gardien* g;
->>>>>>> d96136695f89b27500092935a79da598e51d34db
+
 public:
     /*!
     *  \brief Destructeur
@@ -55,7 +52,6 @@ public:
     *
     */
     Pile();
-<<<<<<< HEAD
 
     /*!
     *  \brief Clone
@@ -65,12 +61,11 @@ public:
     *  Pour dupliquer une pile en conservant son gardien, voir duplique().
     *   \return Nouvelle pile
     */
-=======
     void setFileName(QString name){fileName = name;}
     static degUnit selectedDegUnit;
     void sauvegarde();
     void charger();
->>>>>>> d96136695f89b27500092935a79da598e51d34db
+
     Pile& clone() const;
 
     /*!
@@ -112,21 +107,21 @@ public:
     */
     gardien* getGardien()const{return g;}
 
-<<<<<<< HEAD
+
     /*!
     *  \brief swap
     *  Permet d'echanger la position des elements en x et y
     *  \param x: entier,y:entier
     *
     */
-=======
+
 
     //selection de l'unite des degres
     void on_degUnit_clicked();
     void on_radUnit_clicked();
 
 
->>>>>>> d96136695f89b27500092935a79da598e51d34db
+
     void swap(const unsigned int x, const unsigned int y);
 
     /*!
