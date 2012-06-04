@@ -363,3 +363,8 @@ void MainWindow::on_tabWidget_tabCloseRequested(int index)
 
     }
 }
+
+void MainWindow::on_actionR_glage_triggered()
+{
+    r->exec();
+}

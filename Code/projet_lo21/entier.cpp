@@ -4,7 +4,7 @@
 #include "rationnel.h"
 #include "complexe.h"
 #include <QDebug>
-#include <math.h>
+#include <cmath>
 
 #define PI 3.14159265
 
@@ -174,7 +174,7 @@ type* entier::tangenteh(){
 
 type* entier::ln(){
     double tmp(data);
-    //tmp=log(tmp);
+    tmp=std::log(tmp);
     type* t= new reel(tmp);
     return t;
 }
@@ -195,7 +195,7 @@ type* entier::inv(){
 
 type* entier::sqrt(){
     double tmp(data);
-    //tmp=sqrt(tmp);
+    tmp=std::sqrt(tmp);
     type* t= new reel(tmp);
     return t;
 }

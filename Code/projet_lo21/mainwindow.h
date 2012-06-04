@@ -110,6 +110,8 @@ private slots:
     void on_fact_clicked();
     void on_eval_clicked();
 
+    void on_actionR_glage_triggered();
+
 private:
     Ui::MainWindow *ui;
     reglages * r;

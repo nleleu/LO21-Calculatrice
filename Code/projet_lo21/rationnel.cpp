@@ -1,6 +1,6 @@
 #include "rationnel.h"
 #include <QDataStream>
-#include <math.h>
+#include <cmath>
 #include <qDebug>
 #include "reel.h"
 
@@ -132,42 +132,42 @@ type* rationnel::tangenteh(){
 
 
 type* rationnel::ln(){
-    double tmp(data);
-    tmp=log(tmp);
+    double tmp(num/denum);
+    tmp=std::log(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
 type* rationnel::log(){
-    double tmp(data);
+    double tmp(num/denum);
     tmp=log10(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
 type* rationnel::inv(){
-    double tmp(data);
+    double tmp(num/denum);
     tmp=1/tmp;
     type* t= new reel(tmp);
     return t;
 }
 
 type* rationnel::sqrt(){
-    double tmp(data);
-    tmp=sqrt(tmp);
+    double tmp(num/denum);
+    tmp=std::sqrt(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
 type* rationnel::sqr(){
-    double tmp(data);
+    double tmp(num/denum);
     tmp=pow (tmp,2);
     type* t= new reel(tmp);
     return t;
 }
 
 type* rationnel::cube(){
-    double tmp(data);
+    double tmp(num/denum);
     tmp=pow (tmp,3);
     type* t= new reel(tmp);
     return t;

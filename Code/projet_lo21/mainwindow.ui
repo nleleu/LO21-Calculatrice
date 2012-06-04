@@ -609,6 +609,7 @@
     </property>
     <addaction name="actionAnnuler"/>
     <addaction name="actionR_tablir"/>
+    <addaction name="actionR_glage"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdition"/>
@@ -665,6 +666,11 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionR_glage">
+   <property name="text">
+    <string>Réglages</string>
    </property>
   </action>
  </widget>

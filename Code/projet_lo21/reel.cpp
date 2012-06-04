@@ -1,7 +1,7 @@
 #include "reel.h"
 #include "entier.h"
 #include <QDebug>
-#include <math.h>
+#include <cmath>
 
 #define PI 3.14159265
 
@@ -139,7 +139,7 @@ type* reel::tangenteh(){
 
 type* reel::ln(){
     double tmp(data);
-    tmp=log(tmp);
+    tmp=std::log(tmp);
     type* t= new reel(tmp);
     return t;
 }
@@ -160,7 +160,7 @@ type* reel::inv(){
 
 type* reel::sqrt(){
     double tmp(data);
-    tmp=sqrt(tmp);
+    tmp=std::sqrt(tmp);
     type* t= new reel(tmp);
     return t;
 }

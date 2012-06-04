@@ -59,8 +59,8 @@ public:
     type* sqrt();
     type* sqr();
     type* cube();
-    type* fact();
-    type* eval();
+    type* fact(){}
+    type* eval(){}
 
 
     void simplifie();

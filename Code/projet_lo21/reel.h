@@ -43,7 +43,7 @@ public:
     type* sqrt();
     type* sqr();
     type* cube();
-    type* fact();
+    type* fact(){}
     type* eval(){}
 
     double getData(){return data;}
