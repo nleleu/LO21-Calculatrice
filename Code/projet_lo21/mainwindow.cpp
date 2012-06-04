@@ -9,7 +9,6 @@
 #include <QListWidget>
 #include <QListWidgetItem>
 #include <QString>
-#include "pileaddition.h"
 #include <QTextStream>
 
 
@@ -21,7 +20,6 @@ MainWindow::MainWindow(Pile &pile, QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    r=new reglages(this);
     QObject::connect(this, SIGNAL(keyPress(QKeyEvent*)), this, SLOT(keyPressEvent(QKeyEvent*)));
     QObject::connect(this, SIGNAL(pushStack_signal(const QString&)), this, SLOT(pushStack_slot(const QString&)));
     QObject::connect(this, SIGNAL(cleanList_signal()), this, SLOT(cleanList_slot()));
@@ -151,9 +149,9 @@ void MainWindow::cleanList_slot(){
 void MainWindow::refresh_slot(){
     ui->list->clear();
     ui->nbelt->clear();
+    qDebug() << Collection_pile::getInstance().getActif();
     int n=Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->getNb();
     QString s = QString::number(n);
-    qDebug() << s;
     ui->nbelt->setText(s);
     for(int i=Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->size()-1; i>=0 && n>0; i--){
         ui->list->addItem((Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->at(i))->toQString());
@@ -308,7 +306,6 @@ void MainWindow::on_eval_clicked(){
 
 void MainWindow::on_actionParametre_triggered()
 {
-    r->exec();
 }
 
 void MainWindow::on_quote_clicked()
@@ -389,7 +386,6 @@ void MainWindow::on_tabWidget_tabCloseRequested(int index)
 
 void MainWindow::on_actionR_glage_triggered()
 {
-    r->exec();
 }
 
 

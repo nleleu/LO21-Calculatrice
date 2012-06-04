@@ -49,7 +49,7 @@ class Collection_pile :public std::vector<Pile *>
         *  Constructeur (prive) de la classe Collection_pile
         *
         */
-    Collection_pile(){}
+    Collection_pile():actif(0){}
 
 
     /*!
@@ -79,7 +79,7 @@ public:
     /*!
     *  \brief addPile
     *   Methode permettant l'ajout d'une pile dans la collection
-    *  \param _pile : pile à ajouter
+    *  \param _pile : pile a ajouter
     *
     */
     void addPile (Pile * _pile);
@@ -87,7 +87,7 @@ public:
     /*!
     *  \brief setActif
     *   Methode permettant de modifier la donnee membre "actif"
-    *  \param a : entier representant la position de la pile à rendre active dans le vector
+    *  \param a : entier representant la position de la pile a rendre active dans le vector
     *
     */
     void setActif (int a){actif=a;}
@@ -95,7 +95,7 @@ public:
     /*!
     *  \brief getActif
     *   Methode permettant de recuperer la donnee membre "actif"
-    *  \return entier representant la position de la pile à rendre active dans le vector
+    *  \return entier representant la position de la pile a rendre active dans le vector
     *
     */
     int getActif (){return actif;}

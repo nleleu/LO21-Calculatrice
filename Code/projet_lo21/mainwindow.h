@@ -6,7 +6,6 @@
 #include "pile.h"
 #include "type.h"
 #include <QString>
-#include "reglages.h"
 #include "collection_pile.h"
 
 enum constType{ENTIER, REEL, RATIONNEL};
@@ -123,7 +122,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    reglages * r;
 };
 #endif // MAINWINDOW_H
 

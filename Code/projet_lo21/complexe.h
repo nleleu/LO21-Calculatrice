@@ -108,14 +108,13 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-
+    type* sinus(){}
     type* pow(type & t){}
     type* mod(type & t){}
     type* sign();
 
 
 
-    type* sinus(){}
 
     /*!
     *  \brief Cosinus

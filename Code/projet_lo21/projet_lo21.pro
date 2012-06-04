@@ -19,15 +19,11 @@ SOURCES += main.cpp\
     collection_pile.cpp \
     rationnel.cpp \
     complexe.cpp \
-    reglages.cpp \
     nocomplex.cpp \
     constante.cpp \
     expression.cpp \
     type_factory.cpp \
     dom.cpp \
-    invoker.cpp \
-    pileaddition.cpp \
-    operation.cpp \
     memento.cpp \
     gardien.cpp
 
@@ -39,19 +35,14 @@ HEADERS  += mainwindow.h \
     collection_pile.h \
     rationnel.h \
     complexe.h \
-    reglages.h \
     nocomplex.h \
     constante.h \
     expression.h \
     type_factory.h \
     dom.h \
-    invoker.h \
-    pileaddition.h \
-    operation.h \
     memento.h \
     gardien.h
 
-FORMS    += mainwindow.ui \
-    reglages.ui
+FORMS    += mainwindow.ui
 
 QT += xml

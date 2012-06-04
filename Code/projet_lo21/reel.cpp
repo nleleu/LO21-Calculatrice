@@ -4,7 +4,7 @@
 #include <cmath>
 
 #define PI 3.14159265
-
+/*
 type& reel::operator =(type & t){
     try{
        reel &tmp=dynamic_cast<reel&>(t);
@@ -12,7 +12,7 @@ type& reel::operator =(type & t){
        return *this;
     }
     catch(std::exception &e){}
-}
+}*/
 
 type* reel::operator +(type & t){
 

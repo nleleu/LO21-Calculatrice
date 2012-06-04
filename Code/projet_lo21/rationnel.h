@@ -13,8 +13,8 @@ int pgcd(int a, int b);
 
 class rationnel:public nocomplex
 {
-    int num;
-    int denum;
+    int num;/*!<  Numerateur*/
+    int denum;/*!< Denominateur*/
 public:
     rationnel(int _num=0,int _denum=1):num(_num),denum(_denum){simplifie();}
     rationnel(const std::string &s){
