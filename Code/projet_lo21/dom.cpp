@@ -9,11 +9,11 @@
 Dom::Dom(Pile & pile): _pile(pile){}
 
 
-void Dom::demande_ajout(QString n,QString t)
+void Dom::demande_ajout(QString n, QString t, QString fileName)
 {
      // création de la balise "sauvegarde"
    // doc.appendChild(sauvegardes); // filiation de la balise "sauvegarde"
-    file.setFileName("sauvegarde_contexte.xml");
+    file.setFileName(fileName);
     if (!file.open(QIODevice::WriteOnly)) // ouverture du fichier de sauvegarde
         return; // en écriture
     out.setDevice(&file); // association du flux au fichier
@@ -50,9 +50,9 @@ Dom::~Dom()
 }
 
 
-void Dom::lire()
+void Dom::lire(QString fileName)
 {
-    QFile file("sauvegarde_contexte.xml");
+    QFile file(fileName);
     if (!file.open(QIODevice::ReadOnly)){return;}
     if (!doc.setContent(&file))
     {

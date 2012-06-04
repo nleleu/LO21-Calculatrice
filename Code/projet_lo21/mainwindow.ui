@@ -623,7 +623,8 @@
     <property name="title">
      <string>File</string>
     </property>
-    <addaction name="actionNouvel_onglet_2"/>
+    <addaction name="charger"/>
+    <addaction name="sauvegarder"/>
     <addaction name="actionQuit"/>
    </widget>
    <widget class="QMenu" name="menuEdition">
@@ -666,12 +667,12 @@
     <string>Ctrl+N</string>
    </property>
   </action>
-  <action name="actionNouvel_onglet_2">
+  <action name="charger">
    <property name="text">
-    <string>Nouvel onglet</string>
+    <string>Charger une nouvelle pile</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+N</string>
+    <string>Ctrl+O</string>
    </property>
   </action>
   <action name="actionAnnuler">
@@ -693,6 +694,22 @@
   <action name="actionR_glage">
    <property name="text">
     <string>Réglages</string>
+   </property>
+  </action>
+  <action name="sauvegarder">
+   <property name="text">
+    <string>Enregistrer la pile sous</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="sauvegarder_all">
+   <property name="text">
+    <string>Sauvegarder toutes les piles</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
    </property>
   </action>
  </widget>

@@ -38,6 +38,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
 //Connexion des pushButton 0 à 9
 void MainWindow::on_pushButton0_clicked(){
     ui->lineEdit->setText(ui->lineEdit->text()+ui->pushButton0->text());
@@ -133,17 +134,6 @@ void MainWindow::on_backspace_clicked(){
     ui->lineEdit->backspace();
 }
 
-
-//Selection de l'unite des degres
-void MainWindow::on_degUnit_clicked(){
-    MainWindow::selectedDegUnit=DEGRE;
-}
-void MainWindow::on_radUnit_clicked(){
-    MainWindow::selectedDegUnit=RADIANT;
-}
-
-
-
 void MainWindow::cleanList_slot(){
     ui->list->clear();
 }
@@ -162,37 +152,15 @@ void MainWindow::refresh_slot(){
 }
 
 void MainWindow::on_complexeButton_clicked(){
-
-    if(!ui->lineEdit->text().contains('$'))
         ui->lineEdit->setText(ui->lineEdit->text()+'$');
 }
 
 void MainWindow::on_reelButton_clicked(){
-    if(!ui->lineEdit->text().contains('$')){
-        if(!ui->lineEdit->text().section('$', 0).contains(',')){
             ui->lineEdit->setText(ui->lineEdit->text()+',');
-        }
-    }
-
-    else{
-        if(!ui->lineEdit->text().section('$', 1).contains(',')){
-            ui->lineEdit->setText(ui->lineEdit->text()+',');
-        }
-    }
 }
 
 void MainWindow::on_rationnelButton_clicked(){
-    if(!ui->lineEdit->text().contains('$')){
-        if(!ui->lineEdit->text().section('$', 0).contains('/')){
              ui->lineEdit->setText(ui->lineEdit->text()+'/');
-          }
-     }
-
-     else{
-          if(!ui->lineEdit->text().section('$', 1).contains("/")){
-              ui->lineEdit->setText(ui->lineEdit->text()+'/');
-           }
-     }
 }
 
 
@@ -394,15 +362,24 @@ void MainWindow::on_actionR_glage_triggered()
 
 
 
-void MainWindow::on_nbelt_textChanged(const QString &arg1)
-{
+void MainWindow::on_nbelt_textChanged(const QString &arg1){}
 
-}
 
 void MainWindow::on_nbelt_textEdited(const QString &arg1)
 {
     int n=arg1.toInt();
     Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->setNbElt(n);
     emit refresh_signal();
+}
 
+void MainWindow::on_charger_triggered(){
+    QString fichier = QFileDialog::getOpenFileName(this, "Ouvrir un fichier", QString(), "XML files (*.xml)");
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->setFileName(fichier);
+    emit refresh_signal();
+}
+
+void MainWindow::on_sauvegarder_triggered(){
+    QString fichier = QFileDialog::getSaveFileName(this, "Enregistrer un fichier", QString(), "Images (*.png *.gif *.jpg *.jpeg)");
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->setFileName(fichier);
+    emit refresh_signal();
 }

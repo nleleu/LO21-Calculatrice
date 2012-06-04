@@ -10,19 +10,33 @@
 #include <QDebug>
 #include "gardien.h"
 
+enum degUnit{DEGRE, RADIANT};
+
 class Dom;
 class Pile : public QStack <type *>
 {
     int  nbElt;
+    QString fileName;
     gardien* g;
 public:
     ~Pile();
     Pile();
+    void setFileName(QString name){fileName = name;}
+    static degUnit selectedDegUnit;
+    void sauvegarde();
+    void charger();
     Pile& clone() const;
     Pile& duplique()const;
     void setGardien(gardien* _g){g=_g;}
     void setNbElt(int nb){nbElt=nb;}
     gardien* getGardien()const{return g;}
+
+
+    //selection de l'unite des degres
+    void on_degUnit_clicked();
+    void on_radUnit_clicked();
+
+
     void swap(const unsigned int x, const unsigned int y);
     void sum(const unsigned int x);
     void mean(const unsigned int x);
