@@ -213,6 +213,21 @@ void MainWindow::on_division_clicked()
     emit refresh_signal();
 }
 
+void MainWindow::on_pow_clicked(){
+    ui->lineEdit->setText(ui->lineEdit->text()+"pow");
+    emit refresh_signal();
+}
+
+void MainWindow::on_mod_clicked(){
+    ui->lineEdit->setText(ui->lineEdit->text()+"mod");
+    emit refresh_signal();
+}
+
+void MainWindow::on_sign_clicked(){
+    ui->lineEdit->setText(ui->lineEdit->text()+"sign");
+    emit refresh_signal();
+}
+
 
 void MainWindow::on_sin_clicked(){
     ui->lineEdit->setText(ui->lineEdit->text()+"sin");

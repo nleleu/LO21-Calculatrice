@@ -25,6 +25,10 @@ public:
     type* operator*(type& t);
     type* operator-(type& t);
 
+    type* pow(type & t);
+    type* mod(type & t);
+    type* sign();
+
     int getData(){return data;}
     //type& operator/(int & i);
     //type& operator/(double & i);

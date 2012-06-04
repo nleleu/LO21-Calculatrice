@@ -3,6 +3,7 @@
 #include <cmath>
 #include <qDebug>
 #include "reel.h"
+#include "entier.h"
 
 #define PI 3.14159265
 
@@ -56,6 +57,24 @@ type* rationnel::operator*(type& t)
     catch(std::exception &e){}
 }
 
+type* rationnel::pow(type & t){
+    try{
+
+       entier &tmp=dynamic_cast<entier&>(t);
+       rationnel *res=new rationnel(std::pow(num,tmp.getData()), std::pow(denum, tmp.getData()));
+       return res;
+    }
+    catch(std::exception &e){}
+
+    try{
+
+       reel &tmp=dynamic_cast<reel&>(t);
+       rationnel *res=new rationnel(std::pow(num,tmp.getData()), std::pow(denum, tmp.getData()));
+       return res;
+    }
+    catch(std::exception &e){}
+}
+
 int rationnel::pgcd(int a, int b) const {
     if (a==0||b==0) return 0;
     if (a<0) a=-a;
@@ -84,6 +103,12 @@ QString rationnel::toQString(){
     QTextStream ss(&res);
     ss << num <<'/'<< denum;
     return res;
+}
+
+type* rationnel::sign(){
+    double tmp(-num/denum);
+    type* t= new rationnel(tmp);
+    return t;
 }
 
 
@@ -161,14 +186,14 @@ type* rationnel::sqrt(){
 
 type* rationnel::sqr(){
     double tmp(num/denum);
-    tmp=pow (tmp,2);
+    tmp=std::pow (tmp,2);
     type* t= new reel(tmp);
     return t;
 }
 
 type* rationnel::cube(){
     double tmp(num/denum);
-    tmp=pow (tmp,3);
+    tmp=std::pow (tmp,3);
     type* t= new reel(tmp);
     return t;
 }

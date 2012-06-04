@@ -120,12 +120,47 @@ type* entier::operator-(type& t){
 }
 
 
+type* entier::pow(type & t){
+    try{
+
+       entier &tmp=dynamic_cast<entier&>(t);
+       entier *res=new entier(std::pow(data,tmp.getData()));
+       return res;
+    }
+    catch(std::exception &e){}
+
+    try{
+
+       reel &tmp=dynamic_cast<reel&>(t);
+       entier *res=new entier(std::pow(data,tmp.getData()));
+       return res;
+    }
+    catch(std::exception &e){}
+}
+
+type* entier::mod(type & t){
+    try{
+
+       entier &tmp=dynamic_cast<entier&>(t);
+       entier *res=new entier(data % tmp.getData());
+       return res;
+    }
+    catch(std::exception &e){}
+}
+
+
 
 QString entier::toQString(){
     QString res;
     QTextStream ss(&res);
     ss << data;
     return res;
+}
+
+type* entier::sign(){
+    double tmp(-data);
+    type* t= new entier(tmp);
+    return t;
 }
 
 type* entier::sinus(){
@@ -202,14 +237,14 @@ type* entier::sqrt(){
 
 type* entier::sqr(){
     double tmp(data);
-    tmp=pow (tmp,2);
+    tmp=std::pow(tmp,2);
     type* t= new reel(tmp);
     return t;
 }
 
 type* entier::cube(){
     double tmp(data);
-    tmp=pow (tmp,3);
+    tmp=std::pow(tmp,3);
     type* t= new reel(tmp);
     return t;
 }

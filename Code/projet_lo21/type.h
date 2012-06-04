@@ -17,6 +17,10 @@ public:
     virtual type* operator*(type & t)=0;
     virtual type* operator-(type & t)=0;
 
+    virtual type* pow(type & t)=0;
+    virtual type* mod(type & t)=0;
+    virtual type* sign()=0;
+
     virtual type* sinus()=0;
     virtual type* cosinus()=0;
     virtual type* tangente()=0;

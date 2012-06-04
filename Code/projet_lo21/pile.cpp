@@ -103,7 +103,7 @@ void Pile::addition()
         push(res);
         g->addMemento(*this);
         }
-    }
+}
 
 void Pile::soustraction()
 {
@@ -154,6 +154,36 @@ void Pile::division()
     }
 }
 
+void Pile::pow()
+{
+    if(this->size() > 1){
+        g->addMemento(*this);
+        type * res;
+        type *op1 = pop();
+        type *op2 = pop();
+        res=op2->pow(*op1);
+        delete op1;
+        delete op2;
+        push(res);
+        g->addMemento(*this);
+        }
+}
+
+void Pile::mod()
+{
+    if(this->size() > 1){
+        g->addMemento(*this);
+        type * res;
+        type *op1 = pop();
+        type *op2 = pop();
+        res=op2->mod(*op1);
+        delete op1;
+        delete op2;
+        push(res);
+        g->addMemento(*this);
+        }
+}
+
 void Pile::parser(QString s)
 {
     if(!Expression::isExpression(s)){
@@ -169,6 +199,12 @@ void Pile::parser(QString s)
                     division();
             else if (t[i]=="*")
                     multiplication();
+            else if (t[i]=="pow")
+                    pow();
+            else if (t[i]=="mod")
+                    mod();
+            else if (t[i]=="sign")
+                    sign();
             else if (t[i]=="sin")
                     sinus();
             else if (t[i]=="cos")
@@ -207,6 +243,19 @@ void Pile::parser(QString s)
         push(new Expression(s));
 
 
+}
+
+void Pile::sign(){
+
+    if(this->size() > 0){
+
+       g->addMemento(*this);
+       type *op = pop();
+       op=op->sign();
+       push(op);
+       g->addMemento(*this);
+       return;
+     }
 }
 
 

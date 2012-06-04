@@ -36,6 +36,11 @@ public:
     void undo(){Pile *tmp=g->undo();if(tmp!=0)*this=*tmp;}
     void redo(){Pile *tmp=g->redo();if(tmp!=0)*this=*tmp;}
 
+    void pow();
+    void mod();
+
+    void sign();
+
     void sinus();
     void cosinus();
     void tangente();

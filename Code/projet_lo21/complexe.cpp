@@ -54,3 +54,10 @@ QString complexe::toQString(){
     ss << re->toQString() <<'$'<< im->toQString();
     return res;
 }
+
+type* complexe::sign(){
+    re->sign();
+    im->sign();
+    type* t= new complexe(*this);
+    return t;
+}
