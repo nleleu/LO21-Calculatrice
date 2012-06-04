@@ -1,0 +1,389 @@
+\hypertarget{classrationnel}{\section{rationnel Class Reference}
+\label{classrationnel}\index{rationnel@{rationnel}}
+}
+
+
+{\ttfamily \#include $<$rationnel.\-h$>$}
+
+
+
+Inherits \hyperlink{classnocomplex}{nocomplex}.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrationnel_a92b822d1a85e77456f9db2d0c691d74e}{rationnel} (int \-\_\-num=0, int \-\_\-denum=1)
+\item 
+\hyperlink{classrationnel_a5dd117aa62b25bc976f753251170128b}{rationnel} (const std\-::string \&s)
+\item 
+\hyperlink{classrationnel_a7411453ee0e517a0008e563938033750}{rationnel} (const Q\-String \&s)
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a14d9d411058e146e075ccf16997e525e}{operator+} (\hyperlink{classtype}{type} \&t)
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_ae36b04407cc70d425ed0292975b0d1e9}{operator/} (\hyperlink{classtype}{type} \&t)
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a49250cb9001aad230e5193515ee74efa}{operator$\ast$} (\hyperlink{classtype}{type} \&t)
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a3bdf6de1a2526ddafbf1831a9af11dc9}{operator-\/} (\hyperlink{classtype}{type} \&t)
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_afd9fd9a30f034952ce889d46a07de617}{pow} (\hyperlink{classtype}{type} \&t)
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a546c22eedcb7ce551bb04be7dc527573}{mod} (\hyperlink{classtype}{type} \&t)
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_aa73709167be428fafc4d95a31f4c3cc0}{sign} ()
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_ac6ad55bfba79a0169d8cf1fb82354b89}{sinus} ()
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_ac89f01b8f5927ba88ecd60a2f6996d2d}{cosinus} ()
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a0f189c649bad58fb78894a19ec7b21f4}{tangente} ()
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_afbf300cd97ee35b0302f7365ed84fb95}{sinush} ()
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_aef9f5ccfdc0a0344e64e5f1f77adab0d}{cosinush} ()
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a45d63050134594c5a60c7a594021d7e5}{tangenteh} ()
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a59b1b593905de8676db02d5d2a5554c3}{ln} ()
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a6bed14bda0b8546528454e7b2030645d}{log} ()
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a75336cd670c61195c833f8459c02c3b5}{inv} ()
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_ad37ab4380b5ff66104748ecc0bf5babe}{sqrt} ()
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_ab9f341fd09499253dd1f9b6f15795576}{sqr} ()
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a9bca6086c4a5083765d87324418a86ab}{cube} ()
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a51333d6a00b4307407f1ea324902eeb8}{fact} ()
+\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_aa66761d9af57e34a2ca44d5858dedf00}{eval} ()
+\item 
+void \hyperlink{classrationnel_a236e82f84556d0fcd978164529f9bf67}{simplifie} ()
+\item 
+int \hyperlink{classrationnel_a7e10c925a450321f53a50636177561e5}{pgcd} (int, int) const 
+\item 
+Q\-String \hyperlink{classrationnel_a6c905c688ae54647074a5ddf3ef648bd}{to\-Q\-String} ()
+\item 
+int \hyperlink{classrationnel_a9c4167d0aafd3bf9460ae58a81a0d29f}{get\-Num} ()
+\item 
+int \hyperlink{classrationnel_abb14c1aafb5b4e8f28d5c770e2e1523e}{get\-Denum} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classrationnel_aae8578654aadab4a36ef934e61e474fc}{is\-Rationnel} (const Q\-String \&s)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classrationnel_a92b822d1a85e77456f9db2d0c691d74e}{\index{rationnel@{rationnel}!rationnel@{rationnel}}
+\index{rationnel@{rationnel}!rationnel@{rationnel}}
+\subsubsection[{rationnel}]{\setlength{\rightskip}{0pt plus 5cm}rationnel\-::rationnel (
+\begin{DoxyParamCaption}
+\item[{int}]{\-\_\-num = {\ttfamily 0}, }
+\item[{int}]{\-\_\-denum = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classrationnel_a92b822d1a85e77456f9db2d0c691d74e}
+\hypertarget{classrationnel_a5dd117aa62b25bc976f753251170128b}{\index{rationnel@{rationnel}!rationnel@{rationnel}}
+\index{rationnel@{rationnel}!rationnel@{rationnel}}
+\subsubsection[{rationnel}]{\setlength{\rightskip}{0pt plus 5cm}rationnel\-::rationnel (
+\begin{DoxyParamCaption}
+\item[{const std\-::string \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classrationnel_a5dd117aa62b25bc976f753251170128b}
+\hypertarget{classrationnel_a7411453ee0e517a0008e563938033750}{\index{rationnel@{rationnel}!rationnel@{rationnel}}
+\index{rationnel@{rationnel}!rationnel@{rationnel}}
+\subsubsection[{rationnel}]{\setlength{\rightskip}{0pt plus 5cm}rationnel\-::rationnel (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classrationnel_a7411453ee0e517a0008e563938033750}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classrationnel_ac89f01b8f5927ba88ecd60a2f6996d2d}{\index{rationnel@{rationnel}!cosinus@{cosinus}}
+\index{cosinus@{cosinus}!rationnel@{rationnel}}
+\subsubsection[{cosinus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::cosinus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_ac89f01b8f5927ba88ecd60a2f6996d2d}
+
+
+Implements \hyperlink{classtype_ac459ee75f7ab8d345c01a1f9a13f0728}{type}.
+
+\hypertarget{classrationnel_aef9f5ccfdc0a0344e64e5f1f77adab0d}{\index{rationnel@{rationnel}!cosinush@{cosinush}}
+\index{cosinush@{cosinush}!rationnel@{rationnel}}
+\subsubsection[{cosinush}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::cosinush (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_aef9f5ccfdc0a0344e64e5f1f77adab0d}
+
+
+Implements \hyperlink{classtype_acd7a105cccf58a42d6c09b40c91f75f0}{type}.
+
+\hypertarget{classrationnel_a9bca6086c4a5083765d87324418a86ab}{\index{rationnel@{rationnel}!cube@{cube}}
+\index{cube@{cube}!rationnel@{rationnel}}
+\subsubsection[{cube}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::cube (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a9bca6086c4a5083765d87324418a86ab}
+
+
+Implements \hyperlink{classtype_ae9ff7857936535092924b83aec1412c6}{type}.
+
+\hypertarget{classrationnel_aa66761d9af57e34a2ca44d5858dedf00}{\index{rationnel@{rationnel}!eval@{eval}}
+\index{eval@{eval}!rationnel@{rationnel}}
+\subsubsection[{eval}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ rationnel\-::eval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classrationnel_aa66761d9af57e34a2ca44d5858dedf00}
+
+
+Implements \hyperlink{classtype_a20555e9f6c76f728d94049bd72f65fc6}{type}.
+
+\hypertarget{classrationnel_a51333d6a00b4307407f1ea324902eeb8}{\index{rationnel@{rationnel}!fact@{fact}}
+\index{fact@{fact}!rationnel@{rationnel}}
+\subsubsection[{fact}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ rationnel\-::fact (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classrationnel_a51333d6a00b4307407f1ea324902eeb8}
+
+
+Implements \hyperlink{classtype_aa5503ee1cdc7c88b058f9216e1e780c3}{type}.
+
+\hypertarget{classrationnel_abb14c1aafb5b4e8f28d5c770e2e1523e}{\index{rationnel@{rationnel}!get\-Denum@{get\-Denum}}
+\index{get\-Denum@{get\-Denum}!rationnel@{rationnel}}
+\subsubsection[{get\-Denum}]{\setlength{\rightskip}{0pt plus 5cm}int rationnel\-::get\-Denum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classrationnel_abb14c1aafb5b4e8f28d5c770e2e1523e}
+\hypertarget{classrationnel_a9c4167d0aafd3bf9460ae58a81a0d29f}{\index{rationnel@{rationnel}!get\-Num@{get\-Num}}
+\index{get\-Num@{get\-Num}!rationnel@{rationnel}}
+\subsubsection[{get\-Num}]{\setlength{\rightskip}{0pt plus 5cm}int rationnel\-::get\-Num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classrationnel_a9c4167d0aafd3bf9460ae58a81a0d29f}
+\hypertarget{classrationnel_a75336cd670c61195c833f8459c02c3b5}{\index{rationnel@{rationnel}!inv@{inv}}
+\index{inv@{inv}!rationnel@{rationnel}}
+\subsubsection[{inv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::inv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a75336cd670c61195c833f8459c02c3b5}
+
+
+Implements \hyperlink{classtype_a5eeb7c768cc90a0e9abd91d585169264}{type}.
+
+\hypertarget{classrationnel_aae8578654aadab4a36ef934e61e474fc}{\index{rationnel@{rationnel}!is\-Rationnel@{is\-Rationnel}}
+\index{is\-Rationnel@{is\-Rationnel}!rationnel@{rationnel}}
+\subsubsection[{is\-Rationnel}]{\setlength{\rightskip}{0pt plus 5cm}static bool rationnel\-::is\-Rationnel (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classrationnel_aae8578654aadab4a36ef934e61e474fc}
+\hypertarget{classrationnel_a59b1b593905de8676db02d5d2a5554c3}{\index{rationnel@{rationnel}!ln@{ln}}
+\index{ln@{ln}!rationnel@{rationnel}}
+\subsubsection[{ln}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::ln (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a59b1b593905de8676db02d5d2a5554c3}
+
+
+Implements \hyperlink{classtype_a601802c36f0dd5c1067b9873eb103a6d}{type}.
+
+\hypertarget{classrationnel_a6bed14bda0b8546528454e7b2030645d}{\index{rationnel@{rationnel}!log@{log}}
+\index{log@{log}!rationnel@{rationnel}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::log (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a6bed14bda0b8546528454e7b2030645d}
+
+
+Implements \hyperlink{classtype_a7fc23e8e38550f3ad98c0b3582f6163a}{type}.
+
+\hypertarget{classrationnel_a546c22eedcb7ce551bb04be7dc527573}{\index{rationnel@{rationnel}!mod@{mod}}
+\index{mod@{mod}!rationnel@{rationnel}}
+\subsubsection[{mod}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ rationnel\-::mod (
+\begin{DoxyParamCaption}
+\item[{{\bf type} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classrationnel_a546c22eedcb7ce551bb04be7dc527573}
+
+
+Implements \hyperlink{classtype_ab6f68c2a7481faf20b02aa4ae67c6500}{type}.
+
+\hypertarget{classrationnel_a49250cb9001aad230e5193515ee74efa}{\index{rationnel@{rationnel}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!rationnel@{rationnel}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{{\bf type} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a49250cb9001aad230e5193515ee74efa}
+
+
+Implements \hyperlink{classnocomplex_ac84954cbe0bd9c77eab88c0b97b34c2b}{nocomplex}.
+
+\hypertarget{classrationnel_a14d9d411058e146e075ccf16997e525e}{\index{rationnel@{rationnel}!operator+@{operator+}}
+\index{operator+@{operator+}!rationnel@{rationnel}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf type} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a14d9d411058e146e075ccf16997e525e}
+
+
+Implements \hyperlink{classnocomplex_af3d04b00f4f82d3a35cad0ca023093f4}{nocomplex}.
+
+\hypertarget{classrationnel_a3bdf6de1a2526ddafbf1831a9af11dc9}{\index{rationnel@{rationnel}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!rationnel@{rationnel}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf type} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a3bdf6de1a2526ddafbf1831a9af11dc9}
+
+
+Implements \hyperlink{classnocomplex_a2005c3a0fcaa1f360561539931ffc578}{nocomplex}.
+
+\hypertarget{classrationnel_ae36b04407cc70d425ed0292975b0d1e9}{\index{rationnel@{rationnel}!operator/@{operator/}}
+\index{operator/@{operator/}!rationnel@{rationnel}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::operator/ (
+\begin{DoxyParamCaption}
+\item[{{\bf type} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_ae36b04407cc70d425ed0292975b0d1e9}
+
+
+Implements \hyperlink{classnocomplex_a47942bdcc78cfc5d5e867c9f9836a465}{nocomplex}.
+
+\hypertarget{classrationnel_a7e10c925a450321f53a50636177561e5}{\index{rationnel@{rationnel}!pgcd@{pgcd}}
+\index{pgcd@{pgcd}!rationnel@{rationnel}}
+\subsubsection[{pgcd}]{\setlength{\rightskip}{0pt plus 5cm}int rationnel\-::pgcd (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+) const}}\label{classrationnel_a7e10c925a450321f53a50636177561e5}
+\hypertarget{classrationnel_afd9fd9a30f034952ce889d46a07de617}{\index{rationnel@{rationnel}!pow@{pow}}
+\index{pow@{pow}!rationnel@{rationnel}}
+\subsubsection[{pow}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::pow (
+\begin{DoxyParamCaption}
+\item[{{\bf type} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_afd9fd9a30f034952ce889d46a07de617}
+
+
+Implements \hyperlink{classtype_a60bc9fca9ded4e67963e6c9fad82ff01}{type}.
+
+\hypertarget{classrationnel_aa73709167be428fafc4d95a31f4c3cc0}{\index{rationnel@{rationnel}!sign@{sign}}
+\index{sign@{sign}!rationnel@{rationnel}}
+\subsubsection[{sign}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::sign (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_aa73709167be428fafc4d95a31f4c3cc0}
+
+
+Implements \hyperlink{classtype_a59342fe365d621d47b607d3f4e155169}{type}.
+
+\hypertarget{classrationnel_a236e82f84556d0fcd978164529f9bf67}{\index{rationnel@{rationnel}!simplifie@{simplifie}}
+\index{simplifie@{simplifie}!rationnel@{rationnel}}
+\subsubsection[{simplifie}]{\setlength{\rightskip}{0pt plus 5cm}void rationnel\-::simplifie (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classrationnel_a236e82f84556d0fcd978164529f9bf67}
+\hypertarget{classrationnel_ac6ad55bfba79a0169d8cf1fb82354b89}{\index{rationnel@{rationnel}!sinus@{sinus}}
+\index{sinus@{sinus}!rationnel@{rationnel}}
+\subsubsection[{sinus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::sinus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_ac6ad55bfba79a0169d8cf1fb82354b89}
+
+
+Implements \hyperlink{classtype_ae12b68744cbf5c49e5e065fbf8a13954}{type}.
+
+\hypertarget{classrationnel_afbf300cd97ee35b0302f7365ed84fb95}{\index{rationnel@{rationnel}!sinush@{sinush}}
+\index{sinush@{sinush}!rationnel@{rationnel}}
+\subsubsection[{sinush}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::sinush (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_afbf300cd97ee35b0302f7365ed84fb95}
+
+
+Implements \hyperlink{classtype_a9ae4dee6629d0d366e52e94591de46d3}{type}.
+
+\hypertarget{classrationnel_ab9f341fd09499253dd1f9b6f15795576}{\index{rationnel@{rationnel}!sqr@{sqr}}
+\index{sqr@{sqr}!rationnel@{rationnel}}
+\subsubsection[{sqr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::sqr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_ab9f341fd09499253dd1f9b6f15795576}
+
+
+Implements \hyperlink{classtype_ab5ac11ebbed8a99db5ce4933cb17ddea}{type}.
+
+\hypertarget{classrationnel_ad37ab4380b5ff66104748ecc0bf5babe}{\index{rationnel@{rationnel}!sqrt@{sqrt}}
+\index{sqrt@{sqrt}!rationnel@{rationnel}}
+\subsubsection[{sqrt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::sqrt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_ad37ab4380b5ff66104748ecc0bf5babe}
+
+
+Implements \hyperlink{classtype_a626c58aa4bca21f65845140c7c9b895e}{type}.
+
+\hypertarget{classrationnel_a0f189c649bad58fb78894a19ec7b21f4}{\index{rationnel@{rationnel}!tangente@{tangente}}
+\index{tangente@{tangente}!rationnel@{rationnel}}
+\subsubsection[{tangente}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::tangente (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a0f189c649bad58fb78894a19ec7b21f4}
+
+
+Implements \hyperlink{classtype_a425ad47ffa64f9dafe38ac2cf6f542fb}{type}.
+
+\hypertarget{classrationnel_a45d63050134594c5a60c7a594021d7e5}{\index{rationnel@{rationnel}!tangenteh@{tangenteh}}
+\index{tangenteh@{tangenteh}!rationnel@{rationnel}}
+\subsubsection[{tangenteh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::tangenteh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a45d63050134594c5a60c7a594021d7e5}
+
+
+Implements \hyperlink{classtype_a260ae21ca7b4f5e7eb4dd6f8996ea9a8}{type}.
+
+\hypertarget{classrationnel_a6c905c688ae54647074a5ddf3ef648bd}{\index{rationnel@{rationnel}!to\-Q\-String@{to\-Q\-String}}
+\index{to\-Q\-String@{to\-Q\-String}!rationnel@{rationnel}}
+\subsubsection[{to\-Q\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String rationnel\-::to\-Q\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a6c905c688ae54647074a5ddf3ef648bd}
+
+
+Implements \hyperlink{classtype_ab61f01d56f3896cc99788a1a18c4b0c2}{type}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Code/projet\-\_\-lo21/\hyperlink{rationnel_8h}{rationnel.\-h}\item 
+Code/projet\-\_\-lo21/\hyperlink{rationnel_8cpp}{rationnel.\-cpp}\end{DoxyCompactItemize}

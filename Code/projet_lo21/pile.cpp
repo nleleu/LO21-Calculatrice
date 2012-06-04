@@ -255,7 +255,13 @@ void Pile::parser(QString s)
     }
 
     else
+    {
+        QStringList t=(s.split("'"));
+        for(int i=0; i<t.size();i++)
+            qDebug() << t[i];
+            //parser(t[i]);
         push(new Expression(s));
+    }
 
 
 }
