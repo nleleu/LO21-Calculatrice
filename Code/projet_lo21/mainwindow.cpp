@@ -189,88 +189,89 @@ void MainWindow::on_rationnelButton_clicked(){
 
 
 void MainWindow::on_addition_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->addition();
+    ui->lineEdit->setText(ui->lineEdit->text()+"+");
+
     emit refresh_signal();
 }
 
 void MainWindow::on_soustraction_clicked()
 {
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->soustraction();
+    ui->lineEdit->setText(ui->lineEdit->text()+"-");
     emit refresh_signal();
 }
 
 
 void MainWindow::on_multiplication_clicked()
 {
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->multiplication();
+    ui->lineEdit->setText(ui->lineEdit->text()+"*");
     emit refresh_signal();
 }
 
 void MainWindow::on_division_clicked()
 {
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->division();
+    ui->lineEdit->setText(ui->lineEdit->text()+"/");
     emit refresh_signal();
 }
 
 
 void MainWindow::on_sin_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->sinus();
+    ui->lineEdit->setText(ui->lineEdit->text()+"sin");
     emit refresh_signal();
 }
 
 void MainWindow::on_cos_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->cosinus();
+    ui->lineEdit->setText(ui->lineEdit->text()+"cos");
     emit refresh_signal();
 }
 void MainWindow::on_tan_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->tangente();
+    ui->lineEdit->setText(ui->lineEdit->text()+"tan");
     emit refresh_signal();
 }
 void MainWindow::on_sinh_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->sinush();
+    ui->lineEdit->setText(ui->lineEdit->text()+"sinh");
     emit refresh_signal();
 }
 void MainWindow::on_cosh_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->cosinush();
+    ui->lineEdit->setText(ui->lineEdit->text()+"cosh");
     emit refresh_signal();
 }
 void MainWindow::on_tanh_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->tangenteh();
+    ui->lineEdit->setText(ui->lineEdit->text()+"tanh");
     emit refresh_signal();
 }
 
 void MainWindow::on_ln_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->ln();
+    ui->lineEdit->setText(ui->lineEdit->text()+"ln");
     emit refresh_signal();
 }
 
 void MainWindow::on_log_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->log();
+    ui->lineEdit->setText(ui->lineEdit->text()+"log");
     emit refresh_signal();
 }
 
 void MainWindow::on_inv_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->inv();
+    ui->lineEdit->setText(ui->lineEdit->text()+"inv");
     emit refresh_signal();
 }
 
 void MainWindow::on_sqrt_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->sqrt();
+    ui->lineEdit->setText(ui->lineEdit->text()+"sqrt");
     emit refresh_signal();
 }
 
 void MainWindow::on_sqr_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->sqr();
+    ui->lineEdit->setText(ui->lineEdit->text()+"sqr");
     emit refresh_signal();
 }
 
 void MainWindow::on_cube_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->cube();
+    ui->lineEdit->setText(ui->lineEdit->text()+"cube");
     emit refresh_signal();
 }
 
 void MainWindow::on_fact_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->fact();
+    ui->lineEdit->setText(ui->lineEdit->text()+"!");
     emit refresh_signal();
 }
 
@@ -284,7 +285,6 @@ void MainWindow::on_eval_clicked(){
 
 void MainWindow::on_actionParametre_triggered()
 {
-    qDebug() << "test";
     r->exec();
 }
 

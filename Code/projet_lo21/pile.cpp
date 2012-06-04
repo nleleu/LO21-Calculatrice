@@ -169,6 +169,32 @@ void Pile::parser(QString s)
                     division();
             else if (t[i]=="*")
                     multiplication();
+            else if (t[i]=="sin")
+                    sinus();
+            else if (t[i]=="cos")
+                    cosinus();
+            else if (t[i]=="tan")
+                    tangente();
+            else if (t[i]=="sinh")
+                    sinush();
+            else if (t[i]=="cosh")
+                    cosinush();
+            else if (t[i]=="tanh")
+                    tangenteh();
+            else if (t[i]=="ln")
+                    ln();
+            else if (t[i]=="log")
+                    log();
+            else if (t[i]=="inv")
+                    inv();
+            else if (t[i]=="sqrt")
+                    sqrt();
+            else if (t[i]=="sqr")
+                    sqr();
+            else if (t[i]=="cube")
+                    cube();
+            else if (t[i]=="!")
+                    fact();
             else
             {
                 test=type_factory::getInstance().getType(t[i]);
