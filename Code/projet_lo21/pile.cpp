@@ -14,9 +14,16 @@
 using namespace std;
 
 Pile::Pile():nbElt(5){
-    Dom xml(*this);
     g=new gardien;
-    xml.lire();
+}
+
+void Pile::sauvegarde(){
+    Dom xml(*this);
+}
+
+void Pile::charger(){
+    Dom xml(*this);
+    xml.lire(fileName);
 }
 
 /*Pile::Pile(const Pile &p)
@@ -30,6 +37,14 @@ Pile::Pile():nbElt(5){
 Pile::~Pile(){
 //bug si delete sur tous les pointeurs de la pile, à revoir
 
+}
+
+//Selection de l'unite des degres
+void Pile::on_degUnit_clicked(){
+    Pile::selectedDegUnit=DEGRE;
+}
+void Pile::on_radUnit_clicked(){
+    Pile::selectedDegUnit=RADIANT;
 }
 
 Pile& Pile::clone() const{
@@ -431,3 +446,9 @@ void Pile::eval(){
        return;
      }
 }
+
+void sauvegarde(){
+
+}
+
+

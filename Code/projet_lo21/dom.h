@@ -15,8 +15,8 @@ class Dom
 public:
     Dom(Pile & p);
     ~Dom();
-    void demande_ajout(QString,QString);
-    void lire();
+    void demande_ajout(QString,QString, QString);
+    void lire(QString fileName);
     void newfic();
 
 private :

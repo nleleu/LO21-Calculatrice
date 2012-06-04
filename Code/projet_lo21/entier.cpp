@@ -5,8 +5,9 @@
 #include "complexe.h"
 #include <QDebug>
 #include <cmath>
+#include "mainwindow.h"
 
-#define PI 3.14159265
+const int PI = 3.14159265;
 
 /*type& entier::operator =(type &t){
     try{

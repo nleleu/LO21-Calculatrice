@@ -7,10 +7,8 @@
 #include "type.h"
 #include <QString>
 #include "collection_pile.h"
-
-enum constType{ENTIER, REEL, RATIONNEL};
-enum complexUse{YES, NO};
-enum degUnit{DEGRE, RADIANT};
+#include <QFileDialog>
+#include <QMessageBox>
 
 
 namespace Ui {
@@ -24,8 +22,6 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(Pile &pile, QWidget *parent);
     ~MainWindow();
-    static degUnit selectedDegUnit;
-
 
 signals:
     void pushStack_signal(const QString&);
@@ -68,13 +64,13 @@ private slots:
     void on_rationnelButton_clicked();
 
 
-    //selection de l'unite des degres
-    void on_degUnit_clicked();
-    void on_radUnit_clicked();
-
     //Annuler/répéter
     void on_undo_clicked();
     void on_redo_clicked();
+
+    //Ouvrir interface charger/sauvegarder
+    void on_charger_triggered();
+    void on_sauvegarder_triggered();
 
     //Créer un onglet à partir de la pile courante
     void createOnglet();
