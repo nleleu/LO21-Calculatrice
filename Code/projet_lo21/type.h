@@ -42,8 +42,6 @@ public:
     //virtual type& operator/(double & i)=0;
 
 
-
-
     virtual QString toQString()=0;
 };
 

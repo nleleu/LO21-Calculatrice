@@ -36,6 +36,7 @@ class Pile : public QStack <type *>
     gardien* g;/*!< Gardien de la pile*/
     QString fileName;
 
+
 public:
     /*!
     *  \brief Destructeur
@@ -63,7 +64,8 @@ public:
     */
     void setFileName(QString name){fileName = name;}
     static degUnit selectedDegUnit;
-    void sauvegarde();
+
+    void sauvegarder();
     void charger();
 
     Pile& clone() const;
