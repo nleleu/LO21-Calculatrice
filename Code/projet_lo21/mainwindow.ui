@@ -586,6 +586,29 @@
      </layout>
     </widget>
    </widget>
+   <widget class="QLineEdit" name="nbelt">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>30</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>30</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nombre d'éléménts à afficher :</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -609,7 +632,6 @@
     </property>
     <addaction name="actionAnnuler"/>
     <addaction name="actionR_tablir"/>
-    <addaction name="actionR_glage"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdition"/>

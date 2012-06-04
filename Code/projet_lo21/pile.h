@@ -21,6 +21,7 @@ public:
     Pile& clone() const;
     Pile& duplique()const;
     void setGardien(gardien* _g){g=_g;}
+    void setNbElt(int nb){nbElt=nb;}
     gardien* getGardien()const{return g;}
     void swap(const unsigned int x, const unsigned int y);
     void sum(const unsigned int x);

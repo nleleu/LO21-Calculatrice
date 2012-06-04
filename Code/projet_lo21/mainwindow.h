@@ -112,6 +112,11 @@ private slots:
 
     void on_actionR_glage_triggered();
 
+
+    void on_nbelt_textChanged(const QString &arg1);
+
+    void on_nbelt_textEdited(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
     reglages * r;

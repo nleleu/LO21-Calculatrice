@@ -28,6 +28,7 @@ MainWindow::MainWindow(Pile &pile, QWidget *parent) :
     QObject::connect(this, SIGNAL(refresh_signal()), this, SLOT(refresh_slot()));
 
     Collection_pile::getInstance().addPile(&pile);
+    emit refresh_signal();
     ui->degUnit->setChecked(true);
 
 }
@@ -77,10 +78,13 @@ void MainWindow::on_espace_clicked()
 
 void MainWindow::on_stackButton_clicked(){
     //emit pushStack_signal(ui->lineEdit->text());
+    if (ui->lineEdit->text()!="")
+    {
     Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->parser(ui->lineEdit->text());
 
     emit refresh_signal();
     ui->lineEdit->clear();
+    }
 
 }
 
@@ -146,7 +150,11 @@ void MainWindow::cleanList_slot(){
 
 void MainWindow::refresh_slot(){
     ui->list->clear();
+    ui->nbelt->clear();
     int n=Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->getNb();
+    QString s = QString::number(n);
+    qDebug() << s;
+    ui->nbelt->setText(s);
     for(int i=Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->size()-1; i>=0 && n>0; i--){
         ui->list->addItem((Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->at(i))->toQString());
         n--;
@@ -367,4 +375,19 @@ void MainWindow::on_tabWidget_tabCloseRequested(int index)
 void MainWindow::on_actionR_glage_triggered()
 {
     r->exec();
+}
+
+
+
+void MainWindow::on_nbelt_textChanged(const QString &arg1)
+{
+
+}
+
+void MainWindow::on_nbelt_textEdited(const QString &arg1)
+{
+    int n=arg1.toInt();
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->setNbElt(n);
+    emit refresh_signal();
+
 }
