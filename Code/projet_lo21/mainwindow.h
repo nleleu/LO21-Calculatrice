@@ -94,6 +94,10 @@ private slots:
     void on_tabWidget_destroyed();
     void on_tabWidget_tabCloseRequested(int index);
 
+    void on_pow_clicked();
+    void on_mod_clicked();
+    void on_sign_clicked();
+
     void on_sin_clicked();
     void on_cos_clicked();
     void on_tan_clicked();

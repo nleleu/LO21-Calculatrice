@@ -30,6 +30,10 @@ public:
     type* operator*(type& t);
     type* operator-(type& t);
 
+    type* pow(type & t);
+    type* mod(type & t){}
+    type* sign();
+
     type* sinus();
     type* cosinus();
     type* tangente();

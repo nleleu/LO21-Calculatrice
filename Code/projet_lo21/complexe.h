@@ -98,6 +98,7 @@ public:
     */
     type* operator-(type& t);
 
+<<<<<<< HEAD
 
     /*!
     *  \brief Sinus
@@ -107,6 +108,12 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
+=======
+    type* pow(type & t){}
+    type* mod(type & t){}
+    type* sign();
+
+>>>>>>> c83f75e68159d0e41b11f80f7be8985af1b5b50b
     type* sinus(){}
 
     /*!
