@@ -1,4 +1,5 @@
 #include "rationnel.h"
+#include "complexe.h"
 #include <QDataStream>
 #include <cmath>
 #include <qDebug>
@@ -26,6 +27,29 @@ type* rationnel::operator +(type & t){
        return res;
     }
     catch(std::exception &e){}
+
+    try{
+       entier &tmp=dynamic_cast<entier&>(t);
+       return tmp+*this;
+    }
+    catch(std::exception &e){}
+
+    try{
+       reel &tmp=dynamic_cast<reel&>(t);
+       return tmp+*this;
+    }
+    catch(std::exception &e){}
+
+    try{
+       complexe &tmp=dynamic_cast<complexe&>(t);
+       complexe conv(toQString());
+       type * res;
+       res=conv+tmp;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    throw typeException("erreur entier");
 }
 
 type* rationnel::operator -(type & t){
@@ -35,6 +59,31 @@ type* rationnel::operator -(type & t){
        return res;
     }
     catch(std::exception &e){}
+
+    try{
+       entier &tmp=dynamic_cast<entier&>(t);
+       rationnel r=rationnel(tmp.getData(),1);
+       return tmp-r;
+    }
+    catch(std::exception &e){}
+
+    try{
+       reel &tmp=dynamic_cast<reel&>(t);
+       rationnel r=rationnel(tmp.getData()*tmp.getDecimales()*10,tmp.getDecimales()*10);
+       return tmp-r;
+    }
+    catch(std::exception &e){}
+
+    try{
+       complexe &tmp=dynamic_cast<complexe&>(t);
+       complexe conv(toQString());
+       type * res;
+       res=conv-tmp;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    throw typeException("erreur rationnel");
 }
 
 type* rationnel::operator /(type & t){
@@ -44,6 +93,31 @@ type* rationnel::operator /(type & t){
        return *this*r;
     }
     catch(std::exception &e){}
+
+    try{
+       entier &tmp=dynamic_cast<entier&>(t);
+       rationnel r=rationnel(tmp.getData(),1);
+       return tmp/r;
+    }
+    catch(std::exception &e){}
+
+    try{
+       reel &tmp=dynamic_cast<reel&>(t);
+       rationnel r=rationnel(tmp.getData()*tmp.getDecimales()*10,tmp.getDecimales()*10);
+       return tmp/r;
+    }
+    catch(std::exception &e){}
+
+    try{
+       complexe &tmp=dynamic_cast<complexe&>(t);
+       complexe conv(toQString());
+       type * res;
+       res=conv/tmp;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    throw typeException("erreur rationnel");
 }
 
 
@@ -55,6 +129,31 @@ type* rationnel::operator*(type& t)
        return res;
     }
     catch(std::exception &e){}
+
+    try{
+       entier &tmp=dynamic_cast<entier&>(t);
+       rationnel r=rationnel(tmp.getData(),1);
+       return tmp*r;
+    }
+    catch(std::exception &e){}
+
+    try{
+       reel &tmp=dynamic_cast<reel&>(t);
+       rationnel r=rationnel(tmp.getData()*tmp.getDecimales()*10,tmp.getDecimales()*10);
+       return tmp*r;
+    }
+    catch(std::exception &e){}
+
+    try{
+       complexe &tmp=dynamic_cast<complexe&>(t);
+       complexe conv(toQString());
+       type * res;
+       res=conv*tmp;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    throw typeException("erreur rationnel");
 }
 
 type* rationnel::pow(type & t){
@@ -73,6 +172,8 @@ type* rationnel::pow(type & t){
        return res;
     }
     catch(std::exception &e){}
+
+    throw typeException("erreur rationnel");
 }
 
 int rationnel::pgcd(int a, int b) const {
@@ -101,7 +202,9 @@ void rationnel::simplifie(){
 QString rationnel::toQString(){
     QString res;
     QTextStream ss(&res);
-    ss << num <<'/'<< denum;
+    ss << num;
+    if (denum!=1)
+        ss<<'/'<< denum;
     return res;
 }
 

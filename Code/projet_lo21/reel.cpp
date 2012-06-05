@@ -1,5 +1,9 @@
-#include "reel.h"
 #include "entier.h"
+#include "reel.h"
+#include "rationnel.h"
+#include "complexe.h"
+#include "expression.h"
+#include "typeexception.h"
 #include <QDebug>
 #include <cmath>
 
@@ -32,24 +36,83 @@ type* reel::operator +(type & t){
     }
     catch(std::exception &e){}
 
+    try{
+
+       rationnel &tmp=dynamic_cast<rationnel&>(t);
+       type* res;
+       rationnel r(data*10*getDecimales(),10*getDecimales());
+       res=tmp+r;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    try{
+
+       Expression &tmp=dynamic_cast<Expression&>(t);
+       type* res;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    try{
+       complexe &tmp=dynamic_cast<complexe&>(t);
+       complexe conv(toQString());
+       type * res;
+       res=conv+tmp;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    throw typeException("erreur entier");
+
 
 }
 
 type* reel::operator /(type & t){
     try{
        reel &tmp=dynamic_cast<reel&>(t);
-       reel *res=new reel(data/tmp.getData());
+       rationnel r(data*10*getDecimales(),10*getDecimales());
+       rationnel r1(tmp.getData()*10*tmp.getDecimales(),10*tmp.getDecimales());
+       return r/r1;
+    }
+    catch(std::exception &e){}
+
+    try{
+       entier &tmp=dynamic_cast<entier&>(t);
+       rationnel r(data*10*getDecimales(),10*getDecimales());
+       rationnel r1(tmp.getData(),1);
+       return r/r1;
+    }
+    catch(std::exception &e){}
+
+    try{
+
+       rationnel &tmp=dynamic_cast<rationnel&>(t);
+       type* res;
+       rationnel r(data*10*getDecimales(),10*getDecimales());
+       res=tmp+r;
        return res;
     }
     catch(std::exception &e){}
 
     try{
 
-       entier &tmp=dynamic_cast<entier&>(t);
-       reel *res=new reel(data/tmp.getData());
+       Expression &tmp=dynamic_cast<Expression&>(t);
+       type* res;
        return res;
     }
     catch(std::exception &e){}
+
+    try{
+       complexe &tmp=dynamic_cast<complexe&>(t);
+       complexe conv(toQString());
+       type * res;
+       res=conv/tmp;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    throw typeException("erreur entier");
 }
 
 type* reel::operator*(type& t){
@@ -67,6 +130,26 @@ type* reel::operator*(type& t){
        return res;
     }
     catch(std::exception &e){}
+
+
+    try{
+
+       rationnel &tmp=dynamic_cast<rationnel&>(t);
+       rationnel r(data*10*getDecimales(),10*getDecimales());
+       return r*tmp;
+    }
+    catch(std::exception &e){}
+
+    try{
+       complexe &tmp=dynamic_cast<complexe&>(t);
+       complexe conv(toQString());
+       type * res;
+       res=conv*tmp;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    throw typeException("erreur reel");
 }
 
 type* reel::operator-(type& t){
@@ -84,6 +167,26 @@ type* reel::operator-(type& t){
        return res;
     }
     catch(std::exception &e){}
+
+
+    try{
+
+       rationnel &tmp=dynamic_cast<rationnel&>(t);
+       rationnel r(data*10*getDecimales(),10*getDecimales());
+       return r-tmp;
+    }
+    catch(std::exception &e){}
+
+    try{
+       complexe &tmp=dynamic_cast<complexe&>(t);
+       complexe conv(toQString());
+       type * res;
+       res=conv-tmp;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    throw typeException("erreur reel");
 }
 
 
@@ -103,6 +206,7 @@ type* reel::pow(type & t){
        return res;
     }
     catch(std::exception &e){}
+    throw typeException("erreur reel");
 }
 
 QString reel::toQString(){

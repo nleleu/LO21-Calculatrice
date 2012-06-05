@@ -216,7 +216,13 @@ public:
     *    false sinon
     */
 
-    static bool isReel(const QString& s){return s.contains (",");}
+
+    int getDecimales(){
+        return toQString().section('.', 1,1).size();
+                      }
+
+    static bool isReel(const QString& s){QString copie(s);copie.replace(',', '.');
+                return copie.contains ('.');}
 };
 
 #endif // REEL_H

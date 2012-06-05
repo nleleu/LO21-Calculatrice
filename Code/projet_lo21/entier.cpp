@@ -64,7 +64,7 @@ type* entier::operator +(type & t){
     }
     catch(std::exception &e){}
 
-    throw typeException("erreur complexe");
+    throw typeException("erreur entier");
 
 
 }
@@ -73,7 +73,7 @@ type* entier::operator /(type & t)
 {
     try{
        entier &tmp=dynamic_cast<entier&>(t);
-       entier *res=new entier(data/tmp.getData());
+       rationnel *res=new rationnel(data,tmp.getData());
        return res;
     }
     catch(std::exception &e){}

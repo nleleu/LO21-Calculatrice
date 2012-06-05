@@ -51,7 +51,7 @@ void Pile::on_radUnit_clicked(){
 
 Pile& Pile::clone() const{
     Pile *p=new Pile();
-    for(int i=size()-1; i>=0; i--){
+    for(int i=0; i<size(); i++){
         p->push(type_factory::getInstance().getType(at(i)->toQString()));
     }
     p->setGardien(getGardien());
@@ -61,7 +61,7 @@ Pile& Pile::clone() const{
 
 Pile& Pile::duplique() const{
     Pile *p=new Pile();
-    for(int i=size()-1; i>=0; i--){
+    for(int i=0; i<size(); i++){
         p->push(type_factory::getInstance().getType(at(i)->toQString()));
     }
     p->setGardien(new gardien);
@@ -321,6 +321,7 @@ void Pile::sign(){
        type *res;
        try{
        res=op->sign();
+       delete op;
        push(res);
        g->addMemento(*this);
        }
@@ -343,6 +344,7 @@ void Pile::sinus(){
         try{
        res=op->sinus();
        push(res);
+       delete op;
        g->addMemento(*this);
        }
        catch (std::exception &e) {
@@ -362,6 +364,7 @@ void Pile::cosinus(){
         try{
        res=op->cosinus();
        push(res);
+       delete op;
        g->addMemento(*this);
        }
        catch (std::exception &e) {
@@ -379,6 +382,7 @@ void Pile::tangente(){
         try{
        res=op->tangente();
        push(res);
+       delete op;
        g->addMemento(*this);
        }
        catch (std::exception &e) {
@@ -396,6 +400,7 @@ void Pile::sinush(){
         try{
        res=op->sinush();
        push(res);
+       delete op;
        g->addMemento(*this);
        }
        catch (std::exception &e) {
@@ -413,6 +418,7 @@ void Pile::cosinush(){
         try{
        res=op->cosinush();
        push(res);
+       delete op;
        g->addMemento(*this);
        }
        catch (std::exception &e) {
@@ -430,6 +436,7 @@ void Pile::tangenteh(){
         try{
        res=op->tangenteh();
        push(res);
+       delete op;
        g->addMemento(*this);
        }
        catch (std::exception &e) {
@@ -449,6 +456,7 @@ void Pile::ln(){
         try{
        res=op->ln();
        push(res);
+       delete op;
        g->addMemento(*this);
        }
        catch (std::exception &e) {
@@ -466,6 +474,7 @@ void Pile::log(){
         try{
        res=op->log();
        push(res);
+       delete op;
        g->addMemento(*this);
        }
        catch (std::exception &e) {
@@ -483,6 +492,7 @@ void Pile::inv(){
         try{
        res=op->inv();
        push(res);
+       delete op;
        g->addMemento(*this);
        }
        catch (std::exception &e) {
@@ -500,6 +510,7 @@ void Pile::sqrt(){
         try{
        res=op->sqrt();
        push(res);
+       delete op;
        g->addMemento(*this);
        }
        catch (std::exception &e) {
@@ -517,6 +528,7 @@ void Pile::sqr(){
         try{
        res=op->sqr();
        push(res);
+       delete op;
        g->addMemento(*this);
        }
        catch (std::exception &e) {
@@ -534,6 +546,7 @@ void Pile::cube(){
         try{
        res=op->cube();
        push(res);
+       delete op;
        g->addMemento(*this);
        }
        catch (std::exception &e) {
@@ -551,6 +564,7 @@ void Pile::fact(){
         try{
        res=op->fact();
        push(res);
+       delete op;
        g->addMemento(*this);
        }
        catch (std::exception &e) {
@@ -568,6 +582,7 @@ void Pile::eval(){
         try{
        res=op->eval();
        push(res);
+       delete op;
        g->addMemento(*this);
        }
        catch (std::exception &e) {

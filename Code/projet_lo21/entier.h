@@ -266,7 +266,7 @@ public:
     */
 
 
-    static bool isEntier(const QString& s){return !(s.contains (",") || s.contains ("/") || s.contains ("$"));}
+    static bool isEntier(const QString& s){return !(s.contains (",") || s.contains (".") || s.contains ("/") || s.contains ("$"));}
 };
 
 #endif // ENTIER_H

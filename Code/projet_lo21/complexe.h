@@ -40,6 +40,10 @@ public:
     */
     complexe(nocomplex* _re=0,nocomplex* _im=0):re(_re), im(_im){}
 
+
+
+    type* conjugue();
+
     /*!
     *  \brief Constructeur
     *
