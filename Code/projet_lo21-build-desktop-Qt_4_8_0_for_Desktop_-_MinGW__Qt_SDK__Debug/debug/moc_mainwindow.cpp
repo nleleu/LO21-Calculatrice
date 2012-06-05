@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mainwindow.h'
 **
-** Created: Tue 5. Jun 13:15:13 2012
+** Created: Tue 5. Jun 13:45:04 2012
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.0)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_MainWindow[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-      67,   14, // methods
+      69,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -100,6 +100,8 @@ static const uint qt_meta_data_MainWindow[] = {
     1439,   11,   11,   11, 0x08,
     1473, 1468,   11,   11, 0x08,
     1503, 1468,   11,   11, 0x08,
+    1532, 1468,   11,   11, 0x08,
+    1561, 1468,   11,   11, 0x08,
 
        0        // eod
 };
@@ -153,6 +155,8 @@ static const char qt_meta_stringdata_MainWindow[] = {
     "on_eval_clicked()\0on_actionR_glage_triggered()\0"
     "arg1\0on_nbelt_textChanged(QString)\0"
     "on_nbelt_textEdited(QString)\0"
+    "on_spinBox_valueChanged(int)\0"
+    "on_NbAffiche_valueChanged(int)\0"
 };
 
 void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -228,6 +232,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 64: _t->on_actionR_glage_triggered(); break;
         case 65: _t->on_nbelt_textChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         case 66: _t->on_nbelt_textEdited((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 67: _t->on_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 68: _t->on_NbAffiche_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -265,9 +271,9 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 67)
+        if (_id < 69)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 67;
+        _id -= 69;
     }
     return _id;
 }

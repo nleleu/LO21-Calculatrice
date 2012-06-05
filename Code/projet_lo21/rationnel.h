@@ -62,7 +62,6 @@ public:
     type* sqrt();
     type* sqr();
     type* cube();
-    type* fact(){}
     type* eval(){}
 
 

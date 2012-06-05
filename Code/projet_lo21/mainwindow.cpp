@@ -138,11 +138,10 @@ void MainWindow::cleanList_slot(){
 
 void MainWindow::refresh_slot(){
     ui->list->clear();
-    ui->nbelt->clear();
+    ui->NbAffiche->clear();
     qDebug() << Collection_pile::getInstance().getActif();
     int n=Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->getNb();
-    QString s = QString::number(n);
-    ui->nbelt->setText(s);
+    ui->NbAffiche->setValue(n);
     for(int i=Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->size()-1; i>=0 && n>0; i--){
         ui->list->addItem((Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->at(i))->toQString());
         n--;
@@ -379,5 +378,16 @@ void MainWindow::on_sauvegarder_triggered(){
     QString fichier = QFileDialog::getSaveFileName(this, "Enregistrer un fichier", QString(), "XML files (*.xml)");
     Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->setFileName(fichier);
     Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->sauvegarder();
+    emit refresh_signal();
+}
+
+void MainWindow::on_spinBox_valueChanged(int arg1)
+{
+
+}
+
+void MainWindow::on_NbAffiche_valueChanged(int arg1)
+{
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->setNbElt(arg1);
     emit refresh_signal();
 }

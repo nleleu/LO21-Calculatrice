@@ -116,6 +116,10 @@ private slots:
 
     void on_nbelt_textEdited(const QString &arg1);
 
+    void on_spinBox_valueChanged(int arg1);
+
+    void on_NbAffiche_valueChanged(int arg1);
+
 private:
     Ui::MainWindow *ui;
 };

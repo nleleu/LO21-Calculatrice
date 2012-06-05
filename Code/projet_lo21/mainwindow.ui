@@ -609,6 +609,16 @@
      <string>Nombre d'éléménts à afficher :</string>
     </property>
    </widget>
+   <widget class="QSpinBox" name="NbAffiche">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>90</y>
+      <width>42</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Tue 5. Jun 13:20:15 2012
+** Created: Tue 5. Jun 13:44:53 2012
 **      by: Qt User Interface Compiler version 4.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -25,6 +25,7 @@
 #include <QtGui/QMenuBar>
 #include <QtGui/QPushButton>
 #include <QtGui/QRadioButton>
+#include <QtGui/QSpinBox>
 #include <QtGui/QStatusBar>
 #include <QtGui/QTabWidget>
 #include <QtGui/QToolBar>
@@ -113,6 +114,7 @@ public:
     QPushButton *eval;
     QLineEdit *nbelt;
     QLabel *label;
+    QSpinBox *NbAffiche;
     QMenuBar *menuBar;
     QMenu *menuFile;
     QMenu *menuEdition;
@@ -456,6 +458,9 @@ public:
         label = new QLabel(centralWidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(560, 30, 151, 16));
+        NbAffiche = new QSpinBox(centralWidget);
+        NbAffiche->setObjectName(QString::fromUtf8("NbAffiche"));
+        NbAffiche->setGeometry(QRect(720, 90, 42, 22));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));

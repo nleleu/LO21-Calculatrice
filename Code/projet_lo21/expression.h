@@ -198,15 +198,6 @@ public:
     type* cube(){}
 
 
-    /*!
-    *  \brief Fact
-    *
-    *  Implementation de l'operateur unaire fact (methode virtuelle pure dans la classe mere)
-    *  \param t : Pointeur sur un type (Utilisation du polymorphisme)
-    *  \return Pointeur sur type, resultat de l'operation
-    *
-    */
-    type* fact(){}
 
 
     /*!

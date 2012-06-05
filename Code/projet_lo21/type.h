@@ -35,7 +35,7 @@ public:
     virtual type* sqrt()=0;
     virtual type* sqr()=0;
     virtual type* cube()=0;
-    virtual type* fact()=0;
+    virtual type* fact();
     virtual type* eval()=0;
 
 
