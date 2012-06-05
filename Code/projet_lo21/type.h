@@ -39,9 +39,6 @@ public:
     virtual type* eval()=0;
 
 
-    //virtual type& operator/(int & i)=0;
-    //virtual type& operator/(double & i)=0;
-
 
     virtual QString toQString()=0;
 };

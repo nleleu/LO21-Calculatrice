@@ -294,7 +294,8 @@ void Pile::parser(QString s)
             else
             {
                 test=type_factory::getInstance().getType(t[i]);
-                push(test);
+                if (test)
+                    push(test);
              }
         }
     }

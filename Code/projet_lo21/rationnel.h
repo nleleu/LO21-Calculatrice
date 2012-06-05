@@ -7,6 +7,7 @@
 #include <QString>
 #include <qDebug>
 #include "nocomplex.h"
+#include "typeexception.h"
 
 
 int pgcd(int a, int b);
@@ -16,7 +17,7 @@ class rationnel:public nocomplex
     int num;/*!<  Numerateur*/
     int denum;/*!< Denominateur*/
 public:
-    rationnel(int _num=0,int _denum=1):num(_num),denum(_denum){simplifie();}
+    rationnel(int _num=0,int _denum=1):num(_num),denum(_denum){if (denum==0) throw typeException("Division par 0"); simplifie();}
     rationnel(const std::string &s){
         int pos;
         pos=s.find('/'); //caractere separateur
@@ -28,8 +29,10 @@ public:
         std::istringstream iss2(res2);
         iss1 >> n;
         iss2 >> d;
+
         num=n;
         denum=d;
+        if (denum==0) throw typeException("Division par 0");
     }
 
     rationnel(const QString &s)//pour convertir une QString en rationnel
@@ -38,7 +41,9 @@ public:
 
         num=(copie.section('/', 0,0)).toInt();
         denum=(copie.section('/', 1,1)).toInt();
+         if (denum==0) throw typeException("Division par 0");
         simplifie();
+
     }
 
     type* operator +(type & t);

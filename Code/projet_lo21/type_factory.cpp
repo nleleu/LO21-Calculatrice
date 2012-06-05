@@ -3,7 +3,9 @@
 #include "reel.h"
 #include "rationnel.h"
 #include "complexe.h"
+#include <QDebug>
 #include "expression.h"
+#include "typeexception.h"
 
 type_factory* type_factory::instance=0;
 
@@ -25,7 +27,6 @@ type* type_factory::getType(QString s)
 {
         if(complexe::isComplexe(s))
         {
-            qDebug() << "complexe";
         return new complexe(s);
         }
         if(entier::isEntier(s))
@@ -33,11 +34,17 @@ type* type_factory::getType(QString s)
         if(reel::isReel(s))
             return new reel(s);
         if(rationnel::isRationnel(s))
-            return new rationnel(s);
+        {
+            try
+        {
+            type* res= new rationnel(s);
+            return res;
+        }catch (std::exception &e) {
+            qDebug()  << e.what() ;
+        }
+        }
         if(Expression::isExpression(s))
             return new Expression(s);
-
-
         else
         {
             return NULL;
