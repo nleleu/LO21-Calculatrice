@@ -5,6 +5,7 @@
 #include <qDebug>
 #include "reel.h"
 #include "entier.h"
+#include "expression.h"
 
 #define PI 3.14159265
 
@@ -49,6 +50,16 @@ type* rationnel::operator +(type & t){
     }
     catch(std::exception &e){}
 
+    try{
+       Expression &tmp=dynamic_cast<Expression&>(t);
+       QString e;
+       e = "'" + toQString() + " "+ tmp.toQString().remove("'") + " +'";
+       return new Expression(e);
+    }
+    catch(std::exception &e){}
+
+
+
     throw typeException("erreur entier");
 }
 
@@ -83,6 +94,15 @@ type* rationnel::operator -(type & t){
     }
     catch(std::exception &e){}
 
+    try{
+       Expression &tmp=dynamic_cast<Expression&>(t);
+       QString e;
+       e = "'" + toQString() + " "+ tmp.toQString().remove("'") + " -'";
+       return new Expression(e);
+    }
+    catch(std::exception &e){}
+
+
     throw typeException("erreur rationnel");
 }
 
@@ -116,6 +136,15 @@ type* rationnel::operator /(type & t){
        return res;
     }
     catch(std::exception &e){}
+
+    try{
+       Expression &tmp=dynamic_cast<Expression&>(t);
+       QString e;
+       e = "'" + toQString() + " "+ tmp.toQString().remove("'") + " /'";
+       return new Expression(e);
+    }
+    catch(std::exception &e){}
+
 
     throw typeException("erreur rationnel");
 }
@@ -152,6 +181,15 @@ type* rationnel::operator*(type& t)
        return res;
     }
     catch(std::exception &e){}
+
+    try{
+       Expression &tmp=dynamic_cast<Expression&>(t);
+       QString e;
+       e = "'" + toQString() +" "+ tmp.toQString().remove("'") + " *'";
+       return new Expression(e);
+    }
+    catch(std::exception &e){}
+
 
     throw typeException("erreur rationnel");
 }

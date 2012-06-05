@@ -8,24 +8,26 @@ Expression::Expression(QString& exp1): exp(exp1)
 }
 
 type* Expression::operator +(type & t){
-    throw typeException("test");
-    /*exp = exp + ' ' + t.toQString() + ' ' + "+'";
-    qDebug() << exp;
-    return new Expression(exp);*/
+
+    exp = exp.remove(exp.size()-1,exp.size()-1) + ' ' + t.toQString().remove("'") + ' ' + "+'";
+    return new Expression(exp);
 }
 
 type* Expression::operator -(type & t){
-    exp = exp + ' ' + t.toQString() + ' ' + "-";
+    exp = exp.remove(exp.size()-1,exp.size()-1) + ' ' + t.toQString().remove("'") + ' ' + "-'";
+    return new Expression(exp);
 }
 
 
 type* Expression::operator *(type & t){
-    exp = exp + ' ' + t.toQString() + ' ' + "*";
+    exp = exp.remove(exp.size()-1,exp.size()-1) + ' ' + t.toQString().remove("'") + ' ' + "*'";
+    return new Expression(exp);
 }
 
 
 type* Expression::operator /(type & t){
-    exp = exp + ' ' + t.toQString() + ' ' + "/";
+    exp = exp.remove(exp.size()-1,exp.size()-1) + ' ' + t.toQString().remove("'") + ' ' + "/'";
+    return new Expression(exp);
 }
 
 

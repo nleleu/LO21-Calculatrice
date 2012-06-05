@@ -50,8 +50,9 @@ type* entier::operator +(type & t){
     try{
 
        Expression &tmp=dynamic_cast<Expression&>(t);
-       type* res;
-       return res;
+       QString e;
+       e = "'" + toQString() + " "+ tmp.toQString().remove("'") + " +'";
+       return new Expression(e);
     }
     catch(std::exception &e){}
 
@@ -95,8 +96,9 @@ type* entier::operator /(type & t)
     try{
 
        Expression &tmp=dynamic_cast<Expression&>(t);
-       type* res;
-       return res;
+       QString e;
+       e = "'" + toQString() + " "+ tmp.toQString().remove("'") + " /'";
+       return new Expression(e);
     }
     catch(std::exception &e){}
 
@@ -137,8 +139,9 @@ type* entier::operator*(type& t){
     try{
 
        Expression &tmp=dynamic_cast<Expression&>(t);
-       type* res;
-       return res;
+       QString e;
+       e = "'" + toQString() +" "+ tmp.toQString().remove("'") + " *'";
+       return new Expression(e);
     }
     catch(std::exception &e){}
 
@@ -182,8 +185,9 @@ type* entier::operator-(type& t){
     try{
 
        Expression &tmp=dynamic_cast<Expression&>(t);
-       type* res;
-       return res;
+       QString e;
+       e = "'" + toQString() + " "+ tmp.toQString().remove("'") + " -'";
+       return new Expression(e);
     }
     catch(std::exception &e){}
 

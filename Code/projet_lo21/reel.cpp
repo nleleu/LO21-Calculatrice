@@ -49,8 +49,9 @@ type* reel::operator +(type & t){
     try{
 
        Expression &tmp=dynamic_cast<Expression&>(t);
-       type* res;
-       return res;
+       QString e;
+       e = "'" + toQString() + " "+ tmp.toQString().remove("'") + " +'";
+       return new Expression(e);
     }
     catch(std::exception &e){}
 
@@ -98,8 +99,9 @@ type* reel::operator /(type & t){
     try{
 
        Expression &tmp=dynamic_cast<Expression&>(t);
-       type* res;
-       return res;
+       QString e;
+       e = "'" + toQString() + " "+ tmp.toQString().remove("'") + " /'";
+       return new Expression(e);
     }
     catch(std::exception &e){}
 
@@ -149,6 +151,15 @@ type* reel::operator*(type& t){
     }
     catch(std::exception &e){}
 
+    try{
+
+       Expression &tmp=dynamic_cast<Expression&>(t);
+       QString e;
+       e = "'" + toQString() +" "+ tmp.toQString().remove("'") + " *'";
+       return new Expression(e);
+    }
+    catch(std::exception &e){}
+
     throw typeException("erreur reel");
 }
 
@@ -183,6 +194,15 @@ type* reel::operator-(type& t){
        type * res;
        res=conv-tmp;
        return res;
+    }
+    catch(std::exception &e){}
+
+    try{
+
+       Expression &tmp=dynamic_cast<Expression&>(t);
+       QString e;
+       e = "'" + toQString() + " "+ tmp.toQString().remove("'") + " -'";
+       return new Expression(e);
     }
     catch(std::exception &e){}
 
