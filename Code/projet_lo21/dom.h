@@ -15,13 +15,12 @@ class Dom
 public:
     Dom(Pile & p);
     ~Dom();
-    void demande_ajout(QString,QString, QString);
+    void ecrire(QString);
     void lire(QString fileName);
-    void newfic();
 
 private :
     QDomDocument doc;
-    QDomElement sauvegardes;
+    QDomElement sauvegarde;
     QDomElement racine;
     QFile file;
     QTextStream out;

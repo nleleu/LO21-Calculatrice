@@ -371,11 +371,13 @@ void MainWindow::on_nbelt_textEdited(const QString &arg1)
 void MainWindow::on_charger_triggered(){
     QString fichier = QFileDialog::getOpenFileName(this, "Ouvrir un fichier", QString(), "XML files (*.xml)");
     Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->setFileName(fichier);
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->charger();
     emit refresh_signal();
 }
 
 void MainWindow::on_sauvegarder_triggered(){
-    QString fichier = QFileDialog::getSaveFileName(this, "Enregistrer un fichier", QString(), "Images (*.png *.gif *.jpg *.jpeg)");
+    QString fichier = QFileDialog::getSaveFileName(this, "Enregistrer un fichier", QString(), "XML files (*.xml)");
     Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->setFileName(fichier);
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->sauvegarder();
     emit refresh_signal();
 }

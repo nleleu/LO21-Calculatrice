@@ -18,8 +18,9 @@ Pile::Pile():nbElt(5){
     g=new gardien;
 }
 
-void Pile::sauvegarde(){
+void Pile::sauvegarder(){
     Dom xml(*this);
+    xml.ecrire(fileName);
 }
 
 void Pile::charger(){

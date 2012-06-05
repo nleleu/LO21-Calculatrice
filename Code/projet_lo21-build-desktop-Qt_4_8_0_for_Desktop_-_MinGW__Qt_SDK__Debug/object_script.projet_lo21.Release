@@ -15,6 +15,9 @@ INPUT(
 ./release\dom.o
 ./release\memento.o
 ./release\gardien.o
+<<<<<<< HEAD
 ./release\typeexception.o
+=======
+>>>>>>> d3dcbb8f899c4ec420630721c4ad81528b5e64c7
 ./release\moc_mainwindow.o
 );
