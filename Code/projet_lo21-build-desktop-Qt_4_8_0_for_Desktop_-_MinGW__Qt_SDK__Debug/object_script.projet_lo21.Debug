@@ -15,9 +15,6 @@ INPUT(
 ./debug\dom.o
 ./debug\memento.o
 ./debug\gardien.o
-<<<<<<< HEAD
 ./debug\typeexception.o
-=======
->>>>>>> d3dcbb8f899c4ec420630721c4ad81528b5e64c7
 ./debug\moc_mainwindow.o
 );

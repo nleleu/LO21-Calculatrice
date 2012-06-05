@@ -1,10 +1,10 @@
-#include "entier.h"
 #include <exception>
+#include "entier.h"
 #include "reel.h"
 #include "rationnel.h"
 #include "complexe.h"
-#include "nocomplex.h"
 #include "expression.h"
+#include "typeexception.h"
 #include <QDebug>
 #include <cmath>
 #include "mainwindow.h"
@@ -56,7 +56,6 @@ type* entier::operator +(type & t){
     catch(std::exception &e){}
 
     try{
-        qDebug() << "test";
        complexe &tmp=dynamic_cast<complexe&>(t);
        complexe conv(toQString());
        type * res;
@@ -64,6 +63,8 @@ type* entier::operator +(type & t){
        return res;
     }
     catch(std::exception &e){}
+
+    throw typeException("erreur complexe");
 
 
 }
@@ -90,6 +91,25 @@ type* entier::operator /(type & t)
        return res;
     }
     catch(std::exception &e){}
+
+    try{
+
+       Expression &tmp=dynamic_cast<Expression&>(t);
+       type* res;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    try{
+       complexe &tmp=dynamic_cast<complexe&>(t);
+       complexe conv(toQString());
+       type * res;
+       res=conv/tmp;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    throw typeException("erreur entier");
 }
 
 type* entier::operator*(type& t){
@@ -113,6 +133,25 @@ type* entier::operator*(type& t){
        return res;
     }
     catch(std::exception &e){}
+
+    try{
+
+       Expression &tmp=dynamic_cast<Expression&>(t);
+       type* res;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    try{
+       complexe &tmp=dynamic_cast<complexe&>(t);
+       complexe conv(toQString());
+       type * res;
+       res=conv*tmp;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    throw typeException("erreur entier");
 }
 
 type* entier::operator-(type& t){
@@ -139,6 +178,25 @@ type* entier::operator-(type& t){
        return res;
     }
     catch(std::exception &e){}
+
+    try{
+
+       Expression &tmp=dynamic_cast<Expression&>(t);
+       type* res;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    try{
+       complexe &tmp=dynamic_cast<complexe&>(t);
+       complexe conv(toQString());
+       type * res;
+       res=conv-tmp;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    throw typeException("erreur entier");
 }
 
 
@@ -158,6 +216,7 @@ type* entier::pow(type & t){
        return res;
     }
     catch(std::exception &e){}
+    throw typeException("erreur entier");
 }
 
 type* entier::mod(type & t){
@@ -168,6 +227,7 @@ type* entier::mod(type & t){
        return res;
     }
     catch(std::exception &e){}
+    throw typeException("erreur entier");
 }
 
 

@@ -80,7 +80,6 @@ public:
     */
     type* sinus();
     type* pow(type & t);
-    type* mod(type & t){}
     type* sign();
 
 

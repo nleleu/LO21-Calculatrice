@@ -120,10 +120,13 @@ void Pile::addition()
         delete op1;
         delete op2;
         push(res);
-        }
-        catch (std::exception &e) {qDebug()  << e.what();}
-
         g->addMemento(*this);
+        }
+        catch (std::exception &e) {
+            qDebug()  << e.what() ;
+            push(op2);
+            push(op1);
+        }
         }
 }
 
@@ -134,12 +137,19 @@ void Pile::soustraction()
         type * res;
         type *op1 = pop();
         type *op2 = pop();
+        try{
         res=*op2-(*op1);
         delete op1;
         delete op2;
         push(res);
         g->addMemento(*this);
-    }
+        }
+        catch (std::exception &e) {
+            qDebug()  << e.what() ;
+            push(op2);
+            push(op1);
+        }
+        }
 }
 
 
@@ -150,13 +160,19 @@ void Pile::multiplication()
         type * res;
         type *op1 = pop();
         type *op2 = pop();
+        try{
         res=*op2*(*op1);
         delete op1;
         delete op2;
         push(res);
-
         g->addMemento(*this);
-    }
+        }
+        catch (std::exception &e) {
+            qDebug()  << e.what() ;
+            push(op2);
+            push(op1);
+        }
+        }
 }
 
 
@@ -168,12 +184,19 @@ void Pile::division()
         type * res;
         type *op1 = pop();
         type *op2 = pop();
+        try{
         res=*op2/(*op1);
         delete op1;
         delete op2;
         push(res);
         g->addMemento(*this);
-    }
+        }
+        catch (std::exception &e) {
+            qDebug()  << e.what() ;
+            push(op2);
+            push(op1);
+        }
+        }
 }
 
 void Pile::pow()
@@ -183,11 +206,18 @@ void Pile::pow()
         type * res;
         type *op1 = pop();
         type *op2 = pop();
+        try{
         res=op2->pow(*op1);
         delete op1;
         delete op2;
         push(res);
         g->addMemento(*this);
+        }
+        catch (std::exception &e) {
+            qDebug()  << e.what() ;
+            push(op2);
+            push(op1);
+        }
         }
 }
 
@@ -198,11 +228,19 @@ void Pile::mod()
         type * res;
         type *op1 = pop();
         type *op2 = pop();
+        try
+        {
         res=op2->mod(*op1);
         delete op1;
         delete op2;
         push(res);
         g->addMemento(*this);
+        }
+        catch (std::exception &e) {
+            qDebug()  << e.what() ;
+            push(op2);
+            push(op1);
+        }
         }
 }
 
@@ -279,10 +317,18 @@ void Pile::sign(){
 
        g->addMemento(*this);
        type *op = pop();
-       op=op->sign();
-       push(op);
+       type *res;
+       try{
+       res=op->sign();
+       push(res);
        g->addMemento(*this);
-       return;
+       }
+       catch (std::exception &e) {
+           qDebug()  << e.what() ;
+           push(op);
+       }
+
+
      }
 }
 
@@ -290,178 +336,244 @@ void Pile::sign(){
 void Pile::sinus(){
 
     if(this->size() > 0){
-
+        g->addMemento(*this);
+        type *op = pop();
+        type *res;
+        try{
+       res=op->sinus();
+       push(res);
        g->addMemento(*this);
-       type *op = pop();
-       op=op->sinus();
-       push(op);
-       g->addMemento(*this);
-       return;
-     }
+       }
+       catch (std::exception &e) {
+           qDebug()  << e.what() ;
+           push(op);
+       }
+    }
 }
 
 
 
 void Pile::cosinus(){
     if(this->size() > 0){
-
+        g->addMemento(*this);
+        type *op = pop();
+        type *res;
+        try{
+       res=op->cosinus();
+       push(res);
        g->addMemento(*this);
-       type *op = pop();
-       op=op->cosinus();
-       push(op);
-       g->addMemento(*this);
-       return;
-     }
+       }
+       catch (std::exception &e) {
+           qDebug()  << e.what() ;
+           push(op);
+       }
+    }
 }
 
 void Pile::tangente(){
     if(this->size() > 0){
-
+        g->addMemento(*this);
+        type *op = pop();
+        type *res;
+        try{
+       res=op->tangente();
+       push(res);
        g->addMemento(*this);
-       type *op = pop();
-       op=op->tangente();
-       push(op);
-       g->addMemento(*this);
-       return;
-     }
+       }
+       catch (std::exception &e) {
+           qDebug()  << e.what() ;
+           push(op);
+       }
+    }
 }
 
 void Pile::sinush(){
     if(this->size() > 0){
-
+        g->addMemento(*this);
+        type *op = pop();
+        type *res;
+        try{
+       res=op->sinush();
+       push(res);
        g->addMemento(*this);
-       type *op = pop();
-       op=op->sinush();
-       push(op);
-       g->addMemento(*this);
-       return;
-     }
+       }
+       catch (std::exception &e) {
+           qDebug()  << e.what() ;
+           push(op);
+       }
+    }
 }
 
 void Pile::cosinush(){
     if(this->size() > 0){
-
+        g->addMemento(*this);
+        type *op = pop();
+        type *res;
+        try{
+       res=op->cosinush();
+       push(res);
        g->addMemento(*this);
-       type *op = pop();
-       op=op->cosinush();
-       push(op);
-       g->addMemento(*this);
-       return;
-     }
+       }
+       catch (std::exception &e) {
+           qDebug()  << e.what() ;
+           push(op);
+       }
+    }
 }
 
 void Pile::tangenteh(){
     if(this->size() > 0){
-
+        g->addMemento(*this);
+        type *op = pop();
+        type *res;
+        try{
+       res=op->tangenteh();
+       push(res);
        g->addMemento(*this);
-       type *op = pop();
-       op=op->tangenteh();
-       push(op);
-       g->addMemento(*this);
-       return;
-     }
+       }
+       catch (std::exception &e) {
+           qDebug()  << e.what() ;
+           push(op);
+       }
+    }
 }
 
 
 
 void Pile::ln(){
     if(this->size() > 0){
-
+        g->addMemento(*this);
+        type *op = pop();
+        type *res;
+        try{
+       res=op->ln();
+       push(res);
        g->addMemento(*this);
-       type *op = pop();
-       op=op->ln();
-       push(op);
-       g->addMemento(*this);
-       return;
-     }
+       }
+       catch (std::exception &e) {
+           qDebug()  << e.what() ;
+           push(op);
+       }
+    }
 }
 
 void Pile::log(){
     if(this->size() > 0){
-
+        g->addMemento(*this);
+        type *op = pop();
+        type *res;
+        try{
+       res=op->log();
+       push(res);
        g->addMemento(*this);
-       type *op = pop();
-       op=op->log();
-       push(op);
-       g->addMemento(*this);
-       return;
-     }
+       }
+       catch (std::exception &e) {
+           qDebug()  << e.what() ;
+           push(op);
+       }
+    }
 }
 
 void Pile::inv(){
     if(this->size() > 0){
-
+        g->addMemento(*this);
+        type *op = pop();
+        type *res;
+        try{
+       res=op->inv();
+       push(res);
        g->addMemento(*this);
-       type *op = pop();
-       op=op->inv();
-       push(op);
-       g->addMemento(*this);
-       return;
-     }
+       }
+       catch (std::exception &e) {
+           qDebug()  << e.what() ;
+           push(op);
+       }
+    }
 }
 
 void Pile::sqrt(){
     if(this->size() > 0){
-
+        g->addMemento(*this);
+        type *op = pop();
+        type *res;
+        try{
+       res=op->sqrt();
+       push(res);
        g->addMemento(*this);
-       type *op = pop();
-       op=op->sqrt();
-       push(op);
-       g->addMemento(*this);
-       return;
-     }
+       }
+       catch (std::exception &e) {
+           qDebug()  << e.what() ;
+           push(op);
+       }
+    }
 }
 
 void Pile::sqr(){
     if(this->size() > 0){
-
+        g->addMemento(*this);
+        type *op = pop();
+        type *res;
+        try{
+       res=op->sqr();
+       push(res);
        g->addMemento(*this);
-       type *op = pop();
-       op=op->sqr();
-       push(op);
-       g->addMemento(*this);
-       return;
-     }
+       }
+       catch (std::exception &e) {
+           qDebug()  << e.what() ;
+           push(op);
+       }
+    }
 }
 
 void Pile::cube(){
     if(this->size() > 0){
-
+        g->addMemento(*this);
+        type *op = pop();
+        type *res;
+        try{
+       res=op->cube();
+       push(res);
        g->addMemento(*this);
-       type *op = pop();
-       op=op->cube();
-       push(op);
-       g->addMemento(*this);
-       return;
-     }
+       }
+       catch (std::exception &e) {
+           qDebug()  << e.what() ;
+           push(op);
+       }
+    }
 }
 
 void Pile::fact(){
     if(this->size() > 0){
-
+        g->addMemento(*this);
+        type *op = pop();
+        type *res;
+        try{
+       res=op->fact();
+       push(res);
        g->addMemento(*this);
-       type *op = pop();
-       op=op->fact();
-       push(op);
-       g->addMemento(*this);
-       return;
-     }
+       }
+       catch (std::exception &e) {
+           qDebug()  << e.what() ;
+           push(op);
+       }
+    }
 }
 
 void Pile::eval(){
     if(this->size() > 0){
-
+        g->addMemento(*this);
+        type *op = pop();
+        type *res;
+        try{
+       res=op->eval();
+       push(res);
        g->addMemento(*this);
-       type *op = pop();
-       op=op->eval();
-       push(op);
-       g->addMemento(*this);
-       return;
-     }
-}
-
-void sauvegarde(){
-
+       }
+       catch (std::exception &e) {
+           qDebug()  << e.what() ;
+           push(op);
+       }
+    }
 }
 
 

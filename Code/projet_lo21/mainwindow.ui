@@ -625,6 +625,7 @@
     </property>
     <addaction name="charger"/>
     <addaction name="sauvegarder"/>
+    <addaction name="actionNouvel_onglet_2"/>
     <addaction name="actionQuit"/>
    </widget>
    <widget class="QMenu" name="menuEdition">
@@ -657,14 +658,6 @@
   <action name="actionParametre">
    <property name="text">
     <string>Parametre</string>
-   </property>
-  </action>
-  <action name="actionNouvel_onglet">
-   <property name="text">
-    <string>Nouvel onglet</string>
-   </property>
-   <property name="shortcut">
-    <string>Ctrl+N</string>
    </property>
   </action>
   <action name="charger">
@@ -710,6 +703,14 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionNouvel_onglet_2">
+   <property name="text">
+    <string>Nouvel onglet</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
    </property>
   </action>
  </widget>

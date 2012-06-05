@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Mon 4. Jun 18:44:00 2012
+** Created: Tue 5. Jun 13:20:15 2012
 **      by: Qt User Interface Compiler version 4.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -38,13 +38,13 @@ class Ui_MainWindow
 public:
     QAction *actionQuit;
     QAction *actionParametre;
-    QAction *actionNouvel_onglet;
     QAction *charger;
     QAction *actionAnnuler;
     QAction *actionR_tablir;
     QAction *actionR_glage;
     QAction *sauvegarder;
     QAction *sauvegarder_all;
+    QAction *actionNouvel_onglet_2;
     QWidget *centralWidget;
     QGroupBox *groupBox;
     QWidget *gridLayoutWidget_2;
@@ -132,8 +132,6 @@ public:
         actionQuit->setObjectName(QString::fromUtf8("actionQuit"));
         actionParametre = new QAction(MainWindow);
         actionParametre->setObjectName(QString::fromUtf8("actionParametre"));
-        actionNouvel_onglet = new QAction(MainWindow);
-        actionNouvel_onglet->setObjectName(QString::fromUtf8("actionNouvel_onglet"));
         charger = new QAction(MainWindow);
         charger->setObjectName(QString::fromUtf8("charger"));
         actionAnnuler = new QAction(MainWindow);
@@ -146,6 +144,8 @@ public:
         sauvegarder->setObjectName(QString::fromUtf8("sauvegarder"));
         sauvegarder_all = new QAction(MainWindow);
         sauvegarder_all->setObjectName(QString::fromUtf8("sauvegarder_all"));
+        actionNouvel_onglet_2 = new QAction(MainWindow);
+        actionNouvel_onglet_2->setObjectName(QString::fromUtf8("actionNouvel_onglet_2"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         groupBox = new QGroupBox(centralWidget);
@@ -476,6 +476,7 @@ public:
         menuBar->addAction(menuEdition->menuAction());
         menuFile->addAction(charger);
         menuFile->addAction(sauvegarder);
+        menuFile->addAction(actionNouvel_onglet_2);
         menuFile->addAction(actionQuit);
         menuEdition->addAction(actionAnnuler);
         menuEdition->addAction(actionR_tablir);
@@ -495,8 +496,6 @@ public:
         actionQuit->setText(QApplication::translate("MainWindow", "Quitter", 0, QApplication::UnicodeUTF8));
         actionQuit->setShortcut(QApplication::translate("MainWindow", "Ctrl+Q", 0, QApplication::UnicodeUTF8));
         actionParametre->setText(QApplication::translate("MainWindow", "Parametre", 0, QApplication::UnicodeUTF8));
-        actionNouvel_onglet->setText(QApplication::translate("MainWindow", "Nouvel onglet", 0, QApplication::UnicodeUTF8));
-        actionNouvel_onglet->setShortcut(QApplication::translate("MainWindow", "Ctrl+N", 0, QApplication::UnicodeUTF8));
         charger->setText(QApplication::translate("MainWindow", "Charger une nouvelle pile", 0, QApplication::UnicodeUTF8));
         charger->setShortcut(QApplication::translate("MainWindow", "Ctrl+O", 0, QApplication::UnicodeUTF8));
         actionAnnuler->setText(QApplication::translate("MainWindow", "Annuler", 0, QApplication::UnicodeUTF8));
@@ -508,6 +507,8 @@ public:
         sauvegarder->setShortcut(QApplication::translate("MainWindow", "Ctrl+S", 0, QApplication::UnicodeUTF8));
         sauvegarder_all->setText(QApplication::translate("MainWindow", "Sauvegarder toutes les piles", 0, QApplication::UnicodeUTF8));
         sauvegarder_all->setShortcut(QApplication::translate("MainWindow", "Ctrl+Shift+S", 0, QApplication::UnicodeUTF8));
+        actionNouvel_onglet_2->setText(QApplication::translate("MainWindow", "Nouvel onglet", 0, QApplication::UnicodeUTF8));
+        actionNouvel_onglet_2->setShortcut(QApplication::translate("MainWindow", "Ctrl+N", 0, QApplication::UnicodeUTF8));
         groupBox->setTitle(QApplication::translate("MainWindow", "Op\303\251rations sur la Pile", 0, QApplication::UnicodeUTF8));
         swap->setText(QApplication::translate("MainWindow", "Swap", 0, QApplication::UnicodeUTF8));
         sum->setText(QApplication::translate("MainWindow", "Sum", 0, QApplication::UnicodeUTF8));

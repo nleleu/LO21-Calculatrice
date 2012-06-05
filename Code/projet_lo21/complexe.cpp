@@ -1,4 +1,7 @@
 #include "complexe.h"
+#include "entier.h"
+#include "typeexception.h"
+
 
 
 type* complexe::operator +(type & t){
@@ -11,6 +14,18 @@ type* complexe::operator +(type & t){
        return res;
     }
     catch(std::exception &e){}
+
+    try{
+       entier &tmp=dynamic_cast<entier&>(t);
+       complexe conv(tmp.toQString());
+       type * res;
+       res=conv+*this;
+       return res;
+    }
+    catch(std::exception &e){}
+    throw typeException("erreur complexe");
+
+
 }
 
 type* complexe::operator /(type & t)

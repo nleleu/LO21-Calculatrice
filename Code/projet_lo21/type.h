@@ -4,6 +4,7 @@
 #include <sstream>
 #include <QString>
 #include <QTextStream>
+#include "typeexception.h"
 
 
 class type
@@ -18,7 +19,7 @@ public:
     virtual type* operator-(type & t)=0;
 
     virtual type* pow(type & t)=0;
-    virtual type* mod(type & t)=0;
+    virtual type* mod(type & t);
     virtual type* sign()=0;
 
     virtual type* sinus()=0;
