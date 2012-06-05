@@ -319,6 +319,7 @@ void MainWindow::on_actionNouvel_onglet_2_triggered()
     ss << "Onglet "<< Collection_pile::getInstance().size();
 
         ui->tabWidget->addTab(ajout,res);
+        ui->tabWidget->setCurrentIndex(Collection_pile::getInstance().size()-1);
 }
 
 void MainWindow::on_actionAnnuler_triggered()
