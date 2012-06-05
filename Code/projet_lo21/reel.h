@@ -6,6 +6,7 @@
 #include <QString>
 #include <qDebug>
 #include "nocomplex.h"
+#include <QRegExp>
 
 class reel:public nocomplex
 {
@@ -221,8 +222,12 @@ public:
         return toQString().section('.', 1,1).size();
                       }
 
-    static bool isReel(const QString& s){QString copie(s);copie.replace(',', '.');
-                return copie.contains ('.');}
+
+    static bool isReel(const QString& s){
+        QString copie(s);
+        copie.replace(',', '.');
+        QRegExp rx("^-?\\d*\\.?\\d*$");
+        return copie.contains(rx);}
 };
 
 #endif // REEL_H

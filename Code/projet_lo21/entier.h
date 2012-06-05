@@ -5,6 +5,7 @@
 #include <sstream>
 #include <QString>
 #include "nocomplex.h"
+ #include <QRegExp>
 
 
 /*!
@@ -266,7 +267,8 @@ public:
     */
 
 
-    static bool isEntier(const QString& s){return !(s.contains (",") || s.contains (".") || s.contains ("/") || s.contains ("$"));}
+    static bool isEntier(const QString& s){QRegExp rx("^\\d+$"); return s.contains (rx);}
+    //static bool isEntier(const QString& s){return !(s.contains (",") || s.contains (".") || s.contains ("/") || s.contains ("$"));}
 };
 
 #endif // ENTIER_H

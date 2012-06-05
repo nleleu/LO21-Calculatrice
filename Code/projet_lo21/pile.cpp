@@ -9,6 +9,7 @@
 #include "dom.h"
 #include <cmath>
 #include "typeexception.h"
+ #include <QRegExp>
 
 #define PI 3.14159265
 
@@ -248,7 +249,9 @@ void Pile::parser(QString s)
 {
     if(!Expression::isExpression(s)){
         type* test=0;
-        QStringList t=(s.split(' '));
+
+        QRegExp rx("\\s+");
+        QStringList t=(s.split(rx));
         for(int i=0; i<t.size();i++)
         {
             if (t[i]=="+")
@@ -293,6 +296,7 @@ void Pile::parser(QString s)
                     fact();
             else
             {
+                qDebug()  << t[i];
                 test=type_factory::getInstance().getType(t[i]);
                 if (test)
                     push(test);
@@ -302,13 +306,9 @@ void Pile::parser(QString s)
 
     else
     {
-        QStringList t=(s.split("'"));
-        for(int i=0; i<t.size();i++)
-            qDebug() << t[i];
-            //parser(t[i]);
+
         push(new Expression(s));
     }
-
 
 }
 
