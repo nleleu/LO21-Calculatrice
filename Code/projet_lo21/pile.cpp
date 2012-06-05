@@ -8,6 +8,7 @@
 #include <QDebug>
 #include "dom.h"
 #include <cmath>
+#include "typeexception.h"
 
 #define PI 3.14159265
 
@@ -112,10 +113,15 @@ void Pile::addition()
         type * res;
         type *op1 = pop();
         type *op2 = pop();
+        try
+        {
         res=*op2+(*op1);
         delete op1;
         delete op2;
         push(res);
+        }
+        catch (std::exception &e) {qDebug()  << e.what();}
+
         g->addMemento(*this);
         }
 }

@@ -25,7 +25,8 @@ SOURCES += main.cpp\
     type_factory.cpp \
     dom.cpp \
     memento.cpp \
-    gardien.cpp
+    gardien.cpp \
+    typeexception.cpp
 
 HEADERS  += mainwindow.h \
     pile.h \
@@ -41,7 +42,8 @@ HEADERS  += mainwindow.h \
     type_factory.h \
     dom.h \
     memento.h \
-    gardien.h
+    gardien.h \
+    typeexception.h
 
 FORMS    += mainwindow.ui
 

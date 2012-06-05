@@ -3,6 +3,8 @@
 #include "reel.h"
 #include "rationnel.h"
 #include "complexe.h"
+#include "nocomplex.h"
+#include "expression.h"
 #include <QDebug>
 #include <cmath>
 #include "mainwindow.h"
@@ -44,6 +46,25 @@ type* entier::operator +(type & t){
        return res;
     }
     catch(std::exception &e){}
+
+    try{
+
+       Expression &tmp=dynamic_cast<Expression&>(t);
+       type* res;
+       return res;
+    }
+    catch(std::exception &e){}
+
+    try{
+        qDebug() << "test";
+       complexe &tmp=dynamic_cast<complexe&>(t);
+       complexe conv(toQString());
+       type * res;
+       res=conv+tmp;
+       return res;
+    }
+    catch(std::exception &e){}
+
 
 }
 
