@@ -78,7 +78,7 @@ public:
     int getNum(){return num;}
     int getDenum(){return denum;}
 
-    static bool isRationnel(const QString& s){QRegExp rx("^-?\\d*/-?\\d*$");if (s.contains (rx)) qDebug() << "ratio";  return s.contains (rx);}
+
 };
 
 #endif // RATIONNEL_H

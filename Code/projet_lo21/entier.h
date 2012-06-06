@@ -267,7 +267,7 @@ public:
     */
 
 
-    static bool isEntier(const QString& s){QRegExp rx("^\\d+$"); return s.contains (rx);}
+
     //static bool isEntier(const QString& s){return !(s.contains (",") || s.contains (".") || s.contains ("/") || s.contains ("$"));}
 };
 

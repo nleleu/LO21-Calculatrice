@@ -5,6 +5,7 @@
 #include <QString>
 #include <QTextStream>
 #include "typeexception.h"
+#include <QMessageBox>
 
 
 class type
@@ -38,7 +39,19 @@ public:
     virtual type* fact();
     virtual type* eval()=0;
 
+    static bool isEntier(const QString& s){QRegExp rx("^\\d+$"); return s.contains (rx);}
 
+    static bool isReel(const QString& s){
+        QString copie(s);
+        copie.replace(',', '.');
+        QRegExp rx("^-?\\d*\\.?\\d*$");
+        return copie.contains(rx);}
+
+    static bool isRationnel(const QString& s){QRegExp rx("^-?\\d*/-?\\d*$");  return s.contains (rx);}
+
+    static bool isExpression(const QString& s){return s.contains ('\'');}
+
+    static bool isComplexe(const QString& s){QRegExp rx("^-?\\d*(/|\\.)?\\$-?\\d*/?.?$");return s.contains (rx);}
 
     virtual QString toQString()=0;
 };

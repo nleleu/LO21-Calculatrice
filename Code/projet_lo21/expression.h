@@ -225,7 +225,7 @@ public:
     *  \return true si la chaine permet de construire une expression
     *    false sinon
     */
-    static bool isExpression(const QString& s){return s.contains ('\'');}
+
 };
 
 #endif // EXPRESSION_H

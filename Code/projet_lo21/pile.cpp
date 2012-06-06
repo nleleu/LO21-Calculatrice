@@ -124,7 +124,9 @@ void Pile::addition()
         g->addMemento(*this);
         }
         catch (std::exception &e) {
-            qDebug()  << e.what() ;
+            QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
             push(op2);
             push(op1);
         }
@@ -146,7 +148,9 @@ void Pile::soustraction()
         g->addMemento(*this);
         }
         catch (std::exception &e) {
-            qDebug()  << e.what() ;
+            QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
             push(op2);
             push(op1);
         }
@@ -169,7 +173,9 @@ void Pile::multiplication()
         g->addMemento(*this);
         }
         catch (std::exception &e) {
-            qDebug()  << e.what() ;
+            QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
             push(op2);
             push(op1);
         }
@@ -193,7 +199,9 @@ void Pile::division()
         g->addMemento(*this);
         }
         catch (std::exception &e) {
-            qDebug()  << e.what() ;
+            QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
             push(op2);
             push(op1);
         }
@@ -215,7 +223,9 @@ void Pile::pow()
         g->addMemento(*this);
         }
         catch (std::exception &e) {
-            qDebug()  << e.what() ;
+            QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
             push(op2);
             push(op1);
         }
@@ -238,7 +248,9 @@ void Pile::mod()
         g->addMemento(*this);
         }
         catch (std::exception &e) {
-            qDebug()  << e.what() ;
+            QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
             push(op2);
             push(op1);
         }
@@ -300,6 +312,15 @@ void Pile::parser(QString s)
                 test=type_factory::getInstance().getType(t[i]);
                 if (test)
                     push(test);
+                else
+                {
+                    QMessageBox msgBox;
+                    msgBox.setText("Erreur de saisie, type non reconnu");
+                     msgBox.exec();
+
+
+
+                }
              }
         }
     }
@@ -326,7 +347,9 @@ void Pile::sign(){
        g->addMemento(*this);
        }
        catch (std::exception &e) {
-           qDebug()  << e.what() ;
+           QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
            push(op);
        }
 
@@ -348,7 +371,9 @@ void Pile::sinus(){
        g->addMemento(*this);
        }
        catch (std::exception &e) {
-           qDebug()  << e.what() ;
+           QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
            push(op);
        }
     }
@@ -368,7 +393,9 @@ void Pile::cosinus(){
        g->addMemento(*this);
        }
        catch (std::exception &e) {
-           qDebug()  << e.what() ;
+           QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
            push(op);
        }
     }
@@ -386,7 +413,9 @@ void Pile::tangente(){
        g->addMemento(*this);
        }
        catch (std::exception &e) {
-           qDebug()  << e.what() ;
+           QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
            push(op);
        }
     }
@@ -404,7 +433,9 @@ void Pile::sinush(){
        g->addMemento(*this);
        }
        catch (std::exception &e) {
-           qDebug()  << e.what() ;
+           QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
            push(op);
        }
     }
@@ -422,7 +453,9 @@ void Pile::cosinush(){
        g->addMemento(*this);
        }
        catch (std::exception &e) {
-           qDebug()  << e.what() ;
+           QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
            push(op);
        }
     }
@@ -440,7 +473,9 @@ void Pile::tangenteh(){
        g->addMemento(*this);
        }
        catch (std::exception &e) {
-           qDebug()  << e.what() ;
+           QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
            push(op);
        }
     }
@@ -460,7 +495,9 @@ void Pile::ln(){
        g->addMemento(*this);
        }
        catch (std::exception &e) {
-           qDebug()  << e.what() ;
+           QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
            push(op);
        }
     }
@@ -478,7 +515,9 @@ void Pile::log(){
        g->addMemento(*this);
        }
        catch (std::exception &e) {
-           qDebug()  << e.what() ;
+           QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
            push(op);
        }
     }
@@ -496,7 +535,9 @@ void Pile::inv(){
        g->addMemento(*this);
        }
        catch (std::exception &e) {
-           qDebug()  << e.what() ;
+           QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
            push(op);
        }
     }
@@ -514,7 +555,9 @@ void Pile::sqrt(){
        g->addMemento(*this);
        }
        catch (std::exception &e) {
-           qDebug()  << e.what() ;
+           QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
            push(op);
        }
     }
@@ -532,7 +575,9 @@ void Pile::sqr(){
        g->addMemento(*this);
        }
        catch (std::exception &e) {
-           qDebug()  << e.what() ;
+           QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
            push(op);
        }
     }
@@ -550,7 +595,9 @@ void Pile::cube(){
        g->addMemento(*this);
        }
        catch (std::exception &e) {
-           qDebug()  << e.what() ;
+           QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
            push(op);
        }
     }
@@ -568,7 +615,9 @@ void Pile::fact(){
        g->addMemento(*this);
        }
        catch (std::exception &e) {
-           qDebug()  << e.what() ;
+           QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
            push(op);
        }
     }
@@ -586,7 +635,9 @@ void Pile::eval(){
        g->addMemento(*this);
        }
        catch (std::exception &e) {
-           qDebug()  << e.what() ;
+           QMessageBox msgBox;
+ msgBox.setText(e.what());
+ msgBox.exec();
            push(op);
        }
     }

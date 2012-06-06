@@ -223,11 +223,7 @@ public:
                       }
 
 
-    static bool isReel(const QString& s){
-        QString copie(s);
-        copie.replace(',', '.');
-        QRegExp rx("^-?\\d*\\.?\\d*$");
-        return copie.contains(rx);}
+
 };
 
 #endif // REEL_H

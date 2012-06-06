@@ -270,7 +270,7 @@ public:
     *  \return true si la chaine permet de construire un complexe
     *    false sinon
     */
-    static bool isComplexe(const QString& s){QRegExp rx("^-?\\d*/?.?\\$-?\\d*/?.?$");return s.contains (rx);}
+
 };
 
 #endif // COMPLEXE_H

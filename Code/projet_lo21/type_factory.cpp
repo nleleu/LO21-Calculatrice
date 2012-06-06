@@ -25,13 +25,13 @@ void type_factory::releaseInstance()
 
 type* type_factory::getType(QString s)
 {
-        if(complexe::isComplexe(s))
+        if(type::isComplexe(s))
         {
         return new complexe(s);
         }
-        if(entier::isEntier(s))
+        if(type::isEntier(s))
             return new entier(s);
-        if(reel::isReel(s))
+        if(type::isReel(s))
             return new reel(s);
         if(rationnel::isRationnel(s))
         {
@@ -40,10 +40,12 @@ type* type_factory::getType(QString s)
             type* res= new rationnel(s);
             return res;
         }catch (std::exception &e) {
-            qDebug()  << e.what() ;
+            QMessageBox msgBox;
+             msgBox.setText(e.what());
+             msgBox.exec();
         }
         }
-        if(Expression::isExpression(s))
+        if(type::isExpression(s))
             return new Expression(s);
         else
         {
