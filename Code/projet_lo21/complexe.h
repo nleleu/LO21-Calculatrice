@@ -225,14 +225,7 @@ public:
 
 
 
-    /*!
-    *  \brief eval
-    *
-    *  Implementation de l'operateur unaire eval (methode virtuelle pure dans la classe mere)
-    *  \return Pointeur sur type, resultat de l'operation
-    *
-    */
-    type* eval(){}
+
 
 
     /*!

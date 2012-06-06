@@ -198,7 +198,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* eval(){}
+    
 
 
     /*!

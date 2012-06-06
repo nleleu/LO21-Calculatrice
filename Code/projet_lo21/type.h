@@ -37,7 +37,7 @@ public:
     virtual type* sqr()=0;
     virtual type* cube()=0;
     virtual type* fact();
-    virtual type* eval()=0;
+    virtual QString eval();
 
     static bool isEntier(const QString& s){QRegExp rx("^\\d+$"); return s.contains (rx);}
 

@@ -68,7 +68,7 @@ public:
     type* sqrt();
     type* sqr();
     type* cube();
-    type* eval(){}
+    QString eval();
 
 
     void simplifie();

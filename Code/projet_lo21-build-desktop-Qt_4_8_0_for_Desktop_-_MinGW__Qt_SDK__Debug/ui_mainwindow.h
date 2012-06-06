@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Tue 5. Jun 13:54:24 2012
+** Created: Wed 6. Jun 22:05:32 2012
 **      by: Qt User Interface Compiler version 4.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -126,7 +126,7 @@ public:
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->setEnabled(true);
         MainWindow->resize(800, 600);
-        MainWindow->setMinimumSize(QSize(800, 600));
+        MainWindow->setMinimumSize(QSize(400, 600));
         MainWindow->setMaximumSize(QSize(800, 600));
         MainWindow->setAcceptDrops(false);
         actionQuit = new QAction(MainWindow);

@@ -12,3 +12,8 @@ type* type::mod(type & t){
 type* type::fact(){
     throw typeException("erreur fact");
 }
+
+
+QString type::eval(){
+    throw typeException("erreur eval");
+}

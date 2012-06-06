@@ -68,7 +68,7 @@ public:
     virtual type* sqrt()=0;
     virtual type* sqr()=0;
     virtual type* cube()=0;
-    virtual type* eval()=0;
+    virtual QString eval(){throw typeException("erreur eval");}
 
 };
 

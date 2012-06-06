@@ -627,17 +627,16 @@ void Pile::eval(){
     if(this->size() > 0){
         g->addMemento(*this);
         type *op = pop();
-        type *res;
+        QString res;
         try{
        res=op->eval();
-       push(res);
-       delete op;
+       parser(res);
        g->addMemento(*this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
- msgBox.setText(e.what());
- msgBox.exec();
+            msgBox.setText(e.what());
+            msgBox.exec();
            push(op);
        }
     }

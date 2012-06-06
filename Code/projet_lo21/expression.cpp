@@ -30,4 +30,9 @@ type* Expression::operator /(type & t){
     return new Expression(exp);
 }
 
+QString Expression::eval(){
+    return exp.remove("'");
+}
+
+
 

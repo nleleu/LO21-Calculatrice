@@ -246,6 +246,13 @@ QString rationnel::toQString(){
     return res;
 }
 
+QString rationnel::eval(){
+    QString res;
+    QTextStream ss(&res);
+    ss << (double)num/(double)denum;
+    return res;
+}
+
 type* rationnel::sign(){
     double tmp(-num/denum);
     type* t= new rationnel(tmp);
