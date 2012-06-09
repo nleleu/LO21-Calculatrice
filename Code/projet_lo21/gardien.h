@@ -25,7 +25,7 @@ class Pile;
 class gardien
 {
     int currentStack;/*!< Position de la Pile actuelle*/
-    QVector <Pile> tabPile;/*!< Vector de pile*/
+    QVector <Pile*> tabPile;/*!< Vector de pile*/
 
 public:
     /*!
@@ -60,7 +60,7 @@ public:
     *   Permet d'ajouter un etat dans le vecteur de pile
     *  \param pile: pile a ajouter
     */
-    void addMemento(Pile pile);
+    void addMemento(Pile* pile);
 };
 
 #endif // GARDIEN_H
