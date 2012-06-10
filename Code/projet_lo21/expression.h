@@ -88,9 +88,9 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* sinus(){}
-    type* pow(type & t){}
-    type* sign(){}
+    type* sinus();
+    type* pow(type & t);
+    type* sign();
 
 
 
@@ -101,7 +101,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* cosinus(){}
+    type* cosinus();
 
     /*!
     *  \brief Tangente
@@ -110,7 +110,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* tangente(){}
+    type* tangente();
 
     /*!
     *  \brief Sinush
@@ -119,7 +119,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* sinush(){}
+    type* sinush();
 
     /*!
     *  \brief Cosinush
@@ -128,7 +128,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* cosinush(){}
+    type* cosinush();
 
     /*!
     *  \brief Tangenteh
@@ -137,7 +137,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* tangenteh(){}
+    type* tangenteh();
 
 
     /*!
@@ -147,7 +147,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* ln(){}
+    type* ln();
 
     /*!
     *  \brief Log
@@ -156,7 +156,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* log(){}
+    type* log();
 
     /*!
     *  \brief Inv
@@ -165,7 +165,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* inv(){}
+    type* inv();
 
 
     /*!
@@ -176,7 +176,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* sqrt(){}
+    type* sqrt();
 
 
     /*!
@@ -186,7 +186,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* sqr(){}
+    type* sqr();
 
     /*!
     *  \brief Cube
@@ -195,7 +195,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* cube(){}
+    type* cube();
 
 
 
