@@ -44,6 +44,8 @@ public:
     */
     Pile* undo();
 
+    ~gardien();
+
 
 
 

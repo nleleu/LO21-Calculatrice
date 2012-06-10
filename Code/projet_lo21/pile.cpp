@@ -38,11 +38,11 @@ void Pile::charger(){
 }*/
 
 Pile::~Pile(){
-    qDebug() << "destruc";
-//bug si delete sur tous les pointeurs de la pile, à revoir
     for(int i=0; i<size(); i++){
        delete at(i);
     }
+    if(g)
+    delete g;
 }
 
 //Selection de l'unite des degres

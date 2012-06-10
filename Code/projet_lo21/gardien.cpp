@@ -7,6 +7,16 @@ gardien::gardien()
     currentStack = -1;
 }
 
+
+gardien::~gardien()
+{
+    for(int i=0; i<tabPile.size(); i++){
+       delete tabPile.at(i);
+    }
+}
+
+
+
 void gardien::addMemento(Pile *pile){
 tabPile.push_back(&pile->clone());
 currentStack++;
