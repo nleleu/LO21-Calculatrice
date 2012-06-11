@@ -7,7 +7,7 @@
 #include "entier.h"
 #include "expression.h"
 
-#define PI 3.14159265
+#define M_PI  3.14159265
 
 /*type* rationnel::operator =(type & t){
     try{
@@ -260,62 +260,62 @@ type* rationnel::sign(){
 }
 
 
-type* rationnel::sinus(degUnit& selectedDegUnit){
+type* rationnel::sinus(bool degre){
     double tmp(num/denum);
-    if(selectedDegUnit == DEGRE)
-        tmp=sin(tmp*PI/180);
-    else if(selectedDegUnit == RADIANT)
+    if(degre)
+        tmp=sin(tmp*M_PI /180);
+    else
         tmp=sin(tmp);
 
     type* t= new reel(tmp);
     return t;
 }
 
-type* rationnel::cosinus(degUnit& selectedDegUnit){
+type* rationnel::cosinus(bool degre){
     double tmp(num/denum);
-    if(selectedDegUnit == DEGRE)
-        tmp=cos(tmp*PI/180);
-    else if(selectedDegUnit == RADIANT)
+    if(degre)
+        tmp=cos(tmp*M_PI /180);
+    else
         tmp=cos(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* rationnel::tangente(degUnit& selectedDegUnit){
+type* rationnel::tangente(bool degre){
     double tmp(num/denum);
-    if(selectedDegUnit == DEGRE)
-        tmp=tan(tmp*PI/180);
-    else if(selectedDegUnit == RADIANT)
+    if(degre)
+        tmp=tan(tmp*M_PI /180);
+    else
         tmp=tan(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* rationnel::sinush(degUnit& selectedDegUnit){
+type* rationnel::sinush(bool degre){
     double tmp(num/denum);
-    if(selectedDegUnit == DEGRE)
-        tmp=sinh(tmp*PI/180);
-    else if(selectedDegUnit == RADIANT)
+    if(degre)
+        tmp=sinh(tmp*M_PI /180);
+    else
         tmp=sinh(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* rationnel::cosinush(degUnit& selectedDegUnit){
+type* rationnel::cosinush(bool degre){
     double tmp(num/denum);
-    if(selectedDegUnit == DEGRE)
-        tmp=cosh(tmp*PI/180);
-    else if(selectedDegUnit == RADIANT)
+    if(degre)
+        tmp=cosh(tmp*M_PI /180);
+    else
         tmp=cosh(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* rationnel::tangenteh(degUnit& selectedDegUnit){
+type* rationnel::tangenteh(bool degre){
     double tmp(num/denum);
-    if(selectedDegUnit == DEGRE)
-        tmp=tanh(tmp*PI/180);
-    else if(selectedDegUnit == RADIANT)
+    if(degre)
+        tmp=tanh(tmp*M_PI /180);
+    else
         tmp=tanh(tmp);
     type* t= new reel(tmp);
     return t;

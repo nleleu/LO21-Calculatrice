@@ -79,7 +79,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* sinus(degUnit& selectedDegUnit);
+    type* sinus(bool degre);
     type* pow(type & t);
     type* sign();
 
@@ -92,7 +92,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* cosinus(degUnit& selectedDegUnit);
+    type* cosinus(bool degre);
 
     /*!
     *  \brief Tangente
@@ -101,7 +101,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* tangente(degUnit& selectedDegUnit);
+    type* tangente(bool degre);
 
     /*!
     *  \brief Sinush
@@ -110,7 +110,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* sinush(degUnit& selectedDegUnit);
+    type* sinush(bool degre);
 
     /*!
     *  \brief Cosinush
@@ -119,7 +119,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* cosinush(degUnit& selectedDegUnit);
+    type* cosinush(bool degre);
 
     /*!
     *  \brief Tangenteh
@@ -128,7 +128,7 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-    type* tangenteh(degUnit& selectedDegUnit);
+    type* tangenteh(bool degre);
 
 
     /*!

@@ -25,7 +25,6 @@
    *
  */
 
-enum degUnit{DEGRE, RADIANT};
 
 
 class Dom;
@@ -35,7 +34,7 @@ class Pile : public QStack <type *>
     int  nbElt;/*!< Nombre d'elements a afficher*/
     gardien* g;/*!< Gardien de la pile*/
     QString fileName;
-
+    bool degre;/*!< true si on travaille en degré, false sinon*/
 
 public:
     /*!
@@ -62,8 +61,11 @@ public:
     *  Pour dupliquer une pile en conservant son gardien, voir duplique().
     *   \return Nouvelle pile
     */
+    bool getDegre() const {return degre;}
+
+    void setDegre(bool deg){degre=deg;}
+
     void setFileName(QString name){fileName = name;}
-    static degUnit selectedDegUnit;
 
     void sauvegarder();
     void charger();
@@ -223,12 +225,12 @@ public:
 
     void sign();
 
-    void sinus(degUnit selectedDegUnit);
-    void cosinus(degUnit selectedDegUnit);
-    void tangente(degUnit selectedDegUnit);
-    void sinush(degUnit selectedDegUnit);
-    void cosinush(degUnit selectedDegUnit);
-    void tangenteh(degUnit selectedDegUnit);
+    void sinus(bool degre);
+    void cosinus(bool degre);
+    void tangente(bool degre);
+    void sinush(bool degre);
+    void cosinush(bool degre);
+    void tangenteh(bool degre);
 
     void ln();
     void log();

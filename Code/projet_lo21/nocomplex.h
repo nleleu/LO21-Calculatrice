@@ -55,12 +55,12 @@ public:
     virtual type* pow(type & t)=0;
     virtual type* sign()=0;
 
-    virtual type* sinus()=0;
-    virtual type* cosinus()=0;
-    virtual type* tangente()=0;
-    virtual type* sinush()=0;
-    virtual type* cosinush()=0;
-    virtual type* tangenteh()=0;
+    virtual type* sinus(bool degre)=0;
+    virtual type* cosinus(bool degre)=0;
+    virtual type* tangente(bool degre)=0;
+    virtual type* sinush(bool degre)=0;
+    virtual type* cosinush(bool degre)=0;
+    virtual type* tangenteh(bool degre)=0;
 
     virtual type* ln()=0;
     virtual type* log()=0;

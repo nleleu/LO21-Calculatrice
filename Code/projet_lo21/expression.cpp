@@ -31,7 +31,7 @@ type* Expression::operator /(type & t){
 }
 
 
-type* Expression::sinus()
+type* Expression::sinus(bool b)
 {
     exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "sin'";
     return new Expression(exp);
@@ -54,7 +54,7 @@ type* Expression::sign()
 
 
 
-type* Expression::cosinus()
+type* Expression::cosinus(bool b)
 {
     exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "cos'";
     return new Expression(exp);
@@ -62,26 +62,26 @@ type* Expression::cosinus()
 
 
 
-type* Expression::tangente()
+type* Expression::tangente(bool b)
 {
     exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "tan'";
     return new Expression(exp);
 }
 
-type* Expression::sinush()
+type* Expression::sinush(bool b)
 {
     exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "sinh'";
     return new Expression(exp);
 }
 
 
-type* Expression::cosinush()
+type* Expression::cosinush(bool b)
 {
     exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "cosh'";
     return new Expression(exp);
 }
 
-type* Expression::tangenteh()
+type* Expression::tangenteh(bool b)
 {
     exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "tanh'";
     return new Expression(exp);

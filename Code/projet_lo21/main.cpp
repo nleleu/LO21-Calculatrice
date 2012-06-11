@@ -9,7 +9,7 @@
 #include <QDebug>
 #include "gardien.h"
 
-degUnit Pile::selectedDegUnit=DEGRE;
+
 
 
 int main(int argc, char *argv[])

@@ -392,3 +392,13 @@ void MainWindow::on_NbAffiche_valueChanged(int arg1)
     Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->setNbElt(arg1);
     emit refresh_signal();
 }
+
+void MainWindow::on_degUnit_clicked()
+{
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->setDegre(true);
+}
+
+void MainWindow::on_radUnit_clicked()
+{
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->setDegre(false);
+}

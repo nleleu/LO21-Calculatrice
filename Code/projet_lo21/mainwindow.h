@@ -120,6 +120,10 @@ private slots:
 
     void on_NbAffiche_valueChanged(int arg1);
 
+    void on_degUnit_clicked();
+
+    void on_radUnit_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

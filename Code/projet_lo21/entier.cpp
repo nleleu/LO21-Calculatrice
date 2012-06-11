@@ -9,7 +9,7 @@
 #include <cmath>
 #include "mainwindow.h"
 
-const int PI = 3.14159265;
+
 
 /*type& entier::operator =(type &t){
     try{
@@ -249,61 +249,61 @@ type* entier::sign(){
     return t;
 }
 
-type* entier::sinus(degUnit selectedDegUnit){
+type* entier::sinus(bool degre){
     double tmp(data);
-    if(selectedDegUnit == DEGRE)
-        tmp=sin(tmp*PI/180);
-    else if(selectedDegUnit == RADIANT)
+    if(degre)
+        tmp=sin(tmp*M_PI /180);
+    else
         tmp=sin(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* entier::cosinus(degUnit& selectedDegUnit){
+type* entier::cosinus(bool degre){
     double tmp(data);
-    if(selectedDegUnit == DEGRE)
-        tmp=cos(tmp*PI/180);
-    else if(selectedDegUnit == RADIANT)
+    if(degre)
+        tmp=cos(tmp*M_PI /180);
+    else
         tmp=cos(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* entier::tangente(degUnit& selectedDegUnit){
+type* entier::tangente(bool degre){
     double tmp(data);
-    if(selectedDegUnit == DEGRE)
-        tmp=tan(tmp*PI/180);
-    else if(selectedDegUnit == RADIANT)
+    if(degre)
+        tmp=tan(tmp*M_PI /180);
+    else
         tmp=tan(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* entier::sinush(degUnit& selectedDegUnit){
+type* entier::sinush(bool degre){
     double tmp(data);
-    if(selectedDegUnit == DEGRE)
-        tmp=sinh(tmp*PI/180);
-    else if(selectedDegUnit == RADIANT)
+    if(degre)
+        tmp=sinh(tmp*M_PI /180);
+    else
         tmp=sinh(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* entier::cosinush(degUnit& selectedDegUnit){
+type* entier::cosinush(bool degre){
     double tmp(data);
-    if(selectedDegUnit == DEGRE)
-        tmp=cosh(tmp*PI/180);
-    else if(selectedDegUnit == RADIANT)
+    if(degre)
+        tmp=cosh(tmp*M_PI /180);
+    else
         tmp=cosh(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* entier::tangenteh(degUnit& selectedDegUnit){
+type* entier::tangenteh(bool degre){
     double tmp(data);
-    if(selectedDegUnit == DEGRE)
-        tmp=tanh(tmp*PI/180);
-    else if(selectedDegUnit == RADIANT)
+    if(degre)
+        tmp=tanh(tmp*M_PI /180);
+    else
         tmp=tanh(tmp);
     type* t= new reel(tmp);
     return t;

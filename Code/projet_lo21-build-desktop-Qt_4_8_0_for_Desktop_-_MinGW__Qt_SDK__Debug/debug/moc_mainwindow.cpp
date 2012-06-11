@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mainwindow.h'
 **
-** Created: Sun 10. Jun 10:56:01 2012
+** Created: Mon 11. Jun 14:44:09 2012
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.0)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_MainWindow[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-      69,   14, // methods
+      71,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -102,6 +102,8 @@ static const uint qt_meta_data_MainWindow[] = {
     1503, 1468,   11,   11, 0x08,
     1532, 1468,   11,   11, 0x08,
     1561, 1468,   11,   11, 0x08,
+    1592,   11,   11,   11, 0x08,
+    1613,   11,   11,   11, 0x08,
 
        0        // eod
 };
@@ -157,6 +159,7 @@ static const char qt_meta_stringdata_MainWindow[] = {
     "on_nbelt_textEdited(QString)\0"
     "on_spinBox_valueChanged(int)\0"
     "on_NbAffiche_valueChanged(int)\0"
+    "on_degUnit_clicked()\0on_radUnit_clicked()\0"
 };
 
 void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -234,6 +237,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 66: _t->on_nbelt_textEdited((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         case 67: _t->on_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 68: _t->on_NbAffiche_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 69: _t->on_degUnit_clicked(); break;
+        case 70: _t->on_radUnit_clicked(); break;
         default: ;
         }
     }
@@ -271,9 +276,9 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 69)
+        if (_id < 71)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 69;
+        _id -= 71;
     }
     return _id;
 }

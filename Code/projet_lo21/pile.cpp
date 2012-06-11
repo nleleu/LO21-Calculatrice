@@ -11,12 +11,13 @@
 #include "typeexception.h"
  #include <QRegExp>
 
-#define PI 3.14159265
+#define M_PI  3.14159265
 
 using namespace std;
 
 Pile::Pile():nbElt(5){
     g=new gardien;
+    degre=true;
 }
 
 void Pile::sauvegarder(){
@@ -45,13 +46,7 @@ Pile::~Pile(){
     delete g;
 }
 
-//Selection de l'unite des degres
-void Pile::on_degUnit_clicked(){
-    Pile::selectedDegUnit=DEGRE;
-}
-void Pile::on_radUnit_clicked(){
-    Pile::selectedDegUnit=RADIANT;
-}
+
 
 Pile& Pile::clone() const{
     Pile *p=new Pile();
@@ -59,6 +54,7 @@ Pile& Pile::clone() const{
         p->push(type_factory::getInstance().getType(at(i)->toQString()));
     }
     p->setGardien(getGardien());
+    p->setDegre(getDegre());
     return *p;
 }
 
@@ -69,6 +65,7 @@ Pile& Pile::duplique() const{
         p->push(type_factory::getInstance().getType(at(i)->toQString()));
     }
     p->setGardien(new gardien);
+    p->setDegre(getDegre());
     return *p;
 }
 
@@ -284,17 +281,17 @@ void Pile::parser(QString s)
             else if (t[i]=="sign")
                     sign();
             else if (t[i]=="sin")
-                    sinus();
+                    sinus(degre);
             else if (t[i]=="cos")
-                    cosinus();
+                    cosinus(degre);
             else if (t[i]=="tan")
-                    tangente();
+                    tangente(degre);
             else if (t[i]=="sinh")
-                    sinush();
+                    sinush(degre);
             else if (t[i]=="cosh")
-                    cosinush();
+                    cosinush(degre);
             else if (t[i]=="tanh")
-                    tangenteh();
+                    tangenteh(degre);
             else if (t[i]=="ln")
                     ln();
             else if (t[i]=="log")
@@ -361,14 +358,14 @@ void Pile::sign(){
 }
 
 
-void Pile::sinus(degUnit selectedDegUnit){
+void Pile::sinus(bool degre){
 
     if(this->size() > 0){
         g->addMemento(this);
         type *op = pop();
         type *res;
         try{
-       res=op->sinus(selectedDegUnit);
+       res=op->sinus(degre);
        push(res);
        delete op;
        g->addMemento(this);
@@ -384,13 +381,13 @@ void Pile::sinus(degUnit selectedDegUnit){
 
 
 
-void Pile::cosinus(degUnit selectedDegUnit){
+void Pile::cosinus(bool degre){
     if(this->size() > 0){
         g->addMemento(this);
         type *op = pop();
         type *res;
         try{
-       res=op->cosinus(selectedDegUnit);
+       res=op->cosinus(degre);
        push(res);
        delete op;
        g->addMemento(this);
@@ -404,13 +401,13 @@ void Pile::cosinus(degUnit selectedDegUnit){
     }
 }
 
-void Pile::tangente(degUnit selectedDegUnit){
+void Pile::tangente(bool degre){
     if(this->size() > 0){
         g->addMemento(this);
         type *op = pop();
         type *res;
         try{
-       res=op->tangente(selectedDegUnit);
+       res=op->tangente(degre);
        push(res);
        delete op;
        g->addMemento(this);
@@ -424,13 +421,13 @@ void Pile::tangente(degUnit selectedDegUnit){
     }
 }
 
-void Pile::sinush(degUnit selectedDegUnit){
+void Pile::sinush(bool degre){
     if(this->size() > 0){
         g->addMemento(this);
         type *op = pop();
         type *res;
         try{
-       res=op->sinush(selectedDegUnit);
+       res=op->sinush(degre);
        push(res);
        delete op;
        g->addMemento(this);
@@ -444,13 +441,13 @@ void Pile::sinush(degUnit selectedDegUnit){
     }
 }
 
-void Pile::cosinush(degUnit selectedDegUnit){
+void Pile::cosinush(bool degre){
     if(this->size() > 0){
         g->addMemento(this);
         type *op = pop();
         type *res;
         try{
-       res=op->cosinush(selectedDegUnit);
+       res=op->cosinush(degre);
        push(res);
        delete op;
        g->addMemento(this);
@@ -464,13 +461,13 @@ void Pile::cosinush(degUnit selectedDegUnit){
     }
 }
 
-void Pile::tangenteh(degUnit selectedDegUnit){
+void Pile::tangenteh(bool degre){
     if(this->size() > 0){
         g->addMemento(this);
         type *op = pop();
         type *res;
         try{
-       res=op->tangenteh(selectedDegUnit);
+       res=op->tangenteh(degre);
        push(res);
        delete op;
        g->addMemento(this);

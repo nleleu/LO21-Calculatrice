@@ -88,15 +88,11 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-<<<<<<< HEAD
-    type* sinus(degUnit& selectedDegUnit){}
-    type* pow(type & t){}
-    type* sign(){}
-=======
-    type* sinus();
+
+    type* sinus(bool degre);
     type* pow(type & t);
     type* sign();
->>>>>>> ce23cc6a6cfad0843b3cb0969496e50321829ac0
+
 
 
 
@@ -107,11 +103,8 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-<<<<<<< HEAD
-    type* cosinus(degUnit& selectedDegUnit){}
-=======
-    type* cosinus();
->>>>>>> ce23cc6a6cfad0843b3cb0969496e50321829ac0
+
+    type* cosinus(bool degre);
 
     /*!
     *  \brief Tangente
@@ -120,11 +113,9 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-<<<<<<< HEAD
-    type* tangente(degUnit& selectedDegUnit){}
-=======
-    type* tangente();
->>>>>>> ce23cc6a6cfad0843b3cb0969496e50321829ac0
+
+    type* tangente(bool degre);
+
 
     /*!
     *  \brief Sinush
@@ -133,11 +124,9 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-<<<<<<< HEAD
-    type* sinush(degUnit& selectedDegUnit){}
-=======
-    type* sinush();
->>>>>>> ce23cc6a6cfad0843b3cb0969496e50321829ac0
+
+    type* sinush(bool degre);
+
 
     /*!
     *  \brief Cosinush
@@ -146,11 +135,8 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-<<<<<<< HEAD
-    type* cosinush(degUnit& selectedDegUnit){}
-=======
-    type* cosinush();
->>>>>>> ce23cc6a6cfad0843b3cb0969496e50321829ac0
+
+    type* cosinush(bool degre);
 
     /*!
     *  \brief Tangenteh
@@ -159,11 +145,9 @@ public:
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
-<<<<<<< HEAD
-    type* tangenteh(degUnit& selectedDegUnit){}
-=======
-    type* tangenteh();
->>>>>>> ce23cc6a6cfad0843b3cb0969496e50321829ac0
+
+    type* tangenteh(bool degre);
+
 
 
     /*!

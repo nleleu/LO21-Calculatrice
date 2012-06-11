@@ -55,12 +55,12 @@ public:
     type* pow(type & t);
     type* sign();
 
-    type* sinus(degUnit& selectedDegUnit);
-    type* cosinus(degUnit& selectedDegUnit);
-    type* tangente(degUnit& selectedDegUnit);
-    type* sinush(degUnit& selectedDegUnit);
-    type* cosinush(degUnit& selectedDegUnit);
-    type* tangenteh(degUnit& selectedDegUnit);
+    type* sinus(bool degre);
+    type* cosinus(bool degre);
+    type* tangente(bool degre);
+    type* sinush(bool degre);
+    type* cosinush(bool degre);
+    type* tangenteh(bool degre);
 
     type* ln();
     type* log();

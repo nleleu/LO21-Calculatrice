@@ -6,7 +6,7 @@
 #include <QTextStream>
 #include "typeexception.h"
 #include <QMessageBox>
-#include "pile.h"
+
 
 
 class type
@@ -24,12 +24,12 @@ public:
     virtual type* mod(type & t);
     virtual type* sign()=0;
 
-    virtual type* sinus(degUnit& selectedDegUnit)=0;
-    virtual type* cosinus(degUnit& selectedDegUnit)=0;
-    virtual type* tangente(degUnit& selectedDegUnit)=0;
-    virtual type* sinush(degUnit& selectedDegUnit)=0;
-    virtual type* cosinush(degUnit& selectedDegUnit)=0;
-    virtual type* tangenteh(degUnit& selectedDegUnit)=0;
+    virtual type* sinus(bool degre)=0;
+    virtual type* cosinus(bool degre)=0;
+    virtual type* tangente(bool degre)=0;
+    virtual type* sinush(bool degre)=0;
+    virtual type* cosinush(bool degre)=0;
+    virtual type* tangenteh(bool degre)=0;
 
     virtual type* ln()=0;
     virtual type* log()=0;
