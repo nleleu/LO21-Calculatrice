@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Calculatrice: Member List</title>
+<title>LO21-Calculatrice: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Calculatrice
+   <div id="projectname">LO21-Calculatrice
    </div>
+   <div id="projectbrief">Projet de fin de semestre</div>
   </td>
  </tr>
  </tbody>
@@ -36,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,19 +88,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classrationnel.html">rationnel</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classconstante.html#ae10b7c5fdf34f213a79b12e4b7e8a982">constante</a>()</td><td class="entry"><a class="el" href="classconstante.html">constante</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classrationnel.html#ac89f01b8f5927ba88ecd60a2f6996d2d">cosinus</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#aef9f5ccfdc0a0344e64e5f1f77adab0d">cosinush</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>constante</b>() (defined in <a class="el" href="classconstante.html">constante</a>)</td><td class="entry"><a class="el" href="classconstante.html">constante</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classrationnel.html#a4a2f7528592b31a367799a79c336395c">cosinus</a>(bool degre)</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#af8de9bc6850dc5471d2e31ddf8e3866e">cosinush</a>(bool degre)</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classrationnel.html#a9bca6086c4a5083765d87324418a86ab">cube</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#aa66761d9af57e34a2ca44d5858dedf00">eval</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classrationnel.html#a51333d6a00b4307407f1ea324902eeb8">fact</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#a1418b1d6ac37f7948affefa7b8d0f314">eval</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classtype.html#adfeadf5e6478f3687bcaba9cf9aaf8d9">fact</a>()</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#abb14c1aafb5b4e8f28d5c770e2e1523e">getDenum</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classrationnel.html#a9c4167d0aafd3bf9460ae58a81a0d29f">getNum</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#a75336cd670c61195c833f8459c02c3b5">inv</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classrationnel.html#aae8578654aadab4a36ef934e61e474fc">isRationnel</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classtype.html#aeadbcfa313ab5a235bb44cf724c3ccba">isComplexe</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtype.html#a011e2bd55a2d7784a1455bbc2fbba2e5">isEntier</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classtype.html#a095a592d75acdef11c9e01e199c49e33">isExpression</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtype.html#a8f2852f004b9d1676aa8ee4385d4ed49">isRationnel</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classtype.html#ae610cb80e031c43ae3c56033ec95a3a7">isReel</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#a59b1b593905de8676db02d5d2a5554c3">ln</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classrationnel.html#a6bed14bda0b8546528454e7b2030645d">log</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#a546c22eedcb7ce551bb04be7dc527573">mod</a>(type &amp;t)</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtype.html#aed752df353b43b17d3f993d4b02f216b">mod</a>(type &amp;t)</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classnocomplex.html#a633b5bd1a8681544bb2773605cffed9c">nocomplex</a>()</td><td class="entry"><a class="el" href="classnocomplex.html">nocomplex</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#a49250cb9001aad230e5193515ee74efa">operator*</a>(type &amp;t)</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classrationnel.html#a14d9d411058e146e075ccf16997e525e">operator+</a>(type &amp;t)</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -109,22 +113,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#a7e10c925a450321f53a50636177561e5">pgcd</a>(int, int) const </td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classrationnel.html#afd9fd9a30f034952ce889d46a07de617">pow</a>(type &amp;t)</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#a92b822d1a85e77456f9db2d0c691d74e">rationnel</a>(int _num=0, int _denum=1)</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classrationnel.html#a5dd117aa62b25bc976f753251170128b">rationnel</a>(const std::string &amp;s)</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#a7411453ee0e517a0008e563938033750">rationnel</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classrationnel.html#aa73709167be428fafc4d95a31f4c3cc0">sign</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#a236e82f84556d0fcd978164529f9bf67">simplifie</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classrationnel.html#ac6ad55bfba79a0169d8cf1fb82354b89">sinus</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#afbf300cd97ee35b0302f7365ed84fb95">sinush</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classrationnel.html#ab9f341fd09499253dd1f9b6f15795576">sqr</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#ad37ab4380b5ff66104748ecc0bf5babe">sqrt</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classrationnel.html#a0f189c649bad58fb78894a19ec7b21f4">tangente</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#a45d63050134594c5a60c7a594021d7e5">tangenteh</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classrationnel.html#a6c905c688ae54647074a5ddf3ef648bd">toQString</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtype.html#a24236b97ec65acd7624c81fc33305e7c">type</a>()</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classrationnel.html#a7411453ee0e517a0008e563938033750">rationnel</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#aa73709167be428fafc4d95a31f4c3cc0">sign</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classrationnel.html#a236e82f84556d0fcd978164529f9bf67">simplifie</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#ad34af896f760a0271286e2dbbf55ad9f">sinus</a>(bool degre)</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classrationnel.html#a107f6a0be55879bd49dd015144fdfde4">sinush</a>(bool degre)</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#ab9f341fd09499253dd1f9b6f15795576">sqr</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classrationnel.html#ad37ab4380b5ff66104748ecc0bf5babe">sqrt</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#ac2bdc47a11ea3d010f006256f6e14f79">tangente</a>(bool degre)</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classrationnel.html#a56135a99618c1fec82901c5e7f64a4a2">tangenteh</a>(bool degre)</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classrationnel.html#a6c905c688ae54647074a5ddf3ef648bd">toQString</a>()</td><td class="entry"><a class="el" href="classrationnel.html">rationnel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classtype.html#a24236b97ec65acd7624c81fc33305e7c">type</a>()</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtype.html#a87f20c8ea87a2752a61aacd9a818ae8e">~type</a>()</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 4 2012 17:33:50 for Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 11 2012 21:41:10 for LO21-Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1
 </small></address>

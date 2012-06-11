@@ -11,6 +11,18 @@
 #include <QMessageBox>
 
 
+/*!
+ * \file mainwindow.h
+ * \author Le Feurmou/Leleu
+ */
+
+/*! \class MainWindow
+   * \brief Classe gerant l'affichage
+   *
+   *
+ */
+
+
 namespace Ui {
 class MainWindow;
 }
@@ -81,7 +93,7 @@ private slots:
     void on_espace_clicked();
     void on_actionParametre_triggered();
     void on_quote_clicked();
-    void on_tabWidget_currentChanged(int index);
+    void on_tabWidget_currentChanged(unsigned int index);
     void on_actionNouvel_onglet_triggered();
     void on_actionNouvel_onglet_2_triggered();
     void on_actionAnnuler_triggered();

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Calculatrice: Pile Class Reference</title>
+<title>LO21-Calculatrice: Pile Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Calculatrice
+   <div id="projectname">LO21-Calculatrice
    </div>
+   <div id="projectbrief">Projet de fin de semestre</div>
   </td>
  </tr>
  </tbody>
@@ -36,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,6 +88,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Classe representant une pile.  
+ <a href="class_pile.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="pile_8h_source.html">pile.h</a>&gt;</code></p>
 
 <p><a href="class_pile-members.html">List of all members.</a></p>
@@ -95,44 +98,111 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2d1398d675586ff34994e2b109df152"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#ab2d1398d675586ff34994e2b109df152">~Pile</a> ()</td></tr>
+<tr class="memdesc:ab2d1398d675586ff34994e2b109df152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur.  <a href="#ab2d1398d675586ff34994e2b109df152"></a><br/></td></tr>
 <tr class="memitem:ab44e927107b28f5f3ac7697d10e0a739"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#ab44e927107b28f5f3ac7697d10e0a739">Pile</a> ()</td></tr>
+<tr class="memdesc:ab44e927107b28f5f3ac7697d10e0a739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur.  <a href="#ab44e927107b28f5f3ac7697d10e0a739"></a><br/></td></tr>
+<tr class="memitem:ad65ece3020d11d8d58c2781150cdca44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#ad65ece3020d11d8d58c2781150cdca44">getDegre</a> () const </td></tr>
+<tr class="memdesc:ad65ece3020d11d8d58c2781150cdca44"><td class="mdescLeft">&#160;</td><td class="mdescRight">getDegre  <a href="#ad65ece3020d11d8d58c2781150cdca44"></a><br/></td></tr>
+<tr class="memitem:abf4931bd506e4c892949c7b7b70fd097"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#abf4931bd506e4c892949c7b7b70fd097">setDegre</a> (bool deg)</td></tr>
+<tr class="memdesc:abf4931bd506e4c892949c7b7b70fd097"><td class="mdescLeft">&#160;</td><td class="mdescRight">setDegre  <a href="#abf4931bd506e4c892949c7b7b70fd097"></a><br/></td></tr>
+<tr class="memitem:a555732cb1e82480697663ba299592d9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a555732cb1e82480697663ba299592d9d">sauvegarder</a> (QString fileName)</td></tr>
+<tr class="memdesc:a555732cb1e82480697663ba299592d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">sauvegarder  <a href="#a555732cb1e82480697663ba299592d9d"></a><br/></td></tr>
+<tr class="memitem:a18026c4fab8cd91ddcec265c47039171"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a18026c4fab8cd91ddcec265c47039171">charger</a> (QString fileName)</td></tr>
+<tr class="memdesc:a18026c4fab8cd91ddcec265c47039171"><td class="mdescLeft">&#160;</td><td class="mdescRight">charger  <a href="#a18026c4fab8cd91ddcec265c47039171"></a><br/></td></tr>
 <tr class="memitem:a13e1620ba0de2d1cd4b1f66f5356a8b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pile.html">Pile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a13e1620ba0de2d1cd4b1f66f5356a8b4">clone</a> () const </td></tr>
+<tr class="memdesc:a13e1620ba0de2d1cd4b1f66f5356a8b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone.  <a href="#a13e1620ba0de2d1cd4b1f66f5356a8b4"></a><br/></td></tr>
 <tr class="memitem:aee5282e29d14470c8805b62830207306"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pile.html">Pile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#aee5282e29d14470c8805b62830207306">duplique</a> () const </td></tr>
+<tr class="memdesc:aee5282e29d14470c8805b62830207306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplique.  <a href="#aee5282e29d14470c8805b62830207306"></a><br/></td></tr>
 <tr class="memitem:aace6210d258170c7420d6a4bda5ec967"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#aace6210d258170c7420d6a4bda5ec967">setGardien</a> (<a class="el" href="classgardien.html">gardien</a> *_g)</td></tr>
+<tr class="memdesc:aace6210d258170c7420d6a4bda5ec967"><td class="mdescLeft">&#160;</td><td class="mdescRight">setGardien Permet de modifier le gardien de la pile  <a href="#aace6210d258170c7420d6a4bda5ec967"></a><br/></td></tr>
 <tr class="memitem:a09fd751d9d6d0d3c861f97405756db56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a09fd751d9d6d0d3c861f97405756db56">setNbElt</a> (int nb)</td></tr>
+<tr class="memdesc:a09fd751d9d6d0d3c861f97405756db56"><td class="mdescLeft">&#160;</td><td class="mdescRight">setNbElt Permet de modifier le nombre d'element a afficher de la pile  <a href="#a09fd751d9d6d0d3c861f97405756db56"></a><br/></td></tr>
 <tr class="memitem:af610383f7aa4076d56646753de61bdc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgardien.html">gardien</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#af610383f7aa4076d56646753de61bdc6">getGardien</a> () const </td></tr>
-<tr class="memitem:a667e4bd3ec87f598cac5f5c761bd1623"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a667e4bd3ec87f598cac5f5c761bd1623">swap</a> (const unsigned int x, const unsigned int y)</td></tr>
+<tr class="memdesc:af610383f7aa4076d56646753de61bdc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">getGardien Permet de recuperer le gardien de la pile  <a href="#af610383f7aa4076d56646753de61bdc6"></a><br/></td></tr>
+<tr class="memitem:ab6c3f9840427e2be87e0d76c8697fff5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#ab6c3f9840427e2be87e0d76c8697fff5">swap</a> (unsigned int x, unsigned int y)</td></tr>
+<tr class="memdesc:ab6c3f9840427e2be87e0d76c8697fff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">swap Permet d'echanger la position des elements en x et y  <a href="#ab6c3f9840427e2be87e0d76c8697fff5"></a><br/></td></tr>
 <tr class="memitem:ab2671569b6870d06fb94179e998e2e2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#ab2671569b6870d06fb94179e998e2e2e">sum</a> (const unsigned int x)</td></tr>
+<tr class="memdesc:ab2671569b6870d06fb94179e998e2e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">sum Permet de sommer les x premiers elements de la pile  <a href="#ab2671569b6870d06fb94179e998e2e2e"></a><br/></td></tr>
 <tr class="memitem:a3993e0e33e78011663b15b9eb723d456"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a3993e0e33e78011663b15b9eb723d456">mean</a> (const unsigned int x)</td></tr>
-<tr class="memitem:a081f7843d01cae1f0f7be7d92e46d5d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a081f7843d01cae1f0f7be7d92e46d5d2">dup</a> ()</td></tr>
-<tr class="memitem:a7488ed257c6ceb16ed57a9fffb0726d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a7488ed257c6ceb16ed57a9fffb0726d5">drop</a> ()</td></tr>
-<tr class="memitem:a2f7afa189e97a23a836f07f9898538cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a2f7afa189e97a23a836f07f9898538cf">addition</a> ()</td></tr>
-<tr class="memitem:ab1827b113fff2c3fa59ebbe4c5902b1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#ab1827b113fff2c3fa59ebbe4c5902b1b">soustraction</a> ()</td></tr>
-<tr class="memitem:a48ef99542609f5033f58ebd23189f698"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a48ef99542609f5033f58ebd23189f698">division</a> ()</td></tr>
-<tr class="memitem:ae5006ad08419fc6dcf65cbb4970199fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#ae5006ad08419fc6dcf65cbb4970199fe">multiplication</a> ()</td></tr>
+<tr class="memdesc:a3993e0e33e78011663b15b9eb723d456"><td class="mdescLeft">&#160;</td><td class="mdescRight">mean Permet de calculer la moyenne des x premiers elements de la pile  <a href="#a3993e0e33e78011663b15b9eb723d456"></a><br/></td></tr>
+<tr class="memitem:a081f7843d01cae1f0f7be7d92e46d5d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a081f7843d01cae1f0f7be7d92e46d5d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a081f7843d01cae1f0f7be7d92e46d5d2">dup</a> ()</td></tr>
+<tr class="memdesc:a081f7843d01cae1f0f7be7d92e46d5d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">dup Duplique le dernier element de la pile <br/></td></tr>
+<tr class="memitem:a7488ed257c6ceb16ed57a9fffb0726d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7488ed257c6ceb16ed57a9fffb0726d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a7488ed257c6ceb16ed57a9fffb0726d5">drop</a> ()</td></tr>
+<tr class="memdesc:a7488ed257c6ceb16ed57a9fffb0726d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">drop Supprime le premier element de la pile <br/></td></tr>
+<tr class="memitem:a2f7afa189e97a23a836f07f9898538cf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f7afa189e97a23a836f07f9898538cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a2f7afa189e97a23a836f07f9898538cf">addition</a> ()</td></tr>
+<tr class="memdesc:a2f7afa189e97a23a836f07f9898538cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">addition Additionne les deux premiers elements de la pile <br/></td></tr>
+<tr class="memitem:ab1827b113fff2c3fa59ebbe4c5902b1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1827b113fff2c3fa59ebbe4c5902b1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#ab1827b113fff2c3fa59ebbe4c5902b1b">soustraction</a> ()</td></tr>
+<tr class="memdesc:ab1827b113fff2c3fa59ebbe4c5902b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">soustraction Soustrait les deux premiers elements de la pile <br/></td></tr>
+<tr class="memitem:a48ef99542609f5033f58ebd23189f698"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48ef99542609f5033f58ebd23189f698"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a48ef99542609f5033f58ebd23189f698">division</a> ()</td></tr>
+<tr class="memdesc:a48ef99542609f5033f58ebd23189f698"><td class="mdescLeft">&#160;</td><td class="mdescRight">division Divise les deux premiers elements de la pile <br/></td></tr>
+<tr class="memitem:ae5006ad08419fc6dcf65cbb4970199fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5006ad08419fc6dcf65cbb4970199fe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#ae5006ad08419fc6dcf65cbb4970199fe">multiplication</a> ()</td></tr>
+<tr class="memdesc:ae5006ad08419fc6dcf65cbb4970199fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">multiplication Multiplie les deux premiers elements de la pile <br/></td></tr>
 <tr class="memitem:ac0be84cde5594e29678125e600bd8898"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#ac0be84cde5594e29678125e600bd8898">parser</a> (QString s)</td></tr>
+<tr class="memdesc:ac0be84cde5594e29678125e600bd8898"><td class="mdescLeft">&#160;</td><td class="mdescRight">parser Utilise les regexp pour parser la chaine s Creer ensuite les types dans la pile, ou execute les operations  <a href="#ac0be84cde5594e29678125e600bd8898"></a><br/></td></tr>
 <tr class="memitem:acc36fadfcc65c9863a9d1d8d5dbe859a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#acc36fadfcc65c9863a9d1d8d5dbe859a">getNb</a> ()</td></tr>
-<tr class="memitem:af91a4b277236024aa5aab9ef410881bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#af91a4b277236024aa5aab9ef410881bb">undo</a> ()</td></tr>
-<tr class="memitem:aa8319a2921d86236d135cff700a5f833"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#aa8319a2921d86236d135cff700a5f833">redo</a> ()</td></tr>
-<tr class="memitem:a20b1ece0cc61ecefc78e1a785ad8235f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a20b1ece0cc61ecefc78e1a785ad8235f">pow</a> ()</td></tr>
-<tr class="memitem:a6d6092af4859ea5cefaa7959bb208774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a6d6092af4859ea5cefaa7959bb208774">mod</a> ()</td></tr>
-<tr class="memitem:ad6ce16606725f1b2fa1028073afc3b75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#ad6ce16606725f1b2fa1028073afc3b75">sign</a> ()</td></tr>
-<tr class="memitem:a3a55c324834f3c6a194fce721492748a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a3a55c324834f3c6a194fce721492748a">sinus</a> ()</td></tr>
-<tr class="memitem:a338ae80ae690356ce13d3e065fb61a4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a338ae80ae690356ce13d3e065fb61a4a">cosinus</a> ()</td></tr>
-<tr class="memitem:ac41a978af4eeff70aafccbfc5b1d865f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#ac41a978af4eeff70aafccbfc5b1d865f">tangente</a> ()</td></tr>
-<tr class="memitem:aaf8dcd15ed6a1af20a451c67b4aa0431"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#aaf8dcd15ed6a1af20a451c67b4aa0431">sinush</a> ()</td></tr>
-<tr class="memitem:a4e5e6d1bc818b0f947e12c5ff7049094"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a4e5e6d1bc818b0f947e12c5ff7049094">cosinush</a> ()</td></tr>
-<tr class="memitem:acb89de235850fdc79448fa40506eb20e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#acb89de235850fdc79448fa40506eb20e">tangenteh</a> ()</td></tr>
-<tr class="memitem:ab22aed5e5178d32a3e47d8f4c599c9c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#ab22aed5e5178d32a3e47d8f4c599c9c4">ln</a> ()</td></tr>
-<tr class="memitem:acaec5142e3afb5208091eecb6ac31f35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#acaec5142e3afb5208091eecb6ac31f35">log</a> ()</td></tr>
-<tr class="memitem:a040844b7b06a3aa8a25c47079858e5d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a040844b7b06a3aa8a25c47079858e5d4">inv</a> ()</td></tr>
-<tr class="memitem:a15e52c1dca0ef1e78af39c69f814e01a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a15e52c1dca0ef1e78af39c69f814e01a">sqrt</a> ()</td></tr>
-<tr class="memitem:abd1c5a18cb8dd304e377d74fcec5a513"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#abd1c5a18cb8dd304e377d74fcec5a513">sqr</a> ()</td></tr>
-<tr class="memitem:aee724c6620382459f78fab4fb08749eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#aee724c6620382459f78fab4fb08749eb">cube</a> ()</td></tr>
-<tr class="memitem:a582a24a17a82fc63985900765b0499b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a582a24a17a82fc63985900765b0499b4">fact</a> ()</td></tr>
-<tr class="memitem:a9fbff00a90c14aca3b093b080c8b0f0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a9fbff00a90c14aca3b093b080c8b0f0b">eval</a> ()</td></tr>
+<tr class="memdesc:acc36fadfcc65c9863a9d1d8d5dbe859a"><td class="mdescLeft">&#160;</td><td class="mdescRight">getNb Retourne la donnee membre NbElt  <a href="#acc36fadfcc65c9863a9d1d8d5dbe859a"></a><br/></td></tr>
+<tr class="memitem:af91a4b277236024aa5aab9ef410881bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af91a4b277236024aa5aab9ef410881bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#af91a4b277236024aa5aab9ef410881bb">undo</a> ()</td></tr>
+<tr class="memdesc:af91a4b277236024aa5aab9ef410881bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">undo Restaure (si c'est possible) l'etat precedent de la pile <br/></td></tr>
+<tr class="memitem:aa8319a2921d86236d135cff700a5f833"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8319a2921d86236d135cff700a5f833"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#aa8319a2921d86236d135cff700a5f833">redo</a> ()</td></tr>
+<tr class="memdesc:aa8319a2921d86236d135cff700a5f833"><td class="mdescLeft">&#160;</td><td class="mdescRight">redo Restaure (si c'est possible) l'etat suivant de la pile <br/></td></tr>
+<tr class="memitem:a20b1ece0cc61ecefc78e1a785ad8235f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20b1ece0cc61ecefc78e1a785ad8235f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a20b1ece0cc61ecefc78e1a785ad8235f">pow</a> ()</td></tr>
+<tr class="memdesc:a20b1ece0cc61ecefc78e1a785ad8235f"><td class="mdescLeft">&#160;</td><td class="mdescRight">pow Declenche l'operateur pow <br/></td></tr>
+<tr class="memitem:a6d6092af4859ea5cefaa7959bb208774"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d6092af4859ea5cefaa7959bb208774"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a6d6092af4859ea5cefaa7959bb208774">mod</a> ()</td></tr>
+<tr class="memdesc:a6d6092af4859ea5cefaa7959bb208774"><td class="mdescLeft">&#160;</td><td class="mdescRight">mod Declenche l'operateur mod <br/></td></tr>
+<tr class="memitem:ad6ce16606725f1b2fa1028073afc3b75"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6ce16606725f1b2fa1028073afc3b75"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#ad6ce16606725f1b2fa1028073afc3b75">sign</a> ()</td></tr>
+<tr class="memdesc:ad6ce16606725f1b2fa1028073afc3b75"><td class="mdescLeft">&#160;</td><td class="mdescRight">sign Declenche l'operateur sign <br/></td></tr>
+<tr class="memitem:a6d5405b44a45926264b48bd2df764798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a6d5405b44a45926264b48bd2df764798">sinus</a> (bool degre=false)</td></tr>
+<tr class="memdesc:a6d5405b44a45926264b48bd2df764798"><td class="mdescLeft">&#160;</td><td class="mdescRight">sinus  <a href="#a6d5405b44a45926264b48bd2df764798"></a><br/></td></tr>
+<tr class="memitem:a7962c91ddf8c1a453909150fb91608db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a7962c91ddf8c1a453909150fb91608db">cosinus</a> (bool degre=false)</td></tr>
+<tr class="memdesc:a7962c91ddf8c1a453909150fb91608db"><td class="mdescLeft">&#160;</td><td class="mdescRight">cosinus  <a href="#a7962c91ddf8c1a453909150fb91608db"></a><br/></td></tr>
+<tr class="memitem:a45db8594e7934b5c9d749a9232afde4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a45db8594e7934b5c9d749a9232afde4e">tangente</a> (bool degre=false)</td></tr>
+<tr class="memdesc:a45db8594e7934b5c9d749a9232afde4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">tangente  <a href="#a45db8594e7934b5c9d749a9232afde4e"></a><br/></td></tr>
+<tr class="memitem:a4d12d390bd97a2432f41013ffc0dcc33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a4d12d390bd97a2432f41013ffc0dcc33">sinush</a> (bool degre=false)</td></tr>
+<tr class="memdesc:a4d12d390bd97a2432f41013ffc0dcc33"><td class="mdescLeft">&#160;</td><td class="mdescRight">sinush  <a href="#a4d12d390bd97a2432f41013ffc0dcc33"></a><br/></td></tr>
+<tr class="memitem:a44d3b913edb048c8d53d8f1f9549bfd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a44d3b913edb048c8d53d8f1f9549bfd3">cosinush</a> (bool degre=false)</td></tr>
+<tr class="memdesc:a44d3b913edb048c8d53d8f1f9549bfd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">cosinush  <a href="#a44d3b913edb048c8d53d8f1f9549bfd3"></a><br/></td></tr>
+<tr class="memitem:a60cc5f271bbb70323af2aa0a40d40a3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a60cc5f271bbb70323af2aa0a40d40a3f">tangenteh</a> (bool degre=false)</td></tr>
+<tr class="memdesc:a60cc5f271bbb70323af2aa0a40d40a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">tangenteh  <a href="#a60cc5f271bbb70323af2aa0a40d40a3f"></a><br/></td></tr>
+<tr class="memitem:ab22aed5e5178d32a3e47d8f4c599c9c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab22aed5e5178d32a3e47d8f4c599c9c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#ab22aed5e5178d32a3e47d8f4c599c9c4">ln</a> ()</td></tr>
+<tr class="memdesc:ab22aed5e5178d32a3e47d8f4c599c9c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ln Declenche l'operateur ln <br/></td></tr>
+<tr class="memitem:acaec5142e3afb5208091eecb6ac31f35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acaec5142e3afb5208091eecb6ac31f35"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#acaec5142e3afb5208091eecb6ac31f35">log</a> ()</td></tr>
+<tr class="memdesc:acaec5142e3afb5208091eecb6ac31f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">log Declenche l'operateur log <br/></td></tr>
+<tr class="memitem:a040844b7b06a3aa8a25c47079858e5d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a040844b7b06a3aa8a25c47079858e5d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a040844b7b06a3aa8a25c47079858e5d4">inv</a> ()</td></tr>
+<tr class="memdesc:a040844b7b06a3aa8a25c47079858e5d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">inv Declenche l'operateur inv <br/></td></tr>
+<tr class="memitem:a15e52c1dca0ef1e78af39c69f814e01a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15e52c1dca0ef1e78af39c69f814e01a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a15e52c1dca0ef1e78af39c69f814e01a">sqrt</a> ()</td></tr>
+<tr class="memdesc:a15e52c1dca0ef1e78af39c69f814e01a"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqrt Declenche l'operateur sqrt <br/></td></tr>
+<tr class="memitem:abd1c5a18cb8dd304e377d74fcec5a513"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd1c5a18cb8dd304e377d74fcec5a513"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#abd1c5a18cb8dd304e377d74fcec5a513">sqr</a> ()</td></tr>
+<tr class="memdesc:abd1c5a18cb8dd304e377d74fcec5a513"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqr Declenche l'operateur sqr <br/></td></tr>
+<tr class="memitem:aee724c6620382459f78fab4fb08749eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee724c6620382459f78fab4fb08749eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#aee724c6620382459f78fab4fb08749eb">cube</a> ()</td></tr>
+<tr class="memdesc:aee724c6620382459f78fab4fb08749eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">cube Declenche l'operateur cube <br/></td></tr>
+<tr class="memitem:a582a24a17a82fc63985900765b0499b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a582a24a17a82fc63985900765b0499b4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a582a24a17a82fc63985900765b0499b4">fact</a> ()</td></tr>
+<tr class="memdesc:a582a24a17a82fc63985900765b0499b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">fact Declenche l'operateur fact <br/></td></tr>
+<tr class="memitem:a9fbff00a90c14aca3b093b080c8b0f0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fbff00a90c14aca3b093b080c8b0f0b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pile.html#a9fbff00a90c14aca3b093b080c8b0f0b">eval</a> ()</td></tr>
+<tr class="memdesc:a9fbff00a90c14aca3b093b080c8b0f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">eval Declenche l'operateur eval <br/></td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Classe representant une pile. </p>
+<p>Derive de Qstack </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab2d1398d675586ff34994e2b109df152"></a>
 <div class="memitem">
 <div class="memproto">
@@ -145,6 +215,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Destructeur. </p>
+<p>Destructeur de la classe <a class="el" href="class_pile.html" title="Classe representant une pile.">Pile</a> </p>
 
 </div>
 </div>
@@ -161,21 +234,34 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructeur. </p>
+<p>Constructeur de la classe <a class="el" href="class_pile.html" title="Classe representant une pile.">Pile</a> </p>
+
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a2f7afa189e97a23a836f07f9898538cf"></a>
+<a class="anchor" id="a18026c4fab8cd91ddcec265c47039171"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Pile::addition </td>
+          <td class="memname">void Pile::charger </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>charger </p>
+<p>Restaure une pile sauvegardee au format XML </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>(QString) : nom du fichier </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -192,111 +278,57 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Clone. </p>
+<p>Permet de creer une nouvelle pile a partir d'une pile source. Le gardien sera un nouveau gardien. Pour dupliquer une pile en conservant son gardien, voir <a class="el" href="class_pile.html#aee5282e29d14470c8805b62830207306" title="Duplique.">duplique()</a>. </p>
+<dl class="section return"><dt>Returns:</dt><dd>Nouvelle pile </dd></dl>
+
 </div>
 </div>
-<a class="anchor" id="a338ae80ae690356ce13d3e065fb61a4a"></a>
+<a class="anchor" id="a7962c91ddf8c1a453909150fb91608db"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Pile::cosinus </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>degre</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>cosinus </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">degre</td><td>: true si utilisation des degres, false si utilisation des radians Declenche l'operateur cosinus </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="a4e5e6d1bc818b0f947e12c5ff7049094"></a>
+<a class="anchor" id="a44d3b913edb048c8d53d8f1f9549bfd3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Pile::cosinush </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>degre</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="aee724c6620382459f78fab4fb08749eb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pile::cube </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a48ef99542609f5033f58ebd23189f698"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pile::division </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7488ed257c6ceb16ed57a9fffb0726d5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pile::drop </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a081f7843d01cae1f0f7be7d92e46d5d2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pile::dup </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>cosinush </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">degre</td><td>: true si utilisation des degres, false si utilisation des radians Declenche l'operateur cosinush </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -313,35 +345,36 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a9fbff00a90c14aca3b093b080c8b0f0b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pile::eval </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Duplique. </p>
+<p>Permet de creer une nouvelle pile a partir d'une pile source. Le gardien sera conserve. </p>
+<dl class="section return"><dt>Returns:</dt><dd>Nouvelle pile </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a582a24a17a82fc63985900765b0499b4"></a>
+<a class="anchor" id="ad65ece3020d11d8d58c2781150cdca44"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Pile::fact </td>
+          <td class="memname">bool Pile::getDegre </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>getDegre </p>
+<p>Accesseur de la donnee membre degre </p>
+<dl class="section return"><dt>Returns:</dt><dd>degre (bool) </dd></dl>
 
 </div>
 </div>
@@ -366,6 +399,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>getGardien Permet de recuperer le gardien de la pile </p>
+<dl class="section return"><dt>Returns:</dt><dd>gardien* </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="acc36fadfcc65c9863a9d1d8d5dbe859a"></a>
@@ -389,50 +425,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a040844b7b06a3aa8a25c47079858e5d4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pile::inv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab22aed5e5178d32a3e47d8f4c599c9c4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pile::ln </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="acaec5142e3afb5208091eecb6ac31f35"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pile::log </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>getNb Retourne la donnee membre NbElt </p>
+<dl class="section return"><dt>Returns:</dt><dd>Nombre d'element a afficher pour la pile </dd></dl>
 
 </div>
 </div>
@@ -450,35 +444,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a6d6092af4859ea5cefaa7959bb208774"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pile::mod </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae5006ad08419fc6dcf65cbb4970199fe"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pile::multiplication </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>mean Permet de calculer la moyenne des x premiers elements de la pile </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x,:</td><td>entier </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -496,24 +468,42 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>parser Utilise les regexp pour parser la chaine s Creer ensuite les types dans la pile, ou execute les operations </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s,:</td><td>Qstring source </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="a20b1ece0cc61ecefc78e1a785ad8235f"></a>
+<a class="anchor" id="a555732cb1e82480697663ba299592d9d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Pile::pow </td>
+          <td class="memname">void Pile::sauvegarder </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>sauvegarder </p>
+<p>Sauvegarde la pile dans un fichier XML </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>(QString) : nom du fichier </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="aa8319a2921d86236d135cff700a5f833"></a>
+<a class="anchor" id="abf4931bd506e4c892949c7b7b70fd097"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -521,9 +511,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Pile::redo </td>
+          <td class="memname">void Pile::setDegre </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>deg</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -533,6 +524,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>setDegre </p>
+<p>Modifie la donnee membre degre </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deg</td><td>(bool) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -558,6 +558,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>setGardien Permet de modifier le gardien de la pile </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>: gardien * </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a09fd751d9d6d0d3c861f97405756db56"></a>
@@ -582,95 +590,61 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="ad6ce16606725f1b2fa1028073afc3b75"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pile::sign </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>setNbElt Permet de modifier le nombre d'element a afficher de la pile </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nb</td><td>: nombre d'element </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="a3a55c324834f3c6a194fce721492748a"></a>
+<a class="anchor" id="a6d5405b44a45926264b48bd2df764798"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Pile::sinus </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>degre</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>sinus </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">degre</td><td>: true si utilisation des degres, false si utilisation des radians Declenche l'operateur sinus </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="aaf8dcd15ed6a1af20a451c67b4aa0431"></a>
+<a class="anchor" id="a4d12d390bd97a2432f41013ffc0dcc33"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Pile::sinush </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>degre</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="ab1827b113fff2c3fa59ebbe4c5902b1b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pile::soustraction </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abd1c5a18cb8dd304e377d74fcec5a513"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pile::sqr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a15e52c1dca0ef1e78af39c69f814e01a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pile::sqrt </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>sinush </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">degre</td><td>: true si utilisation des degres, false si utilisation des radians Declenche l'operateur sinush </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -688,22 +662,30 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>sum Permet de sommer les x premiers elements de la pile </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x,:</td><td>entier </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="a667e4bd3ec87f598cac5f5c761bd1623"></a>
+<a class="anchor" id="ab6c3f9840427e2be87e0d76c8697fff5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Pile::swap </td>
           <td>(</td>
-          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>y</em>&#160;</td>
         </tr>
         <tr>
@@ -714,69 +696,72 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>swap Permet d'echanger la position des elements en x et y </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x,:</td><td>entier,y:entier </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="ac41a978af4eeff70aafccbfc5b1d865f"></a>
+<a class="anchor" id="a45db8594e7934b5c9d749a9232afde4e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Pile::tangente </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>degre</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>tangente </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">degre</td><td>: true si utilisation des degres, false si utilisation des radians Declenche l'operateur tangente </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="acb89de235850fdc79448fa40506eb20e"></a>
+<a class="anchor" id="a60cc5f271bbb70323af2aa0a40d40a3f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Pile::tangenteh </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>degre</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="af91a4b277236024aa5aab9ef410881bb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Pile::undo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>tangenteh </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">degre</td><td>: true si utilisation des degres, false si utilisation des radians Declenche l'operateur tangenteh </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Code/projet_lo21/<a class="el" href="pile_8h_source.html">pile.h</a></li>
-<li>Code/projet_lo21/<a class="el" href="pile_8cpp.html">pile.cpp</a></li>
+<li>Code/projet_lo21/pile.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 4 2012 17:33:50 for Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 11 2012 21:41:10 for LO21-Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1
 </small></address>

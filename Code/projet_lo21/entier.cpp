@@ -5,7 +5,7 @@
 #include "complexe.h"
 #include "expression.h"
 #include "typeexception.h"
-#include <QDebug>
+
 #include <cmath>
 #include "mainwindow.h"
 

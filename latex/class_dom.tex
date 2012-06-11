@@ -3,22 +3,31 @@
 }
 
 
+Classe manipulant l'X\-M\-L.  
+
+
+
+
 {\ttfamily \#include $<$dom.\-h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_dom_a76622d9817909851b9e7ba8a9b3d2614}{Dom} (\hyperlink{class_pile}{Pile} \&p)
-\item 
-\hyperlink{class_dom_a5f1552721661519991b402047c661881}{$\sim$\-Dom} ()
-\item 
-void \hyperlink{class_dom_ae871a6f3df66dd25a60dc6473849afa4}{demande\-\_\-ajout} (Q\-String, Q\-String)
-\item 
-void \hyperlink{class_dom_a6ee5457023816c5ed79606e3e9abc17e}{lire} ()
-\item 
-void \hyperlink{class_dom_a502b476ad2ff4b00c5139694f29994af}{newfic} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hypertarget{class_dom_a5f1552721661519991b402047c661881}{\hyperlink{class_dom_a5f1552721661519991b402047c661881}{$\sim$\-Dom} ()}\label{class_dom_a5f1552721661519991b402047c661881}
 
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void \hyperlink{class_dom_a76e1a406daef8ed0e1bea3733575eb7f}{ecrire} (Q\-String file\-Name)
+\begin{DoxyCompactList}\small\item\em Ecrire Sauvegarde la pile dans un fichier xml. \end{DoxyCompactList}\item 
+void \hyperlink{class_dom_a0134557ad01388c484bb1661e1962ce1}{lire} (Q\-String file\-Name)
+\begin{DoxyCompactList}\small\item\em Lire Charge un fichier X\-M\-L dans une pile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe manipulant l'X\-M\-L. 
+
+Permet la sauvegarde et le chargement 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{class_dom_a76622d9817909851b9e7ba8a9b3d2614}{\index{Dom@{Dom}!Dom@{Dom}}
@@ -28,41 +37,53 @@ void \hyperlink{class_dom_a502b476ad2ff4b00c5139694f29994af}{newfic} ()
 \item[{{\bf Pile} \&}]{p}
 \end{DoxyParamCaption}
 )}}\label{class_dom_a76622d9817909851b9e7ba8a9b3d2614}
-\hypertarget{class_dom_a5f1552721661519991b402047c661881}{\index{Dom@{Dom}!$\sim$\-Dom@{$\sim$\-Dom}}
-\index{$\sim$\-Dom@{$\sim$\-Dom}!Dom@{Dom}}
-\subsubsection[{$\sim$\-Dom}]{\setlength{\rightskip}{0pt plus 5cm}Dom\-::$\sim$\-Dom (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_dom_a5f1552721661519991b402047c661881}
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \-: reference sur la pile a charger ou a sauvegarder \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_dom_ae871a6f3df66dd25a60dc6473849afa4}{\index{Dom@{Dom}!demande\-\_\-ajout@{demande\-\_\-ajout}}
-\index{demande\-\_\-ajout@{demande\-\_\-ajout}!Dom@{Dom}}
-\subsubsection[{demande\-\_\-ajout}]{\setlength{\rightskip}{0pt plus 5cm}void Dom\-::demande\-\_\-ajout (
+\hypertarget{class_dom_a76e1a406daef8ed0e1bea3733575eb7f}{\index{Dom@{Dom}!ecrire@{ecrire}}
+\index{ecrire@{ecrire}!Dom@{Dom}}
+\subsubsection[{ecrire}]{\setlength{\rightskip}{0pt plus 5cm}void Dom\-::ecrire (
 \begin{DoxyParamCaption}
-\item[{Q\-String}]{n, }
-\item[{Q\-String}]{t}
+\item[{Q\-String}]{file\-Name}
 \end{DoxyParamCaption}
-)}}\label{class_dom_ae871a6f3df66dd25a60dc6473849afa4}
-\hypertarget{class_dom_a6ee5457023816c5ed79606e3e9abc17e}{\index{Dom@{Dom}!lire@{lire}}
+)}}\label{class_dom_a76e1a406daef8ed0e1bea3733575eb7f}
+
+
+Ecrire Sauvegarde la pile dans un fichier xml. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filemane(\-Q\-String)} & \-: Chemin du fichier de sauvegarde \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_dom_a0134557ad01388c484bb1661e1962ce1}{\index{Dom@{Dom}!lire@{lire}}
 \index{lire@{lire}!Dom@{Dom}}
 \subsubsection[{lire}]{\setlength{\rightskip}{0pt plus 5cm}void Dom\-::lire (
 \begin{DoxyParamCaption}
-{}
+\item[{Q\-String}]{file\-Name}
 \end{DoxyParamCaption}
-)}}\label{class_dom_a6ee5457023816c5ed79606e3e9abc17e}
-\hypertarget{class_dom_a502b476ad2ff4b00c5139694f29994af}{\index{Dom@{Dom}!newfic@{newfic}}
-\index{newfic@{newfic}!Dom@{Dom}}
-\subsubsection[{newfic}]{\setlength{\rightskip}{0pt plus 5cm}void Dom\-::newfic (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_dom_a502b476ad2ff4b00c5139694f29994af}
+)}}\label{class_dom_a0134557ad01388c484bb1661e1962ce1}
+
+
+Lire Charge un fichier X\-M\-L dans une pile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filemane(\-Q\-String)} & \-: Chemin du fichier X\-M\-L source \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
 Code/projet\-\_\-lo21/\hyperlink{dom_8h}{dom.\-h}\item 
-Code/projet\-\_\-lo21/\hyperlink{dom_8cpp}{dom.\-cpp}\end{DoxyCompactItemize}
+Code/projet\-\_\-lo21/dom.\-cpp\end{DoxyCompactItemize}

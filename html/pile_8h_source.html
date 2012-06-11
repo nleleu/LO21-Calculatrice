@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Calculatrice: Code/projet_lo21/pile.h Source File</title>
+<title>LO21-Calculatrice: Code/projet_lo21/pile.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Calculatrice
+   <div id="projectname">LO21-Calculatrice
    </div>
+   <div id="projectbrief">Projet de fin de semestre</div>
   </td>
  </tr>
  </tbody>
@@ -36,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -60,7 +60,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,65 +95,112 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;QStringList&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="type__factory_8h.html">type_factory.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gardien_8h.html">gardien.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_dom.html">Dom</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="class_pile.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pile.html">Pile</a> : <span class="keyword">public</span> QStack &lt;type *&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span>  nbElt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classgardien.html">gardien</a>* g;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_pile.html#ab2d1398d675586ff34994e2b109df152">~Pile</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_pile.html#ab44e927107b28f5f3ac7697d10e0a739">Pile</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_pile.html">Pile</a>&amp; <a class="code" href="class_pile.html#a13e1620ba0de2d1cd4b1f66f5356a8b4">clone</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_pile.html">Pile</a>&amp; <a class="code" href="class_pile.html#aee5282e29d14470c8805b62830207306">duplique</a>()<span class="keyword">const</span>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="class_pile.html#aace6210d258170c7420d6a4bda5ec967">   23</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#aace6210d258170c7420d6a4bda5ec967">setGardien</a>(<a class="code" href="classgardien.html">gardien</a>* _g){g=_g;}</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="class_pile.html#a09fd751d9d6d0d3c861f97405756db56">   24</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a09fd751d9d6d0d3c861f97405756db56">setNbElt</a>(<span class="keywordtype">int</span> nb){nbElt=nb;}</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="class_pile.html#af610383f7aa4076d56646753de61bdc6">   25</a></span>&#160;    <a class="code" href="classgardien.html">gardien</a>* <a class="code" href="class_pile.html#af610383f7aa4076d56646753de61bdc6">getGardien</a>()<span class="keyword">const</span>{<span class="keywordflow">return</span> g;}</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a667e4bd3ec87f598cac5f5c761bd1623">swap</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#ab2671569b6870d06fb94179e998e2e2e">sum</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a3993e0e33e78011663b15b9eb723d456">mean</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x);</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="class_pile.html#a081f7843d01cae1f0f7be7d92e46d5d2">   29</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a081f7843d01cae1f0f7be7d92e46d5d2">dup</a>(){<span class="keywordflow">if</span>(!isEmpty()){push(top());}}</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="class_pile.html#a7488ed257c6ceb16ed57a9fffb0726d5">   30</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a7488ed257c6ceb16ed57a9fffb0726d5">drop</a>(){<span class="keywordflow">if</span>(!isEmpty()){pop();}}</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a2f7afa189e97a23a836f07f9898538cf">addition</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#ab1827b113fff2c3fa59ebbe4c5902b1b">soustraction</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a48ef99542609f5033f58ebd23189f698">division</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#ae5006ad08419fc6dcf65cbb4970199fe">multiplication</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#ac0be84cde5594e29678125e600bd8898">parser</a>(QString s);</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="class_pile.html#acc36fadfcc65c9863a9d1d8d5dbe859a">   36</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_pile.html#acc36fadfcc65c9863a9d1d8d5dbe859a">getNb</a>(){<span class="keywordflow">return</span> nbElt;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_pile.html#af91a4b277236024aa5aab9ef410881bb">   37</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#af91a4b277236024aa5aab9ef410881bb">undo</a>(){<a class="code" href="class_pile.html">Pile</a> *tmp=g-&gt;<a class="code" href="classgardien.html#a766daaa5df48bed986a03f188c8de4e0">undo</a>();<span class="keywordflow">if</span>(tmp!=0)*<span class="keyword">this</span>=*tmp;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="class_pile.html#aa8319a2921d86236d135cff700a5f833">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#aa8319a2921d86236d135cff700a5f833">redo</a>(){<a class="code" href="class_pile.html">Pile</a> *tmp=g-&gt;<a class="code" href="classgardien.html#a2c4455417103371b0281a01e32ac77fc">redo</a>();<span class="keywordflow">if</span>(tmp!=0)*<span class="keyword">this</span>=*tmp;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a20b1ece0cc61ecefc78e1a785ad8235f">pow</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a6d6092af4859ea5cefaa7959bb208774">mod</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#ad6ce16606725f1b2fa1028073afc3b75">sign</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a3a55c324834f3c6a194fce721492748a">sinus</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a338ae80ae690356ce13d3e065fb61a4a">cosinus</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#ac41a978af4eeff70aafccbfc5b1d865f">tangente</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#aaf8dcd15ed6a1af20a451c67b4aa0431">sinush</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a4e5e6d1bc818b0f947e12c5ff7049094">cosinush</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#acb89de235850fdc79448fa40506eb20e">tangenteh</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#ab22aed5e5178d32a3e47d8f4c599c9c4">ln</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#acaec5142e3afb5208091eecb6ac31f35">log</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a040844b7b06a3aa8a25c47079858e5d4">inv</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a15e52c1dca0ef1e78af39c69f814e01a">sqrt</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#abd1c5a18cb8dd304e377d74fcec5a513">sqr</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#aee724c6620382459f78fab4fb08749eb">cube</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a582a24a17a82fc63985900765b0499b4">fact</a>();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a9fbff00a90c14aca3b093b080c8b0f0b">eval</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif // PILE_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span><a class="code" href="class_dom.html" title="Classe manipulant l&#39;XML.">Dom</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="class_pile.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pile.html" title="Classe representant une pile.">Pile</a> : <span class="keyword">public</span> QStack &lt;type *&gt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span>  nbElt;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classgardien.html" title="Classe representant un gardien.">gardien</a>* g;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> degre;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_pile.html#ab2d1398d675586ff34994e2b109df152" title="Destructeur.">~Pile</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_pile.html#ab44e927107b28f5f3ac7697d10e0a739" title="Constructeur.">Pile</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="class_pile.html#ad65ece3020d11d8d58c2781150cdca44">   61</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_pile.html#ad65ece3020d11d8d58c2781150cdca44" title="getDegre">getDegre</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> degre;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="class_pile.html#abf4931bd506e4c892949c7b7b70fd097">   69</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#abf4931bd506e4c892949c7b7b70fd097" title="setDegre">setDegre</a>(<span class="keywordtype">bool</span> deg){degre=deg;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a555732cb1e82480697663ba299592d9d" title="sauvegarder">sauvegarder</a>(QString fileName);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a18026c4fab8cd91ddcec265c47039171" title="charger">charger</a>(QString fileName);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="class_pile.html" title="Classe representant une pile.">Pile</a>&amp; <a class="code" href="class_pile.html#a13e1620ba0de2d1cd4b1f66f5356a8b4" title="Clone.">clone</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="class_pile.html" title="Classe representant une pile.">Pile</a>&amp; <a class="code" href="class_pile.html#aee5282e29d14470c8805b62830207306" title="Duplique.">duplique</a>()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="code" href="class_pile.html#aace6210d258170c7420d6a4bda5ec967">  115</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#aace6210d258170c7420d6a4bda5ec967" title="setGardien Permet de modifier le gardien de la pile">setGardien</a>(<a class="code" href="classgardien.html" title="Classe representant un gardien.">gardien</a>* _g){g=_g;}</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="code" href="class_pile.html#a09fd751d9d6d0d3c861f97405756db56">  125</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a09fd751d9d6d0d3c861f97405756db56" title="setNbElt Permet de modifier le nombre d&#39;element a afficher de la pile">setNbElt</a>(<span class="keywordtype">int</span> nb){nbElt=nb;}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="code" href="class_pile.html#af610383f7aa4076d56646753de61bdc6">  135</a></span>&#160;    <a class="code" href="classgardien.html" title="Classe representant un gardien.">gardien</a>* <a class="code" href="class_pile.html#af610383f7aa4076d56646753de61bdc6" title="getGardien Permet de recuperer le gardien de la pile">getGardien</a>()<span class="keyword">const</span>{<span class="keywordflow">return</span> g;}</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#ab6c3f9840427e2be87e0d76c8697fff5" title="swap Permet d&#39;echanger la position des elements en x et y">swap</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#ab2671569b6870d06fb94179e998e2e2e" title="sum Permet de sommer les x premiers elements de la pile">sum</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a3993e0e33e78011663b15b9eb723d456" title="mean Permet de calculer la moyenne des x premiers elements de la pile">mean</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="code" href="class_pile.html#a081f7843d01cae1f0f7be7d92e46d5d2">  174</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a081f7843d01cae1f0f7be7d92e46d5d2" title="dup Duplique le dernier element de la pile">dup</a>(){<span class="keywordflow">if</span>(!isEmpty()){push(top());}} <span class="comment">//todo : modifier pour eviter les pb de pointeurs de la pile</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="code" href="class_pile.html#a7488ed257c6ceb16ed57a9fffb0726d5">  182</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a7488ed257c6ceb16ed57a9fffb0726d5" title="drop Supprime le premier element de la pile">drop</a>(){<span class="keywordflow">if</span>(!isEmpty()){pop();}}</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a2f7afa189e97a23a836f07f9898538cf" title="addition Additionne les deux premiers elements de la pile">addition</a>();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#ab1827b113fff2c3fa59ebbe4c5902b1b" title="soustraction Soustrait les deux premiers elements de la pile">soustraction</a>();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a48ef99542609f5033f58ebd23189f698" title="division Divise les deux premiers elements de la pile">division</a>();</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#ae5006ad08419fc6dcf65cbb4970199fe" title="multiplication Multiplie les deux premiers elements de la pile">multiplication</a>();</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#ac0be84cde5594e29678125e600bd8898" title="parser Utilise les regexp pour parser la chaine s Creer ensuite les types dans la pile...">parser</a>(QString s);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="code" href="class_pile.html#acc36fadfcc65c9863a9d1d8d5dbe859a">  229</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_pile.html#acc36fadfcc65c9863a9d1d8d5dbe859a" title="getNb Retourne la donnee membre NbElt">getNb</a>(){<span class="keywordflow">return</span> nbElt;}</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="code" href="class_pile.html#af91a4b277236024aa5aab9ef410881bb">  235</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#af91a4b277236024aa5aab9ef410881bb" title="undo Restaure (si c&#39;est possible) l&#39;etat precedent de la pile">undo</a>(){<a class="code" href="class_pile.html" title="Classe representant une pile.">Pile</a> *tmp=g-&gt;<a class="code" href="classgardien.html#a766daaa5df48bed986a03f188c8de4e0" title="Undo Permet de restaurer l&#39;etat precedent.">undo</a>();<span class="keywordflow">if</span>(tmp!=0)*<span class="keyword">this</span>=*tmp;}</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="code" href="class_pile.html#aa8319a2921d86236d135cff700a5f833">  241</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#aa8319a2921d86236d135cff700a5f833" title="redo Restaure (si c&#39;est possible) l&#39;etat suivant de la pile">redo</a>(){<a class="code" href="class_pile.html" title="Classe representant une pile.">Pile</a> *tmp=g-&gt;<a class="code" href="classgardien.html#a2c4455417103371b0281a01e32ac77fc" title="Redo Permet de restaurer l&#39;etat suivant.">redo</a>();<span class="keywordflow">if</span>(tmp!=0)*<span class="keyword">this</span>=*tmp;}</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a20b1ece0cc61ecefc78e1a785ad8235f" title="pow Declenche l&#39;operateur pow">pow</a>();</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a6d6092af4859ea5cefaa7959bb208774" title="mod Declenche l&#39;operateur mod">mod</a>();</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#ad6ce16606725f1b2fa1028073afc3b75" title="sign Declenche l&#39;operateur sign">sign</a>();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a6d5405b44a45926264b48bd2df764798" title="sinus">sinus</a>(<span class="keywordtype">bool</span> degre=<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a7962c91ddf8c1a453909150fb91608db" title="cosinus">cosinus</a>(<span class="keywordtype">bool</span> degre=<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a45db8594e7934b5c9d749a9232afde4e" title="tangente">tangente</a>(<span class="keywordtype">bool</span> degre=<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a4d12d390bd97a2432f41013ffc0dcc33" title="sinush">sinush</a>(<span class="keywordtype">bool</span> degre=<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a44d3b913edb048c8d53d8f1f9549bfd3" title="cosinush">cosinush</a>(<span class="keywordtype">bool</span> degre=<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a60cc5f271bbb70323af2aa0a40d40a3f" title="tangenteh">tangenteh</a>(<span class="keywordtype">bool</span> degre=<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#ab22aed5e5178d32a3e47d8f4c599c9c4" title="ln Declenche l&#39;operateur ln">ln</a>();</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#acaec5142e3afb5208091eecb6ac31f35" title="log Declenche l&#39;operateur log">log</a>();</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a040844b7b06a3aa8a25c47079858e5d4" title="inv Declenche l&#39;operateur inv">inv</a>();</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a15e52c1dca0ef1e78af39c69f814e01a" title="sqrt Declenche l&#39;operateur sqrt">sqrt</a>();</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#abd1c5a18cb8dd304e377d74fcec5a513" title="sqr Declenche l&#39;operateur sqr">sqr</a>();</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#aee724c6620382459f78fab4fb08749eb" title="cube Declenche l&#39;operateur cube">cube</a>();</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a582a24a17a82fc63985900765b0499b4" title="fact Declenche l&#39;operateur fact">fact</a>();</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_pile.html#a9fbff00a90c14aca3b093b080c8b0f0b" title="eval Declenche l&#39;operateur eval">eval</a>();</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;};</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="preprocessor">#endif // PILE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 4 2012 17:33:49 for Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 11 2012 21:41:09 for LO21-Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1
 </small></address>

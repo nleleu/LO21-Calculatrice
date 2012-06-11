@@ -11,6 +11,13 @@ Dom::Dom(Pile & pile): _pile(pile){}
 
 void Dom::ecrire(QString fileName)
 {
+    QFile file;
+    QDomDocument doc;
+    QDomElement sauvegarde;
+    QDomElement racine;
+
+    QTextStream out;
+
     doc.clear();
     racine=doc.createElement("sauvegardes");
     doc.appendChild(racine); // filiation de la balise "sauvegarde"
@@ -26,12 +33,7 @@ void Dom::ecrire(QString fileName)
         sauvegarde.setAttribute("valeur", _pile.at(i)->toQString());
         racine.appendChild(sauvegarde);
     }
-}
 
-
-Dom::~Dom()
-{
-    // insertion en début de document de <?xml version="1.0" ?>
     QDomNode noeud = doc.createProcessingInstruction("xml","version=\"1.0\"");
     doc.insertBefore(noeud,doc.firstChild());
     // sauvegarde dans le flux (deux espaces de décalage dans l'arborescence)
@@ -40,8 +42,12 @@ Dom::~Dom()
 }
 
 
+
+
 void Dom::lire(QString fileName)
 {
+    QFile file;
+    QDomDocument doc;
     file.setFileName(fileName);
     if (!file.open(QIODevice::ReadOnly)){return;}
     if (!doc.setContent(&file))
@@ -71,4 +77,5 @@ void Dom::lire(QString fileName)
 
       n = n.nextSibling();
     }
+
 }

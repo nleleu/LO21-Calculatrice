@@ -3,20 +3,33 @@
 }
 
 
+Classe representant un gardien.  
+
+
+
+
 {\ttfamily \#include $<$gardien.\-h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classgardien_a23b498d98e7a90384585f9d3721b29fe}{gardien} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
 \hyperlink{class_pile}{Pile} $\ast$ \hyperlink{classgardien_a766daaa5df48bed986a03f188c8de4e0}{undo} ()
-\item 
-\hyperlink{class_pile}{Pile} $\ast$ \hyperlink{classgardien_a2c4455417103371b0281a01e32ac77fc}{redo} ()
-\item 
-void \hyperlink{classgardien_a71a30cc54cd294ff17425a0bb55504e1}{add\-Memento} (\hyperlink{class_pile}{Pile} pile)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Undo Permet de restaurer l'etat precedent. \end{DoxyCompactList}\item 
+\hypertarget{classgardien_a87e46d75ffcaa3f126d2eac2f283195e}{\hyperlink{classgardien_a87e46d75ffcaa3f126d2eac2f283195e}{$\sim$gardien} ()}\label{classgardien_a87e46d75ffcaa3f126d2eac2f283195e}
 
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\hyperlink{class_pile}{Pile} $\ast$ \hyperlink{classgardien_a2c4455417103371b0281a01e32ac77fc}{redo} ()
+\begin{DoxyCompactList}\small\item\em Redo Permet de restaurer l'etat suivant. \end{DoxyCompactList}\item 
+void \hyperlink{classgardien_a57921f6a2f454c4cd793d2a702af5d0a}{add\-Memento} (\hyperlink{class_pile}{Pile} $\ast$pile)
+\begin{DoxyCompactList}\small\item\em add\-Memento Permet d'ajouter un etat dans le vecteur de pile \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe representant un gardien. 
+
+La classe permet de sauvegarder les etats d'une pile, dans le but de pouvoir les restaurer Partie du design pattern \char`\"{}\-Memento\char`\"{} 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classgardien_a23b498d98e7a90384585f9d3721b29fe}{\index{gardien@{gardien}!gardien@{gardien}}
@@ -28,14 +41,27 @@ void \hyperlink{classgardien_a71a30cc54cd294ff17425a0bb55504e1}{add\-Memento} (\
 )}}\label{classgardien_a23b498d98e7a90384585f9d3721b29fe}
 
 
+Constructeur. 
+
+Construit un gardien 
+
 \subsection{Member Function Documentation}
-\hypertarget{classgardien_a71a30cc54cd294ff17425a0bb55504e1}{\index{gardien@{gardien}!add\-Memento@{add\-Memento}}
+\hypertarget{classgardien_a57921f6a2f454c4cd793d2a702af5d0a}{\index{gardien@{gardien}!add\-Memento@{add\-Memento}}
 \index{add\-Memento@{add\-Memento}!gardien@{gardien}}
 \subsubsection[{add\-Memento}]{\setlength{\rightskip}{0pt plus 5cm}void gardien\-::add\-Memento (
 \begin{DoxyParamCaption}
-\item[{{\bf Pile}}]{pile}
+\item[{{\bf Pile} $\ast$}]{pile}
 \end{DoxyParamCaption}
-)}}\label{classgardien_a71a30cc54cd294ff17425a0bb55504e1}
+)}}\label{classgardien_a57921f6a2f454c4cd793d2a702af5d0a}
+
+
+add\-Memento Permet d'ajouter un etat dans le vecteur de pile 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pile,\-:} & pile a ajouter \\
+\hline
+\end{DoxyParams}
 \hypertarget{classgardien_a2c4455417103371b0281a01e32ac77fc}{\index{gardien@{gardien}!redo@{redo}}
 \index{redo@{redo}!gardien@{gardien}}
 \subsubsection[{redo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pile} $\ast$ gardien\-::redo (
@@ -43,6 +69,13 @@ void \hyperlink{classgardien_a71a30cc54cd294ff17425a0bb55504e1}{add\-Memento} (\
 {}
 \end{DoxyParamCaption}
 )}}\label{classgardien_a2c4455417103371b0281a01e32ac77fc}
+
+
+Redo Permet de restaurer l'etat suivant. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_pile}{Pile} a restaurer 
+\end{DoxyReturn}
 \hypertarget{classgardien_a766daaa5df48bed986a03f188c8de4e0}{\index{gardien@{gardien}!undo@{undo}}
 \index{undo@{undo}!gardien@{gardien}}
 \subsubsection[{undo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pile} $\ast$ gardien\-::undo (
@@ -52,7 +85,14 @@ void \hyperlink{classgardien_a71a30cc54cd294ff17425a0bb55504e1}{add\-Memento} (\
 )}}\label{classgardien_a766daaa5df48bed986a03f188c8de4e0}
 
 
+Undo Permet de restaurer l'etat precedent. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_pile}{Pile} a restaurer 
+\end{DoxyReturn}
+
+
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
 Code/projet\-\_\-lo21/\hyperlink{gardien_8h}{gardien.\-h}\item 
-Code/projet\-\_\-lo21/\hyperlink{gardien_8cpp}{gardien.\-cpp}\end{DoxyCompactItemize}
+Code/projet\-\_\-lo21/gardien.\-cpp\end{DoxyCompactItemize}

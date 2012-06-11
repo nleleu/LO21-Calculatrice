@@ -7,7 +7,7 @@
 #include <sstream>
 #include <QStringList>
 #include "type_factory.h"
-#include <QDebug>
+
 #include "gardien.h"
 
 
@@ -17,7 +17,7 @@
  * \author Le Feurmou/Leleu
  */
 
-/*! \class pile
+/*! \class Pile
    * \brief Classe representant une pile
    *
    *  Derive de Qstack
@@ -33,7 +33,6 @@ class Pile : public QStack <type *>
 
     int  nbElt;/*!< Nombre d'elements a afficher*/
     gardien* g;/*!< Gardien de la pile*/
-    QString fileName;
     bool degre;/*!< true si on travaille en degré, false sinon*/
 
 public:
@@ -54,6 +53,39 @@ public:
     Pile();
 
     /*!
+    *  \brief getDegre
+    *
+    *  Accesseur de la donnee membre degre
+    *   \return degre (bool)
+    */
+    bool getDegre() const {return degre;}
+
+    /*!
+    *  \brief setDegre
+    *
+    *   Modifie la donnee membre degre
+    *   \param deg (bool)
+    */
+    void setDegre(bool deg){degre=deg;}
+
+    /*!
+    *  \brief sauvegarder
+    *
+    *   Sauvegarde la pile dans un fichier XML
+    *   \param filename (QString) : nom du fichier
+    */
+    void sauvegarder(QString fileName);
+
+    /*!
+    *  \brief charger
+    *
+    *   Restaure une pile sauvegardee au format XML
+    *   \param filename (QString) : nom du fichier
+    */
+    void charger(QString fileName);
+
+
+    /*!
     *  \brief Clone
     *
     *  Permet de creer une nouvelle pile a partir d'une pile source.
@@ -61,15 +93,6 @@ public:
     *  Pour dupliquer une pile en conservant son gardien, voir duplique().
     *   \return Nouvelle pile
     */
-    bool getDegre() const {return degre;}
-
-    void setDegre(bool deg){degre=deg;}
-
-    void setFileName(QString name){fileName = name;}
-
-    void sauvegarder();
-    void charger();
-
     Pile& clone() const;
 
     /*!
@@ -120,13 +143,10 @@ public:
     */
 
 
-    //selection de l'unite des degres
-    void on_degUnit_clicked();
-    void on_radUnit_clicked();
 
 
 
-    void swap(const unsigned int x, const unsigned int y);
+    void swap(unsigned int x,unsigned int y);
 
     /*!
     *  \brief sum
@@ -215,30 +235,117 @@ public:
     void undo(){Pile *tmp=g->undo();if(tmp!=0)*this=*tmp;}
 
     /*!
-    *  \brief undo
+    *  \brief redo
     *  Restaure (si c'est possible) l'etat suivant de la pile
     */
     void redo(){Pile *tmp=g->redo();if(tmp!=0)*this=*tmp;}
 
+
+    /*!
+    *  \brief pow
+    *  Declenche l'operateur pow
+    */
     void pow();
+
+
+    /*!
+    *  \brief mod
+    *  Declenche l'operateur mod
+    */
     void mod();
 
+
+    /*!
+    *  \brief sign
+    *  Declenche l'operateur sign
+    */
     void sign();
 
-    void sinus(bool degre);
-    void cosinus(bool degre);
-    void tangente(bool degre);
-    void sinush(bool degre);
-    void cosinush(bool degre);
-    void tangenteh(bool degre);
 
+    /*!
+    *  \brief sinus
+    *  \param degre : true si utilisation des degres, false si utilisation des radians
+    *  Declenche l'operateur sinus
+    */
+    void sinus(bool degre=false);
+    /*!
+    *  \brief cosinus
+    *  \param degre : true si utilisation des degres, false si utilisation des radians
+    *  Declenche l'operateur cosinus
+    */
+    void cosinus(bool degre=false);
+    /*!
+    *  \brief tangente
+    *  \param degre : true si utilisation des degres, false si utilisation des radians
+    *  Declenche l'operateur tangente
+    */
+    void tangente(bool degre=false);
+    /*!
+    *  \brief sinush
+    *  \param degre : true si utilisation des degres, false si utilisation des radians
+    *  Declenche l'operateur sinush
+    */
+    void sinush(bool degre=false);
+    /*!
+    *  \brief cosinush
+    *  \param degre : true si utilisation des degres, false si utilisation des radians
+    *  Declenche l'operateur cosinush
+    */
+    void cosinush(bool degre=false);
+    /*!
+    *  \brief tangenteh
+    *  \param degre : true si utilisation des degres, false si utilisation des radians
+    *  Declenche l'operateur tangenteh
+    */
+    void tangenteh(bool degre=false);
+
+
+    /*!
+    *  \brief ln
+    *  Declenche l'operateur ln
+    */
     void ln();
+
+    /*!
+    *  \brief log
+    *  Declenche l'operateur log
+    */
     void log();
+
+    /*!
+    *  \brief inv
+    *  Declenche l'operateur inv
+    */
     void inv();
+
+    /*!
+    *  \brief sqrt
+    *  Declenche l'operateur sqrt
+    */
     void sqrt();
+
+    /*!
+    *  \brief sqr
+    *  Declenche l'operateur sqr
+    */
     void sqr();
+
+    /*!
+    *  \brief cube
+    *  Declenche l'operateur cube
+    */
     void cube();
+
+    /*!
+    *  \brief fact
+    *  Declenche l'operateur fact
+    */
     void fact();
+
+    /*!
+    *  \brief eval
+    *  Declenche l'operateur eval
+    */
     void eval();
 
 

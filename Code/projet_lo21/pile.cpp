@@ -4,14 +4,12 @@
 #include "rationnel.h"
 #include "complexe.h"
 #include "expression.h"
-#include "mainwindow.h"
-#include <QDebug>
+
 #include "dom.h"
 #include <cmath>
 #include "typeexception.h"
- #include <QRegExp>
+#include <QRegExp>
 
-#define M_PI  3.14159265
 
 using namespace std;
 
@@ -20,23 +18,16 @@ Pile::Pile():nbElt(5){
     degre=true;
 }
 
-void Pile::sauvegarder(){
+void Pile::sauvegarder(QString fileName){
     Dom xml(*this);
     xml.ecrire(fileName);
 }
 
-void Pile::charger(){
+void Pile::charger(QString fileName){
     Dom xml(*this);
     xml.lire(fileName);
 }
 
-/*Pile::Pile(const Pile &p)
-{
-
-    nbElt=p.nbElt;
-
-
-}*/
 
 Pile::~Pile(){
     for(int i=0; i<size(); i++){
@@ -70,8 +61,8 @@ Pile& Pile::duplique() const{
 }
 
 
-void Pile::swap(const unsigned int x, const unsigned int y){
-    if (x < this->size() && y < this->size()){
+void Pile::swap(unsigned int x, unsigned int y){
+    if (x < (unsigned int)this->size() && y < (unsigned int)this->size()){
         type * tmp = at(size()-1-x);
         replace(size()-1-x, at(size()-1-y));
         replace(size()-1-y, tmp);
@@ -308,7 +299,6 @@ void Pile::parser(QString s)
                     fact();
             else
             {
-                qDebug()  << t[i];
                 test=type_factory::getInstance().getType(t[i]);
                 if (test)
                     push(test);

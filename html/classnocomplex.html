@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Calculatrice: nocomplex Class Reference</title>
+<title>LO21-Calculatrice: nocomplex Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Calculatrice
+   <div id="projectname">LO21-Calculatrice
    </div>
+   <div id="projectbrief">Projet de fin de semestre</div>
   </td>
  </tr>
  </tbody>
@@ -36,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,46 +88,79 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Classe representant les types de constantes non complexes.  
+ <a href="classnocomplex.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="nocomplex_8h_source.html">nocomplex.h</a>&gt;</code></p>
-
-<p>Inherits <a class="el" href="classconstante.html">constante</a>.</p>
-
-<p>Inherited by <a class="el" href="classentier.html">entier</a>, <a class="el" href="classrationnel.html">rationnel</a>, and <a class="el" href="classreel.html">reel</a>.</p>
+<div class="dynheader">
+Inheritance diagram for nocomplex:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classnocomplex.png" usemap="#nocomplex_map" alt=""/>
+  <map id="nocomplex_map" name="nocomplex_map">
+<area href="classconstante.html" title="Classe representant une constante." alt="constante" shape="rect" coords="82,56,154,80"/>
+<area href="classtype.html" title="Classe representant un type." alt="type" shape="rect" coords="82,0,154,24"/>
+<area href="classentier.html" title="Classe representant une constante." alt="entier" shape="rect" coords="0,168,72,192"/>
+<area href="classrationnel.html" title="Classe representant une fraction." alt="rationnel" shape="rect" coords="82,168,154,192"/>
+<area href="classreel.html" title="Classe representant un reel." alt="reel" shape="rect" coords="164,168,236,192"/>
+</map>
+ </div></div>
 
 <p><a href="classnocomplex-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a633b5bd1a8681544bb2773605cffed9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a633b5bd1a8681544bb2773605cffed9c">nocomplex</a> ()</td></tr>
-<tr class="memitem:af3d04b00f4f82d3a35cad0ca023093f4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#af3d04b00f4f82d3a35cad0ca023093f4">operator+</a> (<a class="el" href="classtype.html">type</a> &amp;t)=0</td></tr>
-<tr class="memitem:a47942bdcc78cfc5d5e867c9f9836a465"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a47942bdcc78cfc5d5e867c9f9836a465">operator/</a> (<a class="el" href="classtype.html">type</a> &amp;t)=0</td></tr>
-<tr class="memitem:ac84954cbe0bd9c77eab88c0b97b34c2b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#ac84954cbe0bd9c77eab88c0b97b34c2b">operator*</a> (<a class="el" href="classtype.html">type</a> &amp;t)=0</td></tr>
-<tr class="memitem:a2005c3a0fcaa1f360561539931ffc578"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a2005c3a0fcaa1f360561539931ffc578">operator-</a> (<a class="el" href="classtype.html">type</a> &amp;t)=0</td></tr>
-<tr class="inherit_header pub_methods_classconstante"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classconstante')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classconstante.html">constante</a></td></tr>
-<tr class="memitem:ae10b7c5fdf34f213a79b12e4b7e8a982 inherit pub_methods_classconstante"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconstante.html#ae10b7c5fdf34f213a79b12e4b7e8a982">constante</a> ()</td></tr>
-<tr class="inherit_header pub_methods_classtype"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classtype')"><img src="closed.png" alt="-"/>&nbsp;Public Member Functions inherited from <a class="el" href="classtype.html">type</a></td></tr>
-<tr class="memitem:a24236b97ec65acd7624c81fc33305e7c inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#a24236b97ec65acd7624c81fc33305e7c">type</a> ()</td></tr>
-<tr class="memitem:a60bc9fca9ded4e67963e6c9fad82ff01 inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#a60bc9fca9ded4e67963e6c9fad82ff01">pow</a> (<a class="el" href="classtype.html">type</a> &amp;t)=0</td></tr>
-<tr class="memitem:ab6f68c2a7481faf20b02aa4ae67c6500 inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#ab6f68c2a7481faf20b02aa4ae67c6500">mod</a> (<a class="el" href="classtype.html">type</a> &amp;t)=0</td></tr>
-<tr class="memitem:a59342fe365d621d47b607d3f4e155169 inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#a59342fe365d621d47b607d3f4e155169">sign</a> ()=0</td></tr>
-<tr class="memitem:ae12b68744cbf5c49e5e065fbf8a13954 inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#ae12b68744cbf5c49e5e065fbf8a13954">sinus</a> ()=0</td></tr>
-<tr class="memitem:ac459ee75f7ab8d345c01a1f9a13f0728 inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#ac459ee75f7ab8d345c01a1f9a13f0728">cosinus</a> ()=0</td></tr>
-<tr class="memitem:a425ad47ffa64f9dafe38ac2cf6f542fb inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#a425ad47ffa64f9dafe38ac2cf6f542fb">tangente</a> ()=0</td></tr>
-<tr class="memitem:a9ae4dee6629d0d366e52e94591de46d3 inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#a9ae4dee6629d0d366e52e94591de46d3">sinush</a> ()=0</td></tr>
-<tr class="memitem:acd7a105cccf58a42d6c09b40c91f75f0 inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#acd7a105cccf58a42d6c09b40c91f75f0">cosinush</a> ()=0</td></tr>
-<tr class="memitem:a260ae21ca7b4f5e7eb4dd6f8996ea9a8 inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#a260ae21ca7b4f5e7eb4dd6f8996ea9a8">tangenteh</a> ()=0</td></tr>
-<tr class="memitem:a601802c36f0dd5c1067b9873eb103a6d inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#a601802c36f0dd5c1067b9873eb103a6d">ln</a> ()=0</td></tr>
-<tr class="memitem:a7fc23e8e38550f3ad98c0b3582f6163a inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#a7fc23e8e38550f3ad98c0b3582f6163a">log</a> ()=0</td></tr>
-<tr class="memitem:a5eeb7c768cc90a0e9abd91d585169264 inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#a5eeb7c768cc90a0e9abd91d585169264">inv</a> ()=0</td></tr>
-<tr class="memitem:a626c58aa4bca21f65845140c7c9b895e inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#a626c58aa4bca21f65845140c7c9b895e">sqrt</a> ()=0</td></tr>
-<tr class="memitem:ab5ac11ebbed8a99db5ce4933cb17ddea inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#ab5ac11ebbed8a99db5ce4933cb17ddea">sqr</a> ()=0</td></tr>
-<tr class="memitem:ae9ff7857936535092924b83aec1412c6 inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#ae9ff7857936535092924b83aec1412c6">cube</a> ()=0</td></tr>
-<tr class="memitem:aa5503ee1cdc7c88b058f9216e1e780c3 inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#aa5503ee1cdc7c88b058f9216e1e780c3">fact</a> ()=0</td></tr>
-<tr class="memitem:a20555e9f6c76f728d94049bd72f65fc6 inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#a20555e9f6c76f728d94049bd72f65fc6">eval</a> ()=0</td></tr>
-<tr class="memitem:ab61f01d56f3896cc99788a1a18c4b0c2 inherit pub_methods_classtype"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype.html#ab61f01d56f3896cc99788a1a18c4b0c2">toQString</a> ()=0</td></tr>
+<tr class="memitem:a633b5bd1a8681544bb2773605cffed9c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a633b5bd1a8681544bb2773605cffed9c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a633b5bd1a8681544bb2773605cffed9c">nocomplex</a> ()</td></tr>
+<tr class="memdesc:a633b5bd1a8681544bb2773605cffed9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur. <br/></td></tr>
+<tr class="memitem:af3d04b00f4f82d3a35cad0ca023093f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3d04b00f4f82d3a35cad0ca023093f4"></a>
+virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#af3d04b00f4f82d3a35cad0ca023093f4">operator+</a> (<a class="el" href="classtype.html">type</a> &amp;t)=0</td></tr>
+<tr class="memdesc:af3d04b00f4f82d3a35cad0ca023093f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operateur + Methode virtuelle pure, permet de profiter du polymorphisme (interet pour les complexes) <br/></td></tr>
+<tr class="memitem:a47942bdcc78cfc5d5e867c9f9836a465"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47942bdcc78cfc5d5e867c9f9836a465"></a>
+virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a47942bdcc78cfc5d5e867c9f9836a465">operator/</a> (<a class="el" href="classtype.html">type</a> &amp;t)=0</td></tr>
+<tr class="memdesc:a47942bdcc78cfc5d5e867c9f9836a465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operateur / Methode virtuelle pure, permet de profiter du polymorphisme (interet pour les complexes) <br/></td></tr>
+<tr class="memitem:ac84954cbe0bd9c77eab88c0b97b34c2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac84954cbe0bd9c77eab88c0b97b34c2b"></a>
+virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#ac84954cbe0bd9c77eab88c0b97b34c2b">operator*</a> (<a class="el" href="classtype.html">type</a> &amp;t)=0</td></tr>
+<tr class="memdesc:ac84954cbe0bd9c77eab88c0b97b34c2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operateur * Methode virtuelle pure, permet de profiter du polymorphisme (interet pour les complexes) <br/></td></tr>
+<tr class="memitem:a2005c3a0fcaa1f360561539931ffc578"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2005c3a0fcaa1f360561539931ffc578"></a>
+virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a2005c3a0fcaa1f360561539931ffc578">operator-</a> (<a class="el" href="classtype.html">type</a> &amp;t)=0</td></tr>
+<tr class="memdesc:a2005c3a0fcaa1f360561539931ffc578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operateur - Methode virtuelle pure, permet de profiter du polymorphisme (interet pour les complexes) <br/></td></tr>
+<tr class="memitem:a1ad1b692783c8449efb03cc0dc5d1f3c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a1ad1b692783c8449efb03cc0dc5d1f3c">pow</a> (<a class="el" href="classtype.html">type</a> &amp;t)=0</td></tr>
+<tr class="memdesc:a1ad1b692783c8449efb03cc0dc5d1f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pow Operateur binaire Pow Methode virtuelle pure.  <a href="#a1ad1b692783c8449efb03cc0dc5d1f3c"></a><br/></td></tr>
+<tr class="memitem:acd1c0365d1a2ed160934320cff01cecd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#acd1c0365d1a2ed160934320cff01cecd">sign</a> ()=0</td></tr>
+<tr class="memdesc:acd1c0365d1a2ed160934320cff01cecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">sign Operateur unaire sign Methode virtuelle  <a href="#acd1c0365d1a2ed160934320cff01cecd"></a><br/></td></tr>
+<tr class="memitem:aea2ba416f34c37ad2cf751b6220d53b8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#aea2ba416f34c37ad2cf751b6220d53b8">sinus</a> (bool degre)=0</td></tr>
+<tr class="memdesc:aea2ba416f34c37ad2cf751b6220d53b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">sinus Operateur unaire sinus Methode virtuelle  <a href="#aea2ba416f34c37ad2cf751b6220d53b8"></a><br/></td></tr>
+<tr class="memitem:a2c3aa4791fe0c123079b0332a5978939"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a2c3aa4791fe0c123079b0332a5978939">cosinus</a> (bool degre)=0</td></tr>
+<tr class="memdesc:a2c3aa4791fe0c123079b0332a5978939"><td class="mdescLeft">&#160;</td><td class="mdescRight">cosinus Operateur unaire cosinus Methode virtuelle  <a href="#a2c3aa4791fe0c123079b0332a5978939"></a><br/></td></tr>
+<tr class="memitem:a2e7f4563e7d602c79e356dcb5472e341"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a2e7f4563e7d602c79e356dcb5472e341">tangente</a> (bool degre)=0</td></tr>
+<tr class="memdesc:a2e7f4563e7d602c79e356dcb5472e341"><td class="mdescLeft">&#160;</td><td class="mdescRight">tangente Operateur unaire tangente Methode virtuelle  <a href="#a2e7f4563e7d602c79e356dcb5472e341"></a><br/></td></tr>
+<tr class="memitem:a4df698a9ee147b77aaab9f63840b1012"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a4df698a9ee147b77aaab9f63840b1012">sinush</a> (bool degre)=0</td></tr>
+<tr class="memdesc:a4df698a9ee147b77aaab9f63840b1012"><td class="mdescLeft">&#160;</td><td class="mdescRight">sinush Operateur unaire sinush Methode virtuelle  <a href="#a4df698a9ee147b77aaab9f63840b1012"></a><br/></td></tr>
+<tr class="memitem:ae92516f1c7c78298a11e8e34355b9f81"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#ae92516f1c7c78298a11e8e34355b9f81">cosinush</a> (bool degre)=0</td></tr>
+<tr class="memdesc:ae92516f1c7c78298a11e8e34355b9f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">cosinush Operateur unaire cosinush Methode virtuelle  <a href="#ae92516f1c7c78298a11e8e34355b9f81"></a><br/></td></tr>
+<tr class="memitem:a79aa6c234a5a66bfe18c39794e56c277"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a79aa6c234a5a66bfe18c39794e56c277">tangenteh</a> (bool degre)=0</td></tr>
+<tr class="memdesc:a79aa6c234a5a66bfe18c39794e56c277"><td class="mdescLeft">&#160;</td><td class="mdescRight">tangenteh Operateur unaire tangenteh Methode virtuelle  <a href="#a79aa6c234a5a66bfe18c39794e56c277"></a><br/></td></tr>
+<tr class="memitem:ab3e91b96595fef9d53a5cfb93291c8f0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#ab3e91b96595fef9d53a5cfb93291c8f0">ln</a> ()=0</td></tr>
+<tr class="memdesc:ab3e91b96595fef9d53a5cfb93291c8f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">ln Operateur unaire ln Methode virtuelle  <a href="#ab3e91b96595fef9d53a5cfb93291c8f0"></a><br/></td></tr>
+<tr class="memitem:a0f7a5802123786d1461271d5c05158ca"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a0f7a5802123786d1461271d5c05158ca">log</a> ()=0</td></tr>
+<tr class="memdesc:a0f7a5802123786d1461271d5c05158ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">log Operateur unaire log Methode virtuelle  <a href="#a0f7a5802123786d1461271d5c05158ca"></a><br/></td></tr>
+<tr class="memitem:a9e0f97f51c50b11022c6d0b409c26ecf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a9e0f97f51c50b11022c6d0b409c26ecf">inv</a> ()=0</td></tr>
+<tr class="memdesc:a9e0f97f51c50b11022c6d0b409c26ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">inv Operateur unaire inv Methode virtuelle  <a href="#a9e0f97f51c50b11022c6d0b409c26ecf"></a><br/></td></tr>
+<tr class="memitem:a7f693a0869814705bcc3b8add799e6cd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a7f693a0869814705bcc3b8add799e6cd">sqrt</a> ()=0</td></tr>
+<tr class="memdesc:a7f693a0869814705bcc3b8add799e6cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqrt Operateur unaire sqrt Methode virtuelle  <a href="#a7f693a0869814705bcc3b8add799e6cd"></a><br/></td></tr>
+<tr class="memitem:a5665f2bcf5ad839e92c31f38f3dfc7b7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a5665f2bcf5ad839e92c31f38f3dfc7b7">sqr</a> ()=0</td></tr>
+<tr class="memdesc:a5665f2bcf5ad839e92c31f38f3dfc7b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">sqr Operateur unaire sqr Methode virtuelle  <a href="#a5665f2bcf5ad839e92c31f38f3dfc7b7"></a><br/></td></tr>
+<tr class="memitem:ad84e4a7a269024da4551a8e99078e41d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#ad84e4a7a269024da4551a8e99078e41d">cube</a> ()=0</td></tr>
+<tr class="memdesc:ad84e4a7a269024da4551a8e99078e41d"><td class="mdescLeft">&#160;</td><td class="mdescRight">cube Operateur unaire cube Methode virtuelle  <a href="#ad84e4a7a269024da4551a8e99078e41d"></a><br/></td></tr>
+<tr class="memitem:a8831dff2cd793c03618b6e0751ffc026"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnocomplex.html#a8831dff2cd793c03618b6e0751ffc026">eval</a> ()</td></tr>
+<tr class="memdesc:a8831dff2cd793c03618b6e0751ffc026"><td class="mdescLeft">&#160;</td><td class="mdescRight">sign Operateur unaire sign Methode virtuelle  <a href="#a8831dff2cd793c03618b6e0751ffc026"></a><br/></td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a633b5bd1a8681544bb2773605cffed9c"></a>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Classe representant les types de constantes non complexes. </p>
+<p>La classe derive de constante. Permet d'obtenir un arbre de classe coherent </p>
+</div><hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a2c3aa4791fe0c123079b0332a5978939"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -135,7 +168,69 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">nocomplex::nocomplex </td>
+          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::cosinus </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>degre</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cosinus Operateur unaire cosinus Methode virtuelle </p>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, resultat de l'operation </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtype.html#a4bf0be87d5e0314cc6a29ce86930d34e">type</a>.</p>
+
+<p>Implemented in <a class="el" href="classentier.html#a1313e6cfa480cab69942f9b97418e491">entier</a>, <a class="el" href="classrationnel.html#a4a2f7528592b31a367799a79c336395c">rationnel</a>, and <a class="el" href="classreel.html#ab1d6bb643ca3335b8cb19e1b7eb89878">reel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae92516f1c7c78298a11e8e34355b9f81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::cosinush </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>degre</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>cosinush Operateur unaire cosinush Methode virtuelle </p>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, resultat de l'operation </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtype.html#a387836cc1a0dd2a20ece2f721fab822a">type</a>.</p>
+
+<p>Implemented in <a class="el" href="classentier.html#af111db8d7c89d47f20c59e3bd0ef1dfd">entier</a>, <a class="el" href="classrationnel.html#af8de9bc6850dc5471d2e31ddf8e3866e">rationnel</a>, and <a class="el" href="classreel.html#a94a01afa4662790da504857247837160">reel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad84e4a7a269024da4551a8e99078e41d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::cube </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -143,15 +238,21 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>cube Operateur unaire cube Methode virtuelle </p>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, resultat de l'operation </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtype.html#ac470662477ea88722b58e98fee3e1ec0">type</a>.</p>
+
+<p>Implemented in <a class="el" href="classentier.html#a4c726d947d2f7464ec858f50054118e8">entier</a>, <a class="el" href="classrationnel.html#a9bca6086c4a5083765d87324418a86ab">rationnel</a>, and <a class="el" href="classreel.html#a3a2dc28d66ee81177a986fca957f6fd5">reel</a>.</p>
+
 </div>
 </div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ac84954cbe0bd9c77eab88c0b97b34c2b"></a>
+<a class="anchor" id="a8831dff2cd793c03618b6e0751ffc026"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -159,7 +260,127 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::operator* </td>
+          <td class="memname">virtual QString nocomplex::eval </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sign Operateur unaire sign Methode virtuelle </p>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, resultat de l'operation </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtype.html#a8288e5361dba59212d1f2490f6531793">type</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classrationnel.html#a1418b1d6ac37f7948affefa7b8d0f314">rationnel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e0f97f51c50b11022c6d0b409c26ecf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::inv </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>inv Operateur unaire inv Methode virtuelle </p>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, resultat de l'operation </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtype.html#af4bf1a878929fb77f6e1edf90d33a275">type</a>.</p>
+
+<p>Implemented in <a class="el" href="classentier.html#abaa5775172cf9c417ccdb174304056b3">entier</a>, <a class="el" href="classrationnel.html#a75336cd670c61195c833f8459c02c3b5">rationnel</a>, and <a class="el" href="classreel.html#ab863c6b28a5345dbf7657b4b5121c2f7">reel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3e91b96595fef9d53a5cfb93291c8f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::ln </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ln Operateur unaire ln Methode virtuelle </p>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, resultat de l'operation </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtype.html#aba57b52b37f984806842df5478b2489c">type</a>.</p>
+
+<p>Implemented in <a class="el" href="classentier.html#aef2c65b9f379c5ea7857fcaabca30dba">entier</a>, <a class="el" href="classrationnel.html#a59b1b593905de8676db02d5d2a5554c3">rationnel</a>, and <a class="el" href="classreel.html#a5d09de0b7e0856eb63d333f766c770ed">reel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f7a5802123786d1461271d5c05158ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::log </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>log Operateur unaire log Methode virtuelle </p>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, resultat de l'operation </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtype.html#ab02a7131b07f81a545beb9ae499bcef6">type</a>.</p>
+
+<p>Implemented in <a class="el" href="classentier.html#aeca6cf72ceaa32cfc7b52f00d962d3cc">entier</a>, <a class="el" href="classrationnel.html#a6bed14bda0b8546528454e7b2030645d">rationnel</a>, and <a class="el" href="classreel.html#adcf600e2052329def8e10e81e35ef96e">reel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ad1b692783c8449efb03cc0dc5d1f3c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::pow </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classtype.html">type</a> &amp;&#160;</td>
           <td class="paramname"><em>t</em></td><td>)</td>
@@ -173,13 +394,22 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classtype.html#a9e275d2b8465d6085515f58aaf631ea7">type</a>.</p>
+<p>Pow Operateur binaire Pow Methode virtuelle pure. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>: Pointeur sur un type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, resultat de l'operation </dd></dl>
 
-<p>Implemented in <a class="el" href="classreel.html#a044791a71fd9926cbedf3f19f6eea122">reel</a>, <a class="el" href="classentier.html#a7314a5aad4a2c997eaea01e3aa42092a">entier</a>, and <a class="el" href="classrationnel.html#a49250cb9001aad230e5193515ee74efa">rationnel</a>.</p>
+<p>Reimplemented from <a class="el" href="classtype.html#a01ae853856fcd929e5455b460ccd0be6">type</a>.</p>
+
+<p>Implemented in <a class="el" href="classentier.html#adc71e10e6ea385f7c1aa1de06e2d1b4c">entier</a>, <a class="el" href="classrationnel.html#afd9fd9a30f034952ce889d46a07de617">rationnel</a>, and <a class="el" href="classreel.html#a4fdea6a69bd78b2593fb44cc172fc7bf">reel</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af3d04b00f4f82d3a35cad0ca023093f4"></a>
+<a class="anchor" id="acd1c0365d1a2ed160934320cff01cecd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -187,10 +417,9 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::operator+ </td>
+          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::sign </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtype.html">type</a> &amp;&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -201,13 +430,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classtype.html#aae435de533d21af297434702fd71d04d">type</a>.</p>
+<p>sign Operateur unaire sign Methode virtuelle </p>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, resultat de l'operation </dd></dl>
 
-<p>Implemented in <a class="el" href="classrationnel.html#a14d9d411058e146e075ccf16997e525e">rationnel</a>, <a class="el" href="classreel.html#af2ae884e68ab28b286cf9940f05f59d9">reel</a>, and <a class="el" href="classentier.html#a531e654172d6e2fe225fad108dbb84a7">entier</a>.</p>
+<p>Reimplemented from <a class="el" href="classtype.html#a3ec9f31aec3ddc52efe2adff634a671a">type</a>.</p>
+
+<p>Implemented in <a class="el" href="classentier.html#a4a25b08f29eba0a531bebadeaf77ee04">entier</a>, <a class="el" href="classrationnel.html#aa73709167be428fafc4d95a31f4c3cc0">rationnel</a>, and <a class="el" href="classreel.html#a9a172c44e0a496059bdd1c4d53a98590">reel</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2005c3a0fcaa1f360561539931ffc578"></a>
+<a class="anchor" id="aea2ba416f34c37ad2cf751b6220d53b8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -215,10 +447,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::operator- </td>
+          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::sinus </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtype.html">type</a> &amp;&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>degre</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -229,13 +461,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classtype.html#a4d440ee89d624d7314786d8d18751588">type</a>.</p>
+<p>sinus Operateur unaire sinus Methode virtuelle </p>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, resultat de l'operation </dd></dl>
 
-<p>Implemented in <a class="el" href="classreel.html#a9cd96b762004392eda5216262201322c">reel</a>, <a class="el" href="classentier.html#ac0acf2b6156ef6f5f2e034c0425e1114">entier</a>, and <a class="el" href="classrationnel.html#a3bdf6de1a2526ddafbf1831a9af11dc9">rationnel</a>.</p>
+<p>Reimplemented from <a class="el" href="classtype.html#acfff98100e9af7fe51f22ca553b49652">type</a>.</p>
+
+<p>Implemented in <a class="el" href="classentier.html#a5dd86ffdc48bf745871ac2f65199d2ce">entier</a>, <a class="el" href="classreel.html#a3502ff761467546024da46f1f2bbb2e7">reel</a>, and <a class="el" href="classrationnel.html#ad34af896f760a0271286e2dbbf55ad9f">rationnel</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a47942bdcc78cfc5d5e867c9f9836a465"></a>
+<a class="anchor" id="a4df698a9ee147b77aaab9f63840b1012"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -243,10 +478,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::operator/ </td>
+          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::sinush </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtype.html">type</a> &amp;&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>degre</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -257,9 +492,134 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classtype.html#a0fad8179d45b9bbde90b48e1950ce639">type</a>.</p>
+<p>sinush Operateur unaire sinush Methode virtuelle </p>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, resultat de l'operation </dd></dl>
 
-<p>Implemented in <a class="el" href="classreel.html#a3bc55f29b377547040d47be018b73fe6">reel</a>, <a class="el" href="classrationnel.html#ae36b04407cc70d425ed0292975b0d1e9">rationnel</a>, and <a class="el" href="classentier.html#a3bfd34b6998c5c09df0dbbadead47867">entier</a>.</p>
+<p>Reimplemented from <a class="el" href="classtype.html#a1bb104502962725e2d8d1909a208e7fa">type</a>.</p>
+
+<p>Implemented in <a class="el" href="classentier.html#abfb8840f088a4771520fd48a78c01434">entier</a>, <a class="el" href="classrationnel.html#a107f6a0be55879bd49dd015144fdfde4">rationnel</a>, and <a class="el" href="classreel.html#a410b5cc4316eeddbeff2ec46c13ca249">reel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5665f2bcf5ad839e92c31f38f3dfc7b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::sqr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sqr Operateur unaire sqr Methode virtuelle </p>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, resultat de l'operation </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtype.html#a70b655b274b3378154cd29127c22a4f0">type</a>.</p>
+
+<p>Implemented in <a class="el" href="classentier.html#a33b0b2b13a0fdc767a809df33b934dd6">entier</a>, <a class="el" href="classrationnel.html#ab9f341fd09499253dd1f9b6f15795576">rationnel</a>, and <a class="el" href="classreel.html#ad295586d5862f6dc41966f25c365c4a1">reel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7f693a0869814705bcc3b8add799e6cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::sqrt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sqrt Operateur unaire sqrt Methode virtuelle </p>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, resultat de l'operation </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtype.html#aedd0df2ba42b6cb66ee3dba28309a47b">type</a>.</p>
+
+<p>Implemented in <a class="el" href="classentier.html#a9058b76c3fae96fb3a9ade24e6c33926">entier</a>, <a class="el" href="classrationnel.html#ad37ab4380b5ff66104748ecc0bf5babe">rationnel</a>, and <a class="el" href="classreel.html#a980bc278bf5537519ee05746262ebb6a">reel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e7f4563e7d602c79e356dcb5472e341"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::tangente </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>degre</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>tangente Operateur unaire tangente Methode virtuelle </p>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, resultat de l'operation </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtype.html#a0e48cd1a39419994f14550b2fd188e1d">type</a>.</p>
+
+<p>Implemented in <a class="el" href="classentier.html#a600a48ecf8280f0ab465ab3f3c253662">entier</a>, <a class="el" href="classrationnel.html#ac2bdc47a11ea3d010f006256f6e14f79">rationnel</a>, and <a class="el" href="classreel.html#a88d653b80c7d3a1a4f9c4ac4b709957b">reel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a79aa6c234a5a66bfe18c39794e56c277"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classtype.html">type</a>* nocomplex::tangenteh </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>degre</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>tangenteh Operateur unaire tangenteh Methode virtuelle </p>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, resultat de l'operation </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classtype.html#a36763dd363a8de97e4a52aa87776e61c">type</a>.</p>
+
+<p>Implemented in <a class="el" href="classentier.html#abd47ffc368af385550ed2db6ce289ded">entier</a>, <a class="el" href="classrationnel.html#a56135a99618c1fec82901c5e7f64a4a2">rationnel</a>, and <a class="el" href="classreel.html#a00cb6cca23061d928135c074a5d69eb0">reel</a>.</p>
 
 </div>
 </div>
@@ -269,7 +629,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 4 2012 17:33:50 for Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 11 2012 21:41:10 for LO21-Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1
 </small></address>

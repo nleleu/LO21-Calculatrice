@@ -2,12 +2,12 @@
 #include "complexe.h"
 #include <QDataStream>
 #include <cmath>
-#include <qDebug>
+
 #include "reel.h"
 #include "entier.h"
 #include "expression.h"
 
-#define M_PI  3.14159265
+
 
 /*type* rationnel::operator =(type & t){
     try{

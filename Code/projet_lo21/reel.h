@@ -4,20 +4,45 @@
 #include "type.h"
 #include <sstream>
 #include <QString>
-#include <qDebug>
+
 #include "nocomplex.h"
 #include <QRegExp>
 
+/*!
+ * \file reel.h
+ * \author Le Feurmou/Leleu
+ */
+
+
+/*! \class reel
+   * \brief Classe representant un reel
+   *
+   *  Derive de nocomplex
+   *
+   *
+ */
+
+
 class reel:public nocomplex
 {
-    double data;
+    double data;/*!<  reel*/
 public:
-    reel(double val=0):data(val){}
-    /*reel(const std::string &s){
-        std::istringstream iss1(s);//pour convertir une string en int
-        iss1 >> data;
-    }*/
 
+    /*!
+    *  \brief Constructeur
+    *
+    *  Construit un reel a partir d'un double
+    *
+    */
+    reel(double val=0):data(val){}
+
+
+    /*!
+    *  \brief Constructeur
+    *
+    *  Construit un reel a partir d'une QString
+    *
+    */
     reel(const QString &s)//pour convertir une QString en double
     {
         QString copie(s);
@@ -25,13 +50,20 @@ public:
         data = copie.toDouble();
     }
 
+
+    /*!
+    *  \brief getData
+    *
+    *  Accesseur de la donnee membre data
+    *
+    */
     double getData(){return data;}
 
     /*!
     *  \brief Operateur +
     *
-    *  Implementation de l'operateur binaire + (methode virtuelle pure dans la classe mere)
-    *  \param t : Pointeur sur un type (Utilisation du polymorphisme)
+    *  Implementation de l'operateur binaire + (methode virtuelle dans la classe mere)
+    *  \param t : Pointeur sur un type
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
@@ -42,8 +74,8 @@ public:
     /*!
     *  \brief Operateur /
     *
-    *  Implementation de l'operateur binaire / (methode virtuelle pure dans la classe mere)
-    *  \param t : Pointeur sur un type (Utilisation du polymorphisme)
+    *  Implementation de l'operateur binaire / (methode virtuelle dans la classe mere)
+    *  \param t : Pointeur sur un type
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
@@ -52,8 +84,8 @@ public:
     /*!
     *  \brief Operateur *
     *
-    *  Implementation de l'operateur binaire * (methode virtuelle pure dans la classe mere)
-    *  \param t : Pointeur sur un type (Utilisation du polymorphisme)
+    *  Implementation de l'operateur binaire * (methode virtuelle dans la classe mere)
+    *  \param t : Pointeur sur un type
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
@@ -62,8 +94,8 @@ public:
     /*!
     *  \brief Operateur -
     *
-    *  Implementation de l'operateur binaire - (methode virtuelle pure dans la classe mere)
-    *  \param t : Pointeur sur un type (Utilisation du polymorphisme)
+    *  Implementation de l'operateur binaire - (methode virtuelle dans la classe mere)
+    *  \param t : Pointeur sur un type
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
@@ -74,8 +106,8 @@ public:
     /*!
     *  \brief Sinus
     *
-    *  Implementation de l'operateur unaire sinus (methode virtuelle pure dans la classe mere)
-    *  \param t : Pointeur sur un type (Utilisation du polymorphisme)
+    *  Implementation de l'operateur unaire sinus (methode virtuelle dans la classe mere)
+    *  \param t : Pointeur sur un type
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
@@ -88,7 +120,7 @@ public:
     /*!
     *  \brief Cosinus
     *
-    *  Implementation de l'operateur unaire cosinus (methode virtuelle pure dans la classe mere)
+    *  Implementation de l'operateur unaire cosinus (methode virtuelle dans la classe mere)
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
@@ -97,7 +129,7 @@ public:
     /*!
     *  \brief Tangente
     *
-    *  Implementation de l'operateur unaire tangente (methode virtuelle pure dans la classe mere)
+    *  Implementation de l'operateur unaire tangente (methode virtuelle dans la classe mere)
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
@@ -106,7 +138,7 @@ public:
     /*!
     *  \brief Sinush
     *
-    *  Implementation de l'operateur unaire sinush (methode virtuelle pure dans la classe mere)
+    *  Implementation de l'operateur unaire sinush (methode virtuelle dans la classe mere)
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
@@ -115,7 +147,7 @@ public:
     /*!
     *  \brief Cosinush
     *
-    *  Implementation de l'operateur unaire cosinush (methode virtuelle pure dans la classe mere)
+    *  Implementation de l'operateur unaire cosinush (methode virtuelle dans la classe mere)
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
@@ -124,7 +156,7 @@ public:
     /*!
     *  \brief Tangenteh
     *
-    *  Implementation de l'operateur unaire tangenteh (methode virtuelle pure dans la classe mere)
+    *  Implementation de l'operateur unaire tangenteh (methode virtuelle dans la classe mere)
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
@@ -134,7 +166,7 @@ public:
     /*!
     *  \brief Ln
     *
-    *  Implementation de l'operateur unaire ln (methode virtuelle pure dans la classe mere)
+    *  Implementation de l'operateur unaire ln (methode virtuelle dans la classe mere)
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
@@ -143,7 +175,7 @@ public:
     /*!
     *  \brief Log
     *
-    *  Implementation de l'operateur unaire log (methode virtuelle pure dans la classe mere)
+    *  Implementation de l'operateur unaire log (methode virtuelle dans la classe mere)
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
@@ -152,7 +184,7 @@ public:
     /*!
     *  \brief Inv
     *
-    *  Implementation de l'operateur unaire inv (methode virtuelle pure dans la classe mere)
+    *  Implementation de l'operateur unaire inv (methode virtuelle dans la classe mere)
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
@@ -162,8 +194,8 @@ public:
     /*!
     *  \brief Sqrt
     *
-    *  Implementation de l'operateur unaire sqrt (methode virtuelle pure dans la classe mere)
-    *  \param t : Pointeur sur un type (Utilisation du polymorphisme)
+    *  Implementation de l'operateur unaire sqrt (methode virtuelle dans la classe mere)
+    *  \param t : Pointeur sur un type
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
@@ -173,7 +205,7 @@ public:
     /*!
     *  \brief Sqr
     *
-    *  Implementation de l'operateur unaire sqr (methode virtuelle pure dans la classe mere)
+    *  Implementation de l'operateur unaire sqr (methode virtuelle dans la classe mere)
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
@@ -182,22 +214,12 @@ public:
     /*!
     *  \brief Cube
     *
-    *  Implementation de l'operateur unaire Cube (methode virtuelle pure dans la classe mere)
+    *  Implementation de l'operateur unaire Cube (methode virtuelle dans la classe mere)
     *  \return Pointeur sur type, resultat de l'operation
     *
     */
     type* cube();
 
-
-
-
-    /*!
-    *  \brief eval
-    *
-    *  Implementation de l'operateur unaire eval (methode virtuelle pure dans la classe mere)
-    *  \return Pointeur sur type, resultat de l'operation
-    *
-    */
     
 
 
@@ -210,11 +232,11 @@ public:
     QString toQString();
 
     /*!
-    *  \brief isReel
+    *  \brief getDecimales
     *
-    *  Methode static permettant de savoir quel type d'objet creer
-    *  \return true si la chaine permet de construire un reel
-    *    false sinon
+    *  Methode calculant le nombre de decimales (utile pour la tranformation en fraction)
+    *  \return nombre de decimales (int)
+    *
     */
 
 

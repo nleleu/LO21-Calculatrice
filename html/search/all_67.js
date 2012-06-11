@@ -1,10 +1,11 @@
 var searchData=
 [
   ['gardien',['gardien',['../classgardien.html',1,'gardien'],['../classgardien.html#a23b498d98e7a90384585f9d3721b29fe',1,'gardien::gardien()']]],
-  ['gardien_2ecpp',['gardien.cpp',['../gardien_8cpp.html',1,'']]],
   ['gardien_2eh',['gardien.h',['../gardien_8h.html',1,'']]],
   ['getactif',['getActif',['../class_collection__pile.html#af59e6609f30e907eb617e7a30319a03f',1,'Collection_pile']]],
   ['getdata',['getData',['../classentier.html#a738d3684bb420ffb5bbee2187845af85',1,'entier::getData()'],['../classreel.html#ad1d16e6ce54fc6b8844757a8f04300ca',1,'reel::getData()']]],
+  ['getdecimales',['getDecimales',['../classreel.html#a4615a947e25064384fd0216881b89c7b',1,'reel']]],
+  ['getdegre',['getDegre',['../class_pile.html#ad65ece3020d11d8d58c2781150cdca44',1,'Pile']]],
   ['getdenum',['getDenum',['../classrationnel.html#abb14c1aafb5b4e8f28d5c770e2e1523e',1,'rationnel']]],
   ['getgardien',['getGardien',['../class_pile.html#af610383f7aa4076d56646753de61bdc6',1,'Pile']]],
   ['getim',['getIm',['../classcomplexe.html#a3a2b9bf78d9e6cdbf2c533c2392fef4c',1,'complexe']]],

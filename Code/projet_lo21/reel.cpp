@@ -4,10 +4,9 @@
 #include "complexe.h"
 #include "expression.h"
 #include "typeexception.h"
-#include <QDebug>
+
 #include <cmath>
 
-#define M_PI  3.14159265
 /*
 type& reel::operator =(type & t){
     try{

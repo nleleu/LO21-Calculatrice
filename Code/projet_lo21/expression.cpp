@@ -1,6 +1,6 @@
 #include "expression.h"
 #include "type_factory.h"
-#include <QDebug>
+
 #include "typeexception.h"
 
 Expression::Expression(QString& exp1): exp(exp1)
@@ -41,6 +41,13 @@ type* Expression::sinus(bool b)
 type* Expression::pow(type & t)
 {
     exp = exp.remove(exp.size()-1,exp.size()-1) + ' ' + t.toQString().remove("'") + ' ' + "pow'";
+    return new Expression(exp);
+
+}
+
+type* Expression::mod(type & t)
+{
+    exp = exp.remove(exp.size()-1,exp.size()-1) + ' ' + t.toQString().remove("'") + ' ' + "mod'";
     return new Expression(exp);
 
 }

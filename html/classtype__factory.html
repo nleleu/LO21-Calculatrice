@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Calculatrice: type_factory Class Reference</title>
+<title>LO21-Calculatrice: type_factory Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Calculatrice
+   <div id="projectname">LO21-Calculatrice
    </div>
+   <div id="projectbrief">Projet de fin de semestre</div>
   </td>
  </tr>
  </tbody>
@@ -36,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,19 +89,108 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Classe creant les types Singleton, implementation du design pattern Factory.  
+ <a href="classtype__factory.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="type__factory_8h_source.html">type_factory.h</a>&gt;</code></p>
 
 <p><a href="classtype__factory-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a1782f22ec406749b83ba6c43b17e4d7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype__factory.html#a1782f22ec406749b83ba6c43b17e4d7f">type_factory</a> (const <a class="el" href="classtype__factory.html">type_factory</a> &amp;)</td></tr>
+<tr class="memdesc:a1782f22ec406749b83ba6c43b17e4d7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur par recopie.  <a href="#a1782f22ec406749b83ba6c43b17e4d7f"></a><br/></td></tr>
+<tr class="memitem:a3864904dd1a85d5df74da4675598acae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype__factory.html#a3864904dd1a85d5df74da4675598acae">~type_factory</a> ()</td></tr>
+<tr class="memdesc:a3864904dd1a85d5df74da4675598acae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur.  <a href="#a3864904dd1a85d5df74da4675598acae"></a><br/></td></tr>
+<tr class="memitem:a48e3bffea0219e1ca2fc05463c6981ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype__factory.html#a48e3bffea0219e1ca2fc05463c6981ac">type_factory</a> ()</td></tr>
+<tr class="memdesc:a48e3bffea0219e1ca2fc05463c6981ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur.  <a href="#a48e3bffea0219e1ca2fc05463c6981ac"></a><br/></td></tr>
+<tr class="memitem:a632504653d9667aced28366b82a25e92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtype__factory.html">type_factory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype__factory.html#a632504653d9667aced28366b82a25e92">operator=</a> (const <a class="el" href="classtype__factory.html">type_factory</a>)</td></tr>
+<tr class="memdesc:a632504653d9667aced28366b82a25e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Operateur =.  <a href="#a632504653d9667aced28366b82a25e92"></a><br/></td></tr>
 <tr class="memitem:a144da545ae1616b3e9e644ad0df9564c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtype.html">type</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype__factory.html#a144da545ae1616b3e9e644ad0df9564c">getType</a> (QString s)</td></tr>
+<tr class="memdesc:a144da545ae1616b3e9e644ad0df9564c"><td class="mdescLeft">&#160;</td><td class="mdescRight">getType Methode permettant de creer un nouveau type  <a href="#a144da545ae1616b3e9e644ad0df9564c"></a><br/></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a78223a2e795f2fd36ca4b2a1666b59ec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classtype__factory.html">type_factory</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype__factory.html#a78223a2e795f2fd36ca4b2a1666b59ec">getInstance</a> ()</td></tr>
-<tr class="memitem:af91382fb401454be520fe8cf43ee9245"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype__factory.html#af91382fb401454be520fe8cf43ee9245">releaseInstance</a> ()</td></tr>
+<tr class="memdesc:a78223a2e795f2fd36ca4b2a1666b59ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">getInstance Methode retournant l'instance unique de la classe  <a href="#a78223a2e795f2fd36ca4b2a1666b59ec"></a><br/></td></tr>
+<tr class="memitem:af91382fb401454be520fe8cf43ee9245"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af91382fb401454be520fe8cf43ee9245"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtype__factory.html#af91382fb401454be520fe8cf43ee9245">releaseInstance</a> ()</td></tr>
+<tr class="memdesc:af91382fb401454be520fe8cf43ee9245"><td class="mdescLeft">&#160;</td><td class="mdescRight">releaseInstance Methode liberant l'instance unique de la classe <br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Classe creant les types Singleton, implementation du design pattern Factory. </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a1782f22ec406749b83ba6c43b17e4d7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">type_factory::type_factory </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtype__factory.html">type_factory</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur par recopie. </p>
+<p>Constructeur par recopie (prive) de la classe <a class="el" href="class_collection__pile.html" title="Classe conteneur de piles.">Collection_pile</a> Non implemente pour le rendre inoperant </p>
+
+</div>
+</div>
+<a class="anchor" id="a3864904dd1a85d5df74da4675598acae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">type_factory::~type_factory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructeur. </p>
+<p>Destructeur (prive) de la classe <a class="el" href="class_collection__pile.html" title="Classe conteneur de piles.">Collection_pile</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a48e3bffea0219e1ca2fc05463c6981ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">type_factory::type_factory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructeur. </p>
+<p>Constructeur (prive) de la classe <a class="el" href="class_collection__pile.html" title="Classe conteneur de piles.">Collection_pile</a> </p>
+
+</div>
+</div>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a78223a2e795f2fd36ca4b2a1666b59ec"></a>
 <div class="memitem">
@@ -124,6 +213,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>getInstance Methode retournant l'instance unique de la classe </p>
+<dl class="section return"><dt>Returns:</dt><dd>Instance unique de la classe </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a144da545ae1616b3e9e644ad0df9564c"></a>
@@ -140,39 +232,44 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>getType Methode permettant de creer un nouveau type </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Qstring</td><td>s, chaine de caractere source </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns:</dt><dd>Pointeur sur type, nouveau type cree </dd></dl>
+
 </div>
 </div>
-<a class="anchor" id="af91382fb401454be520fe8cf43ee9245"></a>
+<a class="anchor" id="a632504653d9667aced28366b82a25e92"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void type_factory::releaseInstance </td>
+          <td class="memname"><a class="el" href="classtype__factory.html">type_factory</a> type_factory::operator= </td>
           <td>(</td>
+          <td class="paramtype">const <a class="el" href="classtype__factory.html">type_factory</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Operateur =. </p>
+<p>Operateur = (prive) de la classe <a class="el" href="class_collection__pile.html" title="Classe conteneur de piles.">Collection_pile</a> Non implemente pour le rendre inoperant </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Code/projet_lo21/<a class="el" href="type__factory_8h_source.html">type_factory.h</a></li>
-<li>Code/projet_lo21/<a class="el" href="type__factory_8cpp.html">type_factory.cpp</a></li>
+<li>Code/projet_lo21/type_factory.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 4 2012 17:33:50 for Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 11 2012 21:41:10 for LO21-Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1
 </small></address>

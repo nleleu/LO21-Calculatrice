@@ -3,19 +3,24 @@
 }
 
 
+Classe representant une expression.  
+
+
+
+
 {\ttfamily \#include $<$expression.\-h$>$}
 
-
-
-Inherits \hyperlink{classtype}{type}.
-
+Inheritance diagram for Expression\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_expression}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_expression_a2dfc0f1fe384a18adb7064f44aca0bed}{Expression} (Q\-String \&exp1)
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_aef526940109ca420a164455b612243bd}{evaluer} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a1572f9f1d8b2619b14d7d58f72a63e22}{operator+} (\hyperlink{classtype}{type} \&t)
 \begin{DoxyCompactList}\small\item\em Operateur +. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_aeb3e786f0524b1b1e2c5b238c8d2e50c}{operator/} (\hyperlink{classtype}{type} \&t)
@@ -24,48 +29,47 @@ Inherits \hyperlink{classtype}{type}.
 \begin{DoxyCompactList}\small\item\em Operateur $\ast$. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_adb495f245e3652e3605b290d7d41acb5}{operator-\/} (\hyperlink{classtype}{type} \&t)
 \begin{DoxyCompactList}\small\item\em Operateur -\/. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a70133c8c9911b1193eb8fff99c3c8693}{sinus} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a67a5046f6af705fef094ff5e4a78880d}{sinus} (bool degre=false)
 \begin{DoxyCompactList}\small\item\em Sinus. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a9b7133faeacde4cf9c297275cc07a119}{pow} (\hyperlink{classtype}{type} \&t)
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a4c590a64e8cb76efddca70e3de240640}{mod} (\hyperlink{classtype}{type} \&t)
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a62923fe874212a2d52d8a14769e774a1}{sign} ()
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a39bd1c7e48333e054d7bb73a445bbcad}{cosinus} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_aeaf521221894a0012b604cc0033518b9}{pow} (\hyperlink{classtype}{type} \&t)
+\begin{DoxyCompactList}\small\item\em Pow. \end{DoxyCompactList}\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_ac46a4b88a1b08206e08da229fdbfd3e9}{mod} (\hyperlink{classtype}{type} \&t)
+\begin{DoxyCompactList}\small\item\em mod \end{DoxyCompactList}\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_aa654b4e71cfafd29af080020a77dc1e0}{sign} ()
+\begin{DoxyCompactList}\small\item\em sign \end{DoxyCompactList}\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_ab33831fb9207ba778ae46f49b2f0f7ac}{cosinus} (bool degre=false)
 \begin{DoxyCompactList}\small\item\em Cosinus. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_ad991242120a3cd6da6f76b4a42a8a992}{tangente} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_ae47f82ffeefff823064141174ba5c3ac}{tangente} (bool degre=false)
 \begin{DoxyCompactList}\small\item\em Tangente. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a034e6da5d4074ddd9e042b19d2ec027c}{sinush} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a45aef44cb37e21e99614053bf80801f6}{sinush} (bool degre=false)
 \begin{DoxyCompactList}\small\item\em Sinush. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_ad253a0ab9264d8d0f5eda102bc4fce65}{cosinush} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a032591ce129e8d11b9a75c55287323d8}{cosinush} (bool degre=false)
 \begin{DoxyCompactList}\small\item\em Cosinush. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a61f68d2937cef47108ca36ffdc451b77}{tangenteh} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a0d0acd016a909609e451836060d4e676}{tangenteh} (bool degre=false)
 \begin{DoxyCompactList}\small\item\em Tangenteh. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a3590b5a1c78a0bd0d7783dc101151fe4}{ln} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a1f6cd71d574995f2c3e80c3033ca2940}{ln} ()
 \begin{DoxyCompactList}\small\item\em Ln. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_ad7931ef818f158346f5b979569a1a7d0}{log} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a9eb28aee26ef54093fc83f89ef3c1523}{log} ()
 \begin{DoxyCompactList}\small\item\em Log. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_aca3f23b76ddc13f197127c231830d1a1}{inv} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_ab3dc93b84bb845663383b4347550c9d5}{inv} ()
 \begin{DoxyCompactList}\small\item\em Inv. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_adf9f4b7e58d0f1a3a584c4493302c0b4}{sqrt} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_ac5b9d54cc3699ccec579001a9e954bd3}{sqrt} ()
 \begin{DoxyCompactList}\small\item\em Sqrt. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_ac0520d2c2b2527a430701b964b6ef5f8}{sqr} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a172e59bd44c5ddf668fd8027f0733d8d}{sqr} ()
 \begin{DoxyCompactList}\small\item\em Sqr. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a2f75b5877cd84204a180dc510035b6d5}{cube} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_afaa9e88c0eedebcd346859b7593f5b48}{cube} ()
 \begin{DoxyCompactList}\small\item\em Cube. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_aeebb8e11701e8e618236ff66abcb378f}{fact} ()
-\begin{DoxyCompactList}\small\item\em Fact. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{class_expression_a4cbf84a0a4fcfcb54439c4ae5cc359ec}{eval} ()
+Q\-String \hyperlink{class_expression_a7312cb958b6366f84fb4e01f58cd2119}{eval} ()
 \begin{DoxyCompactList}\small\item\em eval \end{DoxyCompactList}\item 
 Q\-String \hyperlink{class_expression_a4404792ff4997e7c06a3242062825f5c}{to\-Q\-String} ()
 \begin{DoxyCompactList}\small\item\em to\-Q\-String \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Static Public Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-static bool \hyperlink{class_expression_a28a1b17ba2c9fd23529fbb3c3c887e11}{is\-Expression} (const Q\-String \&s)
-\begin{DoxyCompactList}\small\item\em is\-Expression \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+Classe representant une expression. 
+
+La classe derive de type. Permet de representer une expression 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{class_expression_a2dfc0f1fe384a18adb7064f44aca0bed}{\index{Expression@{Expression}!Expression@{Expression}}
@@ -77,100 +81,30 @@ static bool \hyperlink{class_expression_a28a1b17ba2c9fd23529fbb3c3c887e11}{is\-E
 )}}\label{class_expression_a2dfc0f1fe384a18adb7064f44aca0bed}
 
 
+Constructeur. 
+
+Constructeur a partir de Qstring 
+\begin{DoxyParams}{Parameters}
+{\em exp1s} & \-: chaine source \\
+\hline
+\end{DoxyParams}
+
+
 \subsection{Member Function Documentation}
-\hypertarget{class_expression_a39bd1c7e48333e054d7bb73a445bbcad}{\index{Expression@{Expression}!cosinus@{cosinus}}
+\hypertarget{class_expression_ab33831fb9207ba778ae46f49b2f0f7ac}{\index{Expression@{Expression}!cosinus@{cosinus}}
 \index{cosinus@{cosinus}!Expression@{Expression}}
-\subsubsection[{cosinus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::cosinus (
+\subsubsection[{cosinus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ Expression\-::cosinus (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_a39bd1c7e48333e054d7bb73a445bbcad}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_ab33831fb9207ba778ae46f49b2f0f7ac}
 
 
 Cosinus. 
 
-Implementation de l'operateur unaire cosinus (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
-Pointeur sur type, resultat de l'operation 
-\end{DoxyReturn}
-
-
-Implements \hyperlink{classtype_ac459ee75f7ab8d345c01a1f9a13f0728}{type}.
-
-\hypertarget{class_expression_ad253a0ab9264d8d0f5eda102bc4fce65}{\index{Expression@{Expression}!cosinush@{cosinush}}
-\index{cosinush@{cosinush}!Expression@{Expression}}
-\subsubsection[{cosinush}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::cosinush (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_ad253a0ab9264d8d0f5eda102bc4fce65}
-
-
-Cosinush. 
-
-Implementation de l'operateur unaire cosinush (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
-Pointeur sur type, resultat de l'operation 
-\end{DoxyReturn}
-
-
-Implements \hyperlink{classtype_acd7a105cccf58a42d6c09b40c91f75f0}{type}.
-
-\hypertarget{class_expression_a2f75b5877cd84204a180dc510035b6d5}{\index{Expression@{Expression}!cube@{cube}}
-\index{cube@{cube}!Expression@{Expression}}
-\subsubsection[{cube}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::cube (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_a2f75b5877cd84204a180dc510035b6d5}
-
-
-Cube. 
-
-Implementation de l'operateur unaire Cube (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
-Pointeur sur type, resultat de l'operation 
-\end{DoxyReturn}
-
-
-Implements \hyperlink{classtype_ae9ff7857936535092924b83aec1412c6}{type}.
-
-\hypertarget{class_expression_a4cbf84a0a4fcfcb54439c4ae5cc359ec}{\index{Expression@{Expression}!eval@{eval}}
-\index{eval@{eval}!Expression@{Expression}}
-\subsubsection[{eval}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::eval (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_a4cbf84a0a4fcfcb54439c4ae5cc359ec}
-
-
-eval 
-
-Implementation de l'operateur unaire eval (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
-Pointeur sur type, resultat de l'operation 
-\end{DoxyReturn}
-
-
-Implements \hyperlink{classtype_a20555e9f6c76f728d94049bd72f65fc6}{type}.
-
-\hypertarget{class_expression_aef526940109ca420a164455b612243bd}{\index{Expression@{Expression}!evaluer@{evaluer}}
-\index{evaluer@{evaluer}!Expression@{Expression}}
-\subsubsection[{evaluer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::evaluer (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_expression_aef526940109ca420a164455b612243bd}
-\hypertarget{class_expression_aeebb8e11701e8e618236ff66abcb378f}{\index{Expression@{Expression}!fact@{fact}}
-\index{fact@{fact}!Expression@{Expression}}
-\subsubsection[{fact}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::fact (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_aeebb8e11701e8e618236ff66abcb378f}
-
-
-Fact. 
-
-Implementation de l'operateur unaire fact (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur unaire cosinus (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em degre} & \-: booleen, vrai si utilisation des degre, faux si utilisation des radians \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -178,86 +112,138 @@ Pointeur sur type, resultat de l'operation
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_aa5503ee1cdc7c88b058f9216e1e780c3}{type}.
+Reimplemented from \hyperlink{classtype_a4bf0be87d5e0314cc6a29ce86930d34e}{type}.
 
-\hypertarget{class_expression_aca3f23b76ddc13f197127c231830d1a1}{\index{Expression@{Expression}!inv@{inv}}
-\index{inv@{inv}!Expression@{Expression}}
-\subsubsection[{inv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::inv (
+\hypertarget{class_expression_a032591ce129e8d11b9a75c55287323d8}{\index{Expression@{Expression}!cosinush@{cosinush}}
+\index{cosinush@{cosinush}!Expression@{Expression}}
+\subsubsection[{cosinush}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ Expression\-::cosinush (
+\begin{DoxyParamCaption}
+\item[{bool}]{degre = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_a032591ce129e8d11b9a75c55287323d8}
+
+
+Cosinush. 
+
+Implementation de l'operateur unaire cosinush (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em degre} & \-: booleen, vrai si utilisation des degre, faux si utilisation des radians \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classtype_a387836cc1a0dd2a20ece2f721fab822a}{type}.
+
+\hypertarget{class_expression_afaa9e88c0eedebcd346859b7593f5b48}{\index{Expression@{Expression}!cube@{cube}}
+\index{cube@{cube}!Expression@{Expression}}
+\subsubsection[{cube}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ Expression\-::cube (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_aca3f23b76ddc13f197127c231830d1a1}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_afaa9e88c0eedebcd346859b7593f5b48}
+
+
+Cube. 
+
+Implementation de l'operateur unaire Cube (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classtype_ac470662477ea88722b58e98fee3e1ec0}{type}.
+
+\hypertarget{class_expression_a7312cb958b6366f84fb4e01f58cd2119}{\index{Expression@{Expression}!eval@{eval}}
+\index{eval@{eval}!Expression@{Expression}}
+\subsubsection[{eval}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Expression\-::eval (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_a7312cb958b6366f84fb4e01f58cd2119}
+
+
+eval 
+
+Implementation de l'operateur unaire eval (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classtype_a8288e5361dba59212d1f2490f6531793}{type}.
+
+\hypertarget{class_expression_ab3dc93b84bb845663383b4347550c9d5}{\index{Expression@{Expression}!inv@{inv}}
+\index{inv@{inv}!Expression@{Expression}}
+\subsubsection[{inv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ Expression\-::inv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_ab3dc93b84bb845663383b4347550c9d5}
 
 
 Inv. 
 
-Implementation de l'operateur unaire inv (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire inv (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a5eeb7c768cc90a0e9abd91d585169264}{type}.
+Reimplemented from \hyperlink{classtype_af4bf1a878929fb77f6e1edf90d33a275}{type}.
 
-\hypertarget{class_expression_a28a1b17ba2c9fd23529fbb3c3c887e11}{\index{Expression@{Expression}!is\-Expression@{is\-Expression}}
-\index{is\-Expression@{is\-Expression}!Expression@{Expression}}
-\subsubsection[{is\-Expression}]{\setlength{\rightskip}{0pt plus 5cm}static bool Expression\-::is\-Expression (
-\begin{DoxyParamCaption}
-\item[{const Q\-String \&}]{s}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_expression_a28a1b17ba2c9fd23529fbb3c3c887e11}
-
-
-is\-Expression 
-
-Methode static permettant de savoir quel type d'objet creer \begin{DoxyReturn}{Returns}
-true si la chaine permet de construire une expression false sinon 
-\end{DoxyReturn}
-\hypertarget{class_expression_a3590b5a1c78a0bd0d7783dc101151fe4}{\index{Expression@{Expression}!ln@{ln}}
+\hypertarget{class_expression_a1f6cd71d574995f2c3e80c3033ca2940}{\index{Expression@{Expression}!ln@{ln}}
 \index{ln@{ln}!Expression@{Expression}}
-\subsubsection[{ln}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::ln (
+\subsubsection[{ln}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ Expression\-::ln (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_a3590b5a1c78a0bd0d7783dc101151fe4}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_a1f6cd71d574995f2c3e80c3033ca2940}
 
 
 Ln. 
 
-Implementation de l'operateur unaire ln (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire ln (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a601802c36f0dd5c1067b9873eb103a6d}{type}.
+Reimplemented from \hyperlink{classtype_aba57b52b37f984806842df5478b2489c}{type}.
 
-\hypertarget{class_expression_ad7931ef818f158346f5b979569a1a7d0}{\index{Expression@{Expression}!log@{log}}
+\hypertarget{class_expression_a9eb28aee26ef54093fc83f89ef3c1523}{\index{Expression@{Expression}!log@{log}}
 \index{log@{log}!Expression@{Expression}}
-\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::log (
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ Expression\-::log (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_ad7931ef818f158346f5b979569a1a7d0}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_a9eb28aee26ef54093fc83f89ef3c1523}
 
 
 Log. 
 
-Implementation de l'operateur unaire log (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire log (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a7fc23e8e38550f3ad98c0b3582f6163a}{type}.
+Reimplemented from \hyperlink{classtype_ab02a7131b07f81a545beb9ae499bcef6}{type}.
 
-\hypertarget{class_expression_a4c590a64e8cb76efddca70e3de240640}{\index{Expression@{Expression}!mod@{mod}}
+\hypertarget{class_expression_ac46a4b88a1b08206e08da229fdbfd3e9}{\index{Expression@{Expression}!mod@{mod}}
 \index{mod@{mod}!Expression@{Expression}}
-\subsubsection[{mod}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::mod (
+\subsubsection[{mod}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ Expression\-::mod (
 \begin{DoxyParamCaption}
 \item[{{\bf type} \&}]{t}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_a4c590a64e8cb76efddca70e3de240640}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_ac46a4b88a1b08206e08da229fdbfd3e9}
 
 
-Implements \hyperlink{classtype_ab6f68c2a7481faf20b02aa4ae67c6500}{type}.
+mod 
+
+Implementation de l'operateur binaire modulo (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classtype_aed752df353b43b17d3f993d4b02f216b}{type}.
 
 \hypertarget{class_expression_a9f63512e41bb2e498951342759a6fa1e}{\index{Expression@{Expression}!operator$\ast$@{operator$\ast$}}
 \index{operator$\ast$@{operator$\ast$}!Expression@{Expression}}
@@ -270,9 +256,9 @@ Implements \hyperlink{classtype_ab6f68c2a7481faf20b02aa4ae67c6500}{type}.
 
 Operateur $\ast$. 
 
-Implementation de l'operateur binaire $\ast$ (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur binaire $\ast$ (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em t} & \-: Pointeur sur un type \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -293,9 +279,9 @@ Implements \hyperlink{classtype_a9e275d2b8465d6085515f58aaf631ea7}{type}.
 
 Operateur +. 
 
-Implementation de l'operateur binaire + (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur binaire + (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em t} & \-: Pointeur sur un type \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -316,9 +302,9 @@ Implements \hyperlink{classtype_aae435de533d21af297434702fd71d04d}{type}.
 
 Operateur -\/. 
 
-Implementation de l'operateur binaire -\/ (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur binaire -\/ (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em t} & \-: Pointeur sur un type \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -339,9 +325,9 @@ Implements \hyperlink{classtype_a4d440ee89d624d7314786d8d18751588}{type}.
 
 Operateur /. 
 
-Implementation de l'operateur binaire / (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur binaire / (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em t} & \-: Pointeur sur un type \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -351,42 +337,61 @@ Pointeur sur type, resultat de l'operation
 
 Implements \hyperlink{classtype_a0fad8179d45b9bbde90b48e1950ce639}{type}.
 
-\hypertarget{class_expression_a9b7133faeacde4cf9c297275cc07a119}{\index{Expression@{Expression}!pow@{pow}}
+\hypertarget{class_expression_aeaf521221894a0012b604cc0033518b9}{\index{Expression@{Expression}!pow@{pow}}
 \index{pow@{pow}!Expression@{Expression}}
-\subsubsection[{pow}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::pow (
+\subsubsection[{pow}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ Expression\-::pow (
 \begin{DoxyParamCaption}
 \item[{{\bf type} \&}]{t}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_a9b7133faeacde4cf9c297275cc07a119}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_aeaf521221894a0012b604cc0033518b9}
 
 
-Implements \hyperlink{classtype_a60bc9fca9ded4e67963e6c9fad82ff01}{type}.
+Pow. 
 
-\hypertarget{class_expression_a62923fe874212a2d52d8a14769e774a1}{\index{Expression@{Expression}!sign@{sign}}
+Implementation de l'operateur binaire pow (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classtype_a01ae853856fcd929e5455b460ccd0be6}{type}.
+
+\hypertarget{class_expression_aa654b4e71cfafd29af080020a77dc1e0}{\index{Expression@{Expression}!sign@{sign}}
 \index{sign@{sign}!Expression@{Expression}}
-\subsubsection[{sign}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::sign (
+\subsubsection[{sign}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ Expression\-::sign (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_a62923fe874212a2d52d8a14769e774a1}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_aa654b4e71cfafd29af080020a77dc1e0}
 
 
-Implements \hyperlink{classtype_a59342fe365d621d47b607d3f4e155169}{type}.
+sign 
 
-\hypertarget{class_expression_a70133c8c9911b1193eb8fff99c3c8693}{\index{Expression@{Expression}!sinus@{sinus}}
+Implementation de l'operateur unaire sign (methode virtuelle dans la classe mere) Inverse le signe de la constante \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classtype_a3ec9f31aec3ddc52efe2adff634a671a}{type}.
+
+\hypertarget{class_expression_a67a5046f6af705fef094ff5e4a78880d}{\index{Expression@{Expression}!sinus@{sinus}}
 \index{sinus@{sinus}!Expression@{Expression}}
-\subsubsection[{sinus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::sinus (
+\subsubsection[{sinus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ Expression\-::sinus (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_a70133c8c9911b1193eb8fff99c3c8693}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_a67a5046f6af705fef094ff5e4a78880d}
 
 
 Sinus. 
 
-Implementation de l'operateur unaire sinus (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur unaire sinus (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em degre} & \-: booleen, vrai si utilisation des degre, faux si utilisation des radians \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -394,58 +399,22 @@ Pointeur sur type, resultat de l'operation
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_ae12b68744cbf5c49e5e065fbf8a13954}{type}.
+Reimplemented from \hyperlink{classtype_acfff98100e9af7fe51f22ca553b49652}{type}.
 
-\hypertarget{class_expression_a034e6da5d4074ddd9e042b19d2ec027c}{\index{Expression@{Expression}!sinush@{sinush}}
+\hypertarget{class_expression_a45aef44cb37e21e99614053bf80801f6}{\index{Expression@{Expression}!sinush@{sinush}}
 \index{sinush@{sinush}!Expression@{Expression}}
-\subsubsection[{sinush}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::sinush (
+\subsubsection[{sinush}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ Expression\-::sinush (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_a034e6da5d4074ddd9e042b19d2ec027c}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_a45aef44cb37e21e99614053bf80801f6}
 
 
 Sinush. 
 
-Implementation de l'operateur unaire sinush (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
-Pointeur sur type, resultat de l'operation 
-\end{DoxyReturn}
-
-
-Implements \hyperlink{classtype_a9ae4dee6629d0d366e52e94591de46d3}{type}.
-
-\hypertarget{class_expression_ac0520d2c2b2527a430701b964b6ef5f8}{\index{Expression@{Expression}!sqr@{sqr}}
-\index{sqr@{sqr}!Expression@{Expression}}
-\subsubsection[{sqr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::sqr (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_ac0520d2c2b2527a430701b964b6ef5f8}
-
-
-Sqr. 
-
-Implementation de l'operateur unaire sqr (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
-Pointeur sur type, resultat de l'operation 
-\end{DoxyReturn}
-
-
-Implements \hyperlink{classtype_ab5ac11ebbed8a99db5ce4933cb17ddea}{type}.
-
-\hypertarget{class_expression_adf9f4b7e58d0f1a3a584c4493302c0b4}{\index{Expression@{Expression}!sqrt@{sqrt}}
-\index{sqrt@{sqrt}!Expression@{Expression}}
-\subsubsection[{sqrt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::sqrt (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_adf9f4b7e58d0f1a3a584c4493302c0b4}
-
-
-Sqrt. 
-
-Implementation de l'operateur unaire sqrt (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur unaire sinush (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em degre} & \-: booleen, vrai si utilisation des degre, faux si utilisation des radians \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -453,43 +422,89 @@ Pointeur sur type, resultat de l'operation
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a626c58aa4bca21f65845140c7c9b895e}{type}.
+Reimplemented from \hyperlink{classtype_a1bb104502962725e2d8d1909a208e7fa}{type}.
 
-\hypertarget{class_expression_ad991242120a3cd6da6f76b4a42a8a992}{\index{Expression@{Expression}!tangente@{tangente}}
-\index{tangente@{tangente}!Expression@{Expression}}
-\subsubsection[{tangente}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::tangente (
+\hypertarget{class_expression_a172e59bd44c5ddf668fd8027f0733d8d}{\index{Expression@{Expression}!sqr@{sqr}}
+\index{sqr@{sqr}!Expression@{Expression}}
+\subsubsection[{sqr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ Expression\-::sqr (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_ad991242120a3cd6da6f76b4a42a8a992}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_a172e59bd44c5ddf668fd8027f0733d8d}
+
+
+Sqr. 
+
+Implementation de l'operateur unaire sqr (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classtype_a70b655b274b3378154cd29127c22a4f0}{type}.
+
+\hypertarget{class_expression_ac5b9d54cc3699ccec579001a9e954bd3}{\index{Expression@{Expression}!sqrt@{sqrt}}
+\index{sqrt@{sqrt}!Expression@{Expression}}
+\subsubsection[{sqrt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ Expression\-::sqrt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_ac5b9d54cc3699ccec579001a9e954bd3}
+
+
+Sqrt. 
+
+Implementation de l'operateur unaire sqrt (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classtype_aedd0df2ba42b6cb66ee3dba28309a47b}{type}.
+
+\hypertarget{class_expression_ae47f82ffeefff823064141174ba5c3ac}{\index{Expression@{Expression}!tangente@{tangente}}
+\index{tangente@{tangente}!Expression@{Expression}}
+\subsubsection[{tangente}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ Expression\-::tangente (
+\begin{DoxyParamCaption}
+\item[{bool}]{degre = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_ae47f82ffeefff823064141174ba5c3ac}
 
 
 Tangente. 
 
-Implementation de l'operateur unaire tangente (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire tangente (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em degre} & \-: booleen, vrai si utilisation des degre, faux si utilisation des radians \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a425ad47ffa64f9dafe38ac2cf6f542fb}{type}.
+Reimplemented from \hyperlink{classtype_a0e48cd1a39419994f14550b2fd188e1d}{type}.
 
-\hypertarget{class_expression_a61f68d2937cef47108ca36ffdc451b77}{\index{Expression@{Expression}!tangenteh@{tangenteh}}
+\hypertarget{class_expression_a0d0acd016a909609e451836060d4e676}{\index{Expression@{Expression}!tangenteh@{tangenteh}}
 \index{tangenteh@{tangenteh}!Expression@{Expression}}
-\subsubsection[{tangenteh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ Expression\-::tangenteh (
+\subsubsection[{tangenteh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ Expression\-::tangenteh (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_expression_a61f68d2937cef47108ca36ffdc451b77}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_expression_a0d0acd016a909609e451836060d4e676}
 
 
 Tangenteh. 
 
-Implementation de l'operateur unaire tangenteh (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire tangenteh (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em degre} & \-: booleen, vrai si utilisation des degre, faux si utilisation des radians \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a260ae21ca7b4f5e7eb4dd6f8996ea9a8}{type}.
+Reimplemented from \hyperlink{classtype_a36763dd363a8de97e4a52aa87776e61c}{type}.
 
 \hypertarget{class_expression_a4404792ff4997e7c06a3242062825f5c}{\index{Expression@{Expression}!to\-Q\-String@{to\-Q\-String}}
 \index{to\-Q\-String@{to\-Q\-String}!Expression@{Expression}}
@@ -514,4 +529,4 @@ Implements \hyperlink{classtype_ab61f01d56f3896cc99788a1a18c4b0c2}{type}.
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
 Code/projet\-\_\-lo21/\hyperlink{expression_8h}{expression.\-h}\item 
-Code/projet\-\_\-lo21/\hyperlink{expression_8cpp}{expression.\-cpp}\end{DoxyCompactItemize}
+Code/projet\-\_\-lo21/expression.\-cpp\end{DoxyCompactItemize}

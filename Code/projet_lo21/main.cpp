@@ -6,7 +6,7 @@
 #include <iostream>
 #include "rationnel.h"
 #include "reel.h"
-#include <QDebug>
+
 #include "gardien.h"
 
 

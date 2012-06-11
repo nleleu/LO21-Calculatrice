@@ -3,21 +3,28 @@
 }
 
 
+Classe representant un reel.  
+
+
+
+
 {\ttfamily \#include $<$reel.\-h$>$}
 
-
-
-Inherits \hyperlink{classnocomplex}{nocomplex}.
-
+Inheritance diagram for reel\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classreel}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classreel_af400a93dfd7cfa7447f8751ab32c48fc}{reel} (double val=0)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
 \hyperlink{classreel_a6399912ce32c14c918ce5b6fb0b294dc}{reel} (const Q\-String \&s)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
 double \hyperlink{classreel_ad1d16e6ce54fc6b8844757a8f04300ca}{get\-Data} ()
-\item 
+\begin{DoxyCompactList}\small\item\em get\-Data \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_af2ae884e68ab28b286cf9940f05f59d9}{operator+} (\hyperlink{classtype}{type} \&t)
 \begin{DoxyCompactList}\small\item\em Operateur +. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a3bc55f29b377547040d47be018b73fe6}{operator/} (\hyperlink{classtype}{type} \&t)
@@ -26,23 +33,21 @@ double \hyperlink{classreel_ad1d16e6ce54fc6b8844757a8f04300ca}{get\-Data} ()
 \begin{DoxyCompactList}\small\item\em Operateur $\ast$. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a9cd96b762004392eda5216262201322c}{operator-\/} (\hyperlink{classtype}{type} \&t)
 \begin{DoxyCompactList}\small\item\em Operateur -\/. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a8436fd89eda982a6b023e2f7081b5cb0}{sinus} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a3502ff761467546024da46f1f2bbb2e7}{sinus} (bool degre)
 \begin{DoxyCompactList}\small\item\em Sinus. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a4fdea6a69bd78b2593fb44cc172fc7bf}{pow} (\hyperlink{classtype}{type} \&t)
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a7bf66e936c424f243a534406dbe8e8d7}{mod} (\hyperlink{classtype}{type} \&t)
-\item 
+\begin{DoxyCompactList}\small\item\em Pow Operateur binaire Pow Methode virtuelle pure. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a9a172c44e0a496059bdd1c4d53a98590}{sign} ()
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a4d1fb90011705658295e922d525a91dd}{cosinus} ()
+\begin{DoxyCompactList}\small\item\em sign Operateur unaire sign Methode virtuelle \end{DoxyCompactList}\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_ab1d6bb643ca3335b8cb19e1b7eb89878}{cosinus} (bool degre)
 \begin{DoxyCompactList}\small\item\em Cosinus. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a8ded2c9525ab4937f20b28d31a381442}{tangente} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a88d653b80c7d3a1a4f9c4ac4b709957b}{tangente} (bool degre)
 \begin{DoxyCompactList}\small\item\em Tangente. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_ad404481ff6381767546b93ca0c4ba3e3}{sinush} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a410b5cc4316eeddbeff2ec46c13ca249}{sinush} (bool degre)
 \begin{DoxyCompactList}\small\item\em Sinush. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_ad2d6ed0dcaa8fa7b410ca1a84c0d3f57}{cosinush} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a94a01afa4662790da504857247837160}{cosinush} (bool degre)
 \begin{DoxyCompactList}\small\item\em Cosinush. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a4d66c94b0c33019d0dfae8deb2bb41a3}{tangenteh} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a00cb6cca23061d928135c074a5d69eb0}{tangenteh} (bool degre)
 \begin{DoxyCompactList}\small\item\em Tangenteh. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a5d09de0b7e0856eb63d333f766c770ed}{ln} ()
 \begin{DoxyCompactList}\small\item\em Ln. \end{DoxyCompactList}\item 
@@ -56,18 +61,16 @@ double \hyperlink{classreel_ad1d16e6ce54fc6b8844757a8f04300ca}{get\-Data} ()
 \begin{DoxyCompactList}\small\item\em Sqr. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a3a2dc28d66ee81177a986fca957f6fd5}{cube} ()
 \begin{DoxyCompactList}\small\item\em Cube. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_ac56ec7c9e6b96b85723e518e70ecfc24}{fact} ()
-\begin{DoxyCompactList}\small\item\em Fact. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classreel_a5d0427a4f39bbb96411cb5a1a0320625}{eval} ()
-\begin{DoxyCompactList}\small\item\em eval \end{DoxyCompactList}\item 
 Q\-String \hyperlink{classreel_a6b06a283958b63fde5c12382b744a8c9}{to\-Q\-String} ()
-\begin{DoxyCompactList}\small\item\em to\-Q\-String \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Static Public Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-static bool \hyperlink{classreel_abdb4c9f0cd45c053b35f868885c5b822}{is\-Reel} (const Q\-String \&s)
-\begin{DoxyCompactList}\small\item\em is\-Reel \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em to\-Q\-String \end{DoxyCompactList}\item 
+int \hyperlink{classreel_a4615a947e25064384fd0216881b89c7b}{get\-Decimales} ()
+\begin{DoxyCompactList}\small\item\em get\-Decimales \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Classe representant un reel. 
+
+Derive de nocomplex 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classreel_af400a93dfd7cfa7447f8751ab32c48fc}{\index{reel@{reel}!reel@{reel}}
@@ -77,7 +80,11 @@ static bool \hyperlink{classreel_abdb4c9f0cd45c053b35f868885c5b822}{is\-Reel} (c
 \item[{double}]{val = {\ttfamily 0}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classreel_af400a93dfd7cfa7447f8751ab32c48fc}
-\hypertarget{classreel_a6399912ce32c14c918ce5b6fb0b294dc}{\index{reel@{reel}!reel@{reel}}
+
+
+Constructeur. 
+
+Construit un reel a partir d'un double \hypertarget{classreel_a6399912ce32c14c918ce5b6fb0b294dc}{\index{reel@{reel}!reel@{reel}}
 \index{reel@{reel}!reel@{reel}}
 \subsubsection[{reel}]{\setlength{\rightskip}{0pt plus 5cm}reel\-::reel (
 \begin{DoxyParamCaption}
@@ -86,42 +93,46 @@ static bool \hyperlink{classreel_abdb4c9f0cd45c053b35f868885c5b822}{is\-Reel} (c
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classreel_a6399912ce32c14c918ce5b6fb0b294dc}
 
 
+Constructeur. 
+
+Construit un reel a partir d'une Q\-String 
+
 \subsection{Member Function Documentation}
-\hypertarget{classreel_a4d1fb90011705658295e922d525a91dd}{\index{reel@{reel}!cosinus@{cosinus}}
+\hypertarget{classreel_ab1d6bb643ca3335b8cb19e1b7eb89878}{\index{reel@{reel}!cosinus@{cosinus}}
 \index{cosinus@{cosinus}!reel@{reel}}
 \subsubsection[{cosinus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ reel\-::cosinus (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classreel_a4d1fb90011705658295e922d525a91dd}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classreel_ab1d6bb643ca3335b8cb19e1b7eb89878}
 
 
 Cosinus. 
 
-Implementation de l'operateur unaire cosinus (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire cosinus (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_ac459ee75f7ab8d345c01a1f9a13f0728}{type}.
+Implements \hyperlink{classnocomplex_a2c3aa4791fe0c123079b0332a5978939}{nocomplex}.
 
-\hypertarget{classreel_ad2d6ed0dcaa8fa7b410ca1a84c0d3f57}{\index{reel@{reel}!cosinush@{cosinush}}
+\hypertarget{classreel_a94a01afa4662790da504857247837160}{\index{reel@{reel}!cosinush@{cosinush}}
 \index{cosinush@{cosinush}!reel@{reel}}
 \subsubsection[{cosinush}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ reel\-::cosinush (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classreel_ad2d6ed0dcaa8fa7b410ca1a84c0d3f57}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classreel_a94a01afa4662790da504857247837160}
 
 
 Cosinush. 
 
-Implementation de l'operateur unaire cosinush (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire cosinush (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_acd7a105cccf58a42d6c09b40c91f75f0}{type}.
+Implements \hyperlink{classnocomplex_ae92516f1c7c78298a11e8e34355b9f81}{nocomplex}.
 
 \hypertarget{classreel_a3a2dc28d66ee81177a986fca957f6fd5}{\index{reel@{reel}!cube@{cube}}
 \index{cube@{cube}!reel@{reel}}
@@ -134,53 +145,12 @@ Implements \hyperlink{classtype_acd7a105cccf58a42d6c09b40c91f75f0}{type}.
 
 Cube. 
 
-Implementation de l'operateur unaire Cube (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire Cube (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_ae9ff7857936535092924b83aec1412c6}{type}.
-
-\hypertarget{classreel_a5d0427a4f39bbb96411cb5a1a0320625}{\index{reel@{reel}!eval@{eval}}
-\index{eval@{eval}!reel@{reel}}
-\subsubsection[{eval}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ reel\-::eval (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classreel_a5d0427a4f39bbb96411cb5a1a0320625}
-
-
-eval 
-
-Implementation de l'operateur unaire eval (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
-Pointeur sur type, resultat de l'operation 
-\end{DoxyReturn}
-
-
-Implements \hyperlink{classtype_a20555e9f6c76f728d94049bd72f65fc6}{type}.
-
-\hypertarget{classreel_ac56ec7c9e6b96b85723e518e70ecfc24}{\index{reel@{reel}!fact@{fact}}
-\index{fact@{fact}!reel@{reel}}
-\subsubsection[{fact}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ reel\-::fact (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classreel_ac56ec7c9e6b96b85723e518e70ecfc24}
-
-
-Fact. 
-
-Implementation de l'operateur unaire fact (methode virtuelle pure dans la classe mere) 
-\begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Pointeur sur type, resultat de l'operation 
-\end{DoxyReturn}
-
-
-Implements \hyperlink{classtype_aa5503ee1cdc7c88b058f9216e1e780c3}{type}.
+Implements \hyperlink{classnocomplex_ad84e4a7a269024da4551a8e99078e41d}{nocomplex}.
 
 \hypertarget{classreel_ad1d16e6ce54fc6b8844757a8f04300ca}{\index{reel@{reel}!get\-Data@{get\-Data}}
 \index{get\-Data@{get\-Data}!reel@{reel}}
@@ -189,6 +159,24 @@ Implements \hyperlink{classtype_aa5503ee1cdc7c88b058f9216e1e780c3}{type}.
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classreel_ad1d16e6ce54fc6b8844757a8f04300ca}
+
+
+get\-Data 
+
+Accesseur de la donnee membre data \hypertarget{classreel_a4615a947e25064384fd0216881b89c7b}{\index{reel@{reel}!get\-Decimales@{get\-Decimales}}
+\index{get\-Decimales@{get\-Decimales}!reel@{reel}}
+\subsubsection[{get\-Decimales}]{\setlength{\rightskip}{0pt plus 5cm}int reel\-::get\-Decimales (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classreel_a4615a947e25064384fd0216881b89c7b}
+
+
+get\-Decimales 
+
+Methode calculant le nombre de decimales (utile pour la tranformation en fraction) \begin{DoxyReturn}{Returns}
+nombre de decimales (int) 
+\end{DoxyReturn}
 \hypertarget{classreel_ab863c6b28a5345dbf7657b4b5121c2f7}{\index{reel@{reel}!inv@{inv}}
 \index{inv@{inv}!reel@{reel}}
 \subsubsection[{inv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ reel\-::inv (
@@ -200,27 +188,13 @@ Implements \hyperlink{classtype_aa5503ee1cdc7c88b058f9216e1e780c3}{type}.
 
 Inv. 
 
-Implementation de l'operateur unaire inv (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire inv (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a5eeb7c768cc90a0e9abd91d585169264}{type}.
+Implements \hyperlink{classnocomplex_a9e0f97f51c50b11022c6d0b409c26ecf}{nocomplex}.
 
-\hypertarget{classreel_abdb4c9f0cd45c053b35f868885c5b822}{\index{reel@{reel}!is\-Reel@{is\-Reel}}
-\index{is\-Reel@{is\-Reel}!reel@{reel}}
-\subsubsection[{is\-Reel}]{\setlength{\rightskip}{0pt plus 5cm}static bool reel\-::is\-Reel (
-\begin{DoxyParamCaption}
-\item[{const Q\-String \&}]{s}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classreel_abdb4c9f0cd45c053b35f868885c5b822}
-
-
-is\-Reel 
-
-Methode static permettant de savoir quel type d'objet creer \begin{DoxyReturn}{Returns}
-true si la chaine permet de construire un reel false sinon 
-\end{DoxyReturn}
 \hypertarget{classreel_a5d09de0b7e0856eb63d333f766c770ed}{\index{reel@{reel}!ln@{ln}}
 \index{ln@{ln}!reel@{reel}}
 \subsubsection[{ln}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ reel\-::ln (
@@ -232,12 +206,12 @@ true si la chaine permet de construire un reel false sinon
 
 Ln. 
 
-Implementation de l'operateur unaire ln (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire ln (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a601802c36f0dd5c1067b9873eb103a6d}{type}.
+Implements \hyperlink{classnocomplex_ab3e91b96595fef9d53a5cfb93291c8f0}{nocomplex}.
 
 \hypertarget{classreel_adcf600e2052329def8e10e81e35ef96e}{\index{reel@{reel}!log@{log}}
 \index{log@{log}!reel@{reel}}
@@ -250,23 +224,12 @@ Implements \hyperlink{classtype_a601802c36f0dd5c1067b9873eb103a6d}{type}.
 
 Log. 
 
-Implementation de l'operateur unaire log (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire log (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a7fc23e8e38550f3ad98c0b3582f6163a}{type}.
-
-\hypertarget{classreel_a7bf66e936c424f243a534406dbe8e8d7}{\index{reel@{reel}!mod@{mod}}
-\index{mod@{mod}!reel@{reel}}
-\subsubsection[{mod}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ reel\-::mod (
-\begin{DoxyParamCaption}
-\item[{{\bf type} \&}]{t}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classreel_a7bf66e936c424f243a534406dbe8e8d7}
-
-
-Implements \hyperlink{classtype_ab6f68c2a7481faf20b02aa4ae67c6500}{type}.
+Implements \hyperlink{classnocomplex_a0f7a5802123786d1461271d5c05158ca}{nocomplex}.
 
 \hypertarget{classreel_a044791a71fd9926cbedf3f19f6eea122}{\index{reel@{reel}!operator$\ast$@{operator$\ast$}}
 \index{operator$\ast$@{operator$\ast$}!reel@{reel}}
@@ -279,9 +242,9 @@ Implements \hyperlink{classtype_ab6f68c2a7481faf20b02aa4ae67c6500}{type}.
 
 Operateur $\ast$. 
 
-Implementation de l'operateur binaire $\ast$ (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur binaire $\ast$ (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em t} & \-: Pointeur sur un type \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -302,9 +265,9 @@ Implements \hyperlink{classnocomplex_ac84954cbe0bd9c77eab88c0b97b34c2b}{nocomple
 
 Operateur +. 
 
-Implementation de l'operateur binaire + (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur binaire + (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em t} & \-: Pointeur sur un type \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -325,9 +288,9 @@ Implements \hyperlink{classnocomplex_af3d04b00f4f82d3a35cad0ca023093f4}{nocomple
 
 Operateur -\/. 
 
-Implementation de l'operateur binaire -\/ (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur binaire -\/ (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em t} & \-: Pointeur sur un type \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -348,9 +311,9 @@ Implements \hyperlink{classnocomplex_a2005c3a0fcaa1f360561539931ffc578}{nocomple
 
 Operateur /. 
 
-Implementation de l'operateur binaire / (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur binaire / (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em t} & \-: Pointeur sur un type \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -369,7 +332,19 @@ Implements \hyperlink{classnocomplex_a47942bdcc78cfc5d5e867c9f9836a465}{nocomple
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classreel_a4fdea6a69bd78b2593fb44cc172fc7bf}
 
 
-Implements \hyperlink{classtype_a60bc9fca9ded4e67963e6c9fad82ff01}{type}.
+Pow Operateur binaire Pow Methode virtuelle pure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_a1ad1b692783c8449efb03cc0dc5d1f3c}{nocomplex}.
 
 \hypertarget{classreel_a9a172c44e0a496059bdd1c4d53a98590}{\index{reel@{reel}!sign@{sign}}
 \index{sign@{sign}!reel@{reel}}
@@ -380,22 +355,29 @@ Implements \hyperlink{classtype_a60bc9fca9ded4e67963e6c9fad82ff01}{type}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classreel_a9a172c44e0a496059bdd1c4d53a98590}
 
 
-Implements \hyperlink{classtype_a59342fe365d621d47b607d3f4e155169}{type}.
+sign Operateur unaire sign Methode virtuelle 
 
-\hypertarget{classreel_a8436fd89eda982a6b023e2f7081b5cb0}{\index{reel@{reel}!sinus@{sinus}}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_acd1c0365d1a2ed160934320cff01cecd}{nocomplex}.
+
+\hypertarget{classreel_a3502ff761467546024da46f1f2bbb2e7}{\index{reel@{reel}!sinus@{sinus}}
 \index{sinus@{sinus}!reel@{reel}}
 \subsubsection[{sinus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ reel\-::sinus (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classreel_a8436fd89eda982a6b023e2f7081b5cb0}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classreel_a3502ff761467546024da46f1f2bbb2e7}
 
 
 Sinus. 
 
-Implementation de l'operateur unaire sinus (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur unaire sinus (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em t} & \-: Pointeur sur un type \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -403,25 +385,25 @@ Pointeur sur type, resultat de l'operation
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_ae12b68744cbf5c49e5e065fbf8a13954}{type}.
+Implements \hyperlink{classnocomplex_aea2ba416f34c37ad2cf751b6220d53b8}{nocomplex}.
 
-\hypertarget{classreel_ad404481ff6381767546b93ca0c4ba3e3}{\index{reel@{reel}!sinush@{sinush}}
+\hypertarget{classreel_a410b5cc4316eeddbeff2ec46c13ca249}{\index{reel@{reel}!sinush@{sinush}}
 \index{sinush@{sinush}!reel@{reel}}
 \subsubsection[{sinush}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ reel\-::sinush (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classreel_ad404481ff6381767546b93ca0c4ba3e3}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classreel_a410b5cc4316eeddbeff2ec46c13ca249}
 
 
 Sinush. 
 
-Implementation de l'operateur unaire sinush (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire sinush (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a9ae4dee6629d0d366e52e94591de46d3}{type}.
+Implements \hyperlink{classnocomplex_a4df698a9ee147b77aaab9f63840b1012}{nocomplex}.
 
 \hypertarget{classreel_ad295586d5862f6dc41966f25c365c4a1}{\index{reel@{reel}!sqr@{sqr}}
 \index{sqr@{sqr}!reel@{reel}}
@@ -434,12 +416,12 @@ Implements \hyperlink{classtype_a9ae4dee6629d0d366e52e94591de46d3}{type}.
 
 Sqr. 
 
-Implementation de l'operateur unaire sqr (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire sqr (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_ab5ac11ebbed8a99db5ce4933cb17ddea}{type}.
+Implements \hyperlink{classnocomplex_a5665f2bcf5ad839e92c31f38f3dfc7b7}{nocomplex}.
 
 \hypertarget{classreel_a980bc278bf5537519ee05746262ebb6a}{\index{reel@{reel}!sqrt@{sqrt}}
 \index{sqrt@{sqrt}!reel@{reel}}
@@ -452,9 +434,9 @@ Implements \hyperlink{classtype_ab5ac11ebbed8a99db5ce4933cb17ddea}{type}.
 
 Sqrt. 
 
-Implementation de l'operateur unaire sqrt (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur unaire sqrt (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em t} & \-: Pointeur sur un type \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -462,43 +444,43 @@ Pointeur sur type, resultat de l'operation
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a626c58aa4bca21f65845140c7c9b895e}{type}.
+Implements \hyperlink{classnocomplex_a7f693a0869814705bcc3b8add799e6cd}{nocomplex}.
 
-\hypertarget{classreel_a8ded2c9525ab4937f20b28d31a381442}{\index{reel@{reel}!tangente@{tangente}}
+\hypertarget{classreel_a88d653b80c7d3a1a4f9c4ac4b709957b}{\index{reel@{reel}!tangente@{tangente}}
 \index{tangente@{tangente}!reel@{reel}}
 \subsubsection[{tangente}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ reel\-::tangente (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classreel_a8ded2c9525ab4937f20b28d31a381442}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classreel_a88d653b80c7d3a1a4f9c4ac4b709957b}
 
 
 Tangente. 
 
-Implementation de l'operateur unaire tangente (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire tangente (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a425ad47ffa64f9dafe38ac2cf6f542fb}{type}.
+Implements \hyperlink{classnocomplex_a2e7f4563e7d602c79e356dcb5472e341}{nocomplex}.
 
-\hypertarget{classreel_a4d66c94b0c33019d0dfae8deb2bb41a3}{\index{reel@{reel}!tangenteh@{tangenteh}}
+\hypertarget{classreel_a00cb6cca23061d928135c074a5d69eb0}{\index{reel@{reel}!tangenteh@{tangenteh}}
 \index{tangenteh@{tangenteh}!reel@{reel}}
 \subsubsection[{tangenteh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ reel\-::tangenteh (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classreel_a4d66c94b0c33019d0dfae8deb2bb41a3}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classreel_a00cb6cca23061d928135c074a5d69eb0}
 
 
 Tangenteh. 
 
-Implementation de l'operateur unaire tangenteh (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire tangenteh (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a260ae21ca7b4f5e7eb4dd6f8996ea9a8}{type}.
+Implements \hyperlink{classnocomplex_a79aa6c234a5a66bfe18c39794e56c277}{nocomplex}.
 
 \hypertarget{classreel_a6b06a283958b63fde5c12382b744a8c9}{\index{reel@{reel}!to\-Q\-String@{to\-Q\-String}}
 \index{to\-Q\-String@{to\-Q\-String}!reel@{reel}}
@@ -523,4 +505,4 @@ Implements \hyperlink{classtype_ab61f01d56f3896cc99788a1a18c4b0c2}{type}.
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
 Code/projet\-\_\-lo21/\hyperlink{reel_8h}{reel.\-h}\item 
-Code/projet\-\_\-lo21/\hyperlink{reel_8cpp}{reel.\-cpp}\end{DoxyCompactItemize}
+Code/projet\-\_\-lo21/reel.\-cpp\end{DoxyCompactItemize}

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Calculatrice: Code/projet_lo21/mainwindow.h File Reference</title>
+<title>LO21-Calculatrice: Code/projet_lo21/mainwindow.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Calculatrice
+   <div id="projectname">LO21-Calculatrice
    </div>
+   <div id="projectbrief">Projet de fin de semestre</div>
   </td>
  </tr>
  </tbody>
@@ -36,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -60,7 +60,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,9 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">mainwindow.h File Reference</div>  </div>
 </div><!--header-->
@@ -96,99 +93,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="pile_8h_source.html">pile.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="type_8h_source.html">type.h</a>&quot;</code><br/>
 <code>#include &lt;QString&gt;</code><br/>
-<code>#include &quot;<a class="el" href="reglages_8h_source.html">reglages.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="collection__pile_8h_source.html">collection_pile.h</a>&quot;</code><br/>
+<code>#include &lt;QFileDialog&gt;</code><br/>
+<code>#include &lt;QMessageBox&gt;</code><br/>
 </div>
 <p><a href="mainwindow_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html">MainWindow</a></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespace_ui"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ui.html">Ui</a></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ad67f5c4558fd112b346b238fd415278e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ad67f5c4558fd112b346b238fd415278e">constType</a> { <a class="el" href="mainwindow_8h.html#ad67f5c4558fd112b346b238fd415278ea16dc9f4d70a465af504b4850bb440d3d">ENTIER</a>, 
-<a class="el" href="mainwindow_8h.html#ad67f5c4558fd112b346b238fd415278ea7249a363ec252219f7baa096f3e52b27">REEL</a>, 
-<a class="el" href="mainwindow_8h.html#ad67f5c4558fd112b346b238fd415278ea910c496801b48694d14c13801f80a496">RATIONNEL</a>
- }</td></tr>
-<tr class="memitem:a23cbd707a24e07566ce06f2d40ed7979"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a23cbd707a24e07566ce06f2d40ed7979">complexUse</a> { <a class="el" href="mainwindow_8h.html#a23cbd707a24e07566ce06f2d40ed7979a99f136a862ba5c7d16967231c29f09d6">YES</a>, 
-<a class="el" href="mainwindow_8h.html#a23cbd707a24e07566ce06f2d40ed7979a0d077f5b932ce05e5b9f30c6087a2f31">NO</a>
- }</td></tr>
-<tr class="memitem:a9a9c067334793a3ac24564d642912f95"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a9a9c067334793a3ac24564d642912f95">degUnit</a> { <a class="el" href="mainwindow_8h.html#a9a9c067334793a3ac24564d642912f95a389a4063677c2262f3a8060a641afd3f">DEGRE</a>, 
-<a class="el" href="mainwindow_8h.html#a9a9c067334793a3ac24564d642912f95a1e9ec06897fad14800e4fbb444ce0a08">RADIANT</a>
- }</td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe gerant l'affichage.  <a href="class_main_window.html#details">More...</a><br/></td></tr>
 </table>
-<hr/><h2>Enumeration Type Documentation</h2>
-<a class="anchor" id="a23cbd707a24e07566ce06f2d40ed7979"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="mainwindow_8h.html#a23cbd707a24e07566ce06f2d40ed7979">complexUse</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em><a class="anchor" id="a23cbd707a24e07566ce06f2d40ed7979a99f136a862ba5c7d16967231c29f09d6"></a>YES</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a23cbd707a24e07566ce06f2d40ed7979a0d077f5b932ce05e5b9f30c6087a2f31"></a>NO</em>&nbsp;</td><td>
-</td></tr>
-</table>
-</dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ad67f5c4558fd112b346b238fd415278e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="mainwindow_8h.html#ad67f5c4558fd112b346b238fd415278e">constType</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em><a class="anchor" id="ad67f5c4558fd112b346b238fd415278ea16dc9f4d70a465af504b4850bb440d3d"></a>ENTIER</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ad67f5c4558fd112b346b238fd415278ea7249a363ec252219f7baa096f3e52b27"></a>REEL</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ad67f5c4558fd112b346b238fd415278ea910c496801b48694d14c13801f80a496"></a>RATIONNEL</em>&nbsp;</td><td>
-</td></tr>
-</table>
-</dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a9a9c067334793a3ac24564d642912f95"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="mainwindow_8h.html#a9a9c067334793a3ac24564d642912f95">degUnit</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em><a class="anchor" id="a9a9c067334793a3ac24564d642912f95a389a4063677c2262f3a8060a641afd3f"></a>DEGRE</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a9a9c067334793a3ac24564d642912f95a1e9ec06897fad14800e4fbb444ce0a08"></a>RADIANT</em>&nbsp;</td><td>
-</td></tr>
-</table>
-</dd>
-</dl>
-
-</div>
-</div>
-</div><!-- contents -->
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><dl class="section author"><dt>Author:</dt><dd>Le Feurmou/Leleu </dd></dl>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 4 2012 17:33:49 for Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 11 2012 21:41:09 for LO21-Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1
 </small></address>

@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Calculatrice: Collection_pile Class Reference</title>
+<title>LO21-Calculatrice: Collection_pile Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Calculatrice
+   <div id="projectname">LO21-Calculatrice
    </div>
+   <div id="projectbrief">Projet de fin de semestre</div>
   </td>
  </tr>
  </tbody>
@@ -36,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,8 +109,9 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a68b75361b3956c5540dbe6172ce06645"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_collection__pile.html">Collection_pile</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collection__pile.html#a68b75361b3956c5540dbe6172ce06645">getInstance</a> ()</td></tr>
 <tr class="memdesc:a68b75361b3956c5540dbe6172ce06645"><td class="mdescLeft">&#160;</td><td class="mdescRight">getInstance Methode retournant l'instance unique de la classe  <a href="#a68b75361b3956c5540dbe6172ce06645"></a><br/></td></tr>
-<tr class="memitem:adf48e98599e4632a4c8bde6baa24af72"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collection__pile.html#adf48e98599e4632a4c8bde6baa24af72">releaseInstance</a> ()</td></tr>
-<tr class="memdesc:adf48e98599e4632a4c8bde6baa24af72"><td class="mdescLeft">&#160;</td><td class="mdescRight">releaseInstance Methode liberant l'instance unique de la classe  <a href="#adf48e98599e4632a4c8bde6baa24af72"></a><br/></td></tr>
+<tr class="memitem:adf48e98599e4632a4c8bde6baa24af72"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf48e98599e4632a4c8bde6baa24af72"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_collection__pile.html#adf48e98599e4632a4c8bde6baa24af72">releaseInstance</a> ()</td></tr>
+<tr class="memdesc:adf48e98599e4632a4c8bde6baa24af72"><td class="mdescLeft">&#160;</td><td class="mdescRight">releaseInstance Methode liberant l'instance unique de la classe <br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Classe conteneur de piles. </p>
@@ -133,7 +134,7 @@ Static Public Member Functions</h2></td></tr>
 <p>addPile Methode permettant l'ajout d'une pile dans la collection </p>
 <dl class="params"><dt>Parameters:</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_pile</td><td>: pile à ajouter </td></tr>
+    <tr><td class="paramname">_pile</td><td>: pile a ajouter </td></tr>
   </table>
   </dd>
 </dl>
@@ -162,7 +163,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>getActif Methode permettant de recuperer la donnee membre "actif" </p>
-<dl class="section return"><dt>Returns:</dt><dd>entier representant la position de la pile à rendre active dans le vector </dd></dl>
+<dl class="section return"><dt>Returns:</dt><dd>entier representant la position de la pile a rendre active dans le vector </dd></dl>
 
 </div>
 </div>
@@ -192,31 +193,6 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="adf48e98599e4632a4c8bde6baa24af72"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Collection_pile::releaseInstance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>releaseInstance Methode liberant l'instance unique de la classe </p>
-
-</div>
-</div>
 <a class="anchor" id="ab376d28ce132a2704dd8b663f9a3bf71"></a>
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +218,7 @@ Static Public Member Functions</h2></td></tr>
 <p>setActif Methode permettant de modifier la donnee membre "actif" </p>
 <dl class="params"><dt>Parameters:</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>: entier representant la position de la pile à rendre active dans le vector </td></tr>
+    <tr><td class="paramname">a</td><td>: entier representant la position de la pile a rendre active dans le vector </td></tr>
   </table>
   </dd>
 </dl>
@@ -251,12 +227,12 @@ Static Public Member Functions</h2></td></tr>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Code/projet_lo21/<a class="el" href="collection__pile_8h_source.html">collection_pile.h</a></li>
-<li>Code/projet_lo21/<a class="el" href="collection__pile_8cpp.html">collection_pile.cpp</a></li>
+<li>Code/projet_lo21/collection_pile.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 4 2012 17:33:50 for Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 11 2012 21:41:09 for LO21-Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1
 </small></address>

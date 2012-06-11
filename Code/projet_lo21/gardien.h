@@ -39,11 +39,16 @@ public:
     /*!
     *  \brief Undo
     *   Permet de restaurer l'etat precedent
-    *  \return Pile suivante
+    *  \return Pile a restaurer
     *
     */
     Pile* undo();
 
+    /*!
+    *  \brief Destructeur
+    *
+    *
+    */
     ~gardien();
 
 
@@ -52,7 +57,7 @@ public:
     /*!
     *  \brief Redo
     *   Permet de restaurer l'etat suivant
-    *  \return Pile suivante
+    *  \return Pile a restaurer
     *
     */
     Pile* redo();

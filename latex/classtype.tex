@@ -3,172 +3,354 @@
 }
 
 
+Classe representant un type.  
+
+
+
+
 {\ttfamily \#include $<$type.\-h$>$}
 
-
-
-Inherited by \hyperlink{classconstante}{constante}, and \hyperlink{class_expression}{Expression}.
-
+Inheritance diagram for type\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classtype}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classtype_a24236b97ec65acd7624c81fc33305e7c}{type} ()
-\item 
+\hypertarget{classtype_a24236b97ec65acd7624c81fc33305e7c}{\hyperlink{classtype_a24236b97ec65acd7624c81fc33305e7c}{type} ()}\label{classtype_a24236b97ec65acd7624c81fc33305e7c}
+
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hypertarget{classtype_a87f20c8ea87a2752a61aacd9a818ae8e}{virtual \hyperlink{classtype_a87f20c8ea87a2752a61aacd9a818ae8e}{$\sim$type} ()}\label{classtype_a87f20c8ea87a2752a61aacd9a818ae8e}
+
+\begin{DoxyCompactList}\small\item\em Destructeur (virtuel) \end{DoxyCompactList}\item 
 virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_aae435de533d21af297434702fd71d04d}{operator+} (\hyperlink{classtype}{type} \&t)=0
-\item 
+\begin{DoxyCompactList}\small\item\em Operateur + Operateur binaire + Methode virtuelle pure. \end{DoxyCompactList}\item 
 virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a0fad8179d45b9bbde90b48e1950ce639}{operator/} (\hyperlink{classtype}{type} \&t)=0
-\item 
+\begin{DoxyCompactList}\small\item\em Operateur / Operateur binaire / Methode virtuelle pure. \end{DoxyCompactList}\item 
 virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a9e275d2b8465d6085515f58aaf631ea7}{operator$\ast$} (\hyperlink{classtype}{type} \&t)=0
-\item 
+\begin{DoxyCompactList}\small\item\em Operateur $\ast$ Operateur binaire $\ast$ Methode virtuelle pure. \end{DoxyCompactList}\item 
 virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a4d440ee89d624d7314786d8d18751588}{operator-\/} (\hyperlink{classtype}{type} \&t)=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a60bc9fca9ded4e67963e6c9fad82ff01}{pow} (\hyperlink{classtype}{type} \&t)=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_ab6f68c2a7481faf20b02aa4ae67c6500}{mod} (\hyperlink{classtype}{type} \&t)=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a59342fe365d621d47b607d3f4e155169}{sign} ()=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_ae12b68744cbf5c49e5e065fbf8a13954}{sinus} ()=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_ac459ee75f7ab8d345c01a1f9a13f0728}{cosinus} ()=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a425ad47ffa64f9dafe38ac2cf6f542fb}{tangente} ()=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a9ae4dee6629d0d366e52e94591de46d3}{sinush} ()=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_acd7a105cccf58a42d6c09b40c91f75f0}{cosinush} ()=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a260ae21ca7b4f5e7eb4dd6f8996ea9a8}{tangenteh} ()=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a601802c36f0dd5c1067b9873eb103a6d}{ln} ()=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a7fc23e8e38550f3ad98c0b3582f6163a}{log} ()=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a5eeb7c768cc90a0e9abd91d585169264}{inv} ()=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a626c58aa4bca21f65845140c7c9b895e}{sqrt} ()=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_ab5ac11ebbed8a99db5ce4933cb17ddea}{sqr} ()=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_ae9ff7857936535092924b83aec1412c6}{cube} ()=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_aa5503ee1cdc7c88b058f9216e1e780c3}{fact} ()=0
-\item 
-virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a20555e9f6c76f728d94049bd72f65fc6}{eval} ()=0
-\item 
+\begin{DoxyCompactList}\small\item\em Operateur -\/ Operateur binaire -\/ Methode virtuelle pure. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a01ae853856fcd929e5455b460ccd0be6}{pow} (\hyperlink{classtype}{type} \&t)
+\begin{DoxyCompactList}\small\item\em Pow Operateur binaire Pow Methode virtuelle pure. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_aed752df353b43b17d3f993d4b02f216b}{mod} (\hyperlink{classtype}{type} \&t)
+\begin{DoxyCompactList}\small\item\em Mod Operateur binaire Modulo Methode virtuelle. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a3ec9f31aec3ddc52efe2adff634a671a}{sign} ()
+\begin{DoxyCompactList}\small\item\em sign Operateur unaire sign Methode virtuelle \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_acfff98100e9af7fe51f22ca553b49652}{sinus} (bool degre=false)
+\begin{DoxyCompactList}\small\item\em sinus Operateur unaire sinus Methode virtuelle \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a4bf0be87d5e0314cc6a29ce86930d34e}{cosinus} (bool degre=false)
+\begin{DoxyCompactList}\small\item\em cosinus Operateur unaire cosinus Methode virtuelle \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a0e48cd1a39419994f14550b2fd188e1d}{tangente} (bool degre=false)
+\begin{DoxyCompactList}\small\item\em tangente Operateur unaire tangente Methode virtuelle \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a1bb104502962725e2d8d1909a208e7fa}{sinush} (bool degre=false)
+\begin{DoxyCompactList}\small\item\em sinush Operateur unaire sinush Methode virtuelle \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a387836cc1a0dd2a20ece2f721fab822a}{cosinush} (bool degre=false)
+\begin{DoxyCompactList}\small\item\em cosinush Operateur unaire cosinush Methode virtuelle \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a36763dd363a8de97e4a52aa87776e61c}{tangenteh} (bool degre=false)
+\begin{DoxyCompactList}\small\item\em tangenteh Operateur unaire tangenteh Methode virtuelle \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_aba57b52b37f984806842df5478b2489c}{ln} ()
+\begin{DoxyCompactList}\small\item\em ln Operateur unaire ln Methode virtuelle \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_ab02a7131b07f81a545beb9ae499bcef6}{log} ()
+\begin{DoxyCompactList}\small\item\em log Operateur unaire log Methode virtuelle \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_af4bf1a878929fb77f6e1edf90d33a275}{inv} ()
+\begin{DoxyCompactList}\small\item\em inv Operateur unaire inv Methode virtuelle \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_aedd0df2ba42b6cb66ee3dba28309a47b}{sqrt} ()
+\begin{DoxyCompactList}\small\item\em sqrt Operateur unaire sqrt Methode virtuelle \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_a70b655b274b3378154cd29127c22a4f0}{sqr} ()
+\begin{DoxyCompactList}\small\item\em sqr Operateur unaire sqr Methode virtuelle \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_ac470662477ea88722b58e98fee3e1ec0}{cube} ()
+\begin{DoxyCompactList}\small\item\em cube Operateur unaire cube Methode virtuelle \end{DoxyCompactList}\item 
+virtual \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype_adfeadf5e6478f3687bcaba9cf9aaf8d9}{fact} ()
+\begin{DoxyCompactList}\small\item\em fact Operateur unaire fact Methode virtuelle \end{DoxyCompactList}\item 
+virtual Q\-String \hyperlink{classtype_a8288e5361dba59212d1f2490f6531793}{eval} ()
+\begin{DoxyCompactList}\small\item\em sign Operateur unaire sign Methode virtuelle \end{DoxyCompactList}\item 
 virtual Q\-String \hyperlink{classtype_ab61f01d56f3896cc99788a1a18c4b0c2}{to\-Q\-String} ()=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em to\-Q\-String Methode virtuelle pure \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classtype_a011e2bd55a2d7784a1455bbc2fbba2e5}{is\-Entier} (const Q\-String \&s)
+\begin{DoxyCompactList}\small\item\em is\-Entier Methode statique permettant de determiner le type (Utiisation de regexp) \end{DoxyCompactList}\item 
+static bool \hyperlink{classtype_ae610cb80e031c43ae3c56033ec95a3a7}{is\-Reel} (const Q\-String \&s)
+\begin{DoxyCompactList}\small\item\em is\-Reel Methode statique permettant de determiner le type (Utiisation de regexp) \end{DoxyCompactList}\item 
+static bool \hyperlink{classtype_a8f2852f004b9d1676aa8ee4385d4ed49}{is\-Rationnel} (const Q\-String \&s)
+\begin{DoxyCompactList}\small\item\em is\-Rationnel Methode statique permettant de determiner le type (Utiisation de regexp) \end{DoxyCompactList}\item 
+static bool \hyperlink{classtype_a095a592d75acdef11c9e01e199c49e33}{is\-Expression} (const Q\-String \&s)
+\begin{DoxyCompactList}\small\item\em is\-Expression Methode statique permettant de determiner le type (Utiisation de regexp) \end{DoxyCompactList}\item 
+static bool \hyperlink{classtype_aeadbcfa313ab5a235bb44cf724c3ccba}{is\-Complexe} (const Q\-String \&s)
+\begin{DoxyCompactList}\small\item\em is\-Complexe Methode statique permettant de determiner le type (Utiisation de regexp) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
-\hypertarget{classtype_a24236b97ec65acd7624c81fc33305e7c}{\index{type@{type}!type@{type}}
-\index{type@{type}!type@{type}}
-\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}type\-::type (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classtype_a24236b97ec65acd7624c81fc33305e7c}
+\subsection{Detailed Description}
+Classe representant un type. 
 
+Super Classe Abstraite utilise pour le polymorphisme 
 
 \subsection{Member Function Documentation}
-\hypertarget{classtype_ac459ee75f7ab8d345c01a1f9a13f0728}{\index{type@{type}!cosinus@{cosinus}}
+\hypertarget{classtype_a4bf0be87d5e0314cc6a29ce86930d34e}{\index{type@{type}!cosinus@{cosinus}}
 \index{cosinus@{cosinus}!type@{type}}
 \subsubsection[{cosinus}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::cosinus (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_ac459ee75f7ab8d345c01a1f9a13f0728}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_a4bf0be87d5e0314cc6a29ce86930d34e}
 
 
-Implemented in \hyperlink{classcomplexe_a1585612c73f78c15bd20d7800ec834b3}{complexe}, \hyperlink{classreel_a4d1fb90011705658295e922d525a91dd}{reel}, \hyperlink{classentier_aff98af6a48e8051e4b7f8b5ce9f192ae}{entier}, \hyperlink{class_expression_a39bd1c7e48333e054d7bb73a445bbcad}{Expression}, and \hyperlink{classrationnel_ac89f01b8f5927ba88ecd60a2f6996d2d}{rationnel}.
+cosinus Operateur unaire cosinus Methode virtuelle 
 
-\hypertarget{classtype_acd7a105cccf58a42d6c09b40c91f75f0}{\index{type@{type}!cosinush@{cosinush}}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_a1313e6cfa480cab69942f9b97418e491}{entier}, \hyperlink{classrationnel_a4a2f7528592b31a367799a79c336395c}{rationnel}, \hyperlink{class_expression_ab33831fb9207ba778ae46f49b2f0f7ac}{Expression}, \hyperlink{classreel_ab1d6bb643ca3335b8cb19e1b7eb89878}{reel}, and \hyperlink{classnocomplex_a2c3aa4791fe0c123079b0332a5978939}{nocomplex}.
+
+\hypertarget{classtype_a387836cc1a0dd2a20ece2f721fab822a}{\index{type@{type}!cosinush@{cosinush}}
 \index{cosinush@{cosinush}!type@{type}}
 \subsubsection[{cosinush}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::cosinush (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_acd7a105cccf58a42d6c09b40c91f75f0}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_a387836cc1a0dd2a20ece2f721fab822a}
 
 
-Implemented in \hyperlink{classcomplexe_ab5ea61e7d082bd6613cdeed2ac6b522f}{complexe}, \hyperlink{classreel_ad2d6ed0dcaa8fa7b410ca1a84c0d3f57}{reel}, \hyperlink{classentier_a567bb5589f8f988d6ee782dacada8ca5}{entier}, \hyperlink{class_expression_ad253a0ab9264d8d0f5eda102bc4fce65}{Expression}, and \hyperlink{classrationnel_aef9f5ccfdc0a0344e64e5f1f77adab0d}{rationnel}.
+cosinush Operateur unaire cosinush Methode virtuelle 
 
-\hypertarget{classtype_ae9ff7857936535092924b83aec1412c6}{\index{type@{type}!cube@{cube}}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_af111db8d7c89d47f20c59e3bd0ef1dfd}{entier}, \hyperlink{classrationnel_af8de9bc6850dc5471d2e31ddf8e3866e}{rationnel}, \hyperlink{class_expression_a032591ce129e8d11b9a75c55287323d8}{Expression}, \hyperlink{classreel_a94a01afa4662790da504857247837160}{reel}, and \hyperlink{classnocomplex_ae92516f1c7c78298a11e8e34355b9f81}{nocomplex}.
+
+\hypertarget{classtype_ac470662477ea88722b58e98fee3e1ec0}{\index{type@{type}!cube@{cube}}
 \index{cube@{cube}!type@{type}}
 \subsubsection[{cube}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::cube (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_ae9ff7857936535092924b83aec1412c6}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_ac470662477ea88722b58e98fee3e1ec0}
 
 
-Implemented in \hyperlink{classcomplexe_a8d31faea698bef636ff85d5dfd2868ae}{complexe}, \hyperlink{classreel_a3a2dc28d66ee81177a986fca957f6fd5}{reel}, \hyperlink{classentier_a4c726d947d2f7464ec858f50054118e8}{entier}, \hyperlink{class_expression_a2f75b5877cd84204a180dc510035b6d5}{Expression}, and \hyperlink{classrationnel_a9bca6086c4a5083765d87324418a86ab}{rationnel}.
+cube Operateur unaire cube Methode virtuelle 
 
-\hypertarget{classtype_a20555e9f6c76f728d94049bd72f65fc6}{\index{type@{type}!eval@{eval}}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_a4c726d947d2f7464ec858f50054118e8}{entier}, \hyperlink{classrationnel_a9bca6086c4a5083765d87324418a86ab}{rationnel}, \hyperlink{class_expression_afaa9e88c0eedebcd346859b7593f5b48}{Expression}, \hyperlink{classreel_a3a2dc28d66ee81177a986fca957f6fd5}{reel}, and \hyperlink{classnocomplex_ad84e4a7a269024da4551a8e99078e41d}{nocomplex}.
+
+\hypertarget{classtype_a8288e5361dba59212d1f2490f6531793}{\index{type@{type}!eval@{eval}}
 \index{eval@{eval}!type@{type}}
-\subsubsection[{eval}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::eval (
+\subsubsection[{eval}]{\setlength{\rightskip}{0pt plus 5cm}virtual Q\-String type\-::eval (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_a20555e9f6c76f728d94049bd72f65fc6}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_a8288e5361dba59212d1f2490f6531793}
 
 
-Implemented in \hyperlink{classcomplexe_adc5362397311c76d47a8793a14c012c6}{complexe}, \hyperlink{classreel_a5d0427a4f39bbb96411cb5a1a0320625}{reel}, \hyperlink{classentier_aff68ab5a1784c8a4cece781412f93aec}{entier}, \hyperlink{class_expression_a4cbf84a0a4fcfcb54439c4ae5cc359ec}{Expression}, and \hyperlink{classrationnel_aa66761d9af57e34a2ca44d5858dedf00}{rationnel}.
+sign Operateur unaire sign Methode virtuelle 
 
-\hypertarget{classtype_aa5503ee1cdc7c88b058f9216e1e780c3}{\index{type@{type}!fact@{fact}}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classrationnel_a1418b1d6ac37f7948affefa7b8d0f314}{rationnel}, \hyperlink{class_expression_a7312cb958b6366f84fb4e01f58cd2119}{Expression}, and \hyperlink{classnocomplex_a8831dff2cd793c03618b6e0751ffc026}{nocomplex}.
+
+\hypertarget{classtype_adfeadf5e6478f3687bcaba9cf9aaf8d9}{\index{type@{type}!fact@{fact}}
 \index{fact@{fact}!type@{type}}
 \subsubsection[{fact}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::fact (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_aa5503ee1cdc7c88b058f9216e1e780c3}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_adfeadf5e6478f3687bcaba9cf9aaf8d9}
 
 
-Implemented in \hyperlink{classcomplexe_a9fbe1031ebd0226e4bb1c64cbc67b605}{complexe}, \hyperlink{classreel_ac56ec7c9e6b96b85723e518e70ecfc24}{reel}, \hyperlink{classentier_a8a475a326fc2c4e1b2a03ec437270144}{entier}, \hyperlink{class_expression_aeebb8e11701e8e618236ff66abcb378f}{Expression}, and \hyperlink{classrationnel_a51333d6a00b4307407f1ea324902eeb8}{rationnel}.
+fact Operateur unaire fact Methode virtuelle 
 
-\hypertarget{classtype_a5eeb7c768cc90a0e9abd91d585169264}{\index{type@{type}!inv@{inv}}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_a8a475a326fc2c4e1b2a03ec437270144}{entier}.
+
+\hypertarget{classtype_af4bf1a878929fb77f6e1edf90d33a275}{\index{type@{type}!inv@{inv}}
 \index{inv@{inv}!type@{type}}
 \subsubsection[{inv}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::inv (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_a5eeb7c768cc90a0e9abd91d585169264}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_af4bf1a878929fb77f6e1edf90d33a275}
 
 
-Implemented in \hyperlink{classcomplexe_af18ddceaaa21ffc73c5de98d5a037624}{complexe}, \hyperlink{classreel_ab863c6b28a5345dbf7657b4b5121c2f7}{reel}, \hyperlink{classentier_abaa5775172cf9c417ccdb174304056b3}{entier}, \hyperlink{class_expression_aca3f23b76ddc13f197127c231830d1a1}{Expression}, and \hyperlink{classrationnel_a75336cd670c61195c833f8459c02c3b5}{rationnel}.
+inv Operateur unaire inv Methode virtuelle 
 
-\hypertarget{classtype_a601802c36f0dd5c1067b9873eb103a6d}{\index{type@{type}!ln@{ln}}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_abaa5775172cf9c417ccdb174304056b3}{entier}, \hyperlink{classrationnel_a75336cd670c61195c833f8459c02c3b5}{rationnel}, \hyperlink{class_expression_ab3dc93b84bb845663383b4347550c9d5}{Expression}, \hyperlink{classreel_ab863c6b28a5345dbf7657b4b5121c2f7}{reel}, and \hyperlink{classnocomplex_a9e0f97f51c50b11022c6d0b409c26ecf}{nocomplex}.
+
+\hypertarget{classtype_aeadbcfa313ab5a235bb44cf724c3ccba}{\index{type@{type}!is\-Complexe@{is\-Complexe}}
+\index{is\-Complexe@{is\-Complexe}!type@{type}}
+\subsubsection[{is\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}static bool type\-::is\-Complexe (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classtype_aeadbcfa313ab5a235bb44cf724c3ccba}
+
+
+is\-Complexe Methode statique permettant de determiner le type (Utiisation de regexp) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Qstring} & s, chaine de caractere source \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la chaine ressemble a un complexe, false sinon 
+\end{DoxyReturn}
+\hypertarget{classtype_a011e2bd55a2d7784a1455bbc2fbba2e5}{\index{type@{type}!is\-Entier@{is\-Entier}}
+\index{is\-Entier@{is\-Entier}!type@{type}}
+\subsubsection[{is\-Entier}]{\setlength{\rightskip}{0pt plus 5cm}static bool type\-::is\-Entier (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classtype_a011e2bd55a2d7784a1455bbc2fbba2e5}
+
+
+is\-Entier Methode statique permettant de determiner le type (Utiisation de regexp) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Qstring} & s, chaine de caractere source \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la chaine ressemble a un entier, false sinon 
+\end{DoxyReturn}
+\hypertarget{classtype_a095a592d75acdef11c9e01e199c49e33}{\index{type@{type}!is\-Expression@{is\-Expression}}
+\index{is\-Expression@{is\-Expression}!type@{type}}
+\subsubsection[{is\-Expression}]{\setlength{\rightskip}{0pt plus 5cm}static bool type\-::is\-Expression (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classtype_a095a592d75acdef11c9e01e199c49e33}
+
+
+is\-Expression Methode statique permettant de determiner le type (Utiisation de regexp) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Qstring} & s, chaine de caractere source \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la chaine ressemble a une expression, false sinon 
+\end{DoxyReturn}
+\hypertarget{classtype_a8f2852f004b9d1676aa8ee4385d4ed49}{\index{type@{type}!is\-Rationnel@{is\-Rationnel}}
+\index{is\-Rationnel@{is\-Rationnel}!type@{type}}
+\subsubsection[{is\-Rationnel}]{\setlength{\rightskip}{0pt plus 5cm}static bool type\-::is\-Rationnel (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classtype_a8f2852f004b9d1676aa8ee4385d4ed49}
+
+
+is\-Rationnel Methode statique permettant de determiner le type (Utiisation de regexp) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Qstring} & s, chaine de caractere source \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la chaine ressemble a un rationnel, false sinon 
+\end{DoxyReturn}
+\hypertarget{classtype_ae610cb80e031c43ae3c56033ec95a3a7}{\index{type@{type}!is\-Reel@{is\-Reel}}
+\index{is\-Reel@{is\-Reel}!type@{type}}
+\subsubsection[{is\-Reel}]{\setlength{\rightskip}{0pt plus 5cm}static bool type\-::is\-Reel (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classtype_ae610cb80e031c43ae3c56033ec95a3a7}
+
+
+is\-Reel Methode statique permettant de determiner le type (Utiisation de regexp) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Qstring} & s, chaine de caractere source \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la chaine ressemble a un reel, false sinon 
+\end{DoxyReturn}
+\hypertarget{classtype_aba57b52b37f984806842df5478b2489c}{\index{type@{type}!ln@{ln}}
 \index{ln@{ln}!type@{type}}
 \subsubsection[{ln}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::ln (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_a601802c36f0dd5c1067b9873eb103a6d}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_aba57b52b37f984806842df5478b2489c}
 
 
-Implemented in \hyperlink{classcomplexe_a07d473394f16fb1dcfc4770393d165fb}{complexe}, \hyperlink{classreel_a5d09de0b7e0856eb63d333f766c770ed}{reel}, \hyperlink{classentier_aef2c65b9f379c5ea7857fcaabca30dba}{entier}, \hyperlink{class_expression_a3590b5a1c78a0bd0d7783dc101151fe4}{Expression}, and \hyperlink{classrationnel_a59b1b593905de8676db02d5d2a5554c3}{rationnel}.
+ln Operateur unaire ln Methode virtuelle 
 
-\hypertarget{classtype_a7fc23e8e38550f3ad98c0b3582f6163a}{\index{type@{type}!log@{log}}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_aef2c65b9f379c5ea7857fcaabca30dba}{entier}, \hyperlink{classrationnel_a59b1b593905de8676db02d5d2a5554c3}{rationnel}, \hyperlink{class_expression_a1f6cd71d574995f2c3e80c3033ca2940}{Expression}, \hyperlink{classreel_a5d09de0b7e0856eb63d333f766c770ed}{reel}, and \hyperlink{classnocomplex_ab3e91b96595fef9d53a5cfb93291c8f0}{nocomplex}.
+
+\hypertarget{classtype_ab02a7131b07f81a545beb9ae499bcef6}{\index{type@{type}!log@{log}}
 \index{log@{log}!type@{type}}
 \subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::log (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_a7fc23e8e38550f3ad98c0b3582f6163a}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_ab02a7131b07f81a545beb9ae499bcef6}
 
 
-Implemented in \hyperlink{classcomplexe_aa2de62452b049622ad898ac9cc271403}{complexe}, \hyperlink{classreel_adcf600e2052329def8e10e81e35ef96e}{reel}, \hyperlink{classentier_aeca6cf72ceaa32cfc7b52f00d962d3cc}{entier}, \hyperlink{class_expression_ad7931ef818f158346f5b979569a1a7d0}{Expression}, and \hyperlink{classrationnel_a6bed14bda0b8546528454e7b2030645d}{rationnel}.
+log Operateur unaire log Methode virtuelle 
 
-\hypertarget{classtype_ab6f68c2a7481faf20b02aa4ae67c6500}{\index{type@{type}!mod@{mod}}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_aeca6cf72ceaa32cfc7b52f00d962d3cc}{entier}, \hyperlink{classrationnel_a6bed14bda0b8546528454e7b2030645d}{rationnel}, \hyperlink{class_expression_a9eb28aee26ef54093fc83f89ef3c1523}{Expression}, \hyperlink{classreel_adcf600e2052329def8e10e81e35ef96e}{reel}, and \hyperlink{classnocomplex_a0f7a5802123786d1461271d5c05158ca}{nocomplex}.
+
+\hypertarget{classtype_aed752df353b43b17d3f993d4b02f216b}{\index{type@{type}!mod@{mod}}
 \index{mod@{mod}!type@{type}}
 \subsubsection[{mod}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::mod (
 \begin{DoxyParamCaption}
 \item[{{\bf type} \&}]{t}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_ab6f68c2a7481faf20b02aa4ae67c6500}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_aed752df353b43b17d3f993d4b02f216b}
 
 
-Implemented in \hyperlink{classcomplexe_aed8794b57b6bc231e90e6ea60215368e}{complexe}, \hyperlink{classreel_a7bf66e936c424f243a534406dbe8e8d7}{reel}, \hyperlink{classentier_a4e5c25c0ed52135136bb75563a9337e7}{entier}, \hyperlink{class_expression_a4c590a64e8cb76efddca70e3de240640}{Expression}, and \hyperlink{classrationnel_a546c22eedcb7ce551bb04be7dc527573}{rationnel}.
+Mod Operateur binaire Modulo Methode virtuelle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_a4e5c25c0ed52135136bb75563a9337e7}{entier}, and \hyperlink{class_expression_ac46a4b88a1b08206e08da229fdbfd3e9}{Expression}.
 
 \hypertarget{classtype_a9e275d2b8465d6085515f58aaf631ea7}{\index{type@{type}!operator$\ast$@{operator$\ast$}}
 \index{operator$\ast$@{operator$\ast$}!type@{type}}
@@ -179,7 +361,19 @@ Implemented in \hyperlink{classcomplexe_aed8794b57b6bc231e90e6ea60215368e}{compl
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_a9e275d2b8465d6085515f58aaf631ea7}
 
 
-Implemented in \hyperlink{classcomplexe_a02371b6578996af8af11f260931259b4}{complexe}, \hyperlink{classreel_a044791a71fd9926cbedf3f19f6eea122}{reel}, \hyperlink{classentier_a7314a5aad4a2c997eaea01e3aa42092a}{entier}, \hyperlink{classrationnel_a49250cb9001aad230e5193515ee74efa}{rationnel}, \hyperlink{class_expression_a9f63512e41bb2e498951342759a6fa1e}{Expression}, and \hyperlink{classnocomplex_ac84954cbe0bd9c77eab88c0b97b34c2b}{nocomplex}.
+Operateur $\ast$ Operateur binaire $\ast$ Methode virtuelle pure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcomplexe_a02371b6578996af8af11f260931259b4}{complexe}, \hyperlink{classentier_a7314a5aad4a2c997eaea01e3aa42092a}{entier}, \hyperlink{classreel_a044791a71fd9926cbedf3f19f6eea122}{reel}, \hyperlink{classrationnel_a49250cb9001aad230e5193515ee74efa}{rationnel}, \hyperlink{class_expression_a9f63512e41bb2e498951342759a6fa1e}{Expression}, and \hyperlink{classnocomplex_ac84954cbe0bd9c77eab88c0b97b34c2b}{nocomplex}.
 
 \hypertarget{classtype_aae435de533d21af297434702fd71d04d}{\index{type@{type}!operator+@{operator+}}
 \index{operator+@{operator+}!type@{type}}
@@ -190,7 +384,19 @@ Implemented in \hyperlink{classcomplexe_a02371b6578996af8af11f260931259b4}{compl
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_aae435de533d21af297434702fd71d04d}
 
 
-Implemented in \hyperlink{classcomplexe_a9f98da0548d8b73f1f10f248061d196b}{complexe}, \hyperlink{classrationnel_a14d9d411058e146e075ccf16997e525e}{rationnel}, \hyperlink{classreel_af2ae884e68ab28b286cf9940f05f59d9}{reel}, \hyperlink{classentier_a531e654172d6e2fe225fad108dbb84a7}{entier}, \hyperlink{class_expression_a1572f9f1d8b2619b14d7d58f72a63e22}{Expression}, and \hyperlink{classnocomplex_af3d04b00f4f82d3a35cad0ca023093f4}{nocomplex}.
+Operateur + Operateur binaire + Methode virtuelle pure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcomplexe_a9f98da0548d8b73f1f10f248061d196b}{complexe}, \hyperlink{classentier_a531e654172d6e2fe225fad108dbb84a7}{entier}, \hyperlink{classreel_af2ae884e68ab28b286cf9940f05f59d9}{reel}, \hyperlink{classrationnel_a14d9d411058e146e075ccf16997e525e}{rationnel}, \hyperlink{class_expression_a1572f9f1d8b2619b14d7d58f72a63e22}{Expression}, and \hyperlink{classnocomplex_af3d04b00f4f82d3a35cad0ca023093f4}{nocomplex}.
 
 \hypertarget{classtype_a4d440ee89d624d7314786d8d18751588}{\index{type@{type}!operator-\/@{operator-\/}}
 \index{operator-\/@{operator-\/}!type@{type}}
@@ -201,7 +407,19 @@ Implemented in \hyperlink{classcomplexe_a9f98da0548d8b73f1f10f248061d196b}{compl
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_a4d440ee89d624d7314786d8d18751588}
 
 
-Implemented in \hyperlink{classcomplexe_ae74ae6a7236ccbdaf74e88e5464ffb43}{complexe}, \hyperlink{classreel_a9cd96b762004392eda5216262201322c}{reel}, \hyperlink{classentier_ac0acf2b6156ef6f5f2e034c0425e1114}{entier}, \hyperlink{class_expression_adb495f245e3652e3605b290d7d41acb5}{Expression}, \hyperlink{classrationnel_a3bdf6de1a2526ddafbf1831a9af11dc9}{rationnel}, and \hyperlink{classnocomplex_a2005c3a0fcaa1f360561539931ffc578}{nocomplex}.
+Operateur -\/ Operateur binaire -\/ Methode virtuelle pure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcomplexe_ae74ae6a7236ccbdaf74e88e5464ffb43}{complexe}, \hyperlink{classentier_ac0acf2b6156ef6f5f2e034c0425e1114}{entier}, \hyperlink{classreel_a9cd96b762004392eda5216262201322c}{reel}, \hyperlink{classrationnel_a3bdf6de1a2526ddafbf1831a9af11dc9}{rationnel}, \hyperlink{class_expression_adb495f245e3652e3605b290d7d41acb5}{Expression}, and \hyperlink{classnocomplex_a2005c3a0fcaa1f360561539931ffc578}{nocomplex}.
 
 \hypertarget{classtype_a0fad8179d45b9bbde90b48e1950ce639}{\index{type@{type}!operator/@{operator/}}
 \index{operator/@{operator/}!type@{type}}
@@ -212,95 +430,168 @@ Implemented in \hyperlink{classcomplexe_ae74ae6a7236ccbdaf74e88e5464ffb43}{compl
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_a0fad8179d45b9bbde90b48e1950ce639}
 
 
-Implemented in \hyperlink{classcomplexe_af2faf54f25b3e58699ecf1d0b6409603}{complexe}, \hyperlink{classreel_a3bc55f29b377547040d47be018b73fe6}{reel}, \hyperlink{classrationnel_ae36b04407cc70d425ed0292975b0d1e9}{rationnel}, \hyperlink{classentier_a3bfd34b6998c5c09df0dbbadead47867}{entier}, \hyperlink{class_expression_aeb3e786f0524b1b1e2c5b238c8d2e50c}{Expression}, and \hyperlink{classnocomplex_a47942bdcc78cfc5d5e867c9f9836a465}{nocomplex}.
+Operateur / Operateur binaire / Methode virtuelle pure. 
 
-\hypertarget{classtype_a60bc9fca9ded4e67963e6c9fad82ff01}{\index{type@{type}!pow@{pow}}
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcomplexe_af2faf54f25b3e58699ecf1d0b6409603}{complexe}, \hyperlink{classentier_a3bfd34b6998c5c09df0dbbadead47867}{entier}, \hyperlink{classreel_a3bc55f29b377547040d47be018b73fe6}{reel}, \hyperlink{classrationnel_ae36b04407cc70d425ed0292975b0d1e9}{rationnel}, \hyperlink{class_expression_aeb3e786f0524b1b1e2c5b238c8d2e50c}{Expression}, and \hyperlink{classnocomplex_a47942bdcc78cfc5d5e867c9f9836a465}{nocomplex}.
+
+\hypertarget{classtype_a01ae853856fcd929e5455b460ccd0be6}{\index{type@{type}!pow@{pow}}
 \index{pow@{pow}!type@{type}}
 \subsubsection[{pow}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::pow (
 \begin{DoxyParamCaption}
 \item[{{\bf type} \&}]{t}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_a60bc9fca9ded4e67963e6c9fad82ff01}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_a01ae853856fcd929e5455b460ccd0be6}
 
 
-Implemented in \hyperlink{classcomplexe_ab62da214c318ec19868b65394c95723c}{complexe}, \hyperlink{classreel_a4fdea6a69bd78b2593fb44cc172fc7bf}{reel}, \hyperlink{classentier_adc71e10e6ea385f7c1aa1de06e2d1b4c}{entier}, \hyperlink{class_expression_a9b7133faeacde4cf9c297275cc07a119}{Expression}, and \hyperlink{classrationnel_afd9fd9a30f034952ce889d46a07de617}{rationnel}.
+Pow Operateur binaire Pow Methode virtuelle pure. 
 
-\hypertarget{classtype_a59342fe365d621d47b607d3f4e155169}{\index{type@{type}!sign@{sign}}
+
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_adc71e10e6ea385f7c1aa1de06e2d1b4c}{entier}, \hyperlink{classrationnel_afd9fd9a30f034952ce889d46a07de617}{rationnel}, \hyperlink{classreel_a4fdea6a69bd78b2593fb44cc172fc7bf}{reel}, \hyperlink{class_expression_aeaf521221894a0012b604cc0033518b9}{Expression}, and \hyperlink{classnocomplex_a1ad1b692783c8449efb03cc0dc5d1f3c}{nocomplex}.
+
+\hypertarget{classtype_a3ec9f31aec3ddc52efe2adff634a671a}{\index{type@{type}!sign@{sign}}
 \index{sign@{sign}!type@{type}}
 \subsubsection[{sign}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::sign (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_a59342fe365d621d47b607d3f4e155169}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_a3ec9f31aec3ddc52efe2adff634a671a}
 
 
-Implemented in \hyperlink{classcomplexe_a9e7f59cfa1dd74f77891d7bfd1c1c62b}{complexe}, \hyperlink{classreel_a9a172c44e0a496059bdd1c4d53a98590}{reel}, \hyperlink{classentier_a4a25b08f29eba0a531bebadeaf77ee04}{entier}, \hyperlink{class_expression_a62923fe874212a2d52d8a14769e774a1}{Expression}, and \hyperlink{classrationnel_aa73709167be428fafc4d95a31f4c3cc0}{rationnel}.
+sign Operateur unaire sign Methode virtuelle 
 
-\hypertarget{classtype_ae12b68744cbf5c49e5e065fbf8a13954}{\index{type@{type}!sinus@{sinus}}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_a4a25b08f29eba0a531bebadeaf77ee04}{entier}, \hyperlink{classrationnel_aa73709167be428fafc4d95a31f4c3cc0}{rationnel}, \hyperlink{class_expression_aa654b4e71cfafd29af080020a77dc1e0}{Expression}, \hyperlink{classreel_a9a172c44e0a496059bdd1c4d53a98590}{reel}, \hyperlink{classcomplexe_a9e7f59cfa1dd74f77891d7bfd1c1c62b}{complexe}, and \hyperlink{classnocomplex_acd1c0365d1a2ed160934320cff01cecd}{nocomplex}.
+
+\hypertarget{classtype_acfff98100e9af7fe51f22ca553b49652}{\index{type@{type}!sinus@{sinus}}
 \index{sinus@{sinus}!type@{type}}
 \subsubsection[{sinus}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::sinus (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_ae12b68744cbf5c49e5e065fbf8a13954}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_acfff98100e9af7fe51f22ca553b49652}
 
 
-Implemented in \hyperlink{classcomplexe_acd102b7928fdd06a6d507cbec365359f}{complexe}, \hyperlink{classreel_a8436fd89eda982a6b023e2f7081b5cb0}{reel}, \hyperlink{classentier_ae69e6bbd83eec7a85f35a47aa84ec16c}{entier}, \hyperlink{class_expression_a70133c8c9911b1193eb8fff99c3c8693}{Expression}, and \hyperlink{classrationnel_ac6ad55bfba79a0169d8cf1fb82354b89}{rationnel}.
+sinus Operateur unaire sinus Methode virtuelle 
 
-\hypertarget{classtype_a9ae4dee6629d0d366e52e94591de46d3}{\index{type@{type}!sinush@{sinush}}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_a5dd86ffdc48bf745871ac2f65199d2ce}{entier}, \hyperlink{classreel_a3502ff761467546024da46f1f2bbb2e7}{reel}, \hyperlink{classrationnel_ad34af896f760a0271286e2dbbf55ad9f}{rationnel}, \hyperlink{class_expression_a67a5046f6af705fef094ff5e4a78880d}{Expression}, and \hyperlink{classnocomplex_aea2ba416f34c37ad2cf751b6220d53b8}{nocomplex}.
+
+\hypertarget{classtype_a1bb104502962725e2d8d1909a208e7fa}{\index{type@{type}!sinush@{sinush}}
 \index{sinush@{sinush}!type@{type}}
 \subsubsection[{sinush}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::sinush (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_a9ae4dee6629d0d366e52e94591de46d3}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_a1bb104502962725e2d8d1909a208e7fa}
 
 
-Implemented in \hyperlink{classcomplexe_a274c87528cc72aa5590319dc797d2d86}{complexe}, \hyperlink{classreel_ad404481ff6381767546b93ca0c4ba3e3}{reel}, \hyperlink{classentier_ac26dfe71ead5fdd395b0404a76d30bb7}{entier}, \hyperlink{class_expression_a034e6da5d4074ddd9e042b19d2ec027c}{Expression}, and \hyperlink{classrationnel_afbf300cd97ee35b0302f7365ed84fb95}{rationnel}.
+sinush Operateur unaire sinush Methode virtuelle 
 
-\hypertarget{classtype_ab5ac11ebbed8a99db5ce4933cb17ddea}{\index{type@{type}!sqr@{sqr}}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_abfb8840f088a4771520fd48a78c01434}{entier}, \hyperlink{classrationnel_a107f6a0be55879bd49dd015144fdfde4}{rationnel}, \hyperlink{class_expression_a45aef44cb37e21e99614053bf80801f6}{Expression}, \hyperlink{classreel_a410b5cc4316eeddbeff2ec46c13ca249}{reel}, and \hyperlink{classnocomplex_a4df698a9ee147b77aaab9f63840b1012}{nocomplex}.
+
+\hypertarget{classtype_a70b655b274b3378154cd29127c22a4f0}{\index{type@{type}!sqr@{sqr}}
 \index{sqr@{sqr}!type@{type}}
 \subsubsection[{sqr}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::sqr (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_ab5ac11ebbed8a99db5ce4933cb17ddea}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_a70b655b274b3378154cd29127c22a4f0}
 
 
-Implemented in \hyperlink{classcomplexe_a3274db71725cb6d6291939a66ebc3d64}{complexe}, \hyperlink{classreel_ad295586d5862f6dc41966f25c365c4a1}{reel}, \hyperlink{classentier_a33b0b2b13a0fdc767a809df33b934dd6}{entier}, \hyperlink{class_expression_ac0520d2c2b2527a430701b964b6ef5f8}{Expression}, and \hyperlink{classrationnel_ab9f341fd09499253dd1f9b6f15795576}{rationnel}.
+sqr Operateur unaire sqr Methode virtuelle 
 
-\hypertarget{classtype_a626c58aa4bca21f65845140c7c9b895e}{\index{type@{type}!sqrt@{sqrt}}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_a33b0b2b13a0fdc767a809df33b934dd6}{entier}, \hyperlink{classrationnel_ab9f341fd09499253dd1f9b6f15795576}{rationnel}, \hyperlink{class_expression_a172e59bd44c5ddf668fd8027f0733d8d}{Expression}, \hyperlink{classreel_ad295586d5862f6dc41966f25c365c4a1}{reel}, and \hyperlink{classnocomplex_a5665f2bcf5ad839e92c31f38f3dfc7b7}{nocomplex}.
+
+\hypertarget{classtype_aedd0df2ba42b6cb66ee3dba28309a47b}{\index{type@{type}!sqrt@{sqrt}}
 \index{sqrt@{sqrt}!type@{type}}
 \subsubsection[{sqrt}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::sqrt (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_a626c58aa4bca21f65845140c7c9b895e}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_aedd0df2ba42b6cb66ee3dba28309a47b}
 
 
-Implemented in \hyperlink{classcomplexe_a9d26ee640673118afe49f29cb98f3258}{complexe}, \hyperlink{classreel_a980bc278bf5537519ee05746262ebb6a}{reel}, \hyperlink{classentier_a9058b76c3fae96fb3a9ade24e6c33926}{entier}, \hyperlink{class_expression_adf9f4b7e58d0f1a3a584c4493302c0b4}{Expression}, and \hyperlink{classrationnel_ad37ab4380b5ff66104748ecc0bf5babe}{rationnel}.
+sqrt Operateur unaire sqrt Methode virtuelle 
 
-\hypertarget{classtype_a425ad47ffa64f9dafe38ac2cf6f542fb}{\index{type@{type}!tangente@{tangente}}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_a9058b76c3fae96fb3a9ade24e6c33926}{entier}, \hyperlink{classrationnel_ad37ab4380b5ff66104748ecc0bf5babe}{rationnel}, \hyperlink{class_expression_ac5b9d54cc3699ccec579001a9e954bd3}{Expression}, \hyperlink{classreel_a980bc278bf5537519ee05746262ebb6a}{reel}, and \hyperlink{classnocomplex_a7f693a0869814705bcc3b8add799e6cd}{nocomplex}.
+
+\hypertarget{classtype_a0e48cd1a39419994f14550b2fd188e1d}{\index{type@{type}!tangente@{tangente}}
 \index{tangente@{tangente}!type@{type}}
 \subsubsection[{tangente}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::tangente (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_a425ad47ffa64f9dafe38ac2cf6f542fb}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_a0e48cd1a39419994f14550b2fd188e1d}
 
 
-Implemented in \hyperlink{classcomplexe_a50af5f9078a27154e61ac579ff54ac15}{complexe}, \hyperlink{classreel_a8ded2c9525ab4937f20b28d31a381442}{reel}, \hyperlink{classentier_aa405bfd127fc9baf2ee3d0bdbf72309a}{entier}, \hyperlink{class_expression_ad991242120a3cd6da6f76b4a42a8a992}{Expression}, and \hyperlink{classrationnel_a0f189c649bad58fb78894a19ec7b21f4}{rationnel}.
+tangente Operateur unaire tangente Methode virtuelle 
 
-\hypertarget{classtype_a260ae21ca7b4f5e7eb4dd6f8996ea9a8}{\index{type@{type}!tangenteh@{tangenteh}}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_a600a48ecf8280f0ab465ab3f3c253662}{entier}, \hyperlink{classrationnel_ac2bdc47a11ea3d010f006256f6e14f79}{rationnel}, \hyperlink{class_expression_ae47f82ffeefff823064141174ba5c3ac}{Expression}, \hyperlink{classreel_a88d653b80c7d3a1a4f9c4ac4b709957b}{reel}, and \hyperlink{classnocomplex_a2e7f4563e7d602c79e356dcb5472e341}{nocomplex}.
+
+\hypertarget{classtype_a36763dd363a8de97e4a52aa87776e61c}{\index{type@{type}!tangenteh@{tangenteh}}
 \index{tangenteh@{tangenteh}!type@{type}}
 \subsubsection[{tangenteh}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf type}$\ast$ type\-::tangenteh (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_a260ae21ca7b4f5e7eb4dd6f8996ea9a8}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classtype_a36763dd363a8de97e4a52aa87776e61c}
 
 
-Implemented in \hyperlink{classcomplexe_a3e8cf2a1498e563d89b4039c0dc1eceb}{complexe}, \hyperlink{classreel_a4d66c94b0c33019d0dfae8deb2bb41a3}{reel}, \hyperlink{classentier_a215fe89e3f8731831b168a21779bf951}{entier}, \hyperlink{class_expression_a61f68d2937cef47108ca36ffdc451b77}{Expression}, and \hyperlink{classrationnel_a45d63050134594c5a60c7a594021d7e5}{rationnel}.
+tangenteh Operateur unaire tangenteh Methode virtuelle 
+
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classentier_abd47ffc368af385550ed2db6ce289ded}{entier}, \hyperlink{classrationnel_a56135a99618c1fec82901c5e7f64a4a2}{rationnel}, \hyperlink{class_expression_a0d0acd016a909609e451836060d4e676}{Expression}, \hyperlink{classreel_a00cb6cca23061d928135c074a5d69eb0}{reel}, and \hyperlink{classnocomplex_a79aa6c234a5a66bfe18c39794e56c277}{nocomplex}.
 
 \hypertarget{classtype_ab61f01d56f3896cc99788a1a18c4b0c2}{\index{type@{type}!to\-Q\-String@{to\-Q\-String}}
 \index{to\-Q\-String@{to\-Q\-String}!type@{type}}
@@ -311,11 +602,17 @@ Implemented in \hyperlink{classcomplexe_a3e8cf2a1498e563d89b4039c0dc1eceb}{compl
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classtype_ab61f01d56f3896cc99788a1a18c4b0c2}
 
 
-Implemented in \hyperlink{classcomplexe_a5fc10d08facdcbd833d91d0c765c9c18}{complexe}, \hyperlink{classreel_a6b06a283958b63fde5c12382b744a8c9}{reel}, \hyperlink{classentier_a47b7c0d899f24e9117e123165648686b}{entier}, \hyperlink{class_expression_a4404792ff4997e7c06a3242062825f5c}{Expression}, and \hyperlink{classrationnel_a6c905c688ae54647074a5ddf3ef648bd}{rationnel}.
+to\-Q\-String Methode virtuelle pure 
+
+\begin{DoxyReturn}{Returns}
+chaine de caractere 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classentier_a47b7c0d899f24e9117e123165648686b}{entier}, \hyperlink{class_expression_a4404792ff4997e7c06a3242062825f5c}{Expression}, \hyperlink{classrationnel_a6c905c688ae54647074a5ddf3ef648bd}{rationnel}, \hyperlink{classreel_a6b06a283958b63fde5c12382b744a8c9}{reel}, and \hyperlink{classcomplexe_a5fc10d08facdcbd833d91d0c765c9c18}{complexe}.
 
 
 
-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 
-Code/projet\-\_\-lo21/\hyperlink{type_8h}{type.\-h}\item 
-Code/projet\-\_\-lo21/\hyperlink{type_8cpp}{type.\-cpp}\end{DoxyCompactItemize}
+Code/projet\-\_\-lo21/\hyperlink{type_8h}{type.\-h}\end{DoxyCompactItemize}

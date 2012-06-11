@@ -3,23 +3,28 @@
 }
 
 
+Classe representant une constante.  
+
+
+
+
 {\ttfamily \#include $<$entier.\-h$>$}
 
-
-
-Inherits \hyperlink{classnocomplex}{nocomplex}.
-
+Inheritance diagram for entier\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classentier}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classentier_ad1b9eb5e221dfc5006527edda8c19f8a}{entier} (int val=0)
-\item 
-\hyperlink{classentier_acba0d6714c5b8a2a1c587bd300a85370}{entier} (const std\-::string \&s)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
 \hyperlink{classentier_aeee175a8cb61246f25e1ddafefebe820}{entier} (const Q\-String \&s)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
 int \hyperlink{classentier_a738d3684bb420ffb5bbee2187845af85}{get\-Data} ()
-\item 
+\begin{DoxyCompactList}\small\item\em get\-Data \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_a531e654172d6e2fe225fad108dbb84a7}{operator+} (\hyperlink{classtype}{type} \&t)
 \begin{DoxyCompactList}\small\item\em Operateur +. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_a3bfd34b6998c5c09df0dbbadead47867}{operator/} (\hyperlink{classtype}{type} \&t)
@@ -28,23 +33,23 @@ int \hyperlink{classentier_a738d3684bb420ffb5bbee2187845af85}{get\-Data} ()
 \begin{DoxyCompactList}\small\item\em Operateur $\ast$. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_ac0acf2b6156ef6f5f2e034c0425e1114}{operator-\/} (\hyperlink{classtype}{type} \&t)
 \begin{DoxyCompactList}\small\item\em Operateur -\/. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_ae69e6bbd83eec7a85f35a47aa84ec16c}{sinus} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_a5dd86ffdc48bf745871ac2f65199d2ce}{sinus} (bool degre=false)
 \begin{DoxyCompactList}\small\item\em Sinus. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_adc71e10e6ea385f7c1aa1de06e2d1b4c}{pow} (\hyperlink{classtype}{type} \&t)
-\item 
+\begin{DoxyCompactList}\small\item\em Pow. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_a4e5c25c0ed52135136bb75563a9337e7}{mod} (\hyperlink{classtype}{type} \&t)
-\item 
+\begin{DoxyCompactList}\small\item\em mod \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_a4a25b08f29eba0a531bebadeaf77ee04}{sign} ()
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_aff98af6a48e8051e4b7f8b5ce9f192ae}{cosinus} ()
+\begin{DoxyCompactList}\small\item\em sign \end{DoxyCompactList}\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_a1313e6cfa480cab69942f9b97418e491}{cosinus} (bool degre=false)
 \begin{DoxyCompactList}\small\item\em Cosinus. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_aa405bfd127fc9baf2ee3d0bdbf72309a}{tangente} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_a600a48ecf8280f0ab465ab3f3c253662}{tangente} (bool degre=false)
 \begin{DoxyCompactList}\small\item\em Tangente. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_ac26dfe71ead5fdd395b0404a76d30bb7}{sinush} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_abfb8840f088a4771520fd48a78c01434}{sinush} (bool degre=false)
 \begin{DoxyCompactList}\small\item\em Sinush. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_a567bb5589f8f988d6ee782dacada8ca5}{cosinush} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_af111db8d7c89d47f20c59e3bd0ef1dfd}{cosinush} (bool degre=false)
 \begin{DoxyCompactList}\small\item\em Cosinush. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_a215fe89e3f8731831b168a21779bf951}{tangenteh} ()
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_abd47ffc368af385550ed2db6ce289ded}{tangenteh} (bool degre=false)
 \begin{DoxyCompactList}\small\item\em Tangenteh. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_aef2c65b9f379c5ea7857fcaabca30dba}{ln} ()
 \begin{DoxyCompactList}\small\item\em Ln. \end{DoxyCompactList}\item 
@@ -60,16 +65,14 @@ int \hyperlink{classentier_a738d3684bb420ffb5bbee2187845af85}{get\-Data} ()
 \begin{DoxyCompactList}\small\item\em Cube. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_a8a475a326fc2c4e1b2a03ec437270144}{fact} ()
 \begin{DoxyCompactList}\small\item\em Fact. \end{DoxyCompactList}\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classentier_aff68ab5a1784c8a4cece781412f93aec}{eval} ()
-\begin{DoxyCompactList}\small\item\em eval \end{DoxyCompactList}\item 
 Q\-String \hyperlink{classentier_a47b7c0d899f24e9117e123165648686b}{to\-Q\-String} ()
 \begin{DoxyCompactList}\small\item\em to\-Q\-String \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Static Public Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-static bool \hyperlink{classentier_a6fe7ccd5e9c36a7db79ce8f3a71a4970}{is\-Entier} (const Q\-String \&s)
-\begin{DoxyCompactList}\small\item\em is\-Entier \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Classe representant une constante. 
+
+La classe derive de nocomplex. Permet de representer un entier 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classentier_ad1b9eb5e221dfc5006527edda8c19f8a}{\index{entier@{entier}!entier@{entier}}
@@ -79,13 +82,15 @@ static bool \hyperlink{classentier_a6fe7ccd5e9c36a7db79ce8f3a71a4970}{is\-Entier
 \item[{int}]{val = {\ttfamily 0}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classentier_ad1b9eb5e221dfc5006527edda8c19f8a}
-\hypertarget{classentier_acba0d6714c5b8a2a1c587bd300a85370}{\index{entier@{entier}!entier@{entier}}
-\index{entier@{entier}!entier@{entier}}
-\subsubsection[{entier}]{\setlength{\rightskip}{0pt plus 5cm}entier\-::entier (
-\begin{DoxyParamCaption}
-\item[{const std\-::string \&}]{s}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classentier_acba0d6714c5b8a2a1c587bd300a85370}
+
+
+Constructeur. 
+
+Constructeur a partir d'un entier 
+\begin{DoxyParams}{Parameters}
+{\em val} & \-: valeur de l'entier \\
+\hline
+\end{DoxyParams}
 \hypertarget{classentier_aeee175a8cb61246f25e1ddafefebe820}{\index{entier@{entier}!entier@{entier}}
 \index{entier@{entier}!entier@{entier}}
 \subsubsection[{entier}]{\setlength{\rightskip}{0pt plus 5cm}entier\-::entier (
@@ -95,42 +100,56 @@ static bool \hyperlink{classentier_a6fe7ccd5e9c36a7db79ce8f3a71a4970}{is\-Entier
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classentier_aeee175a8cb61246f25e1ddafefebe820}
 
 
+Constructeur. 
+
+Constructeur a partir d'une Qstring 
+\begin{DoxyParams}{Parameters}
+{\em s} & \-: chaine source \\
+\hline
+\end{DoxyParams}
+
+
 \subsection{Member Function Documentation}
-\hypertarget{classentier_aff98af6a48e8051e4b7f8b5ce9f192ae}{\index{entier@{entier}!cosinus@{cosinus}}
+\hypertarget{classentier_a1313e6cfa480cab69942f9b97418e491}{\index{entier@{entier}!cosinus@{cosinus}}
 \index{cosinus@{cosinus}!entier@{entier}}
 \subsubsection[{cosinus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ entier\-::cosinus (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classentier_aff98af6a48e8051e4b7f8b5ce9f192ae}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classentier_a1313e6cfa480cab69942f9b97418e491}
 
 
 Cosinus. 
 
-Implementation de l'operateur unaire cosinus (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire cosinus (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_ac459ee75f7ab8d345c01a1f9a13f0728}{type}.
+Implements \hyperlink{classnocomplex_a2c3aa4791fe0c123079b0332a5978939}{nocomplex}.
 
-\hypertarget{classentier_a567bb5589f8f988d6ee782dacada8ca5}{\index{entier@{entier}!cosinush@{cosinush}}
+\hypertarget{classentier_af111db8d7c89d47f20c59e3bd0ef1dfd}{\index{entier@{entier}!cosinush@{cosinush}}
 \index{cosinush@{cosinush}!entier@{entier}}
 \subsubsection[{cosinush}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ entier\-::cosinush (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classentier_a567bb5589f8f988d6ee782dacada8ca5}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classentier_af111db8d7c89d47f20c59e3bd0ef1dfd}
 
 
 Cosinush. 
 
-Implementation de l'operateur unaire cosinush (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire cosinush (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em degre} & \-: booleen, vrai si utilisation des degre, faux si utilisation des radians \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_acd7a105cccf58a42d6c09b40c91f75f0}{type}.
+Implements \hyperlink{classnocomplex_ae92516f1c7c78298a11e8e34355b9f81}{nocomplex}.
 
 \hypertarget{classentier_a4c726d947d2f7464ec858f50054118e8}{\index{entier@{entier}!cube@{cube}}
 \index{cube@{cube}!entier@{entier}}
@@ -143,30 +162,12 @@ Implements \hyperlink{classtype_acd7a105cccf58a42d6c09b40c91f75f0}{type}.
 
 Cube. 
 
-Implementation de l'operateur unaire Cube (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire Cube (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_ae9ff7857936535092924b83aec1412c6}{type}.
-
-\hypertarget{classentier_aff68ab5a1784c8a4cece781412f93aec}{\index{entier@{entier}!eval@{eval}}
-\index{eval@{eval}!entier@{entier}}
-\subsubsection[{eval}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ entier\-::eval (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classentier_aff68ab5a1784c8a4cece781412f93aec}
-
-
-eval 
-
-Implementation de l'operateur unaire eval (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
-Pointeur sur type, resultat de l'operation 
-\end{DoxyReturn}
-
-
-Implements \hyperlink{classtype_a20555e9f6c76f728d94049bd72f65fc6}{type}.
+Implements \hyperlink{classnocomplex_ad84e4a7a269024da4551a8e99078e41d}{nocomplex}.
 
 \hypertarget{classentier_a8a475a326fc2c4e1b2a03ec437270144}{\index{entier@{entier}!fact@{fact}}
 \index{fact@{fact}!entier@{entier}}
@@ -179,17 +180,12 @@ Implements \hyperlink{classtype_a20555e9f6c76f728d94049bd72f65fc6}{type}.
 
 Fact. 
 
-Implementation de l'operateur unaire fact (methode virtuelle pure dans la classe mere) 
-\begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire fact (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_aa5503ee1cdc7c88b058f9216e1e780c3}{type}.
+Reimplemented from \hyperlink{classtype_adfeadf5e6478f3687bcaba9cf9aaf8d9}{type}.
 
 \hypertarget{classentier_a738d3684bb420ffb5bbee2187845af85}{\index{entier@{entier}!get\-Data@{get\-Data}}
 \index{get\-Data@{get\-Data}!entier@{entier}}
@@ -198,6 +194,13 @@ Implements \hyperlink{classtype_aa5503ee1cdc7c88b058f9216e1e780c3}{type}.
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classentier_a738d3684bb420ffb5bbee2187845af85}
+
+
+get\-Data 
+
+Accesseur de la donnee membre data \begin{DoxyReturn}{Returns}
+entier 
+\end{DoxyReturn}
 \hypertarget{classentier_abaa5775172cf9c417ccdb174304056b3}{\index{entier@{entier}!inv@{inv}}
 \index{inv@{inv}!entier@{entier}}
 \subsubsection[{inv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ entier\-::inv (
@@ -209,27 +212,13 @@ Implements \hyperlink{classtype_aa5503ee1cdc7c88b058f9216e1e780c3}{type}.
 
 Inv. 
 
-Implementation de l'operateur unaire inv (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire inv (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a5eeb7c768cc90a0e9abd91d585169264}{type}.
+Implements \hyperlink{classnocomplex_a9e0f97f51c50b11022c6d0b409c26ecf}{nocomplex}.
 
-\hypertarget{classentier_a6fe7ccd5e9c36a7db79ce8f3a71a4970}{\index{entier@{entier}!is\-Entier@{is\-Entier}}
-\index{is\-Entier@{is\-Entier}!entier@{entier}}
-\subsubsection[{is\-Entier}]{\setlength{\rightskip}{0pt plus 5cm}static bool entier\-::is\-Entier (
-\begin{DoxyParamCaption}
-\item[{const Q\-String \&}]{s}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classentier_a6fe7ccd5e9c36a7db79ce8f3a71a4970}
-
-
-is\-Entier 
-
-Methode static permettant de savoir quel type d'objet creer \begin{DoxyReturn}{Returns}
-true si la chaine permet de construire un entier false sinon 
-\end{DoxyReturn}
 \hypertarget{classentier_aef2c65b9f379c5ea7857fcaabca30dba}{\index{entier@{entier}!ln@{ln}}
 \index{ln@{ln}!entier@{entier}}
 \subsubsection[{ln}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ entier\-::ln (
@@ -241,12 +230,12 @@ true si la chaine permet de construire un entier false sinon
 
 Ln. 
 
-Implementation de l'operateur unaire ln (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire ln (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a601802c36f0dd5c1067b9873eb103a6d}{type}.
+Implements \hyperlink{classnocomplex_ab3e91b96595fef9d53a5cfb93291c8f0}{nocomplex}.
 
 \hypertarget{classentier_aeca6cf72ceaa32cfc7b52f00d962d3cc}{\index{entier@{entier}!log@{log}}
 \index{log@{log}!entier@{entier}}
@@ -259,12 +248,12 @@ Implements \hyperlink{classtype_a601802c36f0dd5c1067b9873eb103a6d}{type}.
 
 Log. 
 
-Implementation de l'operateur unaire log (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire log (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a7fc23e8e38550f3ad98c0b3582f6163a}{type}.
+Implements \hyperlink{classnocomplex_a0f7a5802123786d1461271d5c05158ca}{nocomplex}.
 
 \hypertarget{classentier_a4e5c25c0ed52135136bb75563a9337e7}{\index{entier@{entier}!mod@{mod}}
 \index{mod@{mod}!entier@{entier}}
@@ -275,7 +264,19 @@ Implements \hyperlink{classtype_a7fc23e8e38550f3ad98c0b3582f6163a}{type}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classentier_a4e5c25c0ed52135136bb75563a9337e7}
 
 
-Implements \hyperlink{classtype_ab6f68c2a7481faf20b02aa4ae67c6500}{type}.
+mod 
+
+Implementation de l'operateur binaire modulo (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classtype_aed752df353b43b17d3f993d4b02f216b}{type}.
 
 \hypertarget{classentier_a7314a5aad4a2c997eaea01e3aa42092a}{\index{entier@{entier}!operator$\ast$@{operator$\ast$}}
 \index{operator$\ast$@{operator$\ast$}!entier@{entier}}
@@ -288,9 +289,9 @@ Implements \hyperlink{classtype_ab6f68c2a7481faf20b02aa4ae67c6500}{type}.
 
 Operateur $\ast$. 
 
-Implementation de l'operateur binaire $\ast$ (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur binaire $\ast$ (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em t} & \-: Pointeur sur un type \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -311,9 +312,9 @@ Implements \hyperlink{classnocomplex_ac84954cbe0bd9c77eab88c0b97b34c2b}{nocomple
 
 Operateur +. 
 
-Implementation de l'operateur binaire + (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur binaire + (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em t} & \-: Pointeur sur un type \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -334,9 +335,9 @@ Implements \hyperlink{classnocomplex_af3d04b00f4f82d3a35cad0ca023093f4}{nocomple
 
 Operateur -\/. 
 
-Implementation de l'operateur binaire -\/ (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur binaire -\/ (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em t} & \-: Pointeur sur un type \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -357,9 +358,9 @@ Implements \hyperlink{classnocomplex_a2005c3a0fcaa1f360561539931ffc578}{nocomple
 
 Operateur /. 
 
-Implementation de l'operateur binaire / (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur binaire / (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em t} & \-: Pointeur sur un type \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -378,7 +379,19 @@ Implements \hyperlink{classnocomplex_a47942bdcc78cfc5d5e867c9f9836a465}{nocomple
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classentier_adc71e10e6ea385f7c1aa1de06e2d1b4c}
 
 
-Implements \hyperlink{classtype_a60bc9fca9ded4e67963e6c9fad82ff01}{type}.
+Pow. 
+
+Implementation de l'operateur binaire pow (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_a1ad1b692783c8449efb03cc0dc5d1f3c}{nocomplex}.
 
 \hypertarget{classentier_a4a25b08f29eba0a531bebadeaf77ee04}{\index{entier@{entier}!sign@{sign}}
 \index{sign@{sign}!entier@{entier}}
@@ -389,22 +402,29 @@ Implements \hyperlink{classtype_a60bc9fca9ded4e67963e6c9fad82ff01}{type}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classentier_a4a25b08f29eba0a531bebadeaf77ee04}
 
 
-Implements \hyperlink{classtype_a59342fe365d621d47b607d3f4e155169}{type}.
+sign 
 
-\hypertarget{classentier_ae69e6bbd83eec7a85f35a47aa84ec16c}{\index{entier@{entier}!sinus@{sinus}}
+Implementation de l'operateur unaire sign (methode virtuelle dans la classe mere) Inverse le signe de la constante \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_acd1c0365d1a2ed160934320cff01cecd}{nocomplex}.
+
+\hypertarget{classentier_a5dd86ffdc48bf745871ac2f65199d2ce}{\index{entier@{entier}!sinus@{sinus}}
 \index{sinus@{sinus}!entier@{entier}}
 \subsubsection[{sinus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ entier\-::sinus (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classentier_ae69e6bbd83eec7a85f35a47aa84ec16c}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classentier_a5dd86ffdc48bf745871ac2f65199d2ce}
 
 
 Sinus. 
 
-Implementation de l'operateur unaire sinus (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur unaire sinus (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em degre} & \-: booleen, vrai si utilisation des degre, faux si utilisation des radians \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -412,25 +432,30 @@ Pointeur sur type, resultat de l'operation
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_ae12b68744cbf5c49e5e065fbf8a13954}{type}.
+Implements \hyperlink{classnocomplex_aea2ba416f34c37ad2cf751b6220d53b8}{nocomplex}.
 
-\hypertarget{classentier_ac26dfe71ead5fdd395b0404a76d30bb7}{\index{entier@{entier}!sinush@{sinush}}
+\hypertarget{classentier_abfb8840f088a4771520fd48a78c01434}{\index{entier@{entier}!sinush@{sinush}}
 \index{sinush@{sinush}!entier@{entier}}
 \subsubsection[{sinush}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ entier\-::sinush (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classentier_ac26dfe71ead5fdd395b0404a76d30bb7}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classentier_abfb8840f088a4771520fd48a78c01434}
 
 
 Sinush. 
 
-Implementation de l'operateur unaire sinush (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire sinush (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em degre} & \-: booleen, vrai si utilisation des degre, faux si utilisation des radians \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a9ae4dee6629d0d366e52e94591de46d3}{type}.
+Implements \hyperlink{classnocomplex_a4df698a9ee147b77aaab9f63840b1012}{nocomplex}.
 
 \hypertarget{classentier_a33b0b2b13a0fdc767a809df33b934dd6}{\index{entier@{entier}!sqr@{sqr}}
 \index{sqr@{sqr}!entier@{entier}}
@@ -443,12 +468,12 @@ Implements \hyperlink{classtype_a9ae4dee6629d0d366e52e94591de46d3}{type}.
 
 Sqr. 
 
-Implementation de l'operateur unaire sqr (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire sqr (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_ab5ac11ebbed8a99db5ce4933cb17ddea}{type}.
+Implements \hyperlink{classnocomplex_a5665f2bcf5ad839e92c31f38f3dfc7b7}{nocomplex}.
 
 \hypertarget{classentier_a9058b76c3fae96fb3a9ade24e6c33926}{\index{entier@{entier}!sqrt@{sqrt}}
 \index{sqrt@{sqrt}!entier@{entier}}
@@ -461,9 +486,27 @@ Implements \hyperlink{classtype_ab5ac11ebbed8a99db5ce4933cb17ddea}{type}.
 
 Sqrt. 
 
-Implementation de l'operateur unaire sqrt (methode virtuelle pure dans la classe mere) 
+Implementation de l'operateur unaire sqrt (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_a7f693a0869814705bcc3b8add799e6cd}{nocomplex}.
+
+\hypertarget{classentier_a600a48ecf8280f0ab465ab3f3c253662}{\index{entier@{entier}!tangente@{tangente}}
+\index{tangente@{tangente}!entier@{entier}}
+\subsubsection[{tangente}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ entier\-::tangente (
+\begin{DoxyParamCaption}
+\item[{bool}]{degre = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classentier_a600a48ecf8280f0ab465ab3f3c253662}
+
+
+Tangente. 
+
+Implementation de l'operateur unaire tangente (methode virtuelle dans la classe mere) 
 \begin{DoxyParams}{Parameters}
-{\em t} & \-: Pointeur sur un type (Utilisation du polymorphisme) \\
+{\em degre} & \-: booleen, vrai si utilisation des degre, faux si utilisation des radians \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -471,43 +514,30 @@ Pointeur sur type, resultat de l'operation
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a626c58aa4bca21f65845140c7c9b895e}{type}.
+Implements \hyperlink{classnocomplex_a2e7f4563e7d602c79e356dcb5472e341}{nocomplex}.
 
-\hypertarget{classentier_aa405bfd127fc9baf2ee3d0bdbf72309a}{\index{entier@{entier}!tangente@{tangente}}
-\index{tangente@{tangente}!entier@{entier}}
-\subsubsection[{tangente}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ entier\-::tangente (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classentier_aa405bfd127fc9baf2ee3d0bdbf72309a}
-
-
-Tangente. 
-
-Implementation de l'operateur unaire tangente (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
-Pointeur sur type, resultat de l'operation 
-\end{DoxyReturn}
-
-
-Implements \hyperlink{classtype_a425ad47ffa64f9dafe38ac2cf6f542fb}{type}.
-
-\hypertarget{classentier_a215fe89e3f8731831b168a21779bf951}{\index{entier@{entier}!tangenteh@{tangenteh}}
+\hypertarget{classentier_abd47ffc368af385550ed2db6ce289ded}{\index{entier@{entier}!tangenteh@{tangenteh}}
 \index{tangenteh@{tangenteh}!entier@{entier}}
 \subsubsection[{tangenteh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ entier\-::tangenteh (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre = {\ttfamily false}}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classentier_a215fe89e3f8731831b168a21779bf951}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classentier_abd47ffc368af385550ed2db6ce289ded}
 
 
 Tangenteh. 
 
-Implementation de l'operateur unaire tangenteh (methode virtuelle pure dans la classe mere) \begin{DoxyReturn}{Returns}
+Implementation de l'operateur unaire tangenteh (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em degre} & \-: booleen, vrai si utilisation des degre, faux si utilisation des radians \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
 Pointeur sur type, resultat de l'operation 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_a260ae21ca7b4f5e7eb4dd6f8996ea9a8}{type}.
+Implements \hyperlink{classnocomplex_a79aa6c234a5a66bfe18c39794e56c277}{nocomplex}.
 
 \hypertarget{classentier_a47b7c0d899f24e9117e123165648686b}{\index{entier@{entier}!to\-Q\-String@{to\-Q\-String}}
 \index{to\-Q\-String@{to\-Q\-String}!entier@{entier}}
@@ -532,4 +562,4 @@ Implements \hyperlink{classtype_ab61f01d56f3896cc99788a1a18c4b0c2}{type}.
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
 Code/projet\-\_\-lo21/\hyperlink{entier_8h}{entier.\-h}\item 
-Code/projet\-\_\-lo21/\hyperlink{entier_8cpp}{entier.\-cpp}\end{DoxyCompactItemize}
+Code/projet\-\_\-lo21/entier.\-cpp\end{DoxyCompactItemize}

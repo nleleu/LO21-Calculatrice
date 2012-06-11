@@ -41,11 +41,10 @@ type* complexe::operator +(type & t){
     catch(std::exception &e){}
 
     try{
-       Expression &tmp=dynamic_cast<Expression &>(t);
-       complexe conv(tmp.toQString());
-       type * res;
-       res=conv+*this;
-       return res;
+        Expression &tmp=dynamic_cast<Expression&>(t);
+        QString e;
+        e = "'" + toQString() + " "+ tmp.toQString().remove("'") + " +'";
+        return new Expression(e);
     }
     catch(std::exception &e){}
 
@@ -84,11 +83,10 @@ type* complexe::operator /(type & t)
 
 
     try{
-       Expression &tmp=dynamic_cast<Expression &>(t);
-       /*complexe conv(tmp.toQString());
-       type * res;
-       res=conv/(*this);*/
-       //return res;
+           Expression &tmp=dynamic_cast<Expression&>(t);
+           QString e;
+           e = "'" + toQString() + " "+ tmp.toQString().remove("'") + " /'";
+           return new Expression(e);
     }
     catch(std::exception &e){}
 
@@ -127,11 +125,10 @@ type* complexe::operator*(type& t){
     catch(std::exception &e){}
 
     try{
-       Expression &tmp=dynamic_cast<Expression &>(t);
-       /*complexe conv(tmp.toQString());
-       type * res;
-       res=conv/(*this);*/
-       //return res;
+        Expression &tmp=dynamic_cast<Expression&>(t);
+        QString e;
+        e = "'" + toQString() + " "+ tmp.toQString().remove("'") + " *'";
+        return new Expression(e);
     }
     catch(std::exception &e){}
 
@@ -176,11 +173,10 @@ type* complexe::operator-(type& t){
     catch(std::exception &e){}
 
     try{
-       Expression &tmp=dynamic_cast<Expression &>(t);
-       /*complexe conv(tmp.toQString());
-       type * res;
-       res=conv/(*this);*/
-       //return res;
+        Expression &tmp=dynamic_cast<Expression&>(t);
+        QString e;
+        e = "'" + toQString() + " "+ tmp.toQString().remove("'") + " -'";
+        return new Expression(e);
     }
     catch(std::exception &e){}
 

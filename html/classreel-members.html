@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Calculatrice: Member List</title>
+<title>LO21-Calculatrice: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Calculatrice
+   <div id="projectname">LO21-Calculatrice
    </div>
+   <div id="projectbrief">Projet de fin de semestre</div>
   </td>
  </tr>
  </tbody>
@@ -36,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,39 +88,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="classreel.html">reel</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classconstante.html#ae10b7c5fdf34f213a79b12e4b7e8a982">constante</a>()</td><td class="entry"><a class="el" href="classconstante.html">constante</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classreel.html#a4d1fb90011705658295e922d525a91dd">cosinus</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classreel.html#ad2d6ed0dcaa8fa7b410ca1a84c0d3f57">cosinush</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"class="even"><td class="entry"><b>constante</b>() (defined in <a class="el" href="classconstante.html">constante</a>)</td><td class="entry"><a class="el" href="classconstante.html">constante</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classreel.html#ab1d6bb643ca3335b8cb19e1b7eb89878">cosinus</a>(bool degre)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classreel.html#a94a01afa4662790da504857247837160">cosinush</a>(bool degre)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classreel.html#a3a2dc28d66ee81177a986fca957f6fd5">cube</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classreel.html#a5d0427a4f39bbb96411cb5a1a0320625">eval</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classreel.html#ac56ec7c9e6b96b85723e518e70ecfc24">fact</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnocomplex.html#a8831dff2cd793c03618b6e0751ffc026">eval</a>()</td><td class="entry"><a class="el" href="classnocomplex.html">nocomplex</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classtype.html#adfeadf5e6478f3687bcaba9cf9aaf8d9">fact</a>()</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classreel.html#ad1d16e6ce54fc6b8844757a8f04300ca">getData</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classreel.html#ab863c6b28a5345dbf7657b4b5121c2f7">inv</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classreel.html#abdb4c9f0cd45c053b35f868885c5b822">isReel</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classreel.html#a5d09de0b7e0856eb63d333f766c770ed">ln</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classreel.html#adcf600e2052329def8e10e81e35ef96e">log</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classreel.html#a7bf66e936c424f243a534406dbe8e8d7">mod</a>(type &amp;t)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classnocomplex.html#a633b5bd1a8681544bb2773605cffed9c">nocomplex</a>()</td><td class="entry"><a class="el" href="classnocomplex.html">nocomplex</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classreel.html#a044791a71fd9926cbedf3f19f6eea122">operator*</a>(type &amp;t)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classreel.html#af2ae884e68ab28b286cf9940f05f59d9">operator+</a>(type &amp;t)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classreel.html#a9cd96b762004392eda5216262201322c">operator-</a>(type &amp;t)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classreel.html#a3bc55f29b377547040d47be018b73fe6">operator/</a>(type &amp;t)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classreel.html#a4fdea6a69bd78b2593fb44cc172fc7bf">pow</a>(type &amp;t)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classreel.html#af400a93dfd7cfa7447f8751ab32c48fc">reel</a>(double val=0)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classreel.html#a6399912ce32c14c918ce5b6fb0b294dc">reel</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classreel.html#a9a172c44e0a496059bdd1c4d53a98590">sign</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classreel.html#a8436fd89eda982a6b023e2f7081b5cb0">sinus</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classreel.html#ad404481ff6381767546b93ca0c4ba3e3">sinush</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classreel.html#ad295586d5862f6dc41966f25c365c4a1">sqr</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classreel.html#a980bc278bf5537519ee05746262ebb6a">sqrt</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classreel.html#a8ded2c9525ab4937f20b28d31a381442">tangente</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classreel.html#a4d66c94b0c33019d0dfae8deb2bb41a3">tangenteh</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classreel.html#a6b06a283958b63fde5c12382b744a8c9">toQString</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classtype.html#a24236b97ec65acd7624c81fc33305e7c">type</a>()</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classreel.html#a4615a947e25064384fd0216881b89c7b">getDecimales</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classreel.html#ab863c6b28a5345dbf7657b4b5121c2f7">inv</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classtype.html#aeadbcfa313ab5a235bb44cf724c3ccba">isComplexe</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtype.html#a011e2bd55a2d7784a1455bbc2fbba2e5">isEntier</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classtype.html#a095a592d75acdef11c9e01e199c49e33">isExpression</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtype.html#a8f2852f004b9d1676aa8ee4385d4ed49">isRationnel</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classtype.html#ae610cb80e031c43ae3c56033ec95a3a7">isReel</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classreel.html#a5d09de0b7e0856eb63d333f766c770ed">ln</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classreel.html#adcf600e2052329def8e10e81e35ef96e">log</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtype.html#aed752df353b43b17d3f993d4b02f216b">mod</a>(type &amp;t)</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classnocomplex.html#a633b5bd1a8681544bb2773605cffed9c">nocomplex</a>()</td><td class="entry"><a class="el" href="classnocomplex.html">nocomplex</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classreel.html#a044791a71fd9926cbedf3f19f6eea122">operator*</a>(type &amp;t)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classreel.html#af2ae884e68ab28b286cf9940f05f59d9">operator+</a>(type &amp;t)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classreel.html#a9cd96b762004392eda5216262201322c">operator-</a>(type &amp;t)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classreel.html#a3bc55f29b377547040d47be018b73fe6">operator/</a>(type &amp;t)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classreel.html#a4fdea6a69bd78b2593fb44cc172fc7bf">pow</a>(type &amp;t)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classreel.html#af400a93dfd7cfa7447f8751ab32c48fc">reel</a>(double val=0)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classreel.html#a6399912ce32c14c918ce5b6fb0b294dc">reel</a>(const QString &amp;s)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classreel.html#a9a172c44e0a496059bdd1c4d53a98590">sign</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classreel.html#a3502ff761467546024da46f1f2bbb2e7">sinus</a>(bool degre)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classreel.html#a410b5cc4316eeddbeff2ec46c13ca249">sinush</a>(bool degre)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classreel.html#ad295586d5862f6dc41966f25c365c4a1">sqr</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classreel.html#a980bc278bf5537519ee05746262ebb6a">sqrt</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classreel.html#a88d653b80c7d3a1a4f9c4ac4b709957b">tangente</a>(bool degre)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classreel.html#a00cb6cca23061d928135c074a5d69eb0">tangenteh</a>(bool degre)</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classreel.html#a6b06a283958b63fde5c12382b744a8c9">toQString</a>()</td><td class="entry"><a class="el" href="classreel.html">reel</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classtype.html#a24236b97ec65acd7624c81fc33305e7c">type</a>()</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtype.html#a87f20c8ea87a2752a61aacd9a818ae8e">~type</a>()</td><td class="entry"><a class="el" href="classtype.html">type</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 4 2012 17:33:50 for Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 11 2012 21:41:10 for LO21-Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1
 </small></address>

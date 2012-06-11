@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Calculatrice: Member List</title>
+<title>LO21-Calculatrice: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Calculatrice
+   <div id="projectname">LO21-Calculatrice
    </div>
+   <div id="projectbrief">Projet de fin de semestre</div>
   </td>
  </tr>
  </tbody>
@@ -36,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,15 +88,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="class_dom.html">Dom</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_dom.html#ae871a6f3df66dd25a60dc6473849afa4">demande_ajout</a>(QString, QString)</td><td class="entry"><a class="el" href="class_dom.html">Dom</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_dom.html#a76622d9817909851b9e7ba8a9b3d2614">Dom</a>(Pile &amp;p)</td><td class="entry"><a class="el" href="class_dom.html">Dom</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_dom.html#a6ee5457023816c5ed79606e3e9abc17e">lire</a>()</td><td class="entry"><a class="el" href="class_dom.html">Dom</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_dom.html#a502b476ad2ff4b00c5139694f29994af">newfic</a>()</td><td class="entry"><a class="el" href="class_dom.html">Dom</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_dom.html#a5f1552721661519991b402047c661881">~Dom</a>()</td><td class="entry"><a class="el" href="class_dom.html">Dom</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_dom.html#a76622d9817909851b9e7ba8a9b3d2614">Dom</a>(Pile &amp;p)</td><td class="entry"><a class="el" href="class_dom.html">Dom</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_dom.html#a76e1a406daef8ed0e1bea3733575eb7f">ecrire</a>(QString fileName)</td><td class="entry"><a class="el" href="class_dom.html">Dom</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_dom.html#a0134557ad01388c484bb1661e1962ce1">lire</a>(QString fileName)</td><td class="entry"><a class="el" href="class_dom.html">Dom</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_dom.html#a5f1552721661519991b402047c661881">~Dom</a>()</td><td class="entry"><a class="el" href="class_dom.html">Dom</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 4 2012 17:33:50 for Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 11 2012 21:41:09 for LO21-Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1
 </small></address>

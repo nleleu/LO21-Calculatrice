@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Calculatrice: Code/projet_lo21/rationnel.h Source File</title>
+<title>LO21-Calculatrice: Code/projet_lo21/rationnel.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Calculatrice
+   <div id="projectname">LO21-Calculatrice
    </div>
+   <div id="projectbrief">Projet de fin de semestre</div>
   </td>
  </tr>
  </tbody>
@@ -36,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -60,7 +60,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -68,7 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,83 +93,110 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;qDebug&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="nocomplex_8h.html">nocomplex.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">int</span> <a class="code" href="rationnel_8h.html#a7a18f1d2b66a88b6fce563c918d62198">pgcd</a>(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="typeexception_8h.html">typeexception.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QRegExp&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="classrationnel.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classrationnel.html">rationnel</a>:<span class="keyword">public</span> <a class="code" href="classnocomplex.html">nocomplex</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> num;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> denum;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="classrationnel.html#a92b822d1a85e77456f9db2d0c691d74e">   19</a></span>&#160;    <a class="code" href="classrationnel.html#a92b822d1a85e77456f9db2d0c691d74e">rationnel</a>(<span class="keywordtype">int</span> _num=0,<span class="keywordtype">int</span> _denum=1):num(_num),denum(_denum){<a class="code" href="classrationnel.html#a236e82f84556d0fcd978164529f9bf67">simplifie</a>();}</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="classrationnel.html#a5dd117aa62b25bc976f753251170128b">   20</a></span>&#160;    <a class="code" href="classrationnel.html#a5dd117aa62b25bc976f753251170128b">rationnel</a>(<span class="keyword">const</span> std::string &amp;s){</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">int</span> pos;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        pos=s.find(<span class="charliteral">&#39;/&#39;</span>); <span class="comment">//caractere separateur</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">int</span> n,d;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        std::string res1,res2;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        res1=s.substr(0,pos);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        res2=s.substr(pos+1);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        std::istringstream iss1(res1);<span class="comment">//pour convertir une string en int</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        std::istringstream iss2(res2);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        iss1 &gt;&gt; n;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        iss2 &gt;&gt; d;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        num=n;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        denum=d;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="classrationnel.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classrationnel.html" title="Classe representant une fraction.">rationnel</a>:<span class="keyword">public</span> <a class="code" href="classnocomplex.html" title="Classe representant les types de constantes non complexes.">nocomplex</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> num;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> denum;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="classrationnel.html#a7411453ee0e517a0008e563938033750">   35</a></span>&#160;    <a class="code" href="classrationnel.html#a92b822d1a85e77456f9db2d0c691d74e">rationnel</a>(<span class="keyword">const</span> QString &amp;s)<span class="comment">//pour convertir une QString en rationnel</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        QString copie(s);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        num=(copie.section(<span class="charliteral">&#39;/&#39;</span>, 0,0)).toInt();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        denum=(copie.section(<span class="charliteral">&#39;/&#39;</span>, 1,1)).toInt();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classrationnel.html#a236e82f84556d0fcd978164529f9bf67">simplifie</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="classrationnel.html#a92b822d1a85e77456f9db2d0c691d74e">   41</a></span>&#160;    <a class="code" href="classrationnel.html#a92b822d1a85e77456f9db2d0c691d74e" title="Constructeur.">rationnel</a>(<span class="keywordtype">int</span> _num=0,<span class="keywordtype">int</span> _denum=1):num(_num),denum(_denum){<span class="keywordflow">if</span> (denum==0) <span class="keywordflow">throw</span> <a class="code" href="classtype_exception.html" title="Classe d&#39;exception pour les types.">typeException</a>(<span class="stringliteral">&quot;Division par 0&quot;</span>); <a class="code" href="classrationnel.html#a236e82f84556d0fcd978164529f9bf67" title="simplifie">simplifie</a>();}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#a14d9d411058e146e075ccf16997e525e">operator +</a>(<a class="code" href="classtype.html">type</a> &amp; t);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#ae36b04407cc70d425ed0292975b0d1e9">operator /</a>(<a class="code" href="classtype.html">type</a> &amp; t);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#a49250cb9001aad230e5193515ee74efa">operator*</a>(<a class="code" href="classtype.html">type</a>&amp; t);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#a3bdf6de1a2526ddafbf1831a9af11dc9">operator-</a>(<a class="code" href="classtype.html">type</a>&amp; t);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#afd9fd9a30f034952ce889d46a07de617">pow</a>(<a class="code" href="classtype.html">type</a> &amp; t);</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="classrationnel.html#a546c22eedcb7ce551bb04be7dc527573">   50</a></span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#a546c22eedcb7ce551bb04be7dc527573">mod</a>(<a class="code" href="classtype.html">type</a> &amp; t){}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#aa73709167be428fafc4d95a31f4c3cc0">sign</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#ac6ad55bfba79a0169d8cf1fb82354b89">sinus</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#ac89f01b8f5927ba88ecd60a2f6996d2d">cosinus</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#a0f189c649bad58fb78894a19ec7b21f4">tangente</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#afbf300cd97ee35b0302f7365ed84fb95">sinush</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#aef9f5ccfdc0a0344e64e5f1f77adab0d">cosinush</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#a45d63050134594c5a60c7a594021d7e5">tangenteh</a>();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#a59b1b593905de8676db02d5d2a5554c3">ln</a>();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#a6bed14bda0b8546528454e7b2030645d">log</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#a75336cd670c61195c833f8459c02c3b5">inv</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#ad37ab4380b5ff66104748ecc0bf5babe">sqrt</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#ab9f341fd09499253dd1f9b6f15795576">sqr</a>();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#a9bca6086c4a5083765d87324418a86ab">cube</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="classrationnel.html#a51333d6a00b4307407f1ea324902eeb8">   66</a></span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#a51333d6a00b4307407f1ea324902eeb8">fact</a>(){}</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="classrationnel.html#aa66761d9af57e34a2ca44d5858dedf00">   67</a></span>&#160;    <a class="code" href="classtype.html">type</a>* <a class="code" href="classrationnel.html#aa66761d9af57e34a2ca44d5858dedf00">eval</a>(){}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classrationnel.html#a236e82f84556d0fcd978164529f9bf67">simplifie</a>();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classrationnel.html#a7e10c925a450321f53a50636177561e5">pgcd</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span> ) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QString <a class="code" href="classrationnel.html#a6c905c688ae54647074a5ddf3ef648bd">toQString</a>();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="classrationnel.html#a9c4167d0aafd3bf9460ae58a81a0d29f">   74</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classrationnel.html#a9c4167d0aafd3bf9460ae58a81a0d29f">getNum</a>(){<span class="keywordflow">return</span> num;}</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="classrationnel.html#abb14c1aafb5b4e8f28d5c770e2e1523e">   75</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classrationnel.html#abb14c1aafb5b4e8f28d5c770e2e1523e">getDenum</a>(){<span class="keywordflow">return</span> denum;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="classrationnel.html#aae8578654aadab4a36ef934e61e474fc">   77</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classrationnel.html#aae8578654aadab4a36ef934e61e474fc">isRationnel</a>(<span class="keyword">const</span> QString&amp; s){<span class="keywordflow">return</span> s.contains (<span class="stringliteral">&quot;/&quot;</span>);}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif // RATIONNEL_H</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="classrationnel.html#a7411453ee0e517a0008e563938033750">   50</a></span>&#160;    <a class="code" href="classrationnel.html#a92b822d1a85e77456f9db2d0c691d74e" title="Constructeur.">rationnel</a>(<span class="keyword">const</span> QString &amp;s)<span class="comment">//pour convertir une QString en rationnel</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        QString copie(s);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        num=(copie.section(<span class="charliteral">&#39;/&#39;</span>, 0,0)).toInt();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        denum=(copie.section(<span class="charliteral">&#39;/&#39;</span>, 1,1)).toInt();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;         <span class="keywordflow">if</span> (denum==0) <span class="keywordflow">throw</span> <a class="code" href="classtype_exception.html" title="Classe d&#39;exception pour les types.">typeException</a>(<span class="stringliteral">&quot;Division par 0&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classrationnel.html#a236e82f84556d0fcd978164529f9bf67" title="simplifie">simplifie</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#a14d9d411058e146e075ccf16997e525e" title="Operateur +.">operator +</a>(<a class="code" href="classtype.html" title="Classe representant un type.">type</a> &amp; t);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#ae36b04407cc70d425ed0292975b0d1e9" title="Operateur /.">operator /</a>(<a class="code" href="classtype.html" title="Classe representant un type.">type</a> &amp; t);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#a49250cb9001aad230e5193515ee74efa" title="Operateur *.">operator*</a>(<a class="code" href="classtype.html" title="Classe representant un type.">type</a>&amp; t);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#a3bdf6de1a2526ddafbf1831a9af11dc9" title="Operateur -.">operator-</a>(<a class="code" href="classtype.html" title="Classe representant un type.">type</a>&amp; t);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#ad34af896f760a0271286e2dbbf55ad9f" title="Sinus.">sinus</a>(<span class="keywordtype">bool</span> degre);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#afd9fd9a30f034952ce889d46a07de617" title="Pow.">pow</a>(<a class="code" href="classtype.html" title="Classe representant un type.">type</a> &amp; t);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#aa73709167be428fafc4d95a31f4c3cc0" title="sign">sign</a>();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#a4a2f7528592b31a367799a79c336395c" title="Cosinus.">cosinus</a>(<span class="keywordtype">bool</span> degre);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#ac2bdc47a11ea3d010f006256f6e14f79" title="Tangente.">tangente</a>(<span class="keywordtype">bool</span> degre);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#a107f6a0be55879bd49dd015144fdfde4" title="Sinush.">sinush</a>(<span class="keywordtype">bool</span> degre);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#af8de9bc6850dc5471d2e31ddf8e3866e" title="Cosinush.">cosinush</a>(<span class="keywordtype">bool</span> degre);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#a56135a99618c1fec82901c5e7f64a4a2" title="Tangenteh.">tangenteh</a>(<span class="keywordtype">bool</span> degre);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#a59b1b593905de8676db02d5d2a5554c3" title="Ln.">ln</a>();</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#a6bed14bda0b8546528454e7b2030645d" title="Log.">log</a>();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#a75336cd670c61195c833f8459c02c3b5" title="Inv.">inv</a>();</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#ad37ab4380b5ff66104748ecc0bf5babe" title="Sqrt.">sqrt</a>();</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#ab9f341fd09499253dd1f9b6f15795576" title="Sqr.">sqr</a>();</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <a class="code" href="classtype.html" title="Classe representant un type.">type</a>* <a class="code" href="classrationnel.html#a9bca6086c4a5083765d87324418a86ab" title="Cube.">cube</a>();</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    QString <a class="code" href="classrationnel.html#a6c905c688ae54647074a5ddf3ef648bd" title="toQString">toQString</a>();</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    QString <a class="code" href="classrationnel.html#a1418b1d6ac37f7948affefa7b8d0f314" title="eval">eval</a>();</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classrationnel.html#a236e82f84556d0fcd978164529f9bf67" title="simplifie">simplifie</a>();</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classrationnel.html#a7e10c925a450321f53a50636177561e5" title="pgcd">pgcd</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span> ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno"><a class="code" href="classrationnel.html#a9c4167d0aafd3bf9460ae58a81a0d29f">  296</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classrationnel.html#a9c4167d0aafd3bf9460ae58a81a0d29f" title="getNum">getNum</a>(){<span class="keywordflow">return</span> num;}</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno"><a class="code" href="classrationnel.html#abb14c1aafb5b4e8f28d5c770e2e1523e">  305</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classrationnel.html#abb14c1aafb5b4e8f28d5c770e2e1523e" title="getDenum">getDenum</a>(){<span class="keywordflow">return</span> denum;}</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;};</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="preprocessor">#endif // RATIONNEL_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 4 2012 17:33:49 for Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 11 2012 21:41:09 for LO21-Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1
 </small></address>

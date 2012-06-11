@@ -3,21 +3,74 @@
 }
 
 
+Classe creant les types Singleton, implementation du design pattern Factory.  
+
+
+
+
 {\ttfamily \#include $<$type\-\_\-factory.\-h$>$}
 
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\hyperlink{classtype__factory_a1782f22ec406749b83ba6c43b17e4d7f}{type\-\_\-factory} (const \hyperlink{classtype__factory}{type\-\_\-factory} \&)
+\begin{DoxyCompactList}\small\item\em Constructeur par recopie. \end{DoxyCompactList}\item 
+\hyperlink{classtype__factory_a3864904dd1a85d5df74da4675598acae}{$\sim$type\-\_\-factory} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\hyperlink{classtype__factory_a48e3bffea0219e1ca2fc05463c6981ac}{type\-\_\-factory} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{classtype__factory}{type\-\_\-factory} \hyperlink{classtype__factory_a632504653d9667aced28366b82a25e92}{operator=} (const \hyperlink{classtype__factory}{type\-\_\-factory})
+\begin{DoxyCompactList}\small\item\em Operateur =. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classtype__factory_a144da545ae1616b3e9e644ad0df9564c}{get\-Type} (Q\-String s)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em get\-Type Methode permettant de creer un nouveau type \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static \hyperlink{classtype__factory}{type\-\_\-factory} \& \hyperlink{classtype__factory_a78223a2e795f2fd36ca4b2a1666b59ec}{get\-Instance} ()
-\item 
-static void \hyperlink{classtype__factory_af91382fb401454be520fe8cf43ee9245}{release\-Instance} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em get\-Instance Methode retournant l'instance unique de la classe \end{DoxyCompactList}\item 
+\hypertarget{classtype__factory_af91382fb401454be520fe8cf43ee9245}{static void \hyperlink{classtype__factory_af91382fb401454be520fe8cf43ee9245}{release\-Instance} ()}\label{classtype__factory_af91382fb401454be520fe8cf43ee9245}
 
+\begin{DoxyCompactList}\small\item\em release\-Instance Methode liberant l'instance unique de la classe \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe creant les types Singleton, implementation du design pattern Factory. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classtype__factory_a1782f22ec406749b83ba6c43b17e4d7f}{\index{type\-\_\-factory@{type\-\_\-factory}!type\-\_\-factory@{type\-\_\-factory}}
+\index{type\-\_\-factory@{type\-\_\-factory}!type_factory@{type\-\_\-factory}}
+\subsubsection[{type\-\_\-factory}]{\setlength{\rightskip}{0pt plus 5cm}type\-\_\-factory\-::type\-\_\-factory (
+\begin{DoxyParamCaption}
+\item[{const {\bf type\-\_\-factory} \&}]{}
+\end{DoxyParamCaption}
+)}}\label{classtype__factory_a1782f22ec406749b83ba6c43b17e4d7f}
+
+
+Constructeur par recopie. 
+
+Constructeur par recopie (prive) de la classe \hyperlink{class_collection__pile}{Collection\-\_\-pile} Non implemente pour le rendre inoperant \hypertarget{classtype__factory_a3864904dd1a85d5df74da4675598acae}{\index{type\-\_\-factory@{type\-\_\-factory}!$\sim$type\-\_\-factory@{$\sim$type\-\_\-factory}}
+\index{$\sim$type\-\_\-factory@{$\sim$type\-\_\-factory}!type_factory@{type\-\_\-factory}}
+\subsubsection[{$\sim$type\-\_\-factory}]{\setlength{\rightskip}{0pt plus 5cm}type\-\_\-factory\-::$\sim$type\-\_\-factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtype__factory_a3864904dd1a85d5df74da4675598acae}
+
+
+Destructeur. 
+
+Destructeur (prive) de la classe \hyperlink{class_collection__pile}{Collection\-\_\-pile} \hypertarget{classtype__factory_a48e3bffea0219e1ca2fc05463c6981ac}{\index{type\-\_\-factory@{type\-\_\-factory}!type\-\_\-factory@{type\-\_\-factory}}
+\index{type\-\_\-factory@{type\-\_\-factory}!type_factory@{type\-\_\-factory}}
+\subsubsection[{type\-\_\-factory}]{\setlength{\rightskip}{0pt plus 5cm}type\-\_\-factory\-::type\-\_\-factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtype__factory_a48e3bffea0219e1ca2fc05463c6981ac}
+
+
+Constructeur. 
+
+Constructeur (prive) de la classe \hyperlink{class_collection__pile}{Collection\-\_\-pile} 
 
 \subsection{Member Function Documentation}
 \hypertarget{classtype__factory_a78223a2e795f2fd36ca4b2a1666b59ec}{\index{type\-\_\-factory@{type\-\_\-factory}!get\-Instance@{get\-Instance}}
@@ -27,6 +80,13 @@ static void \hyperlink{classtype__factory_af91382fb401454be520fe8cf43ee9245}{rel
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{classtype__factory_a78223a2e795f2fd36ca4b2a1666b59ec}
+
+
+get\-Instance Methode retournant l'instance unique de la classe 
+
+\begin{DoxyReturn}{Returns}
+Instance unique de la classe 
+\end{DoxyReturn}
 \hypertarget{classtype__factory_a144da545ae1616b3e9e644ad0df9564c}{\index{type\-\_\-factory@{type\-\_\-factory}!get\-Type@{get\-Type}}
 \index{get\-Type@{get\-Type}!type_factory@{type\-\_\-factory}}
 \subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ type\-\_\-factory\-::get\-Type (
@@ -34,16 +94,32 @@ static void \hyperlink{classtype__factory_af91382fb401454be520fe8cf43ee9245}{rel
 \item[{Q\-String}]{s}
 \end{DoxyParamCaption}
 )}}\label{classtype__factory_a144da545ae1616b3e9e644ad0df9564c}
-\hypertarget{classtype__factory_af91382fb401454be520fe8cf43ee9245}{\index{type\-\_\-factory@{type\-\_\-factory}!release\-Instance@{release\-Instance}}
-\index{release\-Instance@{release\-Instance}!type_factory@{type\-\_\-factory}}
-\subsubsection[{release\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}void type\-\_\-factory\-::release\-Instance (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}}\label{classtype__factory_af91382fb401454be520fe8cf43ee9245}
 
+
+get\-Type Methode permettant de creer un nouveau type 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Qstring} & s, chaine de caractere source \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, nouveau type cree 
+\end{DoxyReturn}
+\hypertarget{classtype__factory_a632504653d9667aced28366b82a25e92}{\index{type\-\_\-factory@{type\-\_\-factory}!operator=@{operator=}}
+\index{operator=@{operator=}!type_factory@{type\-\_\-factory}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type\-\_\-factory} type\-\_\-factory\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf type\-\_\-factory}}]{}
+\end{DoxyParamCaption}
+)}}\label{classtype__factory_a632504653d9667aced28366b82a25e92}
+
+
+Operateur =. 
+
+Operateur = (prive) de la classe \hyperlink{class_collection__pile}{Collection\-\_\-pile} Non implemente pour le rendre inoperant 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
 Code/projet\-\_\-lo21/\hyperlink{type__factory_8h}{type\-\_\-factory.\-h}\item 
-Code/projet\-\_\-lo21/\hyperlink{type__factory_8cpp}{type\-\_\-factory.\-cpp}\end{DoxyCompactItemize}
+Code/projet\-\_\-lo21/type\-\_\-factory.\-cpp\end{DoxyCompactItemize}

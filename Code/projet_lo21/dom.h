@@ -6,25 +6,59 @@
 #include <QFile>
 #include <QMessageBox>
 #include <QString>
-#include <QDebug>
+
 #include "pile.h"
 
+/*!
+ * \file dom.h
+ * \author Le Feurmou/Leleu
+ */
+
+
+/*! \class Dom
+   * \brief Classe manipulant l'XML
+   *
+   *  Permet la sauvegarde et le chargement
+   *
+   *
+   *
+ */
 
 class Dom
 {
 public:
+    /*!
+    *  \brief Constructeur
+    *
+    *
+    *  \param p : reference sur la pile a charger ou a sauvegarder
+    *
+    */
+
     Dom(Pile & p);
-    ~Dom();
-    void ecrire(QString);
+
+    /*!
+    *  \brief Destructeur
+    *
+    */
+    ~Dom(){}
+
+    /*!
+    *  \brief Ecrire
+    *  Sauvegarde la pile dans un fichier xml
+    *  \param filemane(QString) : Chemin du fichier de sauvegarde
+    */
+    void ecrire(QString fileName);
+
+    /*!
+    *  \brief Lire
+    *  Charge un fichier XML dans une pile
+    *  \param filemane(QString) : Chemin du fichier XML source
+    */
     void lire(QString fileName);
 
 private :
-    QDomDocument doc;
-    QDomElement sauvegarde;
-    QDomElement racine;
-    QFile file;
-    QTextStream out;
-    Pile& _pile;
+    Pile& _pile;/*!< Pile a charger ou a sauvegarder*/
 };
 
 #endif // DOM_H

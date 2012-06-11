@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Calculatrice: gardien Class Reference</title>
+<title>LO21-Calculatrice: gardien Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Calculatrice
+   <div id="projectname">LO21-Calculatrice
    </div>
+   <div id="projectbrief">Projet de fin de semestre</div>
   </td>
  </tr>
  </tbody>
@@ -36,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,6 +88,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Classe representant un gardien.  
+ <a href="classgardien.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="gardien_8h_source.html">gardien.h</a>&gt;</code></p>
 
 <p><a href="classgardien-members.html">List of all members.</a></p>
@@ -95,11 +98,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a23b498d98e7a90384585f9d3721b29fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgardien.html#a23b498d98e7a90384585f9d3721b29fe">gardien</a> ()</td></tr>
+<tr class="memdesc:a23b498d98e7a90384585f9d3721b29fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur.  <a href="#a23b498d98e7a90384585f9d3721b29fe"></a><br/></td></tr>
 <tr class="memitem:a766daaa5df48bed986a03f188c8de4e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pile.html">Pile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgardien.html#a766daaa5df48bed986a03f188c8de4e0">undo</a> ()</td></tr>
+<tr class="memdesc:a766daaa5df48bed986a03f188c8de4e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undo Permet de restaurer l'etat precedent.  <a href="#a766daaa5df48bed986a03f188c8de4e0"></a><br/></td></tr>
+<tr class="memitem:a87e46d75ffcaa3f126d2eac2f283195e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87e46d75ffcaa3f126d2eac2f283195e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgardien.html#a87e46d75ffcaa3f126d2eac2f283195e">~gardien</a> ()</td></tr>
+<tr class="memdesc:a87e46d75ffcaa3f126d2eac2f283195e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur. <br/></td></tr>
 <tr class="memitem:a2c4455417103371b0281a01e32ac77fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pile.html">Pile</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgardien.html#a2c4455417103371b0281a01e32ac77fc">redo</a> ()</td></tr>
-<tr class="memitem:a71a30cc54cd294ff17425a0bb55504e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgardien.html#a71a30cc54cd294ff17425a0bb55504e1">addMemento</a> (<a class="el" href="class_pile.html">Pile</a> pile)</td></tr>
+<tr class="memdesc:a2c4455417103371b0281a01e32ac77fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redo Permet de restaurer l'etat suivant.  <a href="#a2c4455417103371b0281a01e32ac77fc"></a><br/></td></tr>
+<tr class="memitem:a57921f6a2f454c4cd793d2a702af5d0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgardien.html#a57921f6a2f454c4cd793d2a702af5d0a">addMemento</a> (<a class="el" href="class_pile.html">Pile</a> *pile)</td></tr>
+<tr class="memdesc:a57921f6a2f454c4cd793d2a702af5d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">addMemento Permet d'ajouter un etat dans le vecteur de pile  <a href="#a57921f6a2f454c4cd793d2a702af5d0a"></a><br/></td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Classe representant un gardien. </p>
+<p>La classe permet de sauvegarder les etats d'une pile, dans le but de pouvoir les restaurer Partie du design pattern "Memento" </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a23b498d98e7a90384585f9d3721b29fe"></a>
 <div class="memitem">
 <div class="memproto">
@@ -113,22 +126,33 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructeur. </p>
+<p>Construit un gardien </p>
+
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a71a30cc54cd294ff17425a0bb55504e1"></a>
+<a class="anchor" id="a57921f6a2f454c4cd793d2a702af5d0a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void gardien::addMemento </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_pile.html">Pile</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_pile.html">Pile</a> *&#160;</td>
           <td class="paramname"><em>pile</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>addMemento Permet d'ajouter un etat dans le vecteur de pile </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pile,:</td><td>pile a ajouter </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -145,6 +169,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Redo Permet de restaurer l'etat suivant. </p>
+<dl class="section return"><dt>Returns:</dt><dd><a class="el" href="class_pile.html" title="Classe representant une pile.">Pile</a> a restaurer </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a766daaa5df48bed986a03f188c8de4e0"></a>
@@ -160,16 +187,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Undo Permet de restaurer l'etat precedent. </p>
+<dl class="section return"><dt>Returns:</dt><dd><a class="el" href="class_pile.html" title="Classe representant une pile.">Pile</a> a restaurer </dd></dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Code/projet_lo21/<a class="el" href="gardien_8h_source.html">gardien.h</a></li>
-<li>Code/projet_lo21/<a class="el" href="gardien_8cpp.html">gardien.cpp</a></li>
+<li>Code/projet_lo21/gardien.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 4 2012 17:33:50 for Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 11 2012 21:41:10 for LO21-Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1
 </small></address>

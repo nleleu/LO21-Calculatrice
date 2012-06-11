@@ -13,7 +13,7 @@
    * \brief Classe representant une constante
    *
    *  La classe derive de type.
-   *  Permet d'obtenir un arbre de classe coherent
+   *  Permet d'obtenir une arborescence classe coherente
    *
    *
  */

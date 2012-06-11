@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Calculatrice: Dom Class Reference</title>
+<title>LO21-Calculatrice: Dom Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Calculatrice
+   <div id="projectname">LO21-Calculatrice
    </div>
+   <div id="projectbrief">Projet de fin de semestre</div>
   </td>
  </tr>
  </tbody>
@@ -36,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,6 +88,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
+<p>Classe manipulant l'XML.  
+ <a href="class_dom.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="dom_8h_source.html">dom.h</a>&gt;</code></p>
 
 <p><a href="class_dom-members.html">List of all members.</a></p>
@@ -95,12 +98,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a76622d9817909851b9e7ba8a9b3d2614"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dom.html#a76622d9817909851b9e7ba8a9b3d2614">Dom</a> (<a class="el" href="class_pile.html">Pile</a> &amp;p)</td></tr>
-<tr class="memitem:a5f1552721661519991b402047c661881"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dom.html#a5f1552721661519991b402047c661881">~Dom</a> ()</td></tr>
-<tr class="memitem:ae871a6f3df66dd25a60dc6473849afa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dom.html#ae871a6f3df66dd25a60dc6473849afa4">demande_ajout</a> (QString, QString)</td></tr>
-<tr class="memitem:a6ee5457023816c5ed79606e3e9abc17e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dom.html#a6ee5457023816c5ed79606e3e9abc17e">lire</a> ()</td></tr>
-<tr class="memitem:a502b476ad2ff4b00c5139694f29994af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dom.html#a502b476ad2ff4b00c5139694f29994af">newfic</a> ()</td></tr>
+<tr class="memdesc:a76622d9817909851b9e7ba8a9b3d2614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur.  <a href="#a76622d9817909851b9e7ba8a9b3d2614"></a><br/></td></tr>
+<tr class="memitem:a5f1552721661519991b402047c661881"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f1552721661519991b402047c661881"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dom.html#a5f1552721661519991b402047c661881">~Dom</a> ()</td></tr>
+<tr class="memdesc:a5f1552721661519991b402047c661881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur. <br/></td></tr>
+<tr class="memitem:a76e1a406daef8ed0e1bea3733575eb7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dom.html#a76e1a406daef8ed0e1bea3733575eb7f">ecrire</a> (QString fileName)</td></tr>
+<tr class="memdesc:a76e1a406daef8ed0e1bea3733575eb7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ecrire Sauvegarde la pile dans un fichier xml.  <a href="#a76e1a406daef8ed0e1bea3733575eb7f"></a><br/></td></tr>
+<tr class="memitem:a0134557ad01388c484bb1661e1962ce1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dom.html#a0134557ad01388c484bb1661e1962ce1">lire</a> (QString fileName)</td></tr>
+<tr class="memdesc:a0134557ad01388c484bb1661e1962ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lire Charge un fichier XML dans une pile.  <a href="#a0134557ad01388c484bb1661e1962ce1"></a><br/></td></tr>
 </table>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Classe manipulant l'XML. </p>
+<p>Permet la sauvegarde et le chargement </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a76622d9817909851b9e7ba8a9b3d2614"></a>
 <div class="memitem">
 <div class="memproto">
@@ -115,88 +125,73 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a5f1552721661519991b402047c661881"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dom::~Dom </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Constructeur. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>: reference sur la pile a charger ou a sauvegarder </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ae871a6f3df66dd25a60dc6473849afa4"></a>
+<a class="anchor" id="a76e1a406daef8ed0e1bea3733575eb7f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Dom::demande_ajout </td>
+          <td class="memname">void Dom::ecrire </td>
           <td>(</td>
           <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">QString&#160;</td>
-          <td class="paramname"><em>t</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Ecrire Sauvegarde la pile dans un fichier xml. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filemane(QString)</td><td>: Chemin du fichier de sauvegarde </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a class="anchor" id="a6ee5457023816c5ed79606e3e9abc17e"></a>
+<a class="anchor" id="a0134557ad01388c484bb1661e1962ce1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void Dom::lire </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="a502b476ad2ff4b00c5139694f29994af"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Dom::newfic </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Lire Charge un fichier XML dans une pile. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filemane(QString)</td><td>: Chemin du fichier XML source </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Code/projet_lo21/<a class="el" href="dom_8h_source.html">dom.h</a></li>
-<li>Code/projet_lo21/<a class="el" href="dom_8cpp.html">dom.cpp</a></li>
+<li>Code/projet_lo21/dom.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 4 2012 17:33:50 for Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 11 2012 21:41:09 for LO21-Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1
 </small></address>

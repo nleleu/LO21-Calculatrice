@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>Calculatrice: Class Members - Functions</title>
+<title>LO21-Calculatrice: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Calculatrice
+   <div id="projectname">LO21-Calculatrice
    </div>
+   <div id="projectbrief">Projet de fin de semestre</div>
   </td>
  </tr>
  </tbody>
@@ -36,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -69,7 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="functions.html"><span>All</span></a></li>
       <li class="current"><a href="functions_func.html"><span>Functions</span></a></li>
-      <li><a href="functions_vars.html"><span>Variables</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -90,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li class="current"><a href="functions_func_0x73.html#index_s"><span>s</span></a></li>
       <li><a href="functions_func_0x74.html#index_t"><span>t</span></a></li>
       <li><a href="functions_func_0x75.html#index_u"><span>u</span></a></li>
+      <li><a href="functions_func_0x77.html#index_w"><span>w</span></a></li>
       <li><a href="functions_func_0x7e.html#index_0x7e"><span>~</span></a></li>
     </ul>
   </div>
@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,8 +112,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 &#160;
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>sauvegarder()
+: <a class="el" href="class_pile.html#a555732cb1e82480697663ba299592d9d">Pile</a>
+</li>
 <li>setActif()
 : <a class="el" href="class_collection__pile.html#ab376d28ce132a2704dd8b663f9a3bf71">Collection_pile</a>
+</li>
+<li>setDegre()
+: <a class="el" href="class_pile.html#abf4931bd506e4c892949c7b7b70fd097">Pile</a>
 </li>
 <li>setGardien()
 : <a class="el" href="class_pile.html#aace6210d258170c7420d6a4bda5ec967">Pile</a>
@@ -122,67 +128,68 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="class_pile.html#a09fd751d9d6d0d3c861f97405756db56">Pile</a>
 </li>
 <li>sign()
-: <a class="el" href="classcomplexe.html#a9e7f59cfa1dd74f77891d7bfd1c1c62b">complexe</a>
-, <a class="el" href="classrationnel.html#aa73709167be428fafc4d95a31f4c3cc0">rationnel</a>
-, <a class="el" href="classreel.html#a9a172c44e0a496059bdd1c4d53a98590">reel</a>
-, <a class="el" href="classentier.html#a4a25b08f29eba0a531bebadeaf77ee04">entier</a>
-, <a class="el" href="classtype.html#a59342fe365d621d47b607d3f4e155169">type</a>
-, <a class="el" href="class_expression.html#a62923fe874212a2d52d8a14769e774a1">Expression</a>
+: <a class="el" href="class_expression.html#aa654b4e71cfafd29af080020a77dc1e0">Expression</a>
+, <a class="el" href="classnocomplex.html#acd1c0365d1a2ed160934320cff01cecd">nocomplex</a>
 , <a class="el" href="class_pile.html#ad6ce16606725f1b2fa1028073afc3b75">Pile</a>
+, <a class="el" href="classrationnel.html#aa73709167be428fafc4d95a31f4c3cc0">rationnel</a>
+, <a class="el" href="classcomplexe.html#a9e7f59cfa1dd74f77891d7bfd1c1c62b">complexe</a>
+, <a class="el" href="classreel.html#a9a172c44e0a496059bdd1c4d53a98590">reel</a>
+, <a class="el" href="classtype.html#a3ec9f31aec3ddc52efe2adff634a671a">type</a>
+, <a class="el" href="classentier.html#a4a25b08f29eba0a531bebadeaf77ee04">entier</a>
 </li>
 <li>simplifie()
 : <a class="el" href="classrationnel.html#a236e82f84556d0fcd978164529f9bf67">rationnel</a>
 </li>
 <li>sinus()
-: <a class="el" href="classrationnel.html#ac6ad55bfba79a0169d8cf1fb82354b89">rationnel</a>
-, <a class="el" href="classreel.html#a8436fd89eda982a6b023e2f7081b5cb0">reel</a>
-, <a class="el" href="classtype.html#ae12b68744cbf5c49e5e065fbf8a13954">type</a>
-, <a class="el" href="classcomplexe.html#acd102b7928fdd06a6d507cbec365359f">complexe</a>
-, <a class="el" href="classentier.html#ae69e6bbd83eec7a85f35a47aa84ec16c">entier</a>
-, <a class="el" href="class_expression.html#a70133c8c9911b1193eb8fff99c3c8693">Expression</a>
-, <a class="el" href="class_pile.html#a3a55c324834f3c6a194fce721492748a">Pile</a>
+: <a class="el" href="class_expression.html#a67a5046f6af705fef094ff5e4a78880d">Expression</a>
+, <a class="el" href="classnocomplex.html#aea2ba416f34c37ad2cf751b6220d53b8">nocomplex</a>
+, <a class="el" href="class_pile.html#a6d5405b44a45926264b48bd2df764798">Pile</a>
+, <a class="el" href="classrationnel.html#ad34af896f760a0271286e2dbbf55ad9f">rationnel</a>
+, <a class="el" href="classreel.html#a3502ff761467546024da46f1f2bbb2e7">reel</a>
+, <a class="el" href="classtype.html#acfff98100e9af7fe51f22ca553b49652">type</a>
+, <a class="el" href="classentier.html#a5dd86ffdc48bf745871ac2f65199d2ce">entier</a>
 </li>
 <li>sinush()
-: <a class="el" href="classcomplexe.html#a274c87528cc72aa5590319dc797d2d86">complexe</a>
-, <a class="el" href="classentier.html#ac26dfe71ead5fdd395b0404a76d30bb7">entier</a>
-, <a class="el" href="class_expression.html#a034e6da5d4074ddd9e042b19d2ec027c">Expression</a>
-, <a class="el" href="class_pile.html#aaf8dcd15ed6a1af20a451c67b4aa0431">Pile</a>
-, <a class="el" href="classrationnel.html#afbf300cd97ee35b0302f7365ed84fb95">rationnel</a>
-, <a class="el" href="classreel.html#ad404481ff6381767546b93ca0c4ba3e3">reel</a>
-, <a class="el" href="classtype.html#a9ae4dee6629d0d366e52e94591de46d3">type</a>
+: <a class="el" href="classreel.html#a410b5cc4316eeddbeff2ec46c13ca249">reel</a>
+, <a class="el" href="classentier.html#abfb8840f088a4771520fd48a78c01434">entier</a>
+, <a class="el" href="class_expression.html#a45aef44cb37e21e99614053bf80801f6">Expression</a>
+, <a class="el" href="classnocomplex.html#a4df698a9ee147b77aaab9f63840b1012">nocomplex</a>
+, <a class="el" href="class_pile.html#a4d12d390bd97a2432f41013ffc0dcc33">Pile</a>
+, <a class="el" href="classrationnel.html#a107f6a0be55879bd49dd015144fdfde4">rationnel</a>
+, <a class="el" href="classtype.html#a1bb104502962725e2d8d1909a208e7fa">type</a>
 </li>
 <li>soustraction()
 : <a class="el" href="class_pile.html#ab1827b113fff2c3fa59ebbe4c5902b1b">Pile</a>
 </li>
 <li>sqr()
-: <a class="el" href="class_pile.html#abd1c5a18cb8dd304e377d74fcec5a513">Pile</a>
-, <a class="el" href="classtype.html#ab5ac11ebbed8a99db5ce4933cb17ddea">type</a>
-, <a class="el" href="classreel.html#ad295586d5862f6dc41966f25c365c4a1">reel</a>
-, <a class="el" href="classentier.html#a33b0b2b13a0fdc767a809df33b934dd6">entier</a>
+: <a class="el" href="classnocomplex.html#a5665f2bcf5ad839e92c31f38f3dfc7b7">nocomplex</a>
+, <a class="el" href="class_pile.html#abd1c5a18cb8dd304e377d74fcec5a513">Pile</a>
 , <a class="el" href="classrationnel.html#ab9f341fd09499253dd1f9b6f15795576">rationnel</a>
-, <a class="el" href="class_expression.html#ac0520d2c2b2527a430701b964b6ef5f8">Expression</a>
-, <a class="el" href="classcomplexe.html#a3274db71725cb6d6291939a66ebc3d64">complexe</a>
+, <a class="el" href="class_expression.html#a172e59bd44c5ddf668fd8027f0733d8d">Expression</a>
+, <a class="el" href="classreel.html#ad295586d5862f6dc41966f25c365c4a1">reel</a>
+, <a class="el" href="classtype.html#a70b655b274b3378154cd29127c22a4f0">type</a>
+, <a class="el" href="classentier.html#a33b0b2b13a0fdc767a809df33b934dd6">entier</a>
 </li>
 <li>sqrt()
-: <a class="el" href="classrationnel.html#ad37ab4380b5ff66104748ecc0bf5babe">rationnel</a>
-, <a class="el" href="class_expression.html#adf9f4b7e58d0f1a3a584c4493302c0b4">Expression</a>
-, <a class="el" href="classentier.html#a9058b76c3fae96fb3a9ade24e6c33926">entier</a>
+: <a class="el" href="class_expression.html#ac5b9d54cc3699ccec579001a9e954bd3">Expression</a>
 , <a class="el" href="classreel.html#a980bc278bf5537519ee05746262ebb6a">reel</a>
-, <a class="el" href="classtype.html#a626c58aa4bca21f65845140c7c9b895e">type</a>
-, <a class="el" href="classcomplexe.html#a9d26ee640673118afe49f29cb98f3258">complexe</a>
+, <a class="el" href="classrationnel.html#ad37ab4380b5ff66104748ecc0bf5babe">rationnel</a>
+, <a class="el" href="classentier.html#a9058b76c3fae96fb3a9ade24e6c33926">entier</a>
+, <a class="el" href="classnocomplex.html#a7f693a0869814705bcc3b8add799e6cd">nocomplex</a>
+, <a class="el" href="classtype.html#aedd0df2ba42b6cb66ee3dba28309a47b">type</a>
 , <a class="el" href="class_pile.html#a15e52c1dca0ef1e78af39c69f814e01a">Pile</a>
 </li>
 <li>sum()
 : <a class="el" href="class_pile.html#ab2671569b6870d06fb94179e998e2e2e">Pile</a>
 </li>
 <li>swap()
-: <a class="el" href="class_pile.html#a667e4bd3ec87f598cac5f5c761bd1623">Pile</a>
+: <a class="el" href="class_pile.html#ab6c3f9840427e2be87e0d76c8697fff5">Pile</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 4 2012 17:33:50 for Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 11 2012 21:41:11 for LO21-Calculatrice by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1
 </small></address>

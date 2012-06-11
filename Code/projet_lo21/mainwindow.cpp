@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "pile.h"
-#include <QDebug>
+
 #include "entier.h"
 #include "reel.h"
 #include "rationnel.h"
@@ -88,8 +88,7 @@ void MainWindow::on_stackButton_clicked(){
 }
 
 void MainWindow::on_affichePile_clicked(){
-    for(int i=0; i<Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->size(); i++)
-        qDebug()<<((Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->at(i))->toQString())<<endl;
+   emit refresh_signal();
 }
 
 void MainWindow::on_swap_clicked(){
@@ -139,7 +138,6 @@ void MainWindow::cleanList_slot(){
 void MainWindow::refresh_slot(){
     ui->list->clear();
     ui->NbAffiche->clear();
-    qDebug() << Collection_pile::getInstance().getActif();
     int n=Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->getNb();
     ui->NbAffiche->setValue(n);
     for(int i=Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->size()-1; i>=0 && n>0; i--){
@@ -296,7 +294,7 @@ void MainWindow::createOnglet()
 
 }
 
-void MainWindow::on_tabWidget_currentChanged(int index)
+void MainWindow::on_tabWidget_currentChanged(unsigned int index)
 {
     if(index>=Collection_pile::getInstance().size())
     createOnglet();
@@ -346,7 +344,6 @@ void MainWindow::on_tabWidget_tabCloseRequested(int index)
 
     delete Collection_pile::getInstance().at(index);
         Collection_pile::getInstance().erase(Collection_pile::getInstance().begin()+index);
-        qDebug() << Collection_pile::getInstance().size();
     ui->tabWidget->removeTab(index);
 
     }
@@ -370,15 +367,13 @@ void MainWindow::on_nbelt_textEdited(const QString &arg1)
 
 void MainWindow::on_charger_triggered(){
     QString fichier = QFileDialog::getOpenFileName(this, "Ouvrir un fichier", QString(), "XML files (*.xml)");
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->setFileName(fichier);
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->charger();
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->charger(fichier);
     emit refresh_signal();
 }
 
 void MainWindow::on_sauvegarder_triggered(){
     QString fichier = QFileDialog::getSaveFileName(this, "Enregistrer un fichier", QString(), "XML files (*.xml)");
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->setFileName(fichier);
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->sauvegarder();
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->sauvegarder(fichier);
     emit refresh_signal();
 }
 

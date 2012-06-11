@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mainwindow.h'
 **
-** Created: Mon 11. Jun 14:44:09 2012
+** Created: Mon 11. Jun 21:40:41 2012
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.0)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -74,36 +74,36 @@ static const uint qt_meta_data_MainWindow[] = {
      862,   11,   11,   11, 0x08,
      893,   11,   11,   11, 0x08,
      918,  912,   11,   11, 0x08,
-     951,   11,   11,   11, 0x08,
-     986,   11,   11,   11, 0x08,
-    1023,   11,   11,   11, 0x08,
-    1052,   11,   11,   11, 0x08,
-    1082,   11,   11,   11, 0x08,
-    1107,  912,   11,   11, 0x08,
-    1143,   11,   11,   11, 0x08,
-    1160,   11,   11,   11, 0x08,
-    1177,   11,   11,   11, 0x08,
-    1195,   11,   11,   11, 0x08,
-    1212,   11,   11,   11, 0x08,
-    1229,   11,   11,   11, 0x08,
-    1246,   11,   11,   11, 0x08,
-    1264,   11,   11,   11, 0x08,
-    1282,   11,   11,   11, 0x08,
-    1300,   11,   11,   11, 0x08,
-    1316,   11,   11,   11, 0x08,
-    1333,   11,   11,   11, 0x08,
-    1350,   11,   11,   11, 0x08,
-    1368,   11,   11,   11, 0x08,
-    1385,   11,   11,   11, 0x08,
-    1403,   11,   11,   11, 0x08,
-    1421,   11,   11,   11, 0x08,
-    1439,   11,   11,   11, 0x08,
-    1473, 1468,   11,   11, 0x08,
-    1503, 1468,   11,   11, 0x08,
-    1532, 1468,   11,   11, 0x08,
-    1561, 1468,   11,   11, 0x08,
-    1592,   11,   11,   11, 0x08,
-    1613,   11,   11,   11, 0x08,
+     952,   11,   11,   11, 0x08,
+     987,   11,   11,   11, 0x08,
+    1024,   11,   11,   11, 0x08,
+    1053,   11,   11,   11, 0x08,
+    1083,   11,   11,   11, 0x08,
+    1108,  912,   11,   11, 0x08,
+    1144,   11,   11,   11, 0x08,
+    1161,   11,   11,   11, 0x08,
+    1178,   11,   11,   11, 0x08,
+    1196,   11,   11,   11, 0x08,
+    1213,   11,   11,   11, 0x08,
+    1230,   11,   11,   11, 0x08,
+    1247,   11,   11,   11, 0x08,
+    1265,   11,   11,   11, 0x08,
+    1283,   11,   11,   11, 0x08,
+    1301,   11,   11,   11, 0x08,
+    1317,   11,   11,   11, 0x08,
+    1334,   11,   11,   11, 0x08,
+    1351,   11,   11,   11, 0x08,
+    1369,   11,   11,   11, 0x08,
+    1386,   11,   11,   11, 0x08,
+    1404,   11,   11,   11, 0x08,
+    1422,   11,   11,   11, 0x08,
+    1440,   11,   11,   11, 0x08,
+    1474, 1469,   11,   11, 0x08,
+    1504, 1469,   11,   11, 0x08,
+    1533, 1469,   11,   11, 0x08,
+    1562, 1469,   11,   11, 0x08,
+    1593,   11,   11,   11, 0x08,
+    1614,   11,   11,   11, 0x08,
 
        0        // eod
 };
@@ -139,7 +139,7 @@ static const char qt_meta_stringdata_MainWindow[] = {
     "on_division_clicked()\0on_espace_clicked()\0"
     "on_actionParametre_triggered()\0"
     "on_quote_clicked()\0index\0"
-    "on_tabWidget_currentChanged(int)\0"
+    "on_tabWidget_currentChanged(uint)\0"
     "on_actionNouvel_onglet_triggered()\0"
     "on_actionNouvel_onglet_2_triggered()\0"
     "on_actionAnnuler_triggered()\0"
@@ -208,7 +208,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 37: _t->on_espace_clicked(); break;
         case 38: _t->on_actionParametre_triggered(); break;
         case 39: _t->on_quote_clicked(); break;
-        case 40: _t->on_tabWidget_currentChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 40: _t->on_tabWidget_currentChanged((*reinterpret_cast< uint(*)>(_a[1]))); break;
         case 41: _t->on_actionNouvel_onglet_triggered(); break;
         case 42: _t->on_actionNouvel_onglet_2_triggered(); break;
         case 43: _t->on_actionAnnuler_triggered(); break;

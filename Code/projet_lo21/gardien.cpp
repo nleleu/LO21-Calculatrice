@@ -1,6 +1,6 @@
 #include "gardien.h"
 #include "pile.h"
-#include <QDebug>
+
 
 gardien::gardien()
 {

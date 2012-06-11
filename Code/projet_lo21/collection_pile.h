@@ -36,7 +36,7 @@ class Collection_pile :public std::vector<Pile *>
 
 
         /*!
-        *  \brief Desconstructeur
+        *  \brief Destructeur
         *
         *  Destructeur (prive) de la classe Collection_pile
         *
@@ -47,7 +47,7 @@ class Collection_pile :public std::vector<Pile *>
         *  \brief Constructeur
         *
         *  Constructeur (prive) de la classe Collection_pile
-        *
+        *  A la creation, actif = 0
         */
     Collection_pile():actif(0){}
 

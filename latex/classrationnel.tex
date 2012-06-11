@@ -3,79 +3,80 @@
 }
 
 
+Classe representant une fraction.  
+
+
+
+
 {\ttfamily \#include $<$rationnel.\-h$>$}
 
-
-
-Inherits \hyperlink{classnocomplex}{nocomplex}.
-
+Inheritance diagram for rationnel\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classrationnel}
+\end{center}
+\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classrationnel_a92b822d1a85e77456f9db2d0c691d74e}{rationnel} (int \-\_\-num=0, int \-\_\-denum=1)
-\item 
-\hyperlink{classrationnel_a5dd117aa62b25bc976f753251170128b}{rationnel} (const std\-::string \&s)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
 \hyperlink{classrationnel_a7411453ee0e517a0008e563938033750}{rationnel} (const Q\-String \&s)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a14d9d411058e146e075ccf16997e525e}{operator+} (\hyperlink{classtype}{type} \&t)
-\item 
+\begin{DoxyCompactList}\small\item\em Operateur +. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_ae36b04407cc70d425ed0292975b0d1e9}{operator/} (\hyperlink{classtype}{type} \&t)
-\item 
+\begin{DoxyCompactList}\small\item\em Operateur /. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a49250cb9001aad230e5193515ee74efa}{operator$\ast$} (\hyperlink{classtype}{type} \&t)
-\item 
+\begin{DoxyCompactList}\small\item\em Operateur $\ast$. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a3bdf6de1a2526ddafbf1831a9af11dc9}{operator-\/} (\hyperlink{classtype}{type} \&t)
-\item 
+\begin{DoxyCompactList}\small\item\em Operateur -\/. \end{DoxyCompactList}\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_ad34af896f760a0271286e2dbbf55ad9f}{sinus} (bool degre)
+\begin{DoxyCompactList}\small\item\em Sinus. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_afd9fd9a30f034952ce889d46a07de617}{pow} (\hyperlink{classtype}{type} \&t)
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a546c22eedcb7ce551bb04be7dc527573}{mod} (\hyperlink{classtype}{type} \&t)
-\item 
+\begin{DoxyCompactList}\small\item\em Pow. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_aa73709167be428fafc4d95a31f4c3cc0}{sign} ()
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_ac6ad55bfba79a0169d8cf1fb82354b89}{sinus} ()
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_ac89f01b8f5927ba88ecd60a2f6996d2d}{cosinus} ()
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a0f189c649bad58fb78894a19ec7b21f4}{tangente} ()
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_afbf300cd97ee35b0302f7365ed84fb95}{sinush} ()
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_aef9f5ccfdc0a0344e64e5f1f77adab0d}{cosinush} ()
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a45d63050134594c5a60c7a594021d7e5}{tangenteh} ()
-\item 
+\begin{DoxyCompactList}\small\item\em sign \end{DoxyCompactList}\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a4a2f7528592b31a367799a79c336395c}{cosinus} (bool degre)
+\begin{DoxyCompactList}\small\item\em Cosinus. \end{DoxyCompactList}\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_ac2bdc47a11ea3d010f006256f6e14f79}{tangente} (bool degre)
+\begin{DoxyCompactList}\small\item\em Tangente. \end{DoxyCompactList}\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a107f6a0be55879bd49dd015144fdfde4}{sinush} (bool degre)
+\begin{DoxyCompactList}\small\item\em Sinush. \end{DoxyCompactList}\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_af8de9bc6850dc5471d2e31ddf8e3866e}{cosinush} (bool degre)
+\begin{DoxyCompactList}\small\item\em Cosinush. \end{DoxyCompactList}\item 
+\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a56135a99618c1fec82901c5e7f64a4a2}{tangenteh} (bool degre)
+\begin{DoxyCompactList}\small\item\em Tangenteh. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a59b1b593905de8676db02d5d2a5554c3}{ln} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Ln. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a6bed14bda0b8546528454e7b2030645d}{log} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Log. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a75336cd670c61195c833f8459c02c3b5}{inv} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Inv. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_ad37ab4380b5ff66104748ecc0bf5babe}{sqrt} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Sqrt. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_ab9f341fd09499253dd1f9b6f15795576}{sqr} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Sqr. \end{DoxyCompactList}\item 
 \hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a9bca6086c4a5083765d87324418a86ab}{cube} ()
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_a51333d6a00b4307407f1ea324902eeb8}{fact} ()
-\item 
-\hyperlink{classtype}{type} $\ast$ \hyperlink{classrationnel_aa66761d9af57e34a2ca44d5858dedf00}{eval} ()
-\item 
-void \hyperlink{classrationnel_a236e82f84556d0fcd978164529f9bf67}{simplifie} ()
-\item 
-int \hyperlink{classrationnel_a7e10c925a450321f53a50636177561e5}{pgcd} (int, int) const 
-\item 
+\begin{DoxyCompactList}\small\item\em Cube. \end{DoxyCompactList}\item 
 Q\-String \hyperlink{classrationnel_a6c905c688ae54647074a5ddf3ef648bd}{to\-Q\-String} ()
-\item 
+\begin{DoxyCompactList}\small\item\em to\-Q\-String \end{DoxyCompactList}\item 
+Q\-String \hyperlink{classrationnel_a1418b1d6ac37f7948affefa7b8d0f314}{eval} ()
+\begin{DoxyCompactList}\small\item\em eval \end{DoxyCompactList}\item 
+void \hyperlink{classrationnel_a236e82f84556d0fcd978164529f9bf67}{simplifie} ()
+\begin{DoxyCompactList}\small\item\em simplifie \end{DoxyCompactList}\item 
+int \hyperlink{classrationnel_a7e10c925a450321f53a50636177561e5}{pgcd} (int, int) const 
+\begin{DoxyCompactList}\small\item\em pgcd \end{DoxyCompactList}\item 
 int \hyperlink{classrationnel_a9c4167d0aafd3bf9460ae58a81a0d29f}{get\-Num} ()
-\item 
+\begin{DoxyCompactList}\small\item\em get\-Num \end{DoxyCompactList}\item 
 int \hyperlink{classrationnel_abb14c1aafb5b4e8f28d5c770e2e1523e}{get\-Denum} ()
-\end{DoxyCompactItemize}
-\subsection*{Static Public Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-static bool \hyperlink{classrationnel_aae8578654aadab4a36ef934e61e474fc}{is\-Rationnel} (const Q\-String \&s)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em get\-Denum \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Classe representant une fraction. 
+
+Derive de nocomplex 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classrationnel_a92b822d1a85e77456f9db2d0c691d74e}{\index{rationnel@{rationnel}!rationnel@{rationnel}}
@@ -86,14 +87,11 @@ static bool \hyperlink{classrationnel_aae8578654aadab4a36ef934e61e474fc}{is\-Rat
 \item[{int}]{\-\_\-denum = {\ttfamily 1}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classrationnel_a92b822d1a85e77456f9db2d0c691d74e}
-\hypertarget{classrationnel_a5dd117aa62b25bc976f753251170128b}{\index{rationnel@{rationnel}!rationnel@{rationnel}}
-\index{rationnel@{rationnel}!rationnel@{rationnel}}
-\subsubsection[{rationnel}]{\setlength{\rightskip}{0pt plus 5cm}rationnel\-::rationnel (
-\begin{DoxyParamCaption}
-\item[{const std\-::string \&}]{s}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classrationnel_a5dd117aa62b25bc976f753251170128b}
-\hypertarget{classrationnel_a7411453ee0e517a0008e563938033750}{\index{rationnel@{rationnel}!rationnel@{rationnel}}
+
+
+Constructeur. 
+
+Construit une fraction a partir de deux entiers \-: numerateur et denominateur \hypertarget{classrationnel_a7411453ee0e517a0008e563938033750}{\index{rationnel@{rationnel}!rationnel@{rationnel}}
 \index{rationnel@{rationnel}!rationnel@{rationnel}}
 \subsubsection[{rationnel}]{\setlength{\rightskip}{0pt plus 5cm}rationnel\-::rationnel (
 \begin{DoxyParamCaption}
@@ -102,28 +100,46 @@ static bool \hyperlink{classrationnel_aae8578654aadab4a36ef934e61e474fc}{is\-Rat
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classrationnel_a7411453ee0e517a0008e563938033750}
 
 
+Constructeur. 
+
+Construit une fraction a partir d'une Q\-String 
+
 \subsection{Member Function Documentation}
-\hypertarget{classrationnel_ac89f01b8f5927ba88ecd60a2f6996d2d}{\index{rationnel@{rationnel}!cosinus@{cosinus}}
+\hypertarget{classrationnel_a4a2f7528592b31a367799a79c336395c}{\index{rationnel@{rationnel}!cosinus@{cosinus}}
 \index{cosinus@{cosinus}!rationnel@{rationnel}}
 \subsubsection[{cosinus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::cosinus (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_ac89f01b8f5927ba88ecd60a2f6996d2d}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a4a2f7528592b31a367799a79c336395c}
 
 
-Implements \hyperlink{classtype_ac459ee75f7ab8d345c01a1f9a13f0728}{type}.
+Cosinus. 
 
-\hypertarget{classrationnel_aef9f5ccfdc0a0344e64e5f1f77adab0d}{\index{rationnel@{rationnel}!cosinush@{cosinush}}
+Implementation de l'operateur unaire cosinus (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_a2c3aa4791fe0c123079b0332a5978939}{nocomplex}.
+
+\hypertarget{classrationnel_af8de9bc6850dc5471d2e31ddf8e3866e}{\index{rationnel@{rationnel}!cosinush@{cosinush}}
 \index{cosinush@{cosinush}!rationnel@{rationnel}}
 \subsubsection[{cosinush}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::cosinush (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_aef9f5ccfdc0a0344e64e5f1f77adab0d}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_af8de9bc6850dc5471d2e31ddf8e3866e}
 
 
-Implements \hyperlink{classtype_acd7a105cccf58a42d6c09b40c91f75f0}{type}.
+Cosinush. 
+
+Implementation de l'operateur unaire cosinush (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_ae92516f1c7c78298a11e8e34355b9f81}{nocomplex}.
 
 \hypertarget{classrationnel_a9bca6086c4a5083765d87324418a86ab}{\index{rationnel@{rationnel}!cube@{cube}}
 \index{cube@{cube}!rationnel@{rationnel}}
@@ -134,29 +150,37 @@ Implements \hyperlink{classtype_acd7a105cccf58a42d6c09b40c91f75f0}{type}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a9bca6086c4a5083765d87324418a86ab}
 
 
-Implements \hyperlink{classtype_ae9ff7857936535092924b83aec1412c6}{type}.
+Cube. 
 
-\hypertarget{classrationnel_aa66761d9af57e34a2ca44d5858dedf00}{\index{rationnel@{rationnel}!eval@{eval}}
+Implementation de l'operateur unaire Cube (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_ad84e4a7a269024da4551a8e99078e41d}{nocomplex}.
+
+\hypertarget{classrationnel_a1418b1d6ac37f7948affefa7b8d0f314}{\index{rationnel@{rationnel}!eval@{eval}}
 \index{eval@{eval}!rationnel@{rationnel}}
-\subsubsection[{eval}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ rationnel\-::eval (
+\subsubsection[{eval}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String rationnel\-::eval (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classrationnel_aa66761d9af57e34a2ca44d5858dedf00}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a1418b1d6ac37f7948affefa7b8d0f314}
 
 
-Implements \hyperlink{classtype_a20555e9f6c76f728d94049bd72f65fc6}{type}.
+eval 
 
-\hypertarget{classrationnel_a51333d6a00b4307407f1ea324902eeb8}{\index{rationnel@{rationnel}!fact@{fact}}
-\index{fact@{fact}!rationnel@{rationnel}}
-\subsubsection[{fact}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ rationnel\-::fact (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classrationnel_a51333d6a00b4307407f1ea324902eeb8}
+Implementation de l'operateur unaire eval (methode virtuelle dans la classe mere) Permet d'arrondir une fraction 
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_aa5503ee1cdc7c88b058f9216e1e780c3}{type}.
+Reimplemented from \hyperlink{classnocomplex_a8831dff2cd793c03618b6e0751ffc026}{nocomplex}.
 
 \hypertarget{classrationnel_abb14c1aafb5b4e8f28d5c770e2e1523e}{\index{rationnel@{rationnel}!get\-Denum@{get\-Denum}}
 \index{get\-Denum@{get\-Denum}!rationnel@{rationnel}}
@@ -165,6 +189,13 @@ Implements \hyperlink{classtype_aa5503ee1cdc7c88b058f9216e1e780c3}{type}.
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classrationnel_abb14c1aafb5b4e8f28d5c770e2e1523e}
+
+
+get\-Denum 
+
+Accesseur du denominateur \begin{DoxyReturn}{Returns}
+denominateur(entier) 
+\end{DoxyReturn}
 \hypertarget{classrationnel_a9c4167d0aafd3bf9460ae58a81a0d29f}{\index{rationnel@{rationnel}!get\-Num@{get\-Num}}
 \index{get\-Num@{get\-Num}!rationnel@{rationnel}}
 \subsubsection[{get\-Num}]{\setlength{\rightskip}{0pt plus 5cm}int rationnel\-::get\-Num (
@@ -172,6 +203,13 @@ Implements \hyperlink{classtype_aa5503ee1cdc7c88b058f9216e1e780c3}{type}.
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classrationnel_a9c4167d0aafd3bf9460ae58a81a0d29f}
+
+
+get\-Num 
+
+Accesseur du numerateur \begin{DoxyReturn}{Returns}
+numerateur(entier) 
+\end{DoxyReturn}
 \hypertarget{classrationnel_a75336cd670c61195c833f8459c02c3b5}{\index{rationnel@{rationnel}!inv@{inv}}
 \index{inv@{inv}!rationnel@{rationnel}}
 \subsubsection[{inv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::inv (
@@ -181,15 +219,15 @@ Implements \hyperlink{classtype_aa5503ee1cdc7c88b058f9216e1e780c3}{type}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a75336cd670c61195c833f8459c02c3b5}
 
 
-Implements \hyperlink{classtype_a5eeb7c768cc90a0e9abd91d585169264}{type}.
+Inv. 
 
-\hypertarget{classrationnel_aae8578654aadab4a36ef934e61e474fc}{\index{rationnel@{rationnel}!is\-Rationnel@{is\-Rationnel}}
-\index{is\-Rationnel@{is\-Rationnel}!rationnel@{rationnel}}
-\subsubsection[{is\-Rationnel}]{\setlength{\rightskip}{0pt plus 5cm}static bool rationnel\-::is\-Rationnel (
-\begin{DoxyParamCaption}
-\item[{const Q\-String \&}]{s}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classrationnel_aae8578654aadab4a36ef934e61e474fc}
+Implementation de l'operateur unaire inv (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_a9e0f97f51c50b11022c6d0b409c26ecf}{nocomplex}.
+
 \hypertarget{classrationnel_a59b1b593905de8676db02d5d2a5554c3}{\index{rationnel@{rationnel}!ln@{ln}}
 \index{ln@{ln}!rationnel@{rationnel}}
 \subsubsection[{ln}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::ln (
@@ -199,7 +237,14 @@ Implements \hyperlink{classtype_a5eeb7c768cc90a0e9abd91d585169264}{type}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a59b1b593905de8676db02d5d2a5554c3}
 
 
-Implements \hyperlink{classtype_a601802c36f0dd5c1067b9873eb103a6d}{type}.
+Ln. 
+
+Implementation de l'operateur unaire ln (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_ab3e91b96595fef9d53a5cfb93291c8f0}{nocomplex}.
 
 \hypertarget{classrationnel_a6bed14bda0b8546528454e7b2030645d}{\index{rationnel@{rationnel}!log@{log}}
 \index{log@{log}!rationnel@{rationnel}}
@@ -210,18 +255,14 @@ Implements \hyperlink{classtype_a601802c36f0dd5c1067b9873eb103a6d}{type}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a6bed14bda0b8546528454e7b2030645d}
 
 
-Implements \hyperlink{classtype_a7fc23e8e38550f3ad98c0b3582f6163a}{type}.
+Log. 
 
-\hypertarget{classrationnel_a546c22eedcb7ce551bb04be7dc527573}{\index{rationnel@{rationnel}!mod@{mod}}
-\index{mod@{mod}!rationnel@{rationnel}}
-\subsubsection[{mod}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type}$\ast$ rationnel\-::mod (
-\begin{DoxyParamCaption}
-\item[{{\bf type} \&}]{t}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classrationnel_a546c22eedcb7ce551bb04be7dc527573}
+Implementation de l'operateur unaire log (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
 
 
-Implements \hyperlink{classtype_ab6f68c2a7481faf20b02aa4ae67c6500}{type}.
+Implements \hyperlink{classnocomplex_a0f7a5802123786d1461271d5c05158ca}{nocomplex}.
 
 \hypertarget{classrationnel_a49250cb9001aad230e5193515ee74efa}{\index{rationnel@{rationnel}!operator$\ast$@{operator$\ast$}}
 \index{operator$\ast$@{operator$\ast$}!rationnel@{rationnel}}
@@ -230,6 +271,18 @@ Implements \hyperlink{classtype_ab6f68c2a7481faf20b02aa4ae67c6500}{type}.
 \item[{{\bf type} \&}]{t}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a49250cb9001aad230e5193515ee74efa}
+
+
+Operateur $\ast$. 
+
+Implementation de l'operateur binaire $\ast$ (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classnocomplex_ac84954cbe0bd9c77eab88c0b97b34c2b}{nocomplex}.
@@ -243,6 +296,18 @@ Implements \hyperlink{classnocomplex_ac84954cbe0bd9c77eab88c0b97b34c2b}{nocomple
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a14d9d411058e146e075ccf16997e525e}
 
 
+Operateur +. 
+
+Implementation de l'operateur binaire + (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
 Implements \hyperlink{classnocomplex_af3d04b00f4f82d3a35cad0ca023093f4}{nocomplex}.
 
 \hypertarget{classrationnel_a3bdf6de1a2526ddafbf1831a9af11dc9}{\index{rationnel@{rationnel}!operator-\/@{operator-\/}}
@@ -252,6 +317,18 @@ Implements \hyperlink{classnocomplex_af3d04b00f4f82d3a35cad0ca023093f4}{nocomple
 \item[{{\bf type} \&}]{t}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a3bdf6de1a2526ddafbf1831a9af11dc9}
+
+
+Operateur -\/. 
+
+Implementation de l'operateur binaire -\/ (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classnocomplex_a2005c3a0fcaa1f360561539931ffc578}{nocomplex}.
@@ -265,6 +342,18 @@ Implements \hyperlink{classnocomplex_a2005c3a0fcaa1f360561539931ffc578}{nocomple
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_ae36b04407cc70d425ed0292975b0d1e9}
 
 
+Operateur /. 
+
+Implementation de l'operateur binaire / (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
 Implements \hyperlink{classnocomplex_a47942bdcc78cfc5d5e867c9f9836a465}{nocomplex}.
 
 \hypertarget{classrationnel_a7e10c925a450321f53a50636177561e5}{\index{rationnel@{rationnel}!pgcd@{pgcd}}
@@ -275,6 +364,15 @@ Implements \hyperlink{classnocomplex_a47942bdcc78cfc5d5e867c9f9836a465}{nocomple
 \item[{int}]{b}
 \end{DoxyParamCaption}
 ) const}}\label{classrationnel_a7e10c925a450321f53a50636177561e5}
+
+
+pgcd 
+
+Calcul le pgcd de deux entier 
+\begin{DoxyParams}{Parameters}
+{\em 2} & entiers \\
+\hline
+\end{DoxyParams}
 \hypertarget{classrationnel_afd9fd9a30f034952ce889d46a07de617}{\index{rationnel@{rationnel}!pow@{pow}}
 \index{pow@{pow}!rationnel@{rationnel}}
 \subsubsection[{pow}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::pow (
@@ -284,7 +382,19 @@ Implements \hyperlink{classnocomplex_a47942bdcc78cfc5d5e867c9f9836a465}{nocomple
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_afd9fd9a30f034952ce889d46a07de617}
 
 
-Implements \hyperlink{classtype_a60bc9fca9ded4e67963e6c9fad82ff01}{type}.
+Pow. 
+
+Implementation de l'operateur binaire pow (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_a1ad1b692783c8449efb03cc0dc5d1f3c}{nocomplex}.
 
 \hypertarget{classrationnel_aa73709167be428fafc4d95a31f4c3cc0}{\index{rationnel@{rationnel}!sign@{sign}}
 \index{sign@{sign}!rationnel@{rationnel}}
@@ -295,7 +405,19 @@ Implements \hyperlink{classtype_a60bc9fca9ded4e67963e6c9fad82ff01}{type}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_aa73709167be428fafc4d95a31f4c3cc0}
 
 
-Implements \hyperlink{classtype_a59342fe365d621d47b607d3f4e155169}{type}.
+sign 
+
+Implementation de l'operateur unaire sign (methode virtuelle dans la classe mere) Inverse le signe de la constante 
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_acd1c0365d1a2ed160934320cff01cecd}{nocomplex}.
 
 \hypertarget{classrationnel_a236e82f84556d0fcd978164529f9bf67}{\index{rationnel@{rationnel}!simplifie@{simplifie}}
 \index{simplifie@{simplifie}!rationnel@{rationnel}}
@@ -304,27 +426,50 @@ Implements \hyperlink{classtype_a59342fe365d621d47b607d3f4e155169}{type}.
 {}
 \end{DoxyParamCaption}
 )}}\label{classrationnel_a236e82f84556d0fcd978164529f9bf67}
-\hypertarget{classrationnel_ac6ad55bfba79a0169d8cf1fb82354b89}{\index{rationnel@{rationnel}!sinus@{sinus}}
+
+
+simplifie 
+
+Simplifie la fration. Utilisation du P\-G\-C\-D \hypertarget{classrationnel_ad34af896f760a0271286e2dbbf55ad9f}{\index{rationnel@{rationnel}!sinus@{sinus}}
 \index{sinus@{sinus}!rationnel@{rationnel}}
 \subsubsection[{sinus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::sinus (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_ac6ad55bfba79a0169d8cf1fb82354b89}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_ad34af896f760a0271286e2dbbf55ad9f}
 
 
-Implements \hyperlink{classtype_ae12b68744cbf5c49e5e065fbf8a13954}{type}.
+Sinus. 
 
-\hypertarget{classrationnel_afbf300cd97ee35b0302f7365ed84fb95}{\index{rationnel@{rationnel}!sinush@{sinush}}
+Implementation de l'operateur unaire sinus (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_aea2ba416f34c37ad2cf751b6220d53b8}{nocomplex}.
+
+\hypertarget{classrationnel_a107f6a0be55879bd49dd015144fdfde4}{\index{rationnel@{rationnel}!sinush@{sinush}}
 \index{sinush@{sinush}!rationnel@{rationnel}}
 \subsubsection[{sinush}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::sinush (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_afbf300cd97ee35b0302f7365ed84fb95}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a107f6a0be55879bd49dd015144fdfde4}
 
 
-Implements \hyperlink{classtype_a9ae4dee6629d0d366e52e94591de46d3}{type}.
+Sinush. 
+
+Implementation de l'operateur unaire sinush (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_a4df698a9ee147b77aaab9f63840b1012}{nocomplex}.
 
 \hypertarget{classrationnel_ab9f341fd09499253dd1f9b6f15795576}{\index{rationnel@{rationnel}!sqr@{sqr}}
 \index{sqr@{sqr}!rationnel@{rationnel}}
@@ -335,7 +480,14 @@ Implements \hyperlink{classtype_a9ae4dee6629d0d366e52e94591de46d3}{type}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_ab9f341fd09499253dd1f9b6f15795576}
 
 
-Implements \hyperlink{classtype_ab5ac11ebbed8a99db5ce4933cb17ddea}{type}.
+Sqr. 
+
+Implementation de l'operateur unaire sqr (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_a5665f2bcf5ad839e92c31f38f3dfc7b7}{nocomplex}.
 
 \hypertarget{classrationnel_ad37ab4380b5ff66104748ecc0bf5babe}{\index{rationnel@{rationnel}!sqrt@{sqrt}}
 \index{sqrt@{sqrt}!rationnel@{rationnel}}
@@ -346,29 +498,55 @@ Implements \hyperlink{classtype_ab5ac11ebbed8a99db5ce4933cb17ddea}{type}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_ad37ab4380b5ff66104748ecc0bf5babe}
 
 
-Implements \hyperlink{classtype_a626c58aa4bca21f65845140c7c9b895e}{type}.
+Sqrt. 
 
-\hypertarget{classrationnel_a0f189c649bad58fb78894a19ec7b21f4}{\index{rationnel@{rationnel}!tangente@{tangente}}
+Implementation de l'operateur unaire sqrt (methode virtuelle dans la classe mere) 
+\begin{DoxyParams}{Parameters}
+{\em t} & \-: Pointeur sur un type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_a7f693a0869814705bcc3b8add799e6cd}{nocomplex}.
+
+\hypertarget{classrationnel_ac2bdc47a11ea3d010f006256f6e14f79}{\index{rationnel@{rationnel}!tangente@{tangente}}
 \index{tangente@{tangente}!rationnel@{rationnel}}
 \subsubsection[{tangente}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::tangente (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a0f189c649bad58fb78894a19ec7b21f4}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_ac2bdc47a11ea3d010f006256f6e14f79}
 
 
-Implements \hyperlink{classtype_a425ad47ffa64f9dafe38ac2cf6f542fb}{type}.
+Tangente. 
 
-\hypertarget{classrationnel_a45d63050134594c5a60c7a594021d7e5}{\index{rationnel@{rationnel}!tangenteh@{tangenteh}}
+Implementation de l'operateur unaire tangente (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_a2e7f4563e7d602c79e356dcb5472e341}{nocomplex}.
+
+\hypertarget{classrationnel_a56135a99618c1fec82901c5e7f64a4a2}{\index{rationnel@{rationnel}!tangenteh@{tangenteh}}
 \index{tangenteh@{tangenteh}!rationnel@{rationnel}}
 \subsubsection[{tangenteh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf type} $\ast$ rationnel\-::tangenteh (
 \begin{DoxyParamCaption}
-{}
+\item[{bool}]{degre}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a45d63050134594c5a60c7a594021d7e5}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a56135a99618c1fec82901c5e7f64a4a2}
 
 
-Implements \hyperlink{classtype_a260ae21ca7b4f5e7eb4dd6f8996ea9a8}{type}.
+Tangenteh. 
+
+Implementation de l'operateur unaire tangenteh (methode virtuelle dans la classe mere) \begin{DoxyReturn}{Returns}
+Pointeur sur type, resultat de l'operation 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classnocomplex_a79aa6c234a5a66bfe18c39794e56c277}{nocomplex}.
 
 \hypertarget{classrationnel_a6c905c688ae54647074a5ddf3ef648bd}{\index{rationnel@{rationnel}!to\-Q\-String@{to\-Q\-String}}
 \index{to\-Q\-String@{to\-Q\-String}!rationnel@{rationnel}}
@@ -379,6 +557,13 @@ Implements \hyperlink{classtype_a260ae21ca7b4f5e7eb4dd6f8996ea9a8}{type}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classrationnel_a6c905c688ae54647074a5ddf3ef648bd}
 
 
+to\-Q\-String 
+
+Transforme l'objet Qstring. Permet ensuite l'affichage dans des widget \begin{DoxyReturn}{Returns}
+Qstring \-: chaine resultat 
+\end{DoxyReturn}
+
+
 Implements \hyperlink{classtype_ab61f01d56f3896cc99788a1a18c4b0c2}{type}.
 
 
@@ -386,4 +571,4 @@ Implements \hyperlink{classtype_ab61f01d56f3896cc99788a1a18c4b0c2}{type}.
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
 Code/projet\-\_\-lo21/\hyperlink{rationnel_8h}{rationnel.\-h}\item 
-Code/projet\-\_\-lo21/\hyperlink{rationnel_8cpp}{rationnel.\-cpp}\end{DoxyCompactItemize}
+Code/projet\-\_\-lo21/rationnel.\-cpp\end{DoxyCompactItemize}

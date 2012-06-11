@@ -3,7 +3,7 @@
 #include "reel.h"
 #include "rationnel.h"
 #include "complexe.h"
-#include <QDebug>
+
 #include "expression.h"
 #include "typeexception.h"
 
