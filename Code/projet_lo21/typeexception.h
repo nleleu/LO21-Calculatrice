@@ -3,6 +3,7 @@
 
 #include <stdexcept>
 #include <string>
+#include <QString>
 
 class typeException :public std::exception
 {

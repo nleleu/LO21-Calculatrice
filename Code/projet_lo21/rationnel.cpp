@@ -260,45 +260,63 @@ type* rationnel::sign(){
 }
 
 
-type* rationnel::sinus(){
+type* rationnel::sinus(degUnit& selectedDegUnit){
     double tmp(num/denum);
-    tmp=sin(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=sin(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=sin(tmp);
 
     type* t= new reel(tmp);
     return t;
 }
 
-type* rationnel::cosinus(){
+type* rationnel::cosinus(degUnit& selectedDegUnit){
     double tmp(num/denum);
-    tmp=cos(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=cos(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=cos(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* rationnel::tangente(){
+type* rationnel::tangente(degUnit& selectedDegUnit){
     double tmp(num/denum);
-    tmp=tan(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=tan(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=tan(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* rationnel::sinush(){
+type* rationnel::sinush(degUnit& selectedDegUnit){
     double tmp(num/denum);
-    tmp=sinh(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=sinh(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=sinh(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* rationnel::cosinush(){
+type* rationnel::cosinush(degUnit& selectedDegUnit){
     double tmp(num/denum);
-    tmp=cosh(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=cosh(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=cosh(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* rationnel::tangenteh(){
+type* rationnel::tangenteh(degUnit& selectedDegUnit){
     double tmp(num/denum);
-    tmp=tanh(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=tanh(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=tanh(tmp);
     type* t= new reel(tmp);
     return t;
 }

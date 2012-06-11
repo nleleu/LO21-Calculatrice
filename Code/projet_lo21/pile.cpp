@@ -358,14 +358,14 @@ void Pile::sign(){
 }
 
 
-void Pile::sinus(){
+void Pile::sinus(degUnit selectedDegUnit){
 
     if(this->size() > 0){
         g->addMemento(*this);
         type *op = pop();
         type *res;
         try{
-       res=op->sinus();
+       res=op->sinus(selectedDegUnit);
        push(res);
        delete op;
        g->addMemento(*this);
@@ -381,13 +381,13 @@ void Pile::sinus(){
 
 
 
-void Pile::cosinus(){
+void Pile::cosinus(degUnit selectedDegUnit){
     if(this->size() > 0){
         g->addMemento(*this);
         type *op = pop();
         type *res;
         try{
-       res=op->cosinus();
+       res=op->cosinus(selectedDegUnit);
        push(res);
        delete op;
        g->addMemento(*this);
@@ -401,13 +401,13 @@ void Pile::cosinus(){
     }
 }
 
-void Pile::tangente(){
+void Pile::tangente(degUnit selectedDegUnit){
     if(this->size() > 0){
         g->addMemento(*this);
         type *op = pop();
         type *res;
         try{
-       res=op->tangente();
+       res=op->tangente(selectedDegUnit);
        push(res);
        delete op;
        g->addMemento(*this);
@@ -421,13 +421,13 @@ void Pile::tangente(){
     }
 }
 
-void Pile::sinush(){
+void Pile::sinush(degUnit selectedDegUnit){
     if(this->size() > 0){
         g->addMemento(*this);
         type *op = pop();
         type *res;
         try{
-       res=op->sinush();
+       res=op->sinush(selectedDegUnit);
        push(res);
        delete op;
        g->addMemento(*this);
@@ -441,13 +441,13 @@ void Pile::sinush(){
     }
 }
 
-void Pile::cosinush(){
+void Pile::cosinush(degUnit selectedDegUnit){
     if(this->size() > 0){
         g->addMemento(*this);
         type *op = pop();
         type *res;
         try{
-       res=op->cosinush();
+       res=op->cosinush(selectedDegUnit);
        push(res);
        delete op;
        g->addMemento(*this);
@@ -461,13 +461,13 @@ void Pile::cosinush(){
     }
 }
 
-void Pile::tangenteh(){
+void Pile::tangenteh(degUnit selectedDegUnit){
     if(this->size() > 0){
         g->addMemento(*this);
         type *op = pop();
         type *res;
         try{
-       res=op->tangenteh();
+       res=op->tangenteh(selectedDegUnit);
        push(res);
        delete op;
        g->addMemento(*this);

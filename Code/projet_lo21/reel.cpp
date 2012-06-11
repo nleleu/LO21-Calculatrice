@@ -242,44 +242,62 @@ type* reel::sign(){
     return t;
 }
 
-type* reel::sinus(){
+type* reel::sinus(degUnit& selectedDegUnit){
     double tmp(data);
-    tmp=sin(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=sin(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=sin(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* reel::cosinus(){
+type* reel::cosinus(degUnit& selectedDegUnit){
     double tmp(data);
-    tmp=cos(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=cos(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=cos(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* reel::tangente(){
+type* reel::tangente(degUnit& selectedDegUnit){
     double tmp(data);
-    tmp=tan(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=tan(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=tan(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* reel::sinush(){
+type* reel::sinush(degUnit& selectedDegUnit){
     double tmp(data);
-    tmp=sinh(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=sinh(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=sinh(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* reel::cosinush(){
+type* reel::cosinush(degUnit& selectedDegUnit){
     double tmp(data);
-    tmp=cosh(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=cosh(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=cosh(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* reel::tangenteh(){
+type* reel::tangenteh(degUnit& selectedDegUnit){
     double tmp(data);
-    tmp=tanh(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=tanh(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=tanh(tmp);
     type* t= new reel(tmp);
     return t;
 }

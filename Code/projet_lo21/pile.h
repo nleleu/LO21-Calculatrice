@@ -223,12 +223,12 @@ public:
 
     void sign();
 
-    void sinus();
-    void cosinus();
-    void tangente();
-    void sinush();
-    void cosinush();
-    void tangenteh();
+    void sinus(degUnit selectedDegUnit);
+    void cosinus(degUnit selectedDegUnit);
+    void tangente(degUnit selectedDegUnit);
+    void sinush(degUnit selectedDegUnit);
+    void cosinush(degUnit selectedDegUnit);
+    void tangenteh(degUnit selectedDegUnit);
 
     void ln();
     void log();

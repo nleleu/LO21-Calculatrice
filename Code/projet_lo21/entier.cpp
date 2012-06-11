@@ -249,44 +249,62 @@ type* entier::sign(){
     return t;
 }
 
-type* entier::sinus(){
+type* entier::sinus(degUnit selectedDegUnit){
     double tmp(data);
-    tmp=sin(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=sin(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=sin(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* entier::cosinus(){
+type* entier::cosinus(degUnit& selectedDegUnit){
     double tmp(data);
-    tmp=cos(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=cos(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=cos(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* entier::tangente(){
+type* entier::tangente(degUnit& selectedDegUnit){
     double tmp(data);
-    tmp=tan(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=tan(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=tan(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* entier::sinush(){
+type* entier::sinush(degUnit& selectedDegUnit){
     double tmp(data);
-    tmp=sinh(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=sinh(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=sinh(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* entier::cosinush(){
+type* entier::cosinush(degUnit& selectedDegUnit){
     double tmp(data);
-    tmp=cosh(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=cosh(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=cosh(tmp);
     type* t= new reel(tmp);
     return t;
 }
 
-type* entier::tangenteh(){
+type* entier::tangenteh(degUnit& selectedDegUnit){
     double tmp(data);
-    tmp=tanh(tmp*PI/180);
+    if(selectedDegUnit == DEGRE)
+        tmp=tanh(tmp*PI/180);
+    else if(selectedDegUnit == RADIANT)
+        tmp=tanh(tmp);
     type* t= new reel(tmp);
     return t;
 }
