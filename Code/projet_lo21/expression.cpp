@@ -30,6 +30,108 @@ type* Expression::operator /(type & t){
     return new Expression(exp);
 }
 
+
+type* Expression::sinus()
+{
+    exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "sin'";
+    return new Expression(exp);
+
+}
+
+type* Expression::pow(type & t)
+{
+    exp = exp.remove(exp.size()-1,exp.size()-1) + ' ' + t.toQString().remove("'") + ' ' + "pow'";
+    return new Expression(exp);
+
+}
+
+type* Expression::sign()
+{
+    exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "sign'";
+    return new Expression(exp);
+}
+
+
+
+
+type* Expression::cosinus()
+{
+    exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "cos'";
+    return new Expression(exp);
+}
+
+
+
+type* Expression::tangente()
+{
+    exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "tan'";
+    return new Expression(exp);
+}
+
+type* Expression::sinush()
+{
+    exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "sinh'";
+    return new Expression(exp);
+}
+
+
+type* Expression::cosinush()
+{
+    exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "cosh'";
+    return new Expression(exp);
+}
+
+type* Expression::tangenteh()
+{
+    exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "tanh'";
+    return new Expression(exp);
+}
+
+
+type* Expression::ln()
+{
+    exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "ln'";
+    return new Expression(exp);
+}
+
+
+type* Expression::log()
+{
+    exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "log'";
+    return new Expression(exp);
+}
+
+type* Expression::inv()
+{
+    exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "inv'";
+    return new Expression(exp);
+}
+
+
+type* Expression::sqrt()
+{
+    exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "sqrt'";
+    return new Expression(exp);
+}
+
+
+type* Expression::sqr()
+{
+    exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "sqr'";
+    return new Expression(exp);
+}
+
+type* Expression::cube()
+{
+    exp = exp.remove(exp.size()-1,exp.size()-1)  + ' ' + "cube'";
+    return new Expression(exp);
+}
+
+
+
+
+
+
 QString Expression::eval(){
     return exp.remove("'");
 }

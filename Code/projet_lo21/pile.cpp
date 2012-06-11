@@ -38,8 +38,11 @@ void Pile::charger(){
 }*/
 
 Pile::~Pile(){
-//bug si delete sur tous les pointeurs de la pile, à revoir
-
+    for(int i=0; i<size(); i++){
+       delete at(i);
+    }
+    if(g)
+    delete g;
 }
 
 //Selection de l'unite des degres
@@ -111,7 +114,7 @@ void Pile::mean(const unsigned int x){
 void Pile::addition()
 {
     if(this->size() > 1){
-        g->addMemento(*this);
+        g->addMemento(this);
         type * res;
         type *op1 = pop();
         type *op2 = pop();
@@ -121,7 +124,7 @@ void Pile::addition()
         delete op1;
         delete op2;
         push(res);
-        g->addMemento(*this);
+        g->addMemento(this);
         }
         catch (std::exception &e) {
             QMessageBox msgBox;
@@ -136,7 +139,7 @@ void Pile::addition()
 void Pile::soustraction()
 {
     if(this->size() > 1){
-        g->addMemento(*this);
+        g->addMemento(this);
         type * res;
         type *op1 = pop();
         type *op2 = pop();
@@ -145,7 +148,7 @@ void Pile::soustraction()
         delete op1;
         delete op2;
         push(res);
-        g->addMemento(*this);
+        g->addMemento(this);
         }
         catch (std::exception &e) {
             QMessageBox msgBox;
@@ -161,7 +164,7 @@ void Pile::soustraction()
 void Pile::multiplication()
 {
     if(this->size() > 1){
-        g->addMemento(*this);
+        g->addMemento(this);
         type * res;
         type *op1 = pop();
         type *op2 = pop();
@@ -170,7 +173,7 @@ void Pile::multiplication()
         delete op1;
         delete op2;
         push(res);
-        g->addMemento(*this);
+        g->addMemento(this);
         }
         catch (std::exception &e) {
             QMessageBox msgBox;
@@ -187,7 +190,7 @@ void Pile::multiplication()
 void Pile::division()
 {
     if(this->size() > 1){
-        g->addMemento(*this);
+        g->addMemento(this);
         type * res;
         type *op1 = pop();
         type *op2 = pop();
@@ -196,7 +199,7 @@ void Pile::division()
         delete op1;
         delete op2;
         push(res);
-        g->addMemento(*this);
+        g->addMemento(this);
         }
         catch (std::exception &e) {
             QMessageBox msgBox;
@@ -211,7 +214,7 @@ void Pile::division()
 void Pile::pow()
 {
     if(this->size() > 1){
-        g->addMemento(*this);
+        g->addMemento(this);
         type * res;
         type *op1 = pop();
         type *op2 = pop();
@@ -220,7 +223,7 @@ void Pile::pow()
         delete op1;
         delete op2;
         push(res);
-        g->addMemento(*this);
+        g->addMemento(this);
         }
         catch (std::exception &e) {
             QMessageBox msgBox;
@@ -235,7 +238,7 @@ void Pile::pow()
 void Pile::mod()
 {
     if(this->size() > 1){
-        g->addMemento(*this);
+        g->addMemento(this);
         type * res;
         type *op1 = pop();
         type *op2 = pop();
@@ -245,7 +248,7 @@ void Pile::mod()
         delete op1;
         delete op2;
         push(res);
-        g->addMemento(*this);
+        g->addMemento(this);
         }
         catch (std::exception &e) {
             QMessageBox msgBox;
@@ -337,14 +340,14 @@ void Pile::sign(){
 
     if(this->size() > 0){
 
-       g->addMemento(*this);
+       g->addMemento(this);
        type *op = pop();
        type *res;
        try{
        res=op->sign();
        delete op;
        push(res);
-       g->addMemento(*this);
+       g->addMemento(this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
@@ -361,14 +364,14 @@ void Pile::sign(){
 void Pile::sinus(degUnit selectedDegUnit){
 
     if(this->size() > 0){
-        g->addMemento(*this);
+        g->addMemento(this);
         type *op = pop();
         type *res;
         try{
        res=op->sinus(selectedDegUnit);
        push(res);
        delete op;
-       g->addMemento(*this);
+       g->addMemento(this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
@@ -383,14 +386,14 @@ void Pile::sinus(degUnit selectedDegUnit){
 
 void Pile::cosinus(degUnit selectedDegUnit){
     if(this->size() > 0){
-        g->addMemento(*this);
+        g->addMemento(this);
         type *op = pop();
         type *res;
         try{
        res=op->cosinus(selectedDegUnit);
        push(res);
        delete op;
-       g->addMemento(*this);
+       g->addMemento(this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
@@ -403,14 +406,14 @@ void Pile::cosinus(degUnit selectedDegUnit){
 
 void Pile::tangente(degUnit selectedDegUnit){
     if(this->size() > 0){
-        g->addMemento(*this);
+        g->addMemento(this);
         type *op = pop();
         type *res;
         try{
        res=op->tangente(selectedDegUnit);
        push(res);
        delete op;
-       g->addMemento(*this);
+       g->addMemento(this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
@@ -423,14 +426,14 @@ void Pile::tangente(degUnit selectedDegUnit){
 
 void Pile::sinush(degUnit selectedDegUnit){
     if(this->size() > 0){
-        g->addMemento(*this);
+        g->addMemento(this);
         type *op = pop();
         type *res;
         try{
        res=op->sinush(selectedDegUnit);
        push(res);
        delete op;
-       g->addMemento(*this);
+       g->addMemento(this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
@@ -443,14 +446,14 @@ void Pile::sinush(degUnit selectedDegUnit){
 
 void Pile::cosinush(degUnit selectedDegUnit){
     if(this->size() > 0){
-        g->addMemento(*this);
+        g->addMemento(this);
         type *op = pop();
         type *res;
         try{
        res=op->cosinush(selectedDegUnit);
        push(res);
        delete op;
-       g->addMemento(*this);
+       g->addMemento(this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
@@ -463,14 +466,14 @@ void Pile::cosinush(degUnit selectedDegUnit){
 
 void Pile::tangenteh(degUnit selectedDegUnit){
     if(this->size() > 0){
-        g->addMemento(*this);
+        g->addMemento(this);
         type *op = pop();
         type *res;
         try{
        res=op->tangenteh(selectedDegUnit);
        push(res);
        delete op;
-       g->addMemento(*this);
+       g->addMemento(this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
@@ -485,14 +488,14 @@ void Pile::tangenteh(degUnit selectedDegUnit){
 
 void Pile::ln(){
     if(this->size() > 0){
-        g->addMemento(*this);
+        g->addMemento(this);
         type *op = pop();
         type *res;
         try{
        res=op->ln();
        push(res);
        delete op;
-       g->addMemento(*this);
+       g->addMemento(this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
@@ -505,14 +508,14 @@ void Pile::ln(){
 
 void Pile::log(){
     if(this->size() > 0){
-        g->addMemento(*this);
+        g->addMemento(this);
         type *op = pop();
         type *res;
         try{
        res=op->log();
        push(res);
        delete op;
-       g->addMemento(*this);
+       g->addMemento(this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
@@ -525,14 +528,14 @@ void Pile::log(){
 
 void Pile::inv(){
     if(this->size() > 0){
-        g->addMemento(*this);
+        g->addMemento(this);
         type *op = pop();
         type *res;
         try{
        res=op->inv();
        push(res);
        delete op;
-       g->addMemento(*this);
+       g->addMemento(this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
@@ -545,14 +548,14 @@ void Pile::inv(){
 
 void Pile::sqrt(){
     if(this->size() > 0){
-        g->addMemento(*this);
+        g->addMemento(this);
         type *op = pop();
         type *res;
         try{
        res=op->sqrt();
        push(res);
        delete op;
-       g->addMemento(*this);
+       g->addMemento(this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
@@ -565,14 +568,14 @@ void Pile::sqrt(){
 
 void Pile::sqr(){
     if(this->size() > 0){
-        g->addMemento(*this);
+        g->addMemento(this);
         type *op = pop();
         type *res;
         try{
        res=op->sqr();
        push(res);
        delete op;
-       g->addMemento(*this);
+       g->addMemento(this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
@@ -585,14 +588,14 @@ void Pile::sqr(){
 
 void Pile::cube(){
     if(this->size() > 0){
-        g->addMemento(*this);
+        g->addMemento(this);
         type *op = pop();
         type *res;
         try{
        res=op->cube();
        push(res);
        delete op;
-       g->addMemento(*this);
+       g->addMemento(this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
@@ -605,14 +608,14 @@ void Pile::cube(){
 
 void Pile::fact(){
     if(this->size() > 0){
-        g->addMemento(*this);
+        g->addMemento(this);
         type *op = pop();
         type *res;
         try{
        res=op->fact();
        push(res);
        delete op;
-       g->addMemento(*this);
+       g->addMemento(this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
@@ -625,13 +628,13 @@ void Pile::fact(){
 
 void Pile::eval(){
     if(this->size() > 0){
-        g->addMemento(*this);
+        g->addMemento(this);
         type *op = pop();
         QString res;
         try{
        res=op->eval();
        parser(res);
-       g->addMemento(*this);
+       g->addMemento(this);
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
