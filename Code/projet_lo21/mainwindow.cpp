@@ -92,17 +92,19 @@ void MainWindow::on_affichePile_clicked(){
 }
 
 void MainWindow::on_swap_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->swap(0, 1);
+
+
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->swap();
     emit refresh_signal();
 }
 
 void MainWindow::on_sum_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->sum(10);
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->sum();
     emit refresh_signal();
 }
 
 void MainWindow::on_mean_clicked(){
-    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->mean(10);
+    Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->mean();
     emit refresh_signal();
 }
 

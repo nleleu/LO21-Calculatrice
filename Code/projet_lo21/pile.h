@@ -146,7 +146,7 @@ public:
 
 
 
-    void swap(unsigned int x,unsigned int y);
+    void swap();
 
     /*!
     *  \brief sum
@@ -154,7 +154,7 @@ public:
     *  \param x: entier
     *
     */
-    void sum(const unsigned int x);
+    void sum();
 
     /*!
     *  \brief mean
@@ -162,7 +162,7 @@ public:
     *  \param x: entier
     *
     */
-    void mean(const unsigned int x);
+    void mean();
 
 
     /*!

@@ -4,7 +4,7 @@
 #include "rationnel.h"
 #include "complexe.h"
 #include "expression.h"
-
+#include <QDebug>
 #include "dom.h"
 #include <cmath>
 #include "typeexception.h"
@@ -61,40 +61,77 @@ Pile& Pile::duplique() const{
 }
 
 
-void Pile::swap(unsigned int x, unsigned int y){
-    if (x < (unsigned int)this->size() && y < (unsigned int)this->size()){
-        type * tmp = at(size()-1-x);
-        replace(size()-1-x, at(size()-1-y));
-        replace(size()-1-y, tmp);
+void Pile::swap(){
+    if(this->size() > 1){
+        unsigned int x,y;
+        g->addMemento(this);
+        type *op1 = pop();
+        type *op2 = pop();
+        try{
+
+           entier &e1=dynamic_cast<entier&>(*op1);
+           entier &e2=dynamic_cast<entier&>(*op2);
+           x=(unsigned int)e1.getData();
+           y=(unsigned int)e2.getData();
+           if (x < (unsigned int)this->size() && y < (unsigned int)this->size()){
+               type * tmp = at(size()-1-x);
+               replace(size()-1-x, at(size()-1-y));
+               replace(size()-1-y, tmp);
+           }
+        }
+        catch(std::exception &e){}
+
     }
 }
 
-void Pile::sum(const unsigned int x){
-    if(!isEmpty()){
-
-        type* sumVect;
-
-        for(iterator it=begin(); it!=end(); it++){
+void Pile::sum(){
+    if(this->size() > 1){
+        try{
+            unsigned int x;
+            type *op1 = pop();
+           entier &e1=dynamic_cast<entier&>(*op1);
+           x=(unsigned int)e1.getData();
+        type* sumVect=new entier(0);
+        type* tmp;
+        unsigned int j=0;
+        for(iterator it=end()-1; it>=begin()&& j<x; it--){
+            tmp=sumVect;
             sumVect=*sumVect+*(*it);
+            delete tmp;
+            j++;
         }
 
         push(sumVect);
     }
+      catch(std::exception &e){}
+    }
 }
 
-void Pile::mean(const unsigned int x){
+void Pile::mean(){
 
-    if(!isEmpty()){
-
-            type* sumVect;
-
-            for(iterator it=begin(); it!=end(); it++){
+   if(this->size() > 1){
+       unsigned int x;
+        try{
+           type *op1 = pop();
+           entier &e1=dynamic_cast<entier&>(*op1);
+           x=(unsigned int)e1.getData();
+            type* sumVect=new entier(0);
+            type* tmp;
+            unsigned int j=0;
+            for(iterator it=end()-1; it>=begin()&& j<x; it--){
+                tmp=sumVect;
                 sumVect=*sumVect+*(*it);
+                delete tmp;
+                j++;
             }
 
-            entier taille(size());
+            entier taille(j);
+            tmp=sumVect;
             sumVect=*sumVect/taille;
+            delete tmp;
             push(sumVect);
+        }
+          catch(std::exception &e){}
     }
 
 }
