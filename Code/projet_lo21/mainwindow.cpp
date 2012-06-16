@@ -28,6 +28,7 @@ MainWindow::MainWindow(Pile &pile, QWidget *parent) :
     Collection_pile::getInstance().addPile(&pile);
     emit refresh_signal();
     ui->degUnit->setChecked(true);
+    ui->ouiClavier->setChecked(true);
 
 }
 
@@ -398,4 +399,48 @@ void MainWindow::on_degUnit_clicked()
 void MainWindow::on_radUnit_clicked()
 {
     Collection_pile::getInstance().at(Collection_pile::getInstance().getActif())->setDegre(false);
+}
+
+
+//Affichage du clavier
+void MainWindow::on_ouiClavier_clicked(){
+    ui->pushButton0->show();
+    ui->pushButton1->show();
+    ui->pushButton2->show();
+    ui->pushButton3->show();
+    ui->pushButton4->show();
+    ui->pushButton5->show();
+    ui->pushButton6->show();
+    ui->pushButton7->show();
+    ui->pushButton8->show();
+    ui->pushButton9->show();
+    ui->reelButton->show();
+    ui->rationnelButton->show();
+    ui->complexeButton->show();
+    ui->espace->show();
+    ui->backspace->show();
+    ui->stackButton->show();
+    ui->quote->show();
+
+}
+
+void MainWindow::on_nonClavier_clicked(){
+    ui->pushButton0->hide();
+    ui->pushButton1->hide();
+    ui->pushButton2->hide();
+    ui->pushButton3->hide();
+    ui->pushButton4->hide();
+    ui->pushButton5->hide();
+    ui->pushButton6->hide();
+    ui->pushButton7->hide();
+    ui->pushButton8->hide();
+    ui->pushButton9->hide();
+    ui->reelButton->hide();
+    ui->rationnelButton->hide();
+    ui->complexeButton->hide();
+    ui->espace->hide();
+    ui->backspace->hide();
+    ui->stackButton->hide();
+    ui->quote->hide();
+
 }

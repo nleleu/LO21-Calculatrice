@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Mon 11. Jun 19:49:18 2012
+** Created: Sat 16. Jun 10:14:45 2012
 **      by: Qt User Interface Compiler version 4.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -114,6 +114,11 @@ public:
     QPushButton *eval;
     QLabel *label;
     QSpinBox *NbAffiche;
+    QGroupBox *groupBox_4;
+    QWidget *gridLayoutWidget_3;
+    QGridLayout *gridLayout_3;
+    QRadioButton *ouiClavier;
+    QRadioButton *nonClavier;
     QMenuBar *menuBar;
     QMenu *menuFile;
     QMenu *menuEdition;
@@ -372,10 +377,10 @@ public:
 
         groupBox_3 = new QGroupBox(centralWidget);
         groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
-        groupBox_3->setGeometry(QRect(40, 330, 301, 201));
+        groupBox_3->setGeometry(QRect(40, 330, 261, 171));
         gridLayoutWidget_7 = new QWidget(groupBox_3);
         gridLayoutWidget_7->setObjectName(QString::fromUtf8("gridLayoutWidget_7"));
-        gridLayoutWidget_7->setGeometry(QRect(30, 40, 239, 141));
+        gridLayoutWidget_7->setGeometry(QRect(10, 20, 239, 141));
         gridLayout_7 = new QGridLayout(gridLayoutWidget_7);
         gridLayout_7->setSpacing(6);
         gridLayout_7->setContentsMargins(11, 11, 11, 11);
@@ -457,6 +462,27 @@ public:
         NbAffiche = new QSpinBox(centralWidget);
         NbAffiche->setObjectName(QString::fromUtf8("NbAffiche"));
         NbAffiche->setGeometry(QRect(720, 30, 42, 22));
+        groupBox_4 = new QGroupBox(centralWidget);
+        groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
+        groupBox_4->setGeometry(QRect(570, 70, 120, 80));
+        gridLayoutWidget_3 = new QWidget(groupBox_4);
+        gridLayoutWidget_3->setObjectName(QString::fromUtf8("gridLayoutWidget_3"));
+        gridLayoutWidget_3->setGeometry(QRect(10, 20, 101, 51));
+        gridLayout_3 = new QGridLayout(gridLayoutWidget_3);
+        gridLayout_3->setSpacing(6);
+        gridLayout_3->setContentsMargins(11, 11, 11, 11);
+        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
+        gridLayout_3->setContentsMargins(0, 0, 0, 0);
+        ouiClavier = new QRadioButton(gridLayoutWidget_3);
+        ouiClavier->setObjectName(QString::fromUtf8("ouiClavier"));
+
+        gridLayout_3->addWidget(ouiClavier, 0, 0, 1, 1);
+
+        nonClavier = new QRadioButton(gridLayoutWidget_3);
+        nonClavier->setObjectName(QString::fromUtf8("nonClavier"));
+
+        gridLayout_3->addWidget(nonClavier, 1, 0, 1, 1);
+
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -589,6 +615,9 @@ public:
         fact->setText(QApplication::translate("MainWindow", "!", 0, QApplication::UnicodeUTF8));
         eval->setText(QApplication::translate("MainWindow", "Eval", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("MainWindow", "Nombre d'\303\251l\303\251m\303\251nts \303\240 afficher :", 0, QApplication::UnicodeUTF8));
+        groupBox_4->setTitle(QApplication::translate("MainWindow", "Affichage clavier", 0, QApplication::UnicodeUTF8));
+        ouiClavier->setText(QApplication::translate("MainWindow", "Oui", 0, QApplication::UnicodeUTF8));
+        nonClavier->setText(QApplication::translate("MainWindow", "Non", 0, QApplication::UnicodeUTF8));
         menuFile->setTitle(QApplication::translate("MainWindow", "File", 0, QApplication::UnicodeUTF8));
         menuEdition->setTitle(QApplication::translate("MainWindow", "Edition", 0, QApplication::UnicodeUTF8));
     } // retranslateUi

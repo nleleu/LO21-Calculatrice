@@ -121,6 +121,11 @@ private slots:
     void on_fact_clicked();
     void on_eval_clicked();
 
+    //Affichage du clavier
+    void on_ouiClavier_clicked();
+    void on_nonClavier_clicked();
+
+
     void on_actionR_glage_triggered();
 
 

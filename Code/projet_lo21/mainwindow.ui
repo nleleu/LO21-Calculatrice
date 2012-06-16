@@ -468,8 +468,8 @@
      <rect>
       <x>40</x>
       <y>330</y>
-      <width>301</width>
-      <height>201</height>
+      <width>261</width>
+      <height>171</height>
      </rect>
     </property>
     <property name="title">
@@ -478,8 +478,8 @@
     <widget class="QWidget" name="gridLayoutWidget_7">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>40</y>
+       <x>10</x>
+       <y>20</y>
        <width>239</width>
        <height>141</height>
       </rect>
@@ -608,6 +608,45 @@
       <height>22</height>
      </rect>
     </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>70</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Affichage clavier</string>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="ouiClavier">
+        <property name="text">
+         <string>Oui</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QRadioButton" name="nonClavier">
+        <property name="text">
+         <string>Non</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
