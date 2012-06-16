@@ -77,6 +77,7 @@ void Pile::swap(){
                type * tmp = at(size()-1-x);
                replace(size()-1-x, at(size()-1-y));
                replace(size()-1-y, tmp);
+               g->addMemento(this);
            }
         }
         catch(std::exception &e){}
@@ -100,8 +101,9 @@ void Pile::sum(){
             delete tmp;
             j++;
         }
-
+        g->addMemento(this);
         push(sumVect);
+        g->addMemento(this);
     }
       catch(std::exception &e){}
     }
@@ -129,7 +131,9 @@ void Pile::mean(){
             tmp=sumVect;
             sumVect=*sumVect/taille;
             delete tmp;
+            g->addMemento(this);
             push(sumVect);
+            g->addMemento(this);
         }
           catch(std::exception &e){}
     }
@@ -375,8 +379,8 @@ void Pile::sign(){
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
- msgBox.setText(e.what());
- msgBox.exec();
+     msgBox.setText(e.what());
+     msgBox.exec();
            push(op);
        }
 
@@ -399,8 +403,8 @@ void Pile::sinus(bool degre){
        }
        catch (std::exception &e) {
            QMessageBox msgBox;
- msgBox.setText(e.what());
- msgBox.exec();
+            msgBox.setText(e.what());
+            msgBox.exec();
            push(op);
        }
     }
