@@ -297,9 +297,9 @@ void MainWindow::createOnglet()
 
 }
 
-void MainWindow::on_tabWidget_currentChanged(unsigned int index)
+void MainWindow::on_tabWidget_currentChanged(int index)
 {
-    if(index>=Collection_pile::getInstance().size())
+    if((unsigned int)index>=Collection_pile::getInstance().size())
     createOnglet();
     Collection_pile::getInstance().setActif(index);
     emit refresh_signal();
@@ -444,3 +444,4 @@ void MainWindow::on_nonClavier_clicked(){
     ui->quote->hide();
 
 }
+

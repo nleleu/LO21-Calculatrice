@@ -93,7 +93,7 @@ private slots:
     void on_espace_clicked();
     void on_actionParametre_triggered();
     void on_quote_clicked();
-    void on_tabWidget_currentChanged(unsigned int index);
+    void on_tabWidget_currentChanged(int index);
     void on_actionNouvel_onglet_triggered();
     void on_actionNouvel_onglet_2_triggered();
     void on_actionAnnuler_triggered();
