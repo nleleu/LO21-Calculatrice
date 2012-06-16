@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Sat 16. Jun 10:14:45 2012
+** Created: Sat 16. Jun 11:12:05 2012
 **      by: Qt User Interface Compiler version 4.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -59,7 +59,6 @@ public:
     QListWidget *list;
     QWidget *gridLayoutWidget;
     QGridLayout *gridLayout;
-    QPushButton *pushButton1;
     QPushButton *pushButton2;
     QPushButton *pushButton3;
     QPushButton *pushButton4;
@@ -69,7 +68,6 @@ public:
     QPushButton *pushButton8;
     QPushButton *pushButton9;
     QPushButton *pushButton0;
-    QLineEdit *lineEdit;
     QPushButton *stackButton;
     QPushButton *reelButton;
     QPushButton *rationnelButton;
@@ -77,6 +75,7 @@ public:
     QPushButton *quote;
     QPushButton *backspace;
     QPushButton *espace;
+    QPushButton *pushButton1;
     QPushButton *affichePile;
     QGroupBox *degUnitBox;
     QWidget *verticalLayoutWidget_3;
@@ -119,6 +118,7 @@ public:
     QGridLayout *gridLayout_3;
     QRadioButton *ouiClavier;
     QRadioButton *nonClavier;
+    QLineEdit *lineEdit;
     QMenuBar *menuBar;
     QMenu *menuFile;
     QMenu *menuEdition;
@@ -130,8 +130,7 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->setEnabled(true);
-        MainWindow->resize(800, 600);
-        MainWindow->setMinimumSize(QSize(400, 600));
+        MainWindow->resize(800, 473);
         MainWindow->setMaximumSize(QSize(800, 600));
         MainWindow->setAcceptDrops(false);
         actionQuit = new QAction(MainWindow);
@@ -156,10 +155,10 @@ public:
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         groupBox = new QGroupBox(centralWidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(350, 330, 261, 111));
+        groupBox->setGeometry(QRect(200, 270, 181, 101));
         gridLayoutWidget_2 = new QWidget(groupBox);
         gridLayoutWidget_2->setObjectName(QString::fromUtf8("gridLayoutWidget_2"));
-        gridLayoutWidget_2->setGeometry(QRect(9, 19, 239, 81));
+        gridLayoutWidget_2->setGeometry(QRect(9, 19, 161, 71));
         gridLayout_2 = new QGridLayout(gridLayoutWidget_2);
         gridLayout_2->setSpacing(6);
         gridLayout_2->setContentsMargins(11, 11, 11, 11);
@@ -197,115 +196,109 @@ public:
 
         list = new QListWidget(centralWidget);
         list->setObjectName(QString::fromUtf8("list"));
-        list->setGeometry(QRect(310, 30, 241, 121));
+        list->setGeometry(QRect(10, 70, 241, 121));
         gridLayoutWidget = new QWidget(centralWidget);
         gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(20, 30, 271, 271));
+        gridLayoutWidget->setGeometry(QRect(520, 60, 239, 221));
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
-        pushButton1 = new QPushButton(gridLayoutWidget);
-        pushButton1->setObjectName(QString::fromUtf8("pushButton1"));
-
-        gridLayout->addWidget(pushButton1, 1, 0, 1, 1);
-
         pushButton2 = new QPushButton(gridLayoutWidget);
         pushButton2->setObjectName(QString::fromUtf8("pushButton2"));
 
-        gridLayout->addWidget(pushButton2, 1, 1, 1, 1);
+        gridLayout->addWidget(pushButton2, 0, 1, 1, 1);
 
         pushButton3 = new QPushButton(gridLayoutWidget);
         pushButton3->setObjectName(QString::fromUtf8("pushButton3"));
 
-        gridLayout->addWidget(pushButton3, 1, 2, 1, 1);
+        gridLayout->addWidget(pushButton3, 0, 2, 1, 1);
 
         pushButton4 = new QPushButton(gridLayoutWidget);
         pushButton4->setObjectName(QString::fromUtf8("pushButton4"));
 
-        gridLayout->addWidget(pushButton4, 2, 0, 1, 1);
+        gridLayout->addWidget(pushButton4, 1, 0, 1, 1);
 
         pushButton5 = new QPushButton(gridLayoutWidget);
         pushButton5->setObjectName(QString::fromUtf8("pushButton5"));
 
-        gridLayout->addWidget(pushButton5, 2, 1, 1, 1);
+        gridLayout->addWidget(pushButton5, 1, 1, 1, 1);
 
         pushButton6 = new QPushButton(gridLayoutWidget);
         pushButton6->setObjectName(QString::fromUtf8("pushButton6"));
 
-        gridLayout->addWidget(pushButton6, 2, 2, 1, 1);
+        gridLayout->addWidget(pushButton6, 1, 2, 1, 1);
 
         pushButton7 = new QPushButton(gridLayoutWidget);
         pushButton7->setObjectName(QString::fromUtf8("pushButton7"));
 
-        gridLayout->addWidget(pushButton7, 3, 0, 1, 1);
+        gridLayout->addWidget(pushButton7, 2, 0, 1, 1);
 
         pushButton8 = new QPushButton(gridLayoutWidget);
         pushButton8->setObjectName(QString::fromUtf8("pushButton8"));
 
-        gridLayout->addWidget(pushButton8, 3, 1, 1, 1);
+        gridLayout->addWidget(pushButton8, 2, 1, 1, 1);
 
         pushButton9 = new QPushButton(gridLayoutWidget);
         pushButton9->setObjectName(QString::fromUtf8("pushButton9"));
 
-        gridLayout->addWidget(pushButton9, 3, 2, 1, 1);
+        gridLayout->addWidget(pushButton9, 2, 2, 1, 1);
 
         pushButton0 = new QPushButton(gridLayoutWidget);
         pushButton0->setObjectName(QString::fromUtf8("pushButton0"));
 
-        gridLayout->addWidget(pushButton0, 4, 0, 1, 1);
-
-        lineEdit = new QLineEdit(gridLayoutWidget);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setReadOnly(true);
-
-        gridLayout->addWidget(lineEdit, 0, 0, 1, 3);
+        gridLayout->addWidget(pushButton0, 3, 0, 1, 1);
 
         stackButton = new QPushButton(gridLayoutWidget);
         stackButton->setObjectName(QString::fromUtf8("stackButton"));
 
-        gridLayout->addWidget(stackButton, 8, 0, 1, 3);
+        gridLayout->addWidget(stackButton, 7, 0, 1, 3);
 
         reelButton = new QPushButton(gridLayoutWidget);
         reelButton->setObjectName(QString::fromUtf8("reelButton"));
 
-        gridLayout->addWidget(reelButton, 4, 1, 1, 1);
+        gridLayout->addWidget(reelButton, 3, 1, 1, 1);
 
         rationnelButton = new QPushButton(gridLayoutWidget);
         rationnelButton->setObjectName(QString::fromUtf8("rationnelButton"));
 
-        gridLayout->addWidget(rationnelButton, 4, 2, 1, 1);
+        gridLayout->addWidget(rationnelButton, 3, 2, 1, 1);
 
         complexeButton = new QPushButton(gridLayoutWidget);
         complexeButton->setObjectName(QString::fromUtf8("complexeButton"));
 
-        gridLayout->addWidget(complexeButton, 5, 2, 1, 1);
+        gridLayout->addWidget(complexeButton, 4, 2, 1, 1);
 
         quote = new QPushButton(gridLayoutWidget);
         quote->setObjectName(QString::fromUtf8("quote"));
 
-        gridLayout->addWidget(quote, 6, 2, 1, 1);
+        gridLayout->addWidget(quote, 5, 2, 1, 1);
 
         backspace = new QPushButton(gridLayoutWidget);
         backspace->setObjectName(QString::fromUtf8("backspace"));
 
-        gridLayout->addWidget(backspace, 5, 0, 1, 1);
+        gridLayout->addWidget(backspace, 4, 0, 1, 1);
 
         espace = new QPushButton(gridLayoutWidget);
         espace->setObjectName(QString::fromUtf8("espace"));
 
-        gridLayout->addWidget(espace, 5, 1, 1, 1);
+        gridLayout->addWidget(espace, 4, 1, 1, 1);
+
+        pushButton1 = new QPushButton(gridLayoutWidget);
+        pushButton1->setObjectName(QString::fromUtf8("pushButton1"));
+
+        gridLayout->addWidget(pushButton1, 0, 0, 1, 1);
 
         affichePile = new QPushButton(centralWidget);
         affichePile->setObjectName(QString::fromUtf8("affichePile"));
-        affichePile->setGeometry(QRect(600, 460, 75, 61));
+        affichePile->setGeometry(QRect(400, 290, 71, 61));
         degUnitBox = new QGroupBox(centralWidget);
         degUnitBox->setObjectName(QString::fromUtf8("degUnitBox"));
-        degUnitBox->setGeometry(QRect(540, 170, 141, 80));
+        degUnitBox->setGeometry(QRect(390, 180, 91, 71));
         verticalLayoutWidget_3 = new QWidget(degUnitBox);
         verticalLayoutWidget_3->setObjectName(QString::fromUtf8("verticalLayoutWidget_3"));
-        verticalLayoutWidget_3->setGeometry(QRect(10, 20, 101, 42));
+        verticalLayoutWidget_3->setGeometry(QRect(10, 21, 71, 41));
         verticalLayout_3 = new QVBoxLayout(verticalLayoutWidget_3);
         verticalLayout_3->setSpacing(6);
         verticalLayout_3->setContentsMargins(11, 11, 11, 11);
@@ -321,6 +314,7 @@ public:
 
         verticalLayout_3->addWidget(radUnit);
 
+        verticalLayoutWidget_3->raise();
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
         tabWidget->setEnabled(true);
@@ -331,10 +325,10 @@ public:
         tabWidget->addTab(Onglet_1, QString());
         groupBox_2 = new QGroupBox(centralWidget);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
-        groupBox_2->setGeometry(QRect(310, 160, 211, 151));
+        groupBox_2->setGeometry(QRect(260, 50, 211, 121));
         gridLayoutWidget_5 = new QWidget(groupBox_2);
         gridLayoutWidget_5->setObjectName(QString::fromUtf8("gridLayoutWidget_5"));
-        gridLayoutWidget_5->setGeometry(QRect(10, 20, 191, 112));
+        gridLayoutWidget_5->setGeometry(QRect(10, 20, 191, 101));
         gridLayout_5 = new QGridLayout(gridLayoutWidget_5);
         gridLayout_5->setSpacing(6);
         gridLayout_5->setContentsMargins(11, 11, 11, 11);
@@ -377,10 +371,10 @@ public:
 
         groupBox_3 = new QGroupBox(centralWidget);
         groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
-        groupBox_3->setGeometry(QRect(40, 330, 261, 171));
+        groupBox_3->setGeometry(QRect(0, 200, 191, 171));
         gridLayoutWidget_7 = new QWidget(groupBox_3);
         gridLayoutWidget_7->setObjectName(QString::fromUtf8("gridLayoutWidget_7"));
-        gridLayoutWidget_7->setGeometry(QRect(10, 20, 239, 141));
+        gridLayoutWidget_7->setGeometry(QRect(10, 20, 171, 141));
         gridLayout_7 = new QGridLayout(gridLayoutWidget_7);
         gridLayout_7->setSpacing(6);
         gridLayout_7->setContentsMargins(11, 11, 11, 11);
@@ -458,16 +452,16 @@ public:
 
         label = new QLabel(centralWidget);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(560, 30, 151, 16));
+        label->setGeometry(QRect(260, 20, 151, 16));
         NbAffiche = new QSpinBox(centralWidget);
         NbAffiche->setObjectName(QString::fromUtf8("NbAffiche"));
-        NbAffiche->setGeometry(QRect(720, 30, 42, 22));
+        NbAffiche->setGeometry(QRect(420, 20, 42, 22));
         groupBox_4 = new QGroupBox(centralWidget);
         groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
-        groupBox_4->setGeometry(QRect(570, 70, 120, 80));
+        groupBox_4->setGeometry(QRect(270, 180, 101, 71));
         gridLayoutWidget_3 = new QWidget(groupBox_4);
         gridLayoutWidget_3->setObjectName(QString::fromUtf8("gridLayoutWidget_3"));
-        gridLayoutWidget_3->setGeometry(QRect(10, 20, 101, 51));
+        gridLayoutWidget_3->setGeometry(QRect(10, 20, 51, 41));
         gridLayout_3 = new QGridLayout(gridLayoutWidget_3);
         gridLayout_3->setSpacing(6);
         gridLayout_3->setContentsMargins(11, 11, 11, 11);
@@ -483,7 +477,24 @@ public:
 
         gridLayout_3->addWidget(nonClavier, 1, 0, 1, 1);
 
+        lineEdit = new QLineEdit(centralWidget);
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        lineEdit->setGeometry(QRect(10, 40, 241, 20));
+        lineEdit->setReadOnly(true);
         MainWindow->setCentralWidget(centralWidget);
+        groupBox->raise();
+        list->raise();
+        gridLayoutWidget->raise();
+        affichePile->raise();
+        degUnitBox->raise();
+        tabWidget->raise();
+        groupBox_2->raise();
+        groupBox_3->raise();
+        label->raise();
+        NbAffiche->raise();
+        groupBox_4->raise();
+        lineEdit->raise();
+        lineEdit->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 800, 21));
@@ -544,8 +555,6 @@ public:
         clear->setShortcut(QApplication::translate("MainWindow", "Ctrl+C", 0, QApplication::UnicodeUTF8));
         dup->setText(QApplication::translate("MainWindow", "Dup", 0, QApplication::UnicodeUTF8));
         drop->setText(QApplication::translate("MainWindow", "Drop", 0, QApplication::UnicodeUTF8));
-        pushButton1->setText(QApplication::translate("MainWindow", "1", 0, QApplication::UnicodeUTF8));
-        pushButton1->setShortcut(QApplication::translate("MainWindow", "1", 0, QApplication::UnicodeUTF8));
         pushButton2->setText(QApplication::translate("MainWindow", "2", 0, QApplication::UnicodeUTF8));
         pushButton2->setShortcut(QApplication::translate("MainWindow", "2", 0, QApplication::UnicodeUTF8));
         pushButton3->setText(QApplication::translate("MainWindow", "3", 0, QApplication::UnicodeUTF8));
@@ -564,7 +573,6 @@ public:
         pushButton9->setShortcut(QApplication::translate("MainWindow", "9", 0, QApplication::UnicodeUTF8));
         pushButton0->setText(QApplication::translate("MainWindow", "0", 0, QApplication::UnicodeUTF8));
         pushButton0->setShortcut(QApplication::translate("MainWindow", "0", 0, QApplication::UnicodeUTF8));
-        lineEdit->setText(QString());
         stackButton->setText(QApplication::translate("MainWindow", "Stack", 0, QApplication::UnicodeUTF8));
         stackButton->setShortcut(QApplication::translate("MainWindow", "Return", 0, QApplication::UnicodeUTF8));
         reelButton->setText(QApplication::translate("MainWindow", ",", 0, QApplication::UnicodeUTF8));
@@ -579,6 +587,8 @@ public:
         backspace->setShortcut(QApplication::translate("MainWindow", "Backspace", 0, QApplication::UnicodeUTF8));
         espace->setText(QApplication::translate("MainWindow", "Space", 0, QApplication::UnicodeUTF8));
         espace->setShortcut(QApplication::translate("MainWindow", "Space", 0, QApplication::UnicodeUTF8));
+        pushButton1->setText(QApplication::translate("MainWindow", "1", 0, QApplication::UnicodeUTF8));
+        pushButton1->setShortcut(QApplication::translate("MainWindow", "1", 0, QApplication::UnicodeUTF8));
         affichePile->setText(QApplication::translate("MainWindow", "Affiche Pile", 0, QApplication::UnicodeUTF8));
         affichePile->setShortcut(QApplication::translate("MainWindow", "A", 0, QApplication::UnicodeUTF8));
         degUnitBox->setTitle(QApplication::translate("MainWindow", "Unit\303\251 des degr\303\251s", 0, QApplication::UnicodeUTF8));
@@ -618,6 +628,7 @@ public:
         groupBox_4->setTitle(QApplication::translate("MainWindow", "Affichage clavier", 0, QApplication::UnicodeUTF8));
         ouiClavier->setText(QApplication::translate("MainWindow", "Oui", 0, QApplication::UnicodeUTF8));
         nonClavier->setText(QApplication::translate("MainWindow", "Non", 0, QApplication::UnicodeUTF8));
+        lineEdit->setText(QString());
         menuFile->setTitle(QApplication::translate("MainWindow", "File", 0, QApplication::UnicodeUTF8));
         menuEdition->setTitle(QApplication::translate("MainWindow", "Edition", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
