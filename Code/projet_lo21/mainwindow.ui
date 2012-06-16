@@ -29,9 +29,9 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>290</x>
       <y>270</y>
-      <width>181</width>
+      <width>191</width>
       <height>101</height>
      </rect>
     </property>
@@ -43,7 +43,7 @@
       <rect>
        <x>9</x>
        <y>19</y>
-       <width>161</width>
+       <width>171</width>
        <height>71</height>
       </rect>
      </property>
@@ -288,28 +288,12 @@
      </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="affichePile">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>290</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Affiche Pile</string>
-    </property>
-    <property name="shortcut">
-     <string>A</string>
-    </property>
-   </widget>
    <widget class="QGroupBox" name="degUnitBox">
     <property name="geometry">
      <rect>
-      <x>390</x>
+      <x>380</x>
       <y>180</y>
-      <width>91</width>
+      <width>101</width>
       <height>71</height>
      </rect>
     </property>
@@ -322,7 +306,7 @@
        <x>10</x>
        <y>21</y>
        <width>71</width>
-       <height>41</height>
+       <height>42</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -342,9 +326,6 @@
       </item>
      </layout>
     </widget>
-    <zorder>verticalLayoutWidget_3</zorder>
-    <zorder>label</zorder>
-    <zorder>NbAffiche</zorder>
    </widget>
    <widget class="QTabWidget" name="tabWidget">
     <property name="enabled">
@@ -380,9 +361,9 @@
     <property name="geometry">
      <rect>
       <x>260</x>
-      <y>50</y>
+      <y>40</y>
       <width>211</width>
-      <height>121</height>
+      <height>131</height>
      </rect>
     </property>
     <property name="title">
@@ -455,7 +436,7 @@
      <rect>
       <x>0</x>
       <y>200</y>
-      <width>191</width>
+      <width>261</width>
       <height>171</height>
      </rect>
     </property>
@@ -467,7 +448,7 @@
       <rect>
        <x>10</x>
        <y>20</y>
-       <width>171</width>
+       <width>239</width>
        <height>141</height>
       </rect>
      </property>
@@ -577,7 +558,7 @@
     <property name="geometry">
      <rect>
       <x>260</x>
-      <y>20</y>
+      <y>10</y>
       <width>151</width>
       <height>16</height>
      </rect>
@@ -590,7 +571,7 @@
     <property name="geometry">
      <rect>
       <x>420</x>
-      <y>20</y>
+      <y>10</y>
       <width>42</width>
       <height>22</height>
      </rect>
@@ -614,7 +595,7 @@
        <x>10</x>
        <y>20</y>
        <width>51</width>
-       <height>41</height>
+       <height>42</height>
       </rect>
      </property>
      <layout class="QGridLayout" name="gridLayout_3">
@@ -651,19 +632,6 @@
      <bool>true</bool>
     </property>
    </widget>
-   <zorder>groupBox</zorder>
-   <zorder>list</zorder>
-   <zorder>gridLayoutWidget</zorder>
-   <zorder>affichePile</zorder>
-   <zorder>degUnitBox</zorder>
-   <zorder>tabWidget</zorder>
-   <zorder>groupBox_2</zorder>
-   <zorder>groupBox_3</zorder>
-   <zorder>label</zorder>
-   <zorder>NbAffiche</zorder>
-   <zorder>groupBox_4</zorder>
-   <zorder>lineEdit</zorder>
-   <zorder>lineEdit</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

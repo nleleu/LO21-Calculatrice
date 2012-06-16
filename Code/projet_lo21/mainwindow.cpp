@@ -421,8 +421,8 @@ void MainWindow::on_ouiClavier_clicked(){
     ui->backspace->show();
     ui->stackButton->show();
     ui->quote->show();
-    QSize size(800, 450);
-    resize(size);
+    //QSize size(800, 450);
+    //resize(size);
 
 }
 
@@ -444,8 +444,8 @@ void MainWindow::on_nonClavier_clicked(){
     ui->backspace->hide();
     ui->stackButton->hide();
     ui->quote->hide();
-    QSize size(500, 450);
-    resize(size);
+    //QSize size(500, 450);
+    //resize(size);
 
 }
 
