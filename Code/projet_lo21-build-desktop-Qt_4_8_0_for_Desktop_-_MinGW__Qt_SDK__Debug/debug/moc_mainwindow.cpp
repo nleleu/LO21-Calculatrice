@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mainwindow.h'
 **
-** Created: Thu 14. Jun 22:53:14 2012
+** Created: Sat 16. Jun 10:10:40 2012
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.0)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_MainWindow[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-      71,   14, // methods
+      73,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -98,12 +98,14 @@ static const uint qt_meta_data_MainWindow[] = {
     1404,   11,   11,   11, 0x08,
     1422,   11,   11,   11, 0x08,
     1440,   11,   11,   11, 0x08,
-    1474, 1469,   11,   11, 0x08,
-    1504, 1469,   11,   11, 0x08,
-    1533, 1469,   11,   11, 0x08,
-    1562, 1469,   11,   11, 0x08,
-    1593,   11,   11,   11, 0x08,
-    1614,   11,   11,   11, 0x08,
+    1464,   11,   11,   11, 0x08,
+    1488,   11,   11,   11, 0x08,
+    1522, 1517,   11,   11, 0x08,
+    1552, 1517,   11,   11, 0x08,
+    1581, 1517,   11,   11, 0x08,
+    1610, 1517,   11,   11, 0x08,
+    1641,   11,   11,   11, 0x08,
+    1662,   11,   11,   11, 0x08,
 
        0        // eod
 };
@@ -154,8 +156,10 @@ static const char qt_meta_stringdata_MainWindow[] = {
     "on_log_clicked()\0on_inv_clicked()\0"
     "on_sqrt_clicked()\0on_sqr_clicked()\0"
     "on_cube_clicked()\0on_fact_clicked()\0"
-    "on_eval_clicked()\0on_actionR_glage_triggered()\0"
-    "arg1\0on_nbelt_textChanged(QString)\0"
+    "on_eval_clicked()\0on_ouiClavier_clicked()\0"
+    "on_nonClavier_clicked()\0"
+    "on_actionR_glage_triggered()\0arg1\0"
+    "on_nbelt_textChanged(QString)\0"
     "on_nbelt_textEdited(QString)\0"
     "on_spinBox_valueChanged(int)\0"
     "on_NbAffiche_valueChanged(int)\0"
@@ -232,13 +236,15 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 61: _t->on_cube_clicked(); break;
         case 62: _t->on_fact_clicked(); break;
         case 63: _t->on_eval_clicked(); break;
-        case 64: _t->on_actionR_glage_triggered(); break;
-        case 65: _t->on_nbelt_textChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 66: _t->on_nbelt_textEdited((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 67: _t->on_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 68: _t->on_NbAffiche_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 69: _t->on_degUnit_clicked(); break;
-        case 70: _t->on_radUnit_clicked(); break;
+        case 64: _t->on_ouiClavier_clicked(); break;
+        case 65: _t->on_nonClavier_clicked(); break;
+        case 66: _t->on_actionR_glage_triggered(); break;
+        case 67: _t->on_nbelt_textChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 68: _t->on_nbelt_textEdited((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 69: _t->on_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 70: _t->on_NbAffiche_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 71: _t->on_degUnit_clicked(); break;
+        case 72: _t->on_radUnit_clicked(); break;
         default: ;
         }
     }
@@ -276,9 +282,9 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 71)
+        if (_id < 73)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 71;
+        _id -= 73;
     }
     return _id;
 }
