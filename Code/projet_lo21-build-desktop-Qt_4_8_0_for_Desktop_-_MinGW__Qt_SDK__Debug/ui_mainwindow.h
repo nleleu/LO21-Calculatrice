@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Sat 16. Jun 14:39:44 2012
+** Created: Sun 17. Jun 14:30:53 2012
 **      by: Qt User Interface Compiler version 4.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -130,7 +130,8 @@ public:
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->setEnabled(true);
         MainWindow->resize(800, 473);
-        MainWindow->setMaximumSize(QSize(800, 600));
+        MainWindow->setMinimumSize(QSize(515, 473));
+        MainWindow->setMaximumSize(QSize(800, 473));
         MainWindow->setAcceptDrops(false);
         actionQuit = new QAction(MainWindow);
         actionQuit->setObjectName(QString::fromUtf8("actionQuit"));
@@ -154,10 +155,10 @@ public:
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         groupBox = new QGroupBox(centralWidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(290, 270, 191, 101));
+        groupBox->setGeometry(QRect(260, 260, 251, 101));
         gridLayoutWidget_2 = new QWidget(groupBox);
         gridLayoutWidget_2->setObjectName(QString::fromUtf8("gridLayoutWidget_2"));
-        gridLayoutWidget_2->setGeometry(QRect(9, 19, 171, 71));
+        gridLayoutWidget_2->setGeometry(QRect(9, 19, 239, 71));
         gridLayout_2 = new QGridLayout(gridLayoutWidget_2);
         gridLayout_2->setSpacing(6);
         gridLayout_2->setContentsMargins(11, 11, 11, 11);
@@ -198,7 +199,7 @@ public:
         list->setGeometry(QRect(10, 70, 241, 121));
         gridLayoutWidget = new QWidget(centralWidget);
         gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(520, 60, 239, 221));
+        gridLayoutWidget->setGeometry(QRect(530, 30, 239, 221));
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
@@ -291,7 +292,7 @@ public:
 
         degUnitBox = new QGroupBox(centralWidget);
         degUnitBox->setObjectName(QString::fromUtf8("degUnitBox"));
-        degUnitBox->setGeometry(QRect(390, 180, 91, 71));
+        degUnitBox->setGeometry(QRect(380, 180, 101, 71));
         verticalLayoutWidget_3 = new QWidget(degUnitBox);
         verticalLayoutWidget_3->setObjectName(QString::fromUtf8("verticalLayoutWidget_3"));
         verticalLayoutWidget_3->setGeometry(QRect(10, 21, 71, 42));
@@ -323,7 +324,7 @@ public:
         groupBox_2->setGeometry(QRect(260, 40, 211, 131));
         gridLayoutWidget_5 = new QWidget(groupBox_2);
         gridLayoutWidget_5->setObjectName(QString::fromUtf8("gridLayoutWidget_5"));
-        gridLayoutWidget_5->setGeometry(QRect(10, 20, 191, 101));
+        gridLayoutWidget_5->setGeometry(QRect(10, 20, 191, 112));
         gridLayout_5 = new QGridLayout(gridLayoutWidget_5);
         gridLayout_5->setSpacing(6);
         gridLayout_5->setContentsMargins(11, 11, 11, 11);

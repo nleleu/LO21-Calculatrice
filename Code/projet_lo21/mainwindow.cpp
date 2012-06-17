@@ -404,7 +404,8 @@ void MainWindow::on_radUnit_clicked()
 
 //Affichage du clavier
 void MainWindow::on_ouiClavier_clicked(){
-    ui->pushButton0->show();
+   this->resize(800,473);
+    /*ui->pushButton0->show();
     ui->pushButton1->show();
     ui->pushButton2->show();
     ui->pushButton3->show();
@@ -420,14 +421,14 @@ void MainWindow::on_ouiClavier_clicked(){
     ui->espace->show();
     ui->backspace->show();
     ui->stackButton->show();
-    ui->quote->show();
+    ui->quote->show();*/
     //QSize size(800, 450);
     //resize(size);
 
 }
 
 void MainWindow::on_nonClavier_clicked(){
-    ui->pushButton0->hide();
+    /*ui->pushButton0->hide();
     ui->pushButton1->hide();
     ui->pushButton2->hide();
     ui->pushButton3->hide();
@@ -443,9 +444,10 @@ void MainWindow::on_nonClavier_clicked(){
     ui->espace->hide();
     ui->backspace->hide();
     ui->stackButton->hide();
-    ui->quote->hide();
+    ui->quote->hide();*/
     //QSize size(500, 450);
     //resize(size);
+    this->resize(515,473);
 
 }
 
