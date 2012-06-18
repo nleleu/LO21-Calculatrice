@@ -89,8 +89,8 @@ public:
     *  \brief Clone
     *
     *  Permet de creer une nouvelle pile a partir d'une pile source.
-    *  Le gardien sera un nouveau gardien.
-    *  Pour dupliquer une pile en conservant son gardien, voir duplique().
+    * Le gardien sera conserve.
+    *  Pour dupliquer une pile sans conserver son gardien, voir duplique().
     *   \return Nouvelle pile
     */
     Pile& clone() const;
@@ -99,7 +99,7 @@ public:
     *  \brief Duplique
     *
     *  Permet de creer une nouvelle pile a partir d'une pile source.
-    *   Le gardien sera conserve.
+    *   Le gardien sera un nouveau gardien.
     *   \return Nouvelle pile
     */
     Pile& duplique()const;

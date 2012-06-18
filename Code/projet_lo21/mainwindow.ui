@@ -13,6 +13,12 @@
     <height>473</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
   <property name="minimumSize">
    <size>
     <width>515</width>
@@ -25,6 +31,15 @@
     <height>473</height>
    </size>
   </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::PreventContextMenu</enum>
+  </property>
   <property name="acceptDrops">
    <bool>false</bool>
   </property>
@@ -36,7 +51,7 @@
     <property name="geometry">
      <rect>
       <x>260</x>
-      <y>260</y>
+      <y>280</y>
       <width>251</width>
       <height>101</height>
      </rect>
@@ -115,8 +130,8 @@
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>530</x>
-      <y>30</y>
+      <x>500</x>
+      <y>50</y>
       <width>239</width>
       <height>221</height>
      </rect>
@@ -298,7 +313,7 @@
     <property name="geometry">
      <rect>
       <x>380</x>
-      <y>180</y>
+      <y>200</y>
       <width>101</width>
       <height>71</height>
      </rect>
@@ -367,7 +382,7 @@
     <property name="geometry">
      <rect>
       <x>260</x>
-      <y>40</y>
+      <y>50</y>
       <width>211</width>
       <height>131</height>
      </rect>
@@ -390,11 +405,17 @@
         <property name="text">
          <string>+</string>
         </property>
+        <property name="shortcut">
+         <string>+</string>
+        </property>
        </widget>
       </item>
       <item row="0" column="1">
        <widget class="QPushButton" name="soustraction">
         <property name="text">
+         <string>-</string>
+        </property>
+        <property name="shortcut">
          <string>-</string>
         </property>
        </widget>
@@ -404,11 +425,17 @@
         <property name="text">
          <string>*</string>
         </property>
+        <property name="shortcut">
+         <string>*</string>
+        </property>
        </widget>
       </item>
       <item row="1" column="1">
        <widget class="QPushButton" name="division">
         <property name="text">
+         <string>/</string>
+        </property>
+        <property name="shortcut">
          <string>/</string>
         </property>
        </widget>
@@ -563,8 +590,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>10</y>
+      <x>270</x>
+      <y>30</y>
       <width>151</width>
       <height>16</height>
      </rect>
@@ -576,8 +603,8 @@
    <widget class="QSpinBox" name="NbAffiche">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>10</y>
+      <x>430</x>
+      <y>30</y>
       <width>42</width>
       <height>22</height>
      </rect>
@@ -587,7 +614,7 @@
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>180</y>
+      <y>200</y>
       <width>101</width>
       <height>71</height>
      </rect>
@@ -605,13 +632,6 @@
       </rect>
      </property>
      <layout class="QGridLayout" name="gridLayout_3">
-      <item row="0" column="0">
-       <widget class="QRadioButton" name="ouiClavier">
-        <property name="text">
-         <string>Oui</string>
-        </property>
-       </widget>
-      </item>
       <item row="1" column="0">
        <widget class="QRadioButton" name="nonClavier">
         <property name="text">
@@ -619,8 +639,17 @@
         </property>
        </widget>
       </item>
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="ouiClavier">
+        <property name="text">
+         <string>Oui</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </widget>
+    <zorder>gridLayoutWidget_3</zorder>
+    <zorder>ouiClavier</zorder>
    </widget>
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">

@@ -18,8 +18,11 @@ gardien::~gardien()
 
 
 void gardien::addMemento(Pile *pile){
+
 tabPile.push_back(&pile->clone());
 currentStack++;
+
+
 
 }
 

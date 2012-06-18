@@ -30,6 +30,7 @@ void Pile::charger(QString fileName){
 
 
 Pile::~Pile(){
+    qDebug() << size();
     for(int i=0; i<size(); i++){
        delete at(i);
     }
@@ -361,7 +362,7 @@ void Pile::parser(QString s)
 
         push(new Expression(s));
     }
-
+    g->addMemento(this);
 }
 
 void Pile::sign(){

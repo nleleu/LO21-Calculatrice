@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "pile.h"
-
+#include <QDebug>
 #include "entier.h"
 #include "reel.h"
 #include "rationnel.h"
@@ -344,9 +344,8 @@ void MainWindow::on_tabWidget_tabCloseRequested(int index)
 {
     if (index>0)
     {
-
     delete Collection_pile::getInstance().at(index);
-        Collection_pile::getInstance().erase(Collection_pile::getInstance().begin()+index);
+        Collection_pile::getInstance().erase(Collection_pile::getInstance().begin()+(index));
     ui->tabWidget->removeTab(index);
 
     }
